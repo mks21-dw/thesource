@@ -93,18 +93,3 @@
 (display "#t: ")
 (exor (> 3 4) (<= 5 6))
 
-(define twoDigits
-  (lambda (n)
-    (and
-     (= 0 (quotient n 100))
-     (< 0 (quotient n 10)))))
-
-
-(define xDigits
-  (lambda (n x)
-    (and
-     (= 0 (quotient n (expt 10 x)))
-     (< 0 (quotient n (expt 10 (- x 1)))))))
-(xDigits 32 3)
-(xDigits 3 1)
-(xDigits 1234 4)
