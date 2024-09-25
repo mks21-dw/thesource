@@ -42,7 +42,7 @@
 (display "#f: ")
 (pythTriple 5 3 4)
 
-; (pythTripl2e a b c) --> boolean
+; (pythTriple2 a b c) --> boolean
 ;   a : positive number
 ;   b : positive number
 ;   c : positive number
@@ -68,11 +68,11 @@
 (display "#t: ")
 (pythTriple2 5 3 4)
 (display "#t: ")
-(pythTriple2 4 5 3)
+(pythTriple2 5 3 4)
 
 ; (exor p q) --> boolean
 ;   p : boolean
-;   q : boolean7
+;   q : boolean
 ;
 ;   Returns true if p or q is true but
 ;   not if both p and q are true
