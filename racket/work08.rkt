@@ -67,7 +67,7 @@
      (= 0 (quotient n (expt 10 x)))
      (< 0 (quotient n (expt 10 (- x 1)))))))
 
-#|
+
 (display "xDigits tests:\n")
 (display "#f: ")
 (xDigits 32 1)
@@ -75,7 +75,6 @@
 (xDigits 3 1)
 (display "#t: ")
 (xDigits 1234 4)
-|#
 
 ;Alternate, arguably simpler, versions
 ;of twoDigits and xDigits
@@ -90,3 +89,4 @@
     (and
      (< n (expt 10 x))
      (>= n (expt 10 (- x 1))))))
+
