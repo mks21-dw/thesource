@@ -1,0 +1,435 @@
+
+=======================
+Question 0:
+Programming question: Write the function getThousandsDigit that takes the 1000s digit of a number.
+If the number has no number in the 1000s digit, return 0.
+
+
+(define getThousandsDigit
+    (lambda (s)
+         (remainder (quotient s 1000) 10)))
+=======================
+Question 1:
+Programming Question:
+Given a positive 3-digit integer write a function that finds the product of its digits
+Possible Solutions:
+=======================
+Question 2:
+Programming question:
+Write a function that takes a, b, and c from a quadratic and outputs the quadratic formula answer
+Description
+ax^2 + bx + c = y
+x = (-b +- sqrt (b^2 -4ac))/2a
+
+(define quad
+(lambda (a b c)
+(/ (or (+ (* b -1) (sqrt (- (expt b 2) (* 4 a c))) (- (* b -1) (sqrt (- (expt b 2) (* 4 a c)))) (* 2 a))))))
+=======================
+Question 3:
+Programming question:
+Write a function that returns the area of a triangle given all three sides (a, b, c).
+area = sqrt (s*(s-a)*(s-b)*(s-c))
+
+Possible solutions:
+=======================
+Question 4:
+Programming question:
+Write two functions that solves a quadratic given a b c. 
+
+
+(define quadsolution1
+  (lambda (a b c)
+    (/ (+ (* b -1) (sqrt (-(* b b)(* 4 a c))))(* 2 a))))
+  
+
+(define quadsolution2
+  (lambda (a b c)
+    (/ (- (* b -1) (sqrt (-(* b b)(* 4 a c))))(* 2 a))))
+
+(quadsolution1 1 4 4) 
+(quadsolution2 1 4 4)
+=======================
+Question 5:
+Programming question: Write a function that calculates energy of a photon given frequency
+Description
+Formula is e=hv
+h : planch's constant=6.626 * 10^-34
+v : frequency
+e : energy
+
+(define PhotonEnergy 
+  (lambda (v) (* (* 6.626 
+    (expt 10 -34)) v)))
+=======================
+Question 6:
+Programming question:
+Description
+Write a function that takes the height and base of a triangle and returns it's area
+A = b*h/2
+
+
+=======================
+Question 7:
+Programming question: Write a function that will divide a positive integer by its ones digit 
+Description
+; (dividebyonesdigit n)---> positive real number
+; n ---> positive integer
+; the function will divide n by its ones value
+; (dividebyonesdigit 15) --> 3
+; (dividebyonesdigit 122) --- 61
+
+
+=======================
+Question 8:
+Programming question:
+Write a function that takes a, b, and c from a quadratic and outputs the quadratic formula answer
+Description
+ax^2 + bx + c = y
+x = (-b +- sqrt (b^2 -4ac))/2a
+
+(define quad
+(lambda (a b c)
+(/ (or (+ (* b -1) (sqrt (- (expt b 2) (* 4 a c))) (- (* b -1) (sqrt (- (expt b 2) (* 4 a c)))) (* 2 a))))))
+=======================
+Question 9:
+Answer : C)  (<= (quotient m n) (quotient n m)) where n is greater than m
+MC Question :
+What word do you use to create a function?
+A)Define
+B)Lambda
+C)Display
+D)None of the above
+
+Answer: B) Lambda
+=======================
+Question 10:
+Programming question: Write a function that takes 3 values and returns true if they can be the 3 side lengths of a triangle and false if not.
+a+b>c, b+c>a c+a>b
+
+
+=======================
+Question 11:
+Write a function that finds the area of a triangle given its three sides
+Heron's formula A = sqrt(s(s-a)(s-b)(s-c)) where s = (a+b+c)/2
+
+
+=======================
+Question 12:
+Programming question: Write a function that has two parameters, x and y, with x being degrees in celsius, and y being another value. Convert celsius to fahrenheit and add it to y. Make another function that converts to kelvin based on x being celsius.
+
+Description
+Fahrenheit= 9/5(celsius)+ 32
+Fahrenheit + y = Output
+Kelvin= Celsius + 273.15
+
+
+(define ConvertAdd
+ (lambda (x y)
+  (+ y (+ (* (/ 9 5) x) 32))))
+(ConvertAdd 0 1)
+
+(define Kelvin
+  (Lambda (x)
+   (+ x 273.15)))
+(Kelvin 1)
+=======================
+Question 13:
+Programming question:
+Write a function called freeMoney that takes the
+number of plushies you own and the
+number of hours you put them to work to
+find the profit you make. For each hour they all work,
+each plushie will earn you $15.
+It costs you $10 to pay for rent. Return the profit you make with a test case where
+plushies = 12
+hours = 40
+
+
+=======================
+Question 14:
+Programming question:
+Write a function that takes three sides(a,b,c) of a traingle
+and returns the area of the triangle using Heron's formula:
+area = sqrt (s*(s-a)*(s-b)*(s-c))
+
+
+=======================
+Question 15:
+Programming question:
+Write a function that takes a, b, and c from a quadratic and outputs the quadratic formula answer
+Description
+ax^2 + bx + c = y
+x = (-b +- sqrt (b^2 -4ac))/2a
+
+(define quad
+(lambda (a b c)
+(/ (or (+ (* b -1) (sqrt (- (expt b 2) (* 4 a c))) (- (* b -1) (sqrt (- (expt b 2) (* 4 a c)))) (* 2 a))))))
+=======================
+Question 16:
+Programming question:
+Description
+
+
+=======================
+Question 17:
+Programming question:
+Write a function that determines if a number is the square of another number.
+
+
+=======================
+Question 18:
+Programming question: Write a function that takes 3 values and returns true if they can be the 3 side lengths of a triangle and false if not.
+a+b>c, b+c>a c+a>b
+
+
+=======================
+Question 19:
+Programming question: Write a function that will divide an integer by its one digit plus one
+Description :(dividebyonesdigit n)
+n ---> number
+dividebyonesdigit+1 ---> function that divides the number by its ones digit plus one
+
+
+=======================
+Question 20:
+Programming question:
+Given a positive three-digit integer, write a function that returns the product of its digits.
+
+
+=======================
+Question 21:
+Programming question: Write a program that returns the x value of the vertex of a quadratic equation 
+2 parameters (a b) which are the a and b values of the quadratic equation when written in standard form
+
+
+=======================
+Question 22:
+Programming question:
+Write a function that, given 3 side lengths, returns true if it is a scalene triangle, and false if any 2 sides are =
+Description:
+(define isScalene (lambda (a b c)
+
+
+(define isScalene (lambda (a b c) (and
+                                   (not (= a c))
+                                   (not (= b c))
+                                   (not (= a b)))))
+=======================
+Question 23:
+Programming question:
+Write a function to calculate the percent error in chemistry.
+percentError = ((expected-accepted)/accepted) * 100
+
+=======================
+Question 24:
+Programming question:
+Write a function (called 1Finder) that takes the hypotenuse and one leg of a function and returns the other leg.
+
+
+=======================
+Question 25:
+Programming question:
+Write a program for the circunmference of a circle
+given the radius
+C= 2* pi * r
+
+=======================
+Question 26:
+Programming question:
+Write a function for to find the area of a triangle given sides a, b and c using Herons's formula:
+
+
+(define Heron (lambda (a b c)
+                (sqrt (* (/ (+ a b c) 2) (- (/ (+ a b c) 2) a) (- (/ (+ a b c) 2) b) (- (/ (+ a b c) 2) c)))))
+=======================
+Question 27:
+Programming question:
+Write a function that runs the quadratic formula, and use the test cases with descriptive output:
+- The formula should have three numerical inputs a, b, and c
+- It should also have a bool called "plusminus".
+   This bool will determine whether the user wants to add or subtract for the ± in the formula.
+   #t means to add, #f means to subtract.
+x = (-b ± √(b^2 - 4ac))/2a
+Test cases:
+(quaFormula #t 1 6 8) --> -2
+(quaFormula #f 1 6 8) --> -4
+(quaFormula #t 1 4 5) --> -2+1i
+(quaFormula #f 9 12 -1) --> -1.4120226591665965
+
+
+
+=======================
+Question 28:
+Programming question:
+Write a function that finds the third side of a right triangle given the hypotenuse and one of the legs.
+a^2 + b^2 = c^2, where c is the hypotenuse and a and b are legs of the triangle.
+
+
+=======================
+Question 29:
+Programming question:
+Write a function that takes a measured value and accepted
+value as parameters and calculates the percent error.
+percent_error = ((measured_value - accepted_value) / accepted_value) * 100
+
+
+=======================
+Question 30:
+Programming question: 
+Find the area of a regular hexagon given the side of the hexagon.
+
+
+=======================
+Question 31:
+Programming question:
+Write a function that takes two mathematical expressons and returns if they are both true or not.
+
+
+=======================
+Question 32:
+Programming question:
+Write a function that takes 3 numbers and determines whether they can make a triangle and returns true if they can and false if they cant.
+(the sum of 2 sides is greater than the other side).
+
+
+=======================
+Question 33:
+Programming question:
+Write a function that returns the volume of a triangular pyramid given the area of the base and height of the pyramid
+Area of Triangular Pyramid: 1/3Bh
+Where B is the area of the base and h is the height of the pyramid 
+
+
+=======================
+Question 34:
+Programming question:
+Write a function that takes the bases of a triangle and returns its hypotenuse.
+a^2+b^2=c&^2
+
+ (define hypo (lambda (a b) (sqrt (+ (expt a 2) (expt b 2)))))
+=======================
+Question 35:
+Programming question:
+Write a function that runs the quadratic formula, and use the test cases with descriptive output:
+- The formula should have three numerical inputs a, b, and c
+- It should also have a bool called "plusminus".
+   This bool will determine whether the user wants to add or subtract for the ± in the formula.
+   #t means to add, #f means to subtract.
+x = (-b ± √(b^2 - 4ac))/2a
+Test cases:
+(quaFormula #t 1 6 8) --> -2
+(quaFormula #f 1 6 8) --> -4
+(quaFormula #t 1 4 5) --> -2+1i
+(quaFormula #f 9 12 -1) --> -1.4120226591665965
+
+
+
+=======================
+Question 36:
+Programming question: write a function that returns the discriminant of a quadratic equation.
+discriminant = b^2 - 4ac
+ (- (expt b 2) (* 4 a c))
+=======================
+Question 37:
+Programming question:
+Write a program to find the cosecant of an angle based off of its cosine/
+Cosine (angle A) = b/c
+Cosecant (angle A) = c/a
+a^2 = c^2 - b^2
+
+
+=======================
+Question 38:
+Programming question: write a function that returns the discriminant of a quadratic equation.
+discriminant = b^2 - 4ac
+ (- (expt b 2) (* 4 a c))
+=======================
+Question 39:
+Programming question:
+Create a function that takes a, the measured value and b, the accepted value,
+and finds the percent error.
+((measured-accpeted)/accepted) *100
+
+=======================
+Question 40:
+Programming question:
+Assume a snowman is made from 3 perfect circles stacked on top
+of each other, and the formula for a circle is Circumference = (3.14)(diameter).
+Write a function that calculates the height of the snowman given the
+circumferences of the 3 segments.
+
+Test cases:
+(snowmanHeight 3.14 6.28 31.4) ==> 13 
+(snowmanHeight 15.7 12.56 9.42) ==> 12
+
+
+=======================
+Question 41:
+Programming question:
+Write a function that takes the sine value of a number and returns the secant value of that number.
+(sine angle A) = b/c
+(secant angle A) = c/a
+Where a^2 + b^2 = c^2
+
+
+=======================
+Question 42:
+Programming question: Write a function to calculate percent error
+(in chemistry/a scientific context)
+Description
+percent error  = measured-accepted/accepted * 100
+
+=======================
+Question 43:
+Programming question:
+Write a function that takes the area of the base of a triangular pyramid and the height of the pyramid and returns the volume of the pyramid.
+the 
+V = 1/3Bh
+Where B is the area of the base and h is the height of the pyramid
+
+
+=======================
+Question 44:
+Programming question:
+Write a function that takes 3 numbers and determines whether they can make a triangle and returns true if they can and false if they can't.
+(The sum of 2 sides is greater than the other side)
+
+
+
+=======================
+Question 45:
+Programming question:
+Write a program to find the cosecant of an angle based off of its cosine.
+Cosine (angle A) = b/c
+Cosecant (angle A)= c/a
+a^2 = c^2 - b^2
+
+
+(define cos_to_csc (lambda (b c) (/ c (sqrt (- (expt c 2) (expt b 2))))))
+=======================
+Question 46:
+Programming question:
+Write a function that takes two mathematical expressions and returns if they are both true or not 
+
+=======================
+Question 47:
+Programming question:
+Write a program for the circumference of a circle
+inputting the radius.
+C = 2 * pi * r
+
+
+=======================
+Question 48:
+Programming question:
+Write a function that solves the following problem:
+Daniel has X candies and eats a minimum of 1 each day.
+How many ways are there for him to finish
+(Note: Eating 1 candy on the first day and 2 on the second is different than 2 on the first day and 1 on the second)
+
+
+=======================
+Question 49:
+Programming question: Write a function that finds the area of a hexagon if you have one side given
+
+(define hex (lambda (a) (* (expt a 2) (/ (* (sqrt 3) 3) 2))))

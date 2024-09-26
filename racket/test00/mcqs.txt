@@ -1,0 +1,1101 @@
+
+=======================
+Question 0.a:
+MC question: Which of the following returns #t?
+Options:
+A. (= 2 (remainder quotient 16 3) 3))
+B. (> (*c c) ((* a a) (* b b))) where a b c are a pythagorean triple
+C. (<= (quotient m n) (quotient m n)) where n is greater than m
+D. (= 8 (/ 16 2)
+
+Answer: C
+=======================
+Question 0.b:
+MC Question: What word do you use to create a function?
+Options:
+A. Define
+B. Lambda
+C. Display
+D. None of the above
+
+Answer: B. Lambda
+=======================
+Question 1.a:
+MC Question:
+Which of the following does not yield th same output?
+A. (expt x 3)
+B. (* x (* x x))
+C.(* x x x)
+D.(*x 3)
+
+Answer: D. (* x 3)
+=======================
+Question 1.b:
+MC Question 2:
+Which input produces the output 27?
+A. (+ 9 3)
+B. (quotient 30 10)
+C. (expt 3 3)
+D. (* (- 27 3) 3)
+
+Answer: C. (expt 3 3)
+=======================
+Question 2.a:
+MC Question:
+Which boolean operation only gives true when all arguments are true?
+Options:
+a) and
+b) or
+c) not
+d) expt
+Answer: A
+=======================
+Question 2.b:
+MC Question:
+What language is racket originated from?
+Options:
+a) Python
+b) Lisp
+c) html
+d) Java
+
+Answer: B
+=======================
+Question 3.a:
+MC Question:
+How many Boolean values are there?
+Options:
+A) 1
+B) 2
+C) 3
+D) Infinite
+
+Answer: B
+=======================
+Question 3.b:
+MC Question:
+Which of the following creates a function that adds a and b?
+Options:
+A) (lambda (+ a b))
+B) (lambda (a b) (a + b))
+C) (lambda (a b) (+ a b))
+D) (lambda (a + b))
+
+Answer: C
+=======================
+Question 4.a:
+MC Question:
+Which of the following can be a variable?
+Options:
+A) 27
+B) #f
+C) *
+D) gallon 
+Answer: D
+=======================
+Question 4.b:
+MC Question: Which function will return false? 
+Options:
+A) (= 2 (sqrt 4))
+B) (< 2 3 4)
+C) (= (* 2 3) (expt 2 3))
+D) (lambda (a b))
+Answer:
+=======================
+Question 5.a:
+Mc Question: What function is used to make functions
+Options: A) Define B) Lambda C) Function D)Create
+Answer: B) Lambda
+=======================
+Question 5.b:
+Mc Question: What is the difference between boolean functions and comparison functions? 
+Options: A) Boolean function take in boolean values and comparison functions take in numerical values
+B) Boolean Functions take in numerical values and comparison functions take in boolean values
+C) Boolean functions return numerical values and comparison functions return boolean values
+D) Boolean functions return boolean values and Comparison functions return numerical values 
+Answer: A) Boolean function take in boolean values and comparison functions take in numerical values
+=======================
+Question 6.a:
+MC Question:
+What does 'lambda' do
+Options:
+A) Adds two values together
+B) Names a function
+C) Allows for the input of value(s) into a function
+D) Finds the remainder of an expression
+
+Answer: C
+=======================
+Question 6.b:
+MC Question: Which of the below functions will output #f?
+Options:
+A) (and #t #f)
+B) (or #t #t)
+C) (not (or #f #f))
+D) (not (not #t))
+
+Answer: A
+=======================
+Question 7.a:
+MC Question: What type of notation is used to perform mathematical equations in DrRacket
+Options:
+A)infix notation
+B)operational notation
+C)prefix notation
+D)All of the above 
+Answer C
+=======================
+Question 7.b:
+MC Question: Which of the following is not a boolean operation?
+Options:
+A) <
+B) and 
+C) +
+D) = 
+Answer C
+=======================
+Question 8.a:
+MC Question:
+Which boolean operation only gives true when all arguments are true?
+Options:
+a) and
+b) or
+c) not
+d) expt
+Answer: A
+=======================
+Question 8.b:
+MC Question:
+What language is racket originated from?
+Options:
+a) Python
+b) Lisp
+c) html
+d) Java
+
+Answer: B
+=======================
+Question 9.a:
+Programming question:
+Write the function getThousandsDigit that takes the 1000s digit of a number?
+If the number has no number in the 1000s digit, return 0.
+Possible solution:
+(define getThousandsDigit(lambda (s)
+              (remainder (quotient s 1000) 10)))
+(getThousandsDigit 4132)
+Returns 4
+=======================
+Question 9.b:
+MC Question:
+Which of the following returns #t?
+A) (= 2 (remainder quotient 16 3) 3))
+B) (> (* c c) ((* a a) (* b b))) where a b c are a pythagorean triple
+C)  (<= (quotient m n) (quotient n m)) where n is greater than m
+D) (= 8 (/ 16 2)
+=======================
+Question 10.a:
+MC Question:
+Which of these functions correctly codes for Heron's Formula?
+Options:
+A) (define SemiP (lambda (/ (+ a b c) 2)))
+(define Herons (lambda (sqrt (* (SemiP a b c) (- (SemiP a b c) a) (- (SemiP a b c) b) (- (SemiP a b c) c)))))
+B) (lambda (a b c) (/ (+ a b c) 2)))
+(lambda (a b c) (sqrt (* (SemiP a b c) (- (SemiP a b c) a) (- (SemiP a b c) b) (- (SemiP a b c) c)))))
+C) (define SemiP (lambda (a b c) (/ (+ a b c) 2)))
+(define Herons (lambda (a b c) (sqrt (* (SemiP a b c) (- (SemiP a b c) a) (- (SemiP a b c) b) (- (SemiP a b c) c)))))
+D) (define SemiP (lambda (a, b, c) (/ (+ a, b, c) 2)))
+(define Herons (lambda (a, b, c) (sqrt (* (SemiP a, b, c) (- (SemiP a, b, c) a) (- (SemiP a, b, c) b) (- (SemiP a, b, c) c)))))
+Answer C
+=======================
+Question 10.b:
+MC Question: Which function correctly codes for the surface area of a cone?
+Options:
+A) (define (surfaceAreaOfCone)
+ (lambda (radius slantHeight)
+(+ (* pi radius radius) (* pi radius slantHeight)
+B) (define (surfaceAreaOfCone)
+ (lambda (radius slantHeight)
+(+ (* pi radius radius) (* pi radius slantHeight))))
+C) (+ (* pi radius radius) (* pi radius slantHeight))
+D) (define (surfaceAreaOfCone)
+ (lambda (radius)
+(+ (* pi radius radius) (* pi radius slantHeight)))))
+Answer: B
+=======================
+Question 11.a:
+MC Question:
+Choose which of the following operations ouputs a boolean value
+A) +
+B) =
+C) *
+D) /
+
+Answer: B
+=======================
+Question 11.b:
+MC Question: Which of the following has correct syntax 
+A) (+ a b)
+B) (a b +)
+C) (+ a b):
+D) + a b
+Answer
+=======================
+Question 12.a:
+MC Question:
+How many parameters does this function
+(RandomFunction x y z) have?
+Options:
+A) none
+B)14
+C) 3
+D)Cannot be determined
+Answer: C
+=======================
+Question 12.b:
+MC Question:
+Which function call would return false for the following function defined as "Logic" (= (not a) (or b a)))?
+Options:
+A) (Logic #T #F)
+B) (Logic #T #T)
+C) (Logic #F #F)
+D) (Logic a b)
+
+Answer: A
+=======================
+Question 13.a:
+MC Question:
+Which function call would return true?
+(define functionName (lambda (a b) (and (or a b) (not a))
+
+Options:
+A) (frictionNumber #t #t)
+B) (functionName #t #f)
+C) (functionName #f #t)
+D) (functionName #f #f)
+
+Answer: C
+=======================
+Question 13.b:
+MC Question:
+What would be an appropriate test case for this code?
+(define xDigits
+  (lambda (n x)
+    (and
+     (< n (expt 10 x))
+     (>= n (expt 10 (- x 1))))))
+Options:
+A) (xDigits fifty-three two)
+B) (xDigits #t #t)
+C) (xDigits 53 2)
+D) (xDigits 2 #f)
+
+Answer: C
+=======================
+Question 14.a:
+MC Question:
+Which of the following creates a function that adds a and b?
+Options:
+A) (lambda (+ a b))
+B) (lambda (a b) (a + b))
+C) (lambda (a b) (+ a b)
+D) (lambda (a + b)
+
+Answer: C
+=======================
+Question 14.b:
+MC Question:
+How many boolean values are there?
+Options:
+A) 1
+B) 2
+C) 3
+D) Infinite
+
+Answer: B
+=======================
+Question 15.a:
+MC Question:
+Which boolean operation only gives true when all arguments are true?
+Options:
+a) and
+b) or
+c) not
+d) expt
+Answer: A
+=======================
+Question 15.b:
+MC Question:
+What language is racket originated from?
+Options:
+a) Python
+b) Lisp
+c) html
+d) Java
+
+Answer: B
+=======================
+Question 16.a:
+MC Question:
+Which call for this function will return true?
+(define functionName
+  (lambda (a b)
+    (and
+     (or a b)
+     (not a))))
+Options:
+A) (frictionNumber #t #t)
+B) (functionName #t #f)
+C) (functionName #f #t)
+D) (functionName #f #f)
+
+Answer: C
+=======================
+Question 16.b:
+MC Question:
+What would be an appropriate test case for this?
+
+(define areaC
+  (lambda (radius)
+    (* pi radius radius)))
+(areaC 10)
+
+Options:
+A) (areaC 5)
+B) (areaC #f)
+C) (areaC "5")
+D) (areaC five)
+Answer: A
+=======================
+Question 17.a:
+MC Question: Which of the following codes will return 3
+Options:
+A) (+ 1 6)
+B) (- 89 10)
+C) (* 12 84)
+D) (/ 72 24)
+
+Answer: D
+=======================
+Question 17.b:
+MC Question: Which function is not related to division? 
+Options:
+A) /
+B) Remainder
+C) \
+D) Quotient
+
+Answer: C
+=======================
+Question 18.a:
+MC Question:
+Which of these functions correctly codes for Heron's Formula?
+Options:
+A) (define SemiP (lambda (/ (+ a b c) 2)))
+(define Herons (lambda (sqrt (* (SemiP a b c) (- (SemiP a b c) a) (- (SemiP a b c) b) (- (SemiP a b c) c)))))
+B) (lambda (a b c) (/ (+ a b c) 2)))
+(lambda (a b c) (sqrt (* (SemiP a b c) (- (SemiP a b c) a) (- (SemiP a b c) b) (- (SemiP a b c) c)))))
+C) (define SemiP (lambda (a b c) (/ (+ a b c) 2)))
+(define Herons (lambda (a b c) (sqrt (* (SemiP a b c) (- (SemiP a b c) a) (- (SemiP a b c) b) (- (SemiP a b c) c)))))
+D) (define SemiP (lambda (a, b, c) (/ (+ a, b, c) 2)))
+(define Herons (lambda (a, b, c) (sqrt (* (SemiP a, b, c) (- (SemiP a, b, c) a) (- (SemiP a, b, c) b) (- (SemiP a, b, c) c)))))
+Answer C
+=======================
+Question 18.b:
+MC Question: Which function correctly codes for the surface area of a cone?
+Options:
+A) (define (surfaceAreaOfCone)
+ (lambda (radius slantHeight)
+(+ (* pi radius radius) (* pi radius slantHeight)
+B) (define (surfaceAreaOfCone)
+ (lambda (radius slantHeight)
+(+ (* pi radius radius) (* pi radius slantHeight))))
+C) (+ (* pi radius radius) (* pi radius slantHeight))
+D) (define (surfaceAreaOfCone)
+ (lambda (radius)
+(+ (* pi radius radius) (* pi radius slantHeight)))))
+Answer: B
+=======================
+Question 19.a:
+MC Question: What type of notation is used to perform mathematical equations in DrRacket?
+Options :
+A)infix notation
+B)operational notation
+C)prefix notation
+D)all of the above
+Answer : C
+=======================
+Question 19.b:
+MC Question: Which of the following operations do not return a boolean value?
+Options:
+A)(< 2 3)
+B)(<= 1 2)
+C) (> 201 22122)
+D) (+ 2012 291)
+Answer : D
+=======================
+Question 20.a:
+MC Question:
+Which of the following does not always yield the same output as the rest?
+Options:
+A) (expt x 3)
+B) (* x x x)
+C) (* x (* x x))
+D) (* x 3)
+
+Answer: D
+=======================
+Question 20.b:
+MC Question:
+Which input produces the output 27?
+Options:
+A) (+ 9 3)
+B) (quotient 30 10)
+C) (expt 3 3)
+D) (* (- 27 3) 3)
+
+Answer: C
+=======================
+Question 21.a:
+MC Question: Which of these returns a boolean value? 
+Options:
+A)=
+B)lambda
+C)+
+D)expt
+
+Answer: =
+=======================
+Question 21.b:
+MC Question: What do we call the inputs of a function while USING the function
+Options:
+A) Parameter
+B) Argument
+C) Return value
+D) Variable
+
+Answer: Argument
+=======================
+Question 22.a:
+MC Question:
+Which of the following represents analong information?
+Options:
+A) Info stored on a computer
+B) Time
+C) Light
+D) None of the above
+
+Answer: B
+=======================
+Question 22.b:
+MC Question:
+Which of the following operators does not return a boolean value?
+Options:
+A) >
+B) =
+C) +
+D) or
+
+Answer: C
+=======================
+Question 23.a:
+MC Question:
+Which of the following is not valid Racket syntax?
+Options:
+a) (> 5 9 10)
+b) (remainder 12 a)
+c) (lambda (12 a)) 
+d) (display "\nTrue")
+
+Answer: c
+=======================
+Question 23.b:
+MC Question:
+What is not a Racket operator?
+Options:
+a) expt
+b) sqrt
+c) remainder
+d) square
+
+Answer: d
+=======================
+Question 24.a:
+MC Question:
+Which function correctly defines a phythagorean triple?
+Options:
+A) (define pythTriple
+   (lambda (a b c)
+      (= (+ (* a a) (* b b)) (* c c))
+  )
+B) (define pythTriple
+   (lambda (a b c)
+      (= (+ (* a a) (* b b)) (* c c))
+     )
+  )
+C) (define pythTriple
+   (lambda (a b c)
+      (= (+ (* a a) (* b b) (* c c))
+     )
+  )
+D) (define pythTriple
+   (lambda a b c
+      (= (+ (* a a) (* b b)) (* c c))
+     )
+  )
+
+Answer: B
+=======================
+Question 24.b:
+MC Question:
+What is the difference between a parameter and an argument?
+Options:
+A) Parameters are the actual values put into a function and arguments take the place of a value
+B) Parameters give the range of the values and arguments are the functions
+C) Arguments give the range of the values and parameters are the functions
+D) Arguments are the actual values put into a function and parameters take the place of a value
+
+Answer: D
+=======================
+Question 25.a:
+MC Question:
+Which of the following has the correct syntax?
+Options:
+A) (LAMBDA a b)
+B) (define (1 skibidi)
+C) (lambda (terence))
+D)(display 'isskibidi")
+
+Answer: C
+=======================
+Question 25.b:
+MC Question:
+What is a boolean value?
+Options:
+A) true
+B) false
+C) true and false
+D) none of the above
+
+Answer: C
+=======================
+Question 26.a:
+MC Question: Which answer correctly shows the correct function for the pythagorean theorem?
+Options:
+a)
+(define pythTriple2 (lambda (a b c)
+                     (or (= c (sqrt (+ (* a a) (* b b)))) (= b (sqrt (+ (* a a) (* c c)))) (= a (sqrt (+ (* c c) (* b b)))))))
+b)
+(define pythTriple2 (lambda (a b c)
+                     (or (= c (sqrt (+ (* a a) (* b b)))) (= b (sqrt (+ (* a a) (* c c)))) (= a (sqrt (+ (* c c) (* b b))))))))
+c)
+(define pythTriple2 (lambda (a b c)
+                     (or (= c (sqrt (+ (* a a) (* b b))))) (= b (sqrt (+ (* a a) (* c c)))) (= a (sqrt (+ (* c c) (* b b)))))))
+d)
+(define pythTriple2 (lambda (a b c)
+                     (or (= c (sqrt (+ (* a a) (* b b)))) (- b (sqrt (+ (* a a) (* c c)))) (= a (sqrt (+ (* c c) (* b b)))))))
+Answer:
+a) (define pythTriple2 (lambda (a b c)
+                     (or (= c (sqrt (+ (* a a) (* b b)))) (= b (sqrt (+ (* a a) (* c c)))) (= a (sqrt (+ (* c c) (* b b)))))))
+=======================
+Question 26.b:
+MC Question: What's the difference between a parameter and argument?
+Options:
+a) When you write a function, the parameters act as inputs for the value or the arguments you sbusitute when you call a function.
+b) When you write a function, the arguments act as subsitutes for the value or the parameters you input when you call a function.
+c) When you write a function, the parameters act as subsitutes for the value or the arguments you input when you call a function.
+d) When you write a function, the arguments act as inputs for the value or the parameters you input when you call a function.
+Answer:
+c) When you write a function, the parameters act as subsitutes for the value or the arguments you input when you call a function.
+=======================
+Question 27.a:
+MC Question:
+When using the following function, which choice maps the inputs to the correct output?
+Function: (and (not x) (or y z))
+Options:
+A) x = #f , y = #f , z = #t , output = #f
+B) x = #t , y = #t , z = #t , output = #t
+C) x = #f , y = #t , z = #f , output = #t
+D) x = #t , y = #f , z = #t , output = #t
+
+Answer: C
+=======================
+Question 27.b:
+MC Question:
+When creating a function called "sus_checker", what is the correct order of keywords used to make it?
+Options:
+A) define, sus_checker, lambda
+B) define, lambda, sus_checker
+C) lambda, define, sus_checker
+D) sus_checker, define, lambda
+
+Answer: A
+=======================
+Question 28.a:
+MC Question:
+Which of the following is not part of a function contract?
+Options:
+A) Name
+B) Function call
+C) Parameters
+D) Return values
+
+Answer: B
+=======================
+Question 28.b:
+MC Question:
+Which one of these expressions returns #true?
+
+Options:
+A) (and (or (> 3 5) (< 10 2)) (> 5 2))
+B) (or (#f) (> (sqrt 9) 5))
+C) (and (< 12 (expt 5 3) (> (+ 3 9) 7))) 
+D) (and (> (+ 7 3) 6) (< (expt 2 4) 15))
+Answer: C
+=======================
+Question 29.a:
+MC Question:
+Given function (define myCoolFunc (lambda (a b) (quotient a b))), what will
+(myCoolFunc 10 3) return?
+Options:
+A) 3.3333333
+B) 3 1/3
+C) 1
+D) 3
+
+Answer: D
+=======================
+Question 29.b:
+MC Question:
+Which syntax will return an error?
+Options:
+A) (define #f 0)
+B) (define myCoolFunc 0)
+C) (lambda (a b) (a))
+D) ;(dfne ahh)
+
+Answer: A
+=======================
+Question 30.a:
+MC Question: What functions do you need to create a function?
+Options:
+A) expt
+B) fiji
+C) lambda
+D) define
+Answer: C
+=======================
+Question 30.b:
+MC Question: What function is not used when working Boolean Values?
+Options:
+A) and
+B) or
+C) >
+D) \
+Answer: D
+=======================
+Question 31.a:
+MC Question:
+Which of the following functions is the most useful when determining if a number is even or odd in Racket?
+Options:
+A) quotient
+B) / (divide)
+C) remainder
+D) isEven
+
+Answer: C
+=======================
+Question 31.b:
+MC Question:
+Which keywords/symbols are used when you define a function?
+Options:
+A) Lambda, Define, Parameters (if needed)
+B) Lamda, Define, Arguments (if needed)
+C) And, Or, Not
+D) >=, <=, =, >, <
+
+Answer: A
+=======================
+Question 32.a:
+MC Question: How would you write 4^6-2^5 in racket syntax?
+Options:
+A) (- (expt 4 6 expt 2 5))
+B) (expt 4 6 - expt 2 5)
+C) (- (expt 4 6) (expt 2 5))
+D) (- (expt 4 6) (expt 2 5)
+
+Answer: C
+=======================
+Question 32.b:
+MC Question: What is the correct syntax for adding 1,1, and 10?
+Options:
+A) (+1 1 10)
+B) (+ (+ 1 1) 10)
+C) (+ 1 1 10)
+D) 2 of these
+
+Answer: D
+=======================
+Question 33.a:
+MC Question:
+A function takes in an input and outputs whether the input is divisible by 23. What could be the types of the input and output that the function produces respectively?
+Options:
+A) Boolean and non-negative integer
+B) Boolean and boolean
+C) Non-negative integer and non-negative integer
+D) Non-negative integer and boolean
+
+Answer: D
+=======================
+Question 33.b:
+MC Question: Considering the following function:
+(+ 4 (- 1 2) (+ 5 (- 12 5)))
+What will be the output of this function
+Options:
+A) 19
+B) 15
+C) 29
+D) The function will return an error
+
+Answer: B
+=======================
+Question 34.a:
+MC Question:
+What is your name?
+Options:
+A) Julius Caesar
+B) Gordon Freeman
+C) John Wayne
+D) Hugh Lee
+
+Answer: D
+=======================
+Question 34.b:
+MC Question:
+What is your quest?
+Options:
+A) To retrieve the Holy Grail.
+B) To go to Arizzona.
+C) To meet Xi Jinping.
+D) To get Mastery in every skill.
+
+Answer: D
+=======================
+Question 35.a:
+MC Question:
+When using the following function, which choice maps the inputs to the correct output?
+Function: (and (not x) (or y z))
+Options:
+A) x = #f , y = #f , z = #t , output = #f
+B) x = #t , y = #t , z = #t , output = #t
+C) x = #f , y = #t , z = #f , output = #t
+D) x = #t , y = #f , z = #t , output = #t
+
+Answer: C
+=======================
+Question 35.b:
+MC Question:
+When creating a function called "sus_checker", what is the correct order of keywords used to make it?
+Options:
+A) define, sus_checker, lambda
+B) define, lambda, sus_checker
+C) lambda, define, sus_checker
+D) sus_checker, define, lambda
+
+Answer: A
+=======================
+Question 36.a:
+MC Question: Which of the following is true zbout making a function vs calling a function?
+Options:
+A) When making a function, the inputs are called parameters.
+B) When using a function, the inputs are called parameters.
+C) When making a function, the inputs are called arguments.
+C) None of the above. 
+Answer A
+=======================
+Question 36.b:
+MC Question: which functions will NOT return a boolean value?
+Options:
+A) (= (* 234 123) (+ 32424234 6476567))
+B) (/ 242 (+ 32532 (expt 65 2) 456))
+C) (> (remainder (+ 65 32423 12) (expt 2 5555)))
+D) (and (= 432 (quotient 324 122)) (<= 5000 (* 435 11111))
+Answer B
+=======================
+Question 37.a:
+MC Question:
+Select the function to get the 10s digit of any number 
+Options:
+A) (lambda (n) (remainder (quotient 10 n) 10))
+B) (lambda (n) (remainder (quotient n 10) 10))
+C) (lambda (n) (quotient (remainder n 10) 10))
+D) (lambda (n) (remainder (quotient n 100) 10))
+
+Answer: B
+=======================
+Question 37.b:
+MC Question:
+Translate 12 + 4 /3 (with PEMDAS) with proper Racket syntax.
+Options:
+A) (+ 12 (/ 4 3))
+B) (/ (+ 12 4) 3)
+C) / 12 (+ 4 3)
+D) (+ 12 (3 / 4)))
+
+Answer: A
+=======================
+Question 38.a:
+MC Question: Which of the following is true zbout making a function vs calling a function?
+Options:
+A) When making a function, the inputs are called parameters.
+B) When using a function, the inputs are called parameters.
+C) When making a function, the inputs are called arguments.
+C) None of the above. 
+Answer A
+=======================
+Question 38.b:
+MC Question: which functions will NOT return a boolean value?
+Options:
+A) (= (* 234 123) (+ 32424234 6476567))
+B) (/ 242 (+ 32532 (expt 65 2) 456))
+C) (> (remainder (+ 65 32423 12) (expt 2 5555)))
+D) (and (= 432 (quotient 324 122)) (<= 5000 (* 435 11111))
+Answer B
+=======================
+Question 39.a:
+MC Question:
+Given function (define myCoolFunc
+(lambda (10 3) (quotient 10 3)))), what
+will myCoolFunc return?  
+
+Options:
+A) 3 1/3
+B) 1
+C) 3.33333
+D) 3
+
+Answer: C
+=======================
+Question 39.b:
+MC Question:
+which syntax will return an error?
+
+Options:
+A)(define #f 0)
+B)(define myCoolFunc 0)
+C)(lambda (a b) (a))
+D);(dfne adjsksk)
+
+
+Answer: A
+=======================
+Question 40.a:
+MC Question: Which of the following would return true if x is true and y is false?
+Options:
+A) (and x y)
+B) (or x (not y)
+C) (or (not x) y)
+D) (and (not x) (not y))
+
+Answer: B
+=======================
+Question 40.b:
+MC Question: Which of the following does a function contract
+not have to include?
+Options:
+A) Function name
+B) Output type
+C) Function purpose
+D) Possible expected error messages
+
+Answer: D
+=======================
+Question 41.a:
+MC Question:
+Which of the following returns a value of "#t"?
+Options:
+A) (not (not (not (not (not (not (= 0 1)))))
+B) (not (or (and (not (= 0 1)) (= 2 (modulo 123456 4))) (= (expt 3 -2) (/ 1 9))))
+C) (and (not (< 9 7)) (= (+ 2 2)) (expt 2 2))
+D) (= (+ (expt 20 2) (expt 21 2)) 831)
+
+Answer: C
+=======================
+Question 41.b:
+MC Question:
+When we call a funtion, we use _________, which returns a _____.
+Options:
+A) Outputs, Inputs
+B) Arguments, Value
+C) Inputs, Outputs
+D) Parameters, Variables
+
+Answer: B
+=======================
+Question 42.a:
+MC Question:Which of the following is not vaid racket syntax?
+Options:
+a) (> 5 9 10)
+b) (remainder 12 a)
+c) (lambda (12 a)
+d) (display "\n true)
+Answer c)
+=======================
+Question 42.b:
+MC Question: What is not a racket operator?
+Options:
+a) expt
+b) sqrt
+c) remainder
+d) square
+Answer
+=======================
+Question 43.a:
+MC Question:
+A function takes in an input and outputs whether the input is divisible by 23.
+Which of the following answers could the types of the function's input and output?
+Options:
+A) Boolean and Non-negative integer
+B) Boolean and Boolean
+C) Non-negative integer and Non-negative integer
+D) Non-negative integer and Boolean
+
+Answer: D
+=======================
+Question 43.b:
+MC Question:
+Consider the following function:
+(+ 4 (- 1 2) (+ 5 (- 12 5)))
+What will be the output of this function?
+Options:
+A) 19
+B) 15
+C) 29
+D) The function will return an error due to improper syntax.
+
+Answer: C
+=======================
+Question 44.a:
+MC Question:
+How would you write 4^6-2^5 in racket syntax?
+Options:
+A) (- (expt 4 6 expt 2 5))
+B) (expt 4 6 - expt 2 5)
+C) (- (expt 4 6) (expt 2 5))
+D) (- (expt 4 6) (expt 2 5)
+
+Answer: C
+=======================
+Question 44.b:
+MC Question: What is the correct syntax for adding 1,1, and 10?
+Options:
+A) (+1 1 10)
+B) (+ (+ 1 1) 10)
+C) (+ 1 1 10)
+D)  2 of these
+
+Answer: D
+=======================
+Question 45.a:
+MC Question: Select the function to get the 10s digit of any number
+Options:
+A) (lambda (n) (remainder (quotient 10 n) 10))
+B) (lambda (n) (remainder (quotient n 10) 10))
+C) (lambda (n) (quotient (remainder n 10) 10))
+D) (lambda (n) (remainder (quotient n 100) 10))
+
+Answer: B
+=======================
+Question 45.b:
+MC Question:
+Translate 12 + 4 / 3 (with PEMDAS) with proper Racket syntax.
+Options: 
+A) (+ 12 (/ 4 3))
+B) (/ (+ 12 4) 3)
+C) / 12 (+ 4 3)
+D) (+ 12 (3 / 4)))
+
+Answer: A
+=======================
+Question 46.a:
+MC Question:
+Which of the following functions is the most useful when determining if a number is even or odd? 
+Options:
+A) quotient
+B) / (divide)
+C) remainder
+D) isEven
+
+Answer: C
+=======================
+Question 46.b:
+MC Question:
+Which keywords/symbols are used when you define a function?
+Options:
+A) Lambda, Define, Parameters
+B) Lambda, Define, Arguments 
+C) And, Or, Not
+D) >=, <=, =, >, <
+
+Answer: A
+=======================
+Question 47.a:
+MC Question:
+Which of the following has the correct syntax?
+Options:
+A) (LAMBDA A B)
+B) (define (2 2)
+C) (lambda (n))
+D) (display 'ksldjf")
+
+Answer: C
+=======================
+Question 47.b:
+MC Question:
+What is a boolean value?
+Options:
+A) true
+B) false
+C) true and false
+D) none of the above
+
+Answer: C
+=======================
+Question 48.a:
+MC Question:
+Which of the following is NOT an example of graphical vocabulary?
+Options:
+A) Terminal
+B) Process
+C) Transition
+D) Decision
+
+Answer: C
+=======================
+Question 48.b:
+MC Question:
+Which of the following is NOT an example of a problem-solving tool?
+Options:
+A) Decomposition
+B) Abstraction
+C) Modeling and Simulation
+D) Synthesis
+
+Answer: D
+=======================
+Question 49.a:
+MC Question: What function is need to create a function?
+Options:
+A) expt
+B) fiji
+C) lambda
+D) define
+Answer: C
+=======================
+Question 49.b:
+MC Question: What function is not used when working with boolean values? 
+Options:
+A) and
+B) or
+C) >
+D) \
+Answer: D

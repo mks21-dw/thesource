@@ -1,0 +1,344 @@
+
+=======================
+Question 0:
+
+=======================
+Question 1:
+(define prodDigit
+  (lambda (number)
+    (* (remainder number 10)
+       (remainder(quotient number 10) 10)
+       (remainder (quotient number 100) 10))))
+(prodDigit 456)
+(prodDigit 808)
+(prodDigit 492)
+=======================
+Question 2:
+
+=======================
+Question 3:
+;Miklas solution below
+(define semiP_Miklas
+  (lambda (a b c)
+    (/ (+ a b c) 2)))
+(define area_3sides_Miklas
+  (lambda (a b c)
+    (sqrt
+     (* (semiP_Miklas a b c)
+        (- (semiP_Miklas a b c) a)
+        (- (semiP_Miklas a b c) b)
+        (- (semiP_Miklas a b c) c)))))
+(display "84 (Miklas'* function): ")
+(area_3sides_Miklas 13 14 15)
+
+;my solution below
+
+(define area_3sides
+  (lambda (a b c)
+    (sqrt (*
+           (/ (+ a b c) 2)
+           (- (/ (+ a b c) 2) a)
+           (- (/ (+ a b c) 2) b)
+           (- (/ (+ a b c) 2) c)))))
+(display "84: ")
+(area_3sides 13 14 15)
+=======================
+Question 4:
+
+=======================
+Question 5:
+
+=======================
+Question 6:
+(define Area (lambda (base height) (/ (* height base) 2)))
+=======================
+Question 7:
+;CODE GOES HERE
+
+(define dividebyonesdigit
+  (lambda (n)
+    (/ n (remainder n 10))))
+=======================
+Question 8:
+
+=======================
+Question 9:
+
+=======================
+Question 10:
+(define Trianglesides
+  (lambda (a b c)
+    (and (> (+ a b) c) (> (+ b c) a) (> (+ a c) b))))
+=======================
+Question 11:
+(define semiperimeter
+  (lambda (a b c)
+    (/ (+ a b c) 2)))
+
+
+(define herons
+  (lambda (a b c)
+    (sqrt (* (semiperimeter a b c)
+          (- (semiperimeter a b c) a)
+          (- (semiperimeter a b c) b)
+          (- (semiperimeter a b c) c)))))
+
+;test cases
+(display "herons formula\n")
+(display "84: ")
+(herons 13 14 15)
+
+#|
+Write a function that finds one of the roots of a given quadratic Ax^2+Bx+C with A B and C
+quadratic formula = (-b + sqrt(b^2-4ac))/2a
+
+Possible solution:
+|#
+(define quadraticFormula
+  (lambda (a b c)
+    (/ (+ (- 0 b) (sqrt (- (expt b 2) (* 4 a c))))
+       (* 2 a))))
+
+;test case
+(display "quadraticFormula\n")
+(display "-2, 2: ")
+(quadraticFormula 1 4 4)
+=======================
+Question 12:
+
+=======================
+Question 13:
+(define freeMoney
+  (lambda (plushies hours) (- (* plushies (* hours 15)) 10))
+  )
+(freeMoney 12 40)
+=======================
+Question 14:
+(define semiP
+  (lambda (a b c)
+    (/ (+ a b c) 2)))
+(define areaTriangle
+  (lambda (a b c)
+    (sqrt (* (semiP a b c)
+           (- (semiP a b c) a)
+           (- (semiP a b c) b)
+           (- (semiP a b c) c)))))
+
+(display "6: ")
+(areaTriangle 3 4 5)
+=======================
+Question 15:
+
+=======================
+Question 16:
+CODE GOES HERE
+=======================
+Question 17:
+(define isSquareof
+  (lambda (a b)
+    (= b (expt a 2))))
+
+(isSquareof 2 25)
+(isSquareof 6 36)
+=======================
+Question 18:
+(define Trianglesides
+  (lambda (a b c)
+    (and (> (+ a b) c) (> (+ b c) a) (> (+ a c) b))))
+=======================
+Question 19:
+(define dividebyonesdigit+1 (lambda (n) (/ n (+ (remainder n 10) 1))))
+(dividebyonesdigit+1 21)
+=======================
+Question 20:
+(define prodDigits
+  (lambda (number)
+    (* (remainder number 10)
+       (remainder (quotient number 10) 10)
+       (remainder (quotient number 100) 10))))
+(prodDigits 345)
+=======================
+Question 21:
+(define vertexFormula
+  (lambda (a b)
+    (/ (- 0 b) (* a 2))))
+=======================
+Question 22:
+
+=======================
+Question 23:
+(define percentError
+  (lambda (e a)
+    (* 100 (/ (- e a) a))))
+=======================
+Question 24:
+(define lFinder
+  (lambda (c a)
+    (sqrt (- (* c c) (* a a)))))
+(lFinder 10 6)
+=======================
+Question 25:
+(define circumference
+  (lambda (r)
+    (* 2 pi r)))
+(circumference 2)
+=======================
+Question 26:
+
+=======================
+Question 27:
+(define quaFormula
+  (lambda (plusminus a b c)
+    (/ (+ (* -1 b)
+          (* (if plusminus 1 -1)
+             (sqrt (- (* b b) (* 4 a c)))))
+       (* 2 a))))
+(quaFormula #t 1 6 8)
+(quaFormula #t 1 4 5)
+(quaFormula #f 9 12 -1)
+=======================
+Question 28:
+(define leg
+  (lambda (leg hypot)
+    (sqrt (- (expt hypot 2) (expt leg 2)))))
+=======================
+Question 29:
+(define percError
+  (lambda (m a)
+    (* (/ (- m a) a) 100)
+    )
+  )
+(percError 10 11)
+=======================
+Question 30:
+(define areaHex
+  (lambda (a)
+    (*
+     (/ (* 3 (sqrt 3))
+      2)
+     (expt a 2))))
+=======================
+Question 31:
+(define equalToEachOther
+  (lambda (a b)
+    (and a b)))
+(equalToEachOther (= 9 10) (> 89 4))
+=======================
+Question 32:
+(define sidesOfTriangle
+  (lambda (a b c)
+    (and (> (+ a b) c)
+         (> (+ b c) a)
+         (> (+ c a) b)
+         )
+    ))
+(sidesOfTriangle 3 15 19)
+=======================
+Question 33:
+(define PyramidVolume
+  (lambda (B h)
+    (* (/ 1 3) B h)))
+(display "(PyramidVolume 10 12) ==> 40: ")
+(PyramidVolume 10 12)
+(display "(PyramidVolume 5 15) ==> 25: ")
+(PyramidVolume 5 15)
+=======================
+Question 34:
+
+=======================
+Question 35:
+(define quaFormula
+  (lambda (plusminus a b c)
+    (/ (+ (* -1 b)
+          (* (if plusminus 1 -1)
+             (sqrt (- (* b b) (* 4 a c)))))
+       (* 2 a))))
+(quaFormula #t 1 6 8)
+(quaFormula #t 1 4 5)
+(quaFormula #f 9 12 -1)
+=======================
+Question 36:
+(define getDis (lambda (a b c)
+                (- (expt b 2) (* 4 a c))))
+(display "-8:")
+(getDis 1 2 3)
+=======================
+Question 37:
+(define cos_to_csc (lambda (b c) (/ c (sqrt (- (expt c 2) (expt b 2))))))
+(cos_to_csc 4 5)
+=======================
+Question 38:
+(define getDis (lambda (a b c)
+                (- (expt b 2) (* 4 a c))))
+(display "-8:")
+(getDis 1 2 3)
+=======================
+Question 39:
+(define percError
+  (lambda (a b)
+    (*(/(- a b)b) 100)))
+=======================
+Question 40:
+(define snowmanHeight
+  (lambda (baseCircum middleCircum topCircum)
+    (+
+     (/ baseCircum 3.14)
+     (/ middleCircum 3.14)
+     (/ topCircum 3.14))))
+
+(display "expect 13: ")
+(snowmanHeight 3.14 6.28 31.4) 
+(display "expect 12: ")
+(snowmanHeight 15.7 12.56 9.42)
+=======================
+Question 41:
+(define sineToSecant (lambda (b c) (/ c (sqrt (- (expt c 2) (expt b 2))))))
+=======================
+Question 42:
+(define percentError
+  (lambda (mea acc)
+    (* 100 (/ (- mea acc) acc))))
+CODE GOES HERE
+=======================
+Question 43:
+(define areaPyramid
+  (lambda (areaBase height)
+    (* (/ 1 3) areaBase height)))
+(display "40: ")
+(areaPyramid 10 12)
+(display "26 2/3: ")
+(areaPyramid 5 16)
+=======================
+Question 44:
+(define sidesOfTriangle
+  (lambda (a b c)
+    (and (> (+ a b) c)
+         (> (+ b c) a)
+         (> (+ c a) b)
+=======================
+Question 45:
+(define cos_to_csc (lambda (b c) (/ c (sqrt (- (expt c 2) (expt b 2))))))
+(cos_to_csc 4 5)
+=======================
+Question 46:
+(define equalToEachOther
+  (lambda (a b)
+    (and a b)))
+(equalToEachOther (= 9 10) (> 89 4))
+=======================
+Question 47:
+(define circumference
+  (lambda (r)
+    (* 2 pi r)
+    )
+  )
+(circumference 2)
+=======================
+Question 48:
+(define NumberOfWays
+  (lambda (X)
+    (expt 2 (- x 1))))
+; This is equivalent to placing 9 dividers between 10 candies.
+; There are 2^9 ways to do this since each divider can be there or not.
+=======================
+Question 49:
