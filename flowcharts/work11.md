@@ -25,7 +25,7 @@ flowchart TD;
 flowchart TD;
     id0([closerNumber]) -- a, target --> id1(a - target);
     id1 -- result0 --> id2(abs result0);
-    id2 -- result1 --> id5{if result1 < result3};
+    id2 -- result1 --> id5{if result1 > result3};
 
     id0 -- b, target --> id3(b - target);
     id3 -- result2 --> id4(abs result1);
