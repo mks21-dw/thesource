@@ -1,7 +1,7 @@
 ### FC 1
 ```mermaid
 flowchart TD;
-    id0(Study For Exam) --> id1{Do you know what skills are on the exam?};
+    id0([Study For Exam]) --> id1{Do you know what skills are on the exam?};
     id1 -- no --> id2(look up the skills);
     id2 --> id1;
 
@@ -23,7 +23,7 @@ flowchart TD;
 ### FC 2
 ```mermaid
 flowchart TD;
-    id0(Fun Shape) --> id1(Draw a circle);
+    id0([Fun Shape]) --> id1(Draw a circle);
     id1 --> id2(draw a square touching the bottom of the circle, the sidelength should be the diameter of the circle);
     id2 --> id3(draw an equilateral triangle, with base paralell to the bottom of the square. The top vertex should touch the square at the midpoint of its bottom edge);
     id3 --> id4([YOU DID IT]);
@@ -32,7 +32,7 @@ flowchart TD;
 ### FC 3
 ```mermaid
 flowchart TD;
-    id0(digit-fu) -- n --> id1(remainder n 2);
+    id0([digit-fu]) -- n --> id1(remainder n 2);
     id1 -- result0 --> id2{if result0 = 0};
     id2 -- false --> id3([remainder n 10]);
     id2 -- true --> id4(quotient n 10);
