@@ -1,0 +1,323 @@
+
+=======================
+Question 0:
+Programming question: Filter out the odd values from a list of 20 random integers ranging from 0 to 100
+
+Skill: 3,7,22
+Description:
+Write a function that filters out all the odd values in a list of 20 random integers randing from 0(including) to 100(excluding)
+
+
+(define randlist
+   (lambda (n maxvlaue)
+   (build-list n (lambda (x) (random maxvalue)))))
+define g (randlist 20 100)
+(filter odd? g)
+=======================
+Question 1:
+
+=======================
+Question 2:
+Programming question: Create a program that filter all the numbers in a list of 20 integers less than 100 that are greater than a specific number n. 
+Skill: 9,22
+Description
+Use the randList function to create the list. 
+
+=======================
+Question 3:
+Programming question: Make a list that returns 20 values if the first statement is true (if n is greater than 50), and 10 if false (both up to 80)
+Skill: 9, 7, 6, 3
+Description
+
+(define ifList (lambda (n) (if (> n 50) (buildlist 20 80) (buildlist 10 80))))
+=======================
+Question 4:
+Programming question: Write a program using filter and foldl
+that provides the values in a random list (20 values maximum 100) that are greater than 50 but less than 80
+Skill:9
+Description
+
+
+(define randList
+  (lambda (n maxValue)
+    (build-list n (lambda (x) (random maxValue)))))
+(define g (randList 20 100))
+g
+(filter (lambda (n) (and (> n 50) (< n 80))) g)
+=======================
+Question 5:
+Programming question: Write a function that gives a list of 20 random numbers less than 100
+and counts how many numbers are less than 50.
+Skill: 7. Using Randomness in Programs
+Description: Write a function that gives a list of 20 random numbers less than 100
+and counts how many numbers are less than 50.
+
+=======================
+Question 6:
+Programming question: 
+Skill:3, 7, 9
+Description:Filter out the odd values from a list of 20 random integers ranging from 0 to 100
+
+
+
+(define (randList n maxValue)
+  (build-list n (lambda (_) (random maxValue))))
+(define g (randList 20 100))
+g
+(filter odd? g)
+=======================
+Question 7:
+Programming question: Create a code called grade that generates list of the first n even terms
+Skill:3,9
+Description
+
+
+=======================
+Question 8:
+Programming question:
+Skill: 3, 6, 22
+Description
+Create a function that yields random perfect squares of length n less than or equal to maxValue
+Create a list of the squares of 10 random integers from 1 through 10 inclusive
+display a list with all of the elements that yield a remainder of 1 when divided by 4
+find the number of elements that yield a remainder of 1 when divided by 4
+find the sum of the the elements that yield a remainder of 1 when divided by 4
+
+
+=======================
+Question 9:
+Programming question: 
+Skill:Using Randomness in Programs and Data structures
+Description
+Using foldl and filter, write a function that will state if the smallest number of the list is even . 
+Assume that the letter "c" is the list. 
+
+
+=======================
+Question 10:
+Programming question:
+Skill: 6, 7, 9
+Description
+Write a function coinFlip that takes one argument n, that flips a coin n times
+and returns
+=======================
+Question 11:
+Programming question:
+Skill: 7, 9
+Make a list of length 10 and a maximum value of 100 (not including 100), and display the average of the largest and smallest element.
+
+
+=======================
+Question 12:
+Programming question: Create a function called Trapezoid for the area of a trapezoid given b1, b2, and the height. Add 2 test cases
+Skill: 3. Writing functions/procedure, 22. using variables.
+Description: math question using the student’s (hopefully) knowledge of geometry. Practices both the basic arithmetic in racket and creating functions. 
+
+
+ #lang racket
+(define (Trapezoid base1 base2 height)
+ 	 (* 0.5 (+ base1 base2) height))
+(Trapezoid 5 7 10) → should return 60
+=======================
+Question 13:
+Programming question:
+Skill: 3, 6, 7, 22
+How would you get the smallest
+number out of a set of 10 random numbers from 0-9?
+
+=======================
+Question 14:
+Programming question:
+Build a program that takes a list of 7 random values in the range [0, 50) and returns a filtered list of even values, if the sum of the taken list is more than 200.
+Skill: 6, 7, 9
+Description
+
+
+=======================
+Question 15:
+Programming question: Write code to create a list of 15 random numbers from 1 to 100 and return the range of the list.
+Skill: 3, 7, 9 
+Description
+
+
+=======================
+Question 16:
+
+=======================
+Question 17:
+Programming question: Write a function that can identify whether
+or not a given value is a perfect square of another value.
+Skill: 3, 6
+Description: a function that uses if statements to tell if a number
+is a perfect square of a different value (returns a boolean)
+
+
+=======================
+Question 18:
+Programming question: List (you can use name LL) was successfully defined as the list of first ten nonnegative integer cubes.
+Use filter command to leave only odd integers there.
+Skill: 3, 6
+
+
+To avoid giving hints to solving prior question(s):
+=======================
+Question 19:
+Programming question:
+Skill: 6,7
+Write a function that takes a list of numbers and returns the sum of the squares of those numbers.
+sum of squares = x1^2 + x2^2 + ... + xn^2
+
+
+=======================
+Question 20:
+Programming question: 
+Skill: 
+Write and ultimately run a function that returns the sum of the even numbers in a random list of 30 integers that are in the range 0 to 100. 
+
+
+(define randList
+  (lambda (n maxValue)
+    (build-list n (lambda (x) (random maxValue)))))
+
+(display "sum: ")
+(define bread (filter odd? (randList 30 100)))
+(foldl + 0 bread)
+(display "odds: ")
+bread
+(display "list: ")
+(randList 30 100)
+=======================
+Question 21:
+Programming question: 
+Skill: 
+Write and ultimately run a function that returns the sum of the even numbers in a random list of 30 integers that are in the range 0 to 100. 
+
+
+=======================
+Question 23:
+Programming question:
+Skill:
+Description
+
+
+=======================
+Question 24:
+Programming question:
+Skill: 5, 7, 9, 22
+Make a list of any length over 2 containing random values, define it as g, and using that list find the largest value in it using foldl
+
+
+(define c
+  (build-list 5 (lambda (x) (random 100))))
+
+(foldl (lambda (value previous)
+         (if (> value previous)
+             value
+             previous))
+         0
+         c)
+=======================
+Question 25:
+Programming question: Write a function that takes a list that returns the list of all values less than the first value
+Skill: 9 and 3
+Description
+
+
+=======================
+Question 26:
+Programming question: Write a function that finds the sum of all the numbers that
+are greater than 30 in a list of 20 random integers from 0 to 100, including 100
+Skill: Using randomness in programs 
+Description:
+Starter code to make your life easier:
+(define theList (lambda (x) (build-list 20 (lambda (y) (random 0 101)))))
+(define g (theList 20)) g
+(define 30greater (filter (lambda (x) (< 30 x)) g))
+Create a list of 20 integers, 0 to 100 (included 100) and sum them.
+
+=======================
+Question 27:
+Programming question:
+Skill: 3,6,7,9
+Description
+; Write code that defines a list of 20 random integers in the range [0, 100]
+; Write a function that finds the average of all the numbers in that list
+
+
+=======================
+Question 28:
+Programming question:
+Skill: 3, 9
+Description: Write a function that will build a list of the first 10 positive squares.
+
+
+=======================
+Question 29:
+Programming question: Build a list that will contain 20 multiples of 9 and filter it for values that are multiples of 6
+Skill: 9
+Description
+
+
+=======================
+Question 30:
+Programming question: 
+Skill: 7 
+Description
+write a code that makes a list containing 20 random values under 100. Then use the filter function to 
+take only multiples of 3 from that list. 
+
+=======================
+Question 31:
+Programming question: Write a function that can identify whether
+or not a given value is the perfect square of another value.
+Skill: 3 6
+Description: a function that uses if statements to tell if a given
+number is a perfect square of another number.
+
+
+=======================
+Question 32:
+Programming question:
+Skill: 7, 9
+Description
+Using foldl, filter, and build-list, create a program that generates a list of 10 random integers from [0, 20) and returns all multiples of 3 in the list.
+
+
+=======================
+Question 33:
+Programming question:
+Skill: Data Structures
+Make a function that will build a list of the first 10 POSITIVE squares.
+
+
+=======================
+Question 34:
+Programming question: Using build-list and filter, create a list of the first 20 even integers (define the list g) 
+Skill:
+Description
+
+
+=======================
+Question 35:
+Programming question:
+Skill: 7
+Write a program that returns 2 random values between 3 and 15;
+adds them, and then muliplies the sum by the first
+
+
+=======================
+Question 36:
+Programming question: 
+Skill: 3
+Write a function that finds the number
+of integers greater than or equal to 10 in a list of 20 random
+values in the range [0, 100).
+
+
+=======================
+Question 37:
+Programming question: 
+Skill: 3, 9
+Description
+Create a list of 20 numbers that are less than 50 and count the numbers greater than 30
+

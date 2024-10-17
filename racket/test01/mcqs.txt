@@ -1,0 +1,797 @@
+
+=======================
+Question 0.a:
+MC Question: How many values does foldl require?
+Skill: 9
+Options:
+A) 5
+B) 4
+C) 1
+D) 3
+Answer
+D
+=======================
+Question 0.b:
+MC Question:Which of the following is not a conditional statement?
+Skill:6
+Options:
+A.+
+B.=
+C.and
+D.>
+Answer
+A.+
+=======================
+Question 1.a:
+MC Question:
+How many values does each item of a list store?
+Skill: 9
+Options:
+A) 1 
+B) 2 
+C) 3 
+D) 4
+
+Answer: B
+=======================
+Question 1.b:
+MC Question:
+How many arguments does a random function take in Racket?
+Skill: 7
+Options:
+A) 1
+B) 2
+C) 3
+D) All of the above
+
+Answer: D
+=======================
+Question 2.a:
+MC Question: Which statement always returns true?
+Skill:5
+Options:
+A) (if (> 9 7) #t false)
+B) (= (* 5 1) 6)
+C) (not #t)
+D) (if (> 1 (random 10)) true false)
+Answer: A
+=======================
+Question 2.b:
+MC Question: Which answer never returns an integer?
+Options:
+A) (random)
+B) (random 1 2)
+C) (random 24 5)
+D) (random 10)
+Skill: 7
+Answer
+=======================
+Question 3.a:
+MC Question: Which of the following will always output true?
+Skill: 5, 6
+Options:
+A. (= 1 2)
+B. (if (= n x) #t (> n x))
+C. (< 10 8)
+D. (if (< n 10) #t #t)
+Answer
+D
+=======================
+Question 3.b:
+MC Question: Which of the following is a function that builds a list with 20 values?
+Options:
+A. (randList  2 4)
+B. (buildlist 10 10)
+C. (buildlist 20 70)
+D. (buildlist 30 40)
+Skill:
+7,9
+Answer
+C
+=======================
+Question 4.a:
+MC Question: What is true about foldl?
+Skill:9
+Options:
+A. It calls a function using the first element of a list
+as the first element and the resulting value as the next element
+B. When it reaches a null link it returns 0
+C. The function used must only take 1 argument
+D. The list used must be defined already
+Answer
+A
+=======================
+Question 4.b:
+MC Question:A data node has how many parts
+Options:
+A.1
+B.2
+C.3.D.4
+Skill:9
+Answer
+B
+=======================
+Question 5.a:
+MC Question: What should be placed before each statement in a contract?
+Skill:3. Writing functions/procedures.
+Options:
+A. semicolon
+B. colon
+C. dot
+D. comma
+Answer A
+=======================
+Question 5.b:
+MC Question: What will be the result of function (if (< 2 5) 0 1)?
+Options:
+A. #t
+B. #f
+C. 0
+D. 1
+Skill: 6. Using Conditional Statements
+Answer C
+=======================
+Question 6.a:
+MC Question: How many values does foldl require?
+Skill: 9
+Options:
+A) 5
+B) 4
+C) 1
+D) 3
+Answer
+D
+=======================
+Question 6.b:
+MC Question:Which of the following is not a conditional statement?
+Skill:6
+Options:
+A.+
+B.=
+C.and
+D.>
+Answer
+A.+
+=======================
+Question 7.a:
+MC Question: Which of the following correctly uses the foldl function to sum all of the values in list w?
+Skill:9
+Options:
+A) (foldl 0 + w)
+B) (foldl + 0 w)
+C) (foldl + w 1000)
+D) (foldl (+ 0) w)
+Answer B
+=======================
+Question 7.b:
+MC Question: Which of the following will return boolean values?
+Options:
+A) (-4 and 3)
+B) (= 2 3)
+C) (not (not (not (not 3)))))))
+D) (+ 10 17)
+Skill:
+Answer: B
+=======================
+Question 8.a:
+MC Question: What is the breakdown of a build-list function
+Skill: 5, 6
+Options:
+A) (build-list num num)
+B) (build-list num func)
+C) (build-list func num)
+D) (build-list func func)
+Answer
+B
+=======================
+Question 8.b:
+MC Question: if given the function (random 5) what is the range of the values 
+Options:
+A) 0-5
+B) 1-5
+C) 0-4
+D) 1-4
+Skill: 7
+Answer
+C
+=======================
+Question 9.a:
+MC Question: Based on the function that is defined below:
+(define Function
+ (lambda (n)
+   (if (= (remainder n 2) 0)
+       (+ n 3)
+       (- n 3))))
+What would (Function 13) return? 
+Skill:Using conditional statements 
+Options: 
+A) Not enough information 
+B) 16
+C) 10
+D) 13
+Answer
+C
+=======================
+Question 9.b:
+MC Question: Which list fits the function below?
+(build-list  5 (lambda (n) (random 10 20)))
+Options:
+A) 1 2 3 4 5
+B) 13.4 16.5 17.8 19.3 10.2 
+C) 11 13 14 17 19
+D) The function does not create a list
+Skill:Data Structures
+Answer
+C
+=======================
+Question 10.a:
+MC Question: How many values does each item of a list store?
+Skill: 9
+Options:
+A) 1
+B) 2
+C) 3
+D) 4
+Answer: B
+=======================
+Question 10.b:
+MC Question: How many arguments does a random function take in Racket?
+Skill: 7
+Options:
+A) 1
+B) 2
+C) 3
+D) All of the above
+Answer: D
+=======================
+Question 11.a:
+MC Question:
+In a linked list, where does the link from the final node go?
+Skill: 9
+Options:
+A) The first node
+B) Null
+C) There is no link from the final node
+D) To the previous node
+Answer: B
+=======================
+Question 11.b:
+MC Question:
+How many parameters do functions that can be the function foldl runs have?
+Skill: 9
+Options:
+A) None
+B) One
+C) Two 
+D) Three
+Answer: C
+=======================
+Question 12.a:
+MC Question: Which of the following is not one of the parameters necessary for foldl?
+Skill: 9
+Options:
+A) Function
+B) List
+C) Arithmetic Expression
+D) Starting Value
+Answer
+C
+=======================
+Question 12.b:
+MC Question: 2
+Skill: 5
+Options:
+A) (and #true  #false)
+B) (or  #false  #false)
+C) (not  #false)
+D) (and ( or #true  #false) (not #true))
+Answer
+C
+=======================
+Question 13.a:
+MC Question:
+How would the function "random x" work?
+Skill: 7
+Options:
+A) Finds a random number from 1 to x-1
+B) Finds a random number from 0 to x-1
+C) Finds x random numbers from 0 to 1
+D) Doesn't work, you need two values for random
+
+Answer: B
+=======================
+Question 13.b:
+MC Question:
+How is foldl formatted?
+Skill: 3
+Options:
+A) (foldl function startValue list)
+B) (foldl startValue function list)
+C) (foldl List startValue function)
+D) (foldl number function)
+
+Answer: A
+=======================
+Question 14.a:
+MC Question: Which of these values are not possible outputs for (random 7)?
+Skill: 7
+Options:
+A) 0
+B) 1
+C) 6
+D) 7
+Answer: D
+=======================
+Question 14.b:
+MC Question: Which function call would generate a random value in the range [100, 420)?
+Skill: 7
+Options:
+A) (+ 100 (random))
+B) (* 10 (random 42))
+C) (+ 100 (random 320))
+D) (* 420 (random))
+Answer: C
+=======================
+Question 15.a:
+MC Question: How many parts does every element in a list have?
+Skill: 9
+Options:
+A. 1
+B. 2 
+C. 4
+D. 8
+Answer: B
+=======================
+Question 15.b:
+MC Question: Which of the following could NOT be returned from (random 10)
+Options:
+A. 6
+B. 10
+C. 1
+D. 0
+Skill: 7
+Answer: B
+=======================
+Question 16.a:
+MC Question:
+What would (foldl * 0 (list 1 2 3 4)) return?
+Skill: 9 
+Options:
+A: 1
+B: 3 
+C: 32
+D: 24
+Answer
+D: 24
+=======================
+Question 16.b:
+
+=======================
+Question 17.a:
+MC Question: Which of the following returns a random number
+less than 100 and at least 1?
+Skill: 7
+Options:
+A) (random 100)
+B) (random 1 100)
+C) (random 0 100)
+D) (random 1 99)
+
+Answer: B
+=======================
+Question 17.b:
+MC Question: Which of the following is not a valid use of build-list?
+Options:
+A) To construct a list of n perfect squares
+B) To construct a list of n square roots
+C) To construct a list of only the odd numbers of a given list
+D) To construct a list of the multiples of n
+Skill: 9
+
+Answer: C
+=======================
+Question 18.a:
+MC Question: What can this function not return: (random (random 1 5) (random 9 10))
+Skill: 7
+Options:
+A) 0
+B) 3
+C) 6
+D)10
+Answer A
+=======================
+Question 18.b:
+MC Question: Which of the following will return list of first ten nonnegative integer cubes:
+Skill: 3, 9, 22
+Options:
+A) define LL (build-list 10 lambda (x) (* x x x))
+B) define LL (0 1 8 27 64 125 216 343 512 729)
+C)(build-list 10 lambda (x) (* x x x))
+D) build-list 10 lambda (x) (x^3))
+Answer C
+=======================
+Question 19.a:
+MC Question:
+Which of the following is a correct use of foldl?
+Skill: 9
+Options:
+A) (foldl 3 + g)
+B) (foldl g + 3)
+C) (foldl + g 3)
+D) (foldl + 3 g)
+
+Answer: D
+=======================
+Question 19.b:
+MC Question:
+Which of the following is correct for the random function?
+Skill: 7
+Options:
+A) (random 5) returns a number from (0,5)
+B) (random 3) returns a number from (0,3]
+C) The 3 in (random 3 5) represents the higher bound
+D) The 5 in (random 3 5) represents the # of values output
+
+Answer: B
+=======================
+Question 20.a:
+MC Question:
+What are the three parameters in order for foldl?
+Skill: 3
+Options:
+A) function, starting value, list
+B) function, 0 , list
+C) function, list, 0
+D) function, list, starting value
+Answer: A
+=======================
+Question 20.b:
+MC Question:
+What does (randList n maxValue) do?
+Skill: 7
+Options:
+A) create a list of n random integers in the range [0, maxValue)
+B) create a random list with values from n to maxValue
+C) create a list with values from 0 to maxValue with the first value n
+D) create a random list with n values from [0, maxValue]
+Answer: A
+=======================
+Question 21.a:
+MC Question:
+What are the three parameters in order for foldl?
+Skill: 3
+Options:
+A) function, starting value, list
+B) function, 0 , list
+C) function, list, 0
+D) function, list, starting value
+Answer: A
+=======================
+Question 21.b:
+MC Question:
+What does (randList n maxValue) do?
+Skill: 7
+Options:
+A) create a list of n random integers in the range [0, maxValue)
+B) create a random list with values from n to maxValue
+C) create a list with values from 0 to maxValue with the first value n
+D) create a random list with n values from [0, maxValue]
+Answer: A
+=======================
+Question 23.a:
+MC Question:Which line of code will return an error?
+Skill:9
+Options:
+a)(list (list 5 6))
+b)(foldl (lambda (value) (+ value 1)) 0 (list 5 6))
+c)(build-list 6 (lambda (x) (+ x 1)))
+d)(filter even? (list 7 9))
+Answer
+=======================
+Question 23.b:
+MC Question:
+Options:
+Skill:
+Answer
+=======================
+Question 24.a:
+MC Question: What is a nested conditional statement?
+Skill: 5
+
+Options:
+A) an "if" within an "if"
+B) an "if" where one or both of the returned booleans runs another "if"
+C) "conditional
+      conditional"
+D) (= 8  (+ 6 7))
+
+Answer B)
+=======================
+Question 24.b:
+MC Question: Which answer choice only inludes data structures?
+Skill: 9
+
+Options:
+A) linked list, 0, "hi", foldl
+B) linked list, hash table, lists within a list
+C) foldl, foldr, filter, build-list
+D) strings, integers, floats, booleans
+
+Answer: C)
+=======================
+Question 25.a:
+MC Question:
+Skill:
+Options:
+Answer
+=======================
+Question 25.b:
+MC Question: 
+Options:
+Skill:
+Answer
+=======================
+Question 26.a:
+MC Question: What will be the result of the following program?
+(if (<= 7 7) (if (< 4 3) 100 200) 300)
+Skill: Using Conditional Statements
+Options:
+A: 100
+B: 300
+C: #t
+D: 200
+Answer
+=======================
+Question 26.b:
+MC Question:
+Consider the following list, defined as g: '(7 8 10 29 35)
+What would this function output:
+(foldl (lambda (x y) (+ x (* 2 y))) 37 g)
+Options:
+Skill: Data Structures
+Answer
+A: 37
+B: 1279
+C: 1493
+D: 1825
+=======================
+Question 27.a:
+MC Question: What is the function for conditional functions?
+(the finctions inside the () are just for representation and are all written correctly)
+Skill: 6
+Options:
+A. (when (= x 2) 5 else 3)
+B. (if (= x 2) 5 3)
+C. (if (= x 2) then 5 3)
+D. (if (= x 2) 5 else 3)
+Answer B
+=======================
+Question 27.b:
+MC Question:  What result will the following block of code return?
+(define g (list 1 2 3))
+(foldl - 8 g)
+Options: 2/-6/'(-7 -6 -5)/'(7 6 5)
+A) '(-7 -6 -5)
+B) '(7 6 5)
+C) 2
+D) -6
+Skill: 9
+Answer D
+=======================
+Question 28.a:
+MC Question: Given p and q are true boolean values, which of the following will result
+Skill: 5
+Options:
+A) (or (and p q) (not p))
+B) (not (not (and (not p) q)))
+C) (not (or (not p) (not q)))
+D) (not (not (not (not (or (not p) q)))))
+Answer: B
+=======================
+Question 28.b:
+MC Question: Based on the given function (lambda (n) (if (= (remainder n 2) 0) (= n 2) (if (= n 3) #t (not (= (remainder n 3) 0))))), determine the number that would result in a true result.
+Options:
+A) 4
+B) 10
+C) 7
+D) 15
+Skill: 6
+Answer: C
+=======================
+Question 29.a:
+MC Question: the domain of (random 10) will be..
+Skill: 7 
+Options:
+a) (0, 10)
+b) [0, 10]
+c) [0, 10)
+d) (0, 10]
+Answer: C
+=======================
+Question 29.b:
+MC Question: Which of the following is the correct output of (rest (list (list 1 3) (list 6 8) 4))?
+Skill: 9 
+Options:
+A) '(1 3)
+B) '((6 8) 4)
+C) '(4)
+D) '((1 3) 4
+Answer B
+=======================
+Question 30.a:
+MC Question: What parameters are a part of the function foldl?
+Skill: 9
+Options:
+a) any function, a starting value, and a list
+b) a function with 2 arguments, a starting value, and a list. 
+c) any function with 1 argument, a starting value, and a list.
+d) a function with 2 arguments, a common factor, and a list. 
+Answer
+=======================
+Question 30.b:
+MC Question: What does the Racket function (build-list n func) do?
+Options:
+a) It generates a list of n random numbers.
+b) It creates a list of n elements by applying the function func to each integer from 0 to n-1.
+c) It creates a list of n elements by applying the function func to each integer from 0 to n. 
+d) It generates a list of n identical elements, all equal to the result of func(n). 
+Skill:
+Answer
+=======================
+Question 31.a:
+MC Question: Which of the following returns a random number less
+             than 100 and at least 1?
+Skill: 7
+Options: A) (random 100)
+         B) (random 1 100)
+         C) (random 0 100)
+         D) (random 1 99)
+Answer:
+=======================
+Question 31.b:
+MC Question: Which of the following is not
+             a valid use of build-list?
+Options: A) To construct a list of n perfect squares
+         B) To construct a list of n square roots
+         C) To construct a list of only odd numbers from list n
+         D) To construct a list of the multiples of n
+Skill: 9
+Answer C
+=======================
+Question 32.a:
+MC Question:
+What will be the result of the following program?
+(if (>= 7 7) (if (< 4 3) 100 200) 300)
+Skill: 6
+Options:
+A) 100
+B) 200
+C) 300
+D) true
+Answer: B
+=======================
+Question 32.b:
+MC Question:
+Consider the following list, defined as g: '(7, 8, 10, 35)
+What would this function output:
+(foldl (lambda (x y) (+ x (* 2 y))) 37 g)
+Skill: 9
+Options:
+A) 735
+B) 835
+C) 935
+D) 1035
+Answer: A
+=======================
+Question 33.a:
+MC Question:
+Given p and q are tru boolean values, which of the following will result in a false statement.
+Skill: Working with Boolean Values
+Options:
+A) (or (and p q) (not p))
+B) (not (not (and (not p) q)))
+C) (not (or (not p) (not q)))
+D) (not (not (not (not (or (not p) q)))))
+Answer: B
+=======================
+Question 33.b:
+MC Question: In the function (lambda (n) (if (= (remainder n 2) 0)
+                                            (= n 2)
+                                            (if (= n 3)
+                                              #t
+                                              (not (= (remainder n 3) 0))))), determine the number, n, that would return true.
+Options:
+A) 4
+B) 10
+C) 7
+D) 15
+Skill: Using Conditional Statements
+Answer: C
+=======================
+Question 34.a:
+MC Question: What would the code (build-list 3 (lambda (n) n)) return?
+Skill:9
+Options:
+A)'(1 2 3)
+B)'(0 1 2)
+C)'(2 3 5)
+D)'(-1 -2 -3)
+Answer B
+=======================
+Question 34.b:
+MC Question: How many arguments does the function "if" takes?
+Options:
+A)1
+B)2
+C)3
+D)4
+Skill:5
+Answer C
+=======================
+Question 35.a:
+MC Question:
+Which of the following is a correct use of foldl?
+Skill: 9
+Options:
+A) (foldl 3 + g)
+B) (foldl g + 3)
+C) (foldl + g 3)
+D) (foldl + 3 g)
+
+Answer: D
+=======================
+Question 35.b:
+MC Question:
+Which of the following is correct for the random function?
+Skill: 7
+Options:
+A) (random 5) returns a number from (0,5)
+B) (random 3) returns a number from [0,3)
+C) The 3 in (random 3 5) represents the higher bound
+D) The 5 in (random 3 5) represents the # of values outputted
+
+Answer: B
+=======================
+Question 36.a:
+MC Question: What does the
+(if (= (remainder n 2) 1) odd even) return if n = 0?
+Skill: 6, 22
+Options:
+A) 1
+B) 2
+C) Odd
+D) Even
+
+Answer: C
+=======================
+Question 36.b:
+MC Question: When does the function
+(define Function (lambda (a b) (and (not a) (not b)))) return true?
+Skill: 5
+Options:
+A) (= a b)
+B) Both a and b are #t
+C) Both a and b are #f
+D) a is true and b is false
+
+Answer: C
+=======================
+Question 37.a:
+MC Question: What is not a parameter of the function foldl?
+Skill: 22
+Options:
+A) function
+B) starting value
+C) variable name
+D) list
+Answer: C
+=======================
+Question 37.b:
+MC Question: Which is not a valid way to use the random function?
+Options: 
+A) (random 10 20)
+B) (random 2)
+C) (random 1 2)
+D) (random 1 -2)
+Skill: 3
+Answer: D

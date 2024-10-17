@@ -1,0 +1,273 @@
+
+=======================
+Question 0:
+
+=======================
+Question 1:
+
+=======================
+Question 2:
+(define randList
+  (lambda (n maxValue)
+  (build-list n (lambda (b) (random 0 maxValue)))))
+(define list (randList 20 100))
+
+(define (greater any n)
+   (filter (lambda (x) (> x n)) list))
+(greater list 78)
+=======================
+Question 3:
+
+=======================
+Question 4:
+(define randList
+  (lambda (n maxValue)
+    (build-list n (lambda (x) (random maxValue)))))
+(define g (randList 20 100))
+g
+(filter (lambda (n) (and (> n 50) (< n 80))) g)
+=======================
+Question 5:
+(define randList (lambda (n maxValue) (build-list n (lambda (x) (random maxValue)))))
+(define g (randList 20 100))
+g
+(foldl (lambda (value previous) (+ 1 previous)) 0 (filter (lambda (x) (< x 50)) g))
+=======================
+Question 6:
+
+=======================
+Question 7:
+(define grade (lambda  (n) (build-list (quotient n 2) (lambda (x) (+ (* x 2) 2)))))
+=======================
+Question 8:
+(define randList
+  (lambda (n maxValue)
+    (build-list n (lambda (x) (expt (random 1 (+ maxValue 1)) 2)))))
+
+(define g (randList 10 10))
+g
+(filter (lambda (x)
+          (= 1 (modulo x 4))) g)
+
+(foldl (lambda (value previous)
+         (+ 1 previous))
+       0
+       (filter (lambda (x)
+                 (= 1 (modulo x 4))) g))
+
+(foldl (lambda (value previous)
+         (+ value  previous))
+       0
+       (filter (lambda (x)
+                 (= 1 (modulo x 4))) g))
+=======================
+Question 9:
+(if (= (/ (foldl (lambda (value previous) (if (< value previous) value previous)) 100 c) 2) 0)
+    #true
+    #false)
+=======================
+Question 10:
+
+=======================
+Question 11:
+(define randList
+  (lambda (n maxVal)
+    (build-list n (lambda (x) (random maxVal)))))
+
+(define g (randList 10 100))
+
+(display "list:")
+g
+
+(define greaternum
+  (lambda (x y)
+    (if (> x y)
+        x
+        y)))
+
+(define largest
+  (foldl (lambda (prev new) (greaternum prev new)) 0 g))
+(display "largest:")
+largest
+
+(define smallernum
+  (lambda (x y)
+    (if (< x y)
+        x
+        y)))
+
+(define smallest
+  (foldl (lambda (prev new) (smallernum prev new)) 100 g))
+(display "smallest:")
+smallest
+
+(display "average of smallest and largest:")
+(/ (+ largest smallest) 2)
+=======================
+Question 12:
+
+=======================
+Question 13:
+(define g
+  (build-list 10
+              (lambda (x) (random 10))))
+
+(foldl
+ (lambda (x y)
+   (if (>= x y)
+       y
+       x)) 10 g)
+=======================
+Question 14:
+CODE GOES HERE
+=======================
+Question 15:
+(define l (build-list 15 (lambda (x) (+ 1 (random 100)))))
+l
+(- (foldl (lambda (x y)(if (> x y) x y)) 0 l) (foldl (lambda (x y)(if (< x y) x y)) 100 l))
+=======================
+Question 16:
+
+=======================
+Question 17:
+(define perfSquare
+  (lambda (x y)
+    (if (= y (/ x y))
+        #t
+        #f)))
+(perfSquare 26 6)
+(perfSquare 36 6)
+=======================
+Question 18:
+(filter odd? '(0 1 8 27 64 125 216 343 512 729))
+=======================
+Question 19:
+(define sum-squares
+  (lambda (sumlist)
+    (foldl (lambda (x g)(+ g (* x x))) 0 sumlist)))
+(sum-squares '(1 2 3)) ; Should return 14
+=======================
+Question 20:
+
+=======================
+Question 21:
+(define randList
+  (lambda (n maxValue)
+    (build-list n (lambda (x) (random maxValue)))))
+
+(display "sum: ")
+(define bread (filter odd? (randList 30 100)))
+(foldl + 0 bread)
+(display "odds: ")
+bread
+(display "list: ")
+(randList 30 100)
+=======================
+Question 23:
+;CODE GOES HERE
+
+(list (list 5 6))
+(foldl (lambda (value) (+ value 1)) 0 (list 5 6))
+(build-list 6 (lambda (x) (+ x 1)))
+(filter even? (list 7 9))
+=======================
+Question 24:
+CODE GOES HERE
+=======================
+Question 25:
+(define g (list 10 2 3 45))
+(filter (lambda (x) (> (first g) x)) g)
+=======================
+Question 26:
+;CODE GOES HERE
+(define theList (lambda (x) (build-list 20 (lambda (y) (random 0 101)))))
+(define g (theList 20)) g
+(define 30greater (filter (lambda (x) (< 30 x)) g))
+(foldl (lambda (x y) (+ x y)) 0 30greater)
+=======================
+Question 27:
+(define g (build-list 20 (lambda (x) (random 101))))
+(/ (foldl + 0.0 g) 20)
+=======================
+Question 28:
+(build-list 10 (lambda (x) (expt (+ x 1) 2)))
+=======================
+Question 29:
+(define m (build-list 20 (lambda (x) (* x 9))))
+m
+(filter (lambda (x) (= 0 (remainder x 6))) m)
+=======================
+Question 30:
+(define randList
+  (lambda (n maxValue)
+    (build-list n (lambda (x) (random maxValue)))))
+
+(display "list: ")
+(define g (randList 20 100)) 
+g
+
+(display "perfect squares: ") 
+(filter (lambda (x) (= 0 (remainder x 3))) g)
+=======================
+Question 31:
+(define PerfSquare
+  (lambda (n v)
+    (if (= v (* n n)
+           #t
+           #f))))
+
+(display "true: ")
+(PerfSquare 49 7)
+(display "false: ")
+(PerfSquare 36 5)
+=======================
+Question 32:
+;CODE GOES HERE
+
+(define randList
+  (lambda (n maxValue)
+    (build-list n (lambda (x) (random 0 maxValue)))))
+(define g (randList 10 20))
+(filter (lambda (x) (= (remainder x 3) 0)) g)
+=======================
+Question 33:
+(build-list 10 (lambda (x) (expt (+ x 1) 2)))
+=======================
+Question 34:
+(define g
+  (build-list 20 (lambda (n) n)))
+(filter even? g)
+=======================
+Question 35:
+(display "r1: ")
+(define r1 (random 3 15))
+r1
+(display "r2 : ")
+(define r2 (random 3 15))
+r2
+(display "result: ")
+(* r1 (+ r1 r2))
+=======================
+Question 36:
+; (randList a b) --> list
+; a : non negative integer
+; b : non negative integer
+;
+; Returns a random list given the maximum value and the number of values
+; (randList 1 1) --> 0
+(define randList
+  (lambda (a b)
+    (build-list a (lambda (x)
+                    (random b)))))
+(randList 20 100)
+(foldl (lambda (value previous)
+         (+ 1 previous))
+       0
+       (filter (lambda (n)
+          (>= n 10))
+        (randList 20 100)))
+=======================
+Question 37:
+(foldl (lambda (value previous) (+ previous 1)) 0
+                (filter (lambda (x) (> x 30))
+                        (build-list 20 (lambda (x) (random 50)))))
