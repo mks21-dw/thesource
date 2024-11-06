@@ -3,3 +3,6 @@ hungry
 green
 quick
 lazy
+paradoxical
+loquatious
+elegant
