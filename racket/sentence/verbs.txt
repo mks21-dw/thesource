@@ -1,0 +1,6 @@
+moves
+swims
+eats
+barks
+hugs
+destroys
