@@ -1,0 +1,346 @@
+
+=======================
+Question 0:
+Programming question: Write a function that has a 50% chance  of adding or multiplying all the values in a list
+Skill: 2,3,6,10,23
+Description
+NOTE: To be recursive you may have to use 3 functions
+
+
+=======================
+Question 1:
+Programming question: Let's say you are a librarian and want to generate book ID
+numbers based on the edition.
+If the edition number is between 0 and 50 including 0, return the square that number plus 2.
+If the ID number is between 51 and 100 including 51, return 
+Write a function that will generate a list of book ID numbers for books of edition 1-100, 
+including 1 and not 100.
+Skill:
+Description
+
+
+=======================
+Question 2:
+Programming question: Write a function that returns the position of an element in the list. 
+Skill: 3, 10 
+Description
+Ex test case. (returnlist (list 0 1 2 3) 0) --> 0 
+
+
+(define returnlist
+  (lambda (lst position)
+    (if (= 0 position)
+        (first lst)
+        (returnlist (rest lst)(- position 1)))))
+(returnlist (list 1 2 3 4 5) 1)
+=======================
+Question 3:
+Programming question: Make a program that always returns 1 for every nonzero element in the list and 0 if theeres a zero.
+Skill:
+Description
+
+
+(define binary
+       (lambda (g)
+         (if (null? g)
+             null
+             (if (= 0 (first g))
+                 (cons 0 (binary (rest g)))
+                 (cons 1 (binary (rest g)))))))
+=======================
+Question 4:
+Programming question: 
+Skill:10
+Description
+Make a code using recursion named product-of-evens that finds the product of the even numbers in a list. Write a test case for this function.
+
+=======================
+Question 5:
+Programming question:
+Skill:2, 3, 10
+Description
+Write a function with an output of a list of odd numbers less than or equal to n.
+
+=======================
+Question 6:
+Programming question: Create a code that successfully sorts between even and odd numbers in a list
+Skill: 10
+Description
+Create a function (sorts) such that you can input a list and recieve one list with even values
+
+=======================
+Question 7:
+Programming question:
+Create a list of length n that starts at d,
+If the number is odd, then multiply by three and add one
+If the number is even, then divide by 2 
+Skill: 10
+Description:
+Use recursion
+
+=======================
+Question 8:
+Programming question: Write a recurrsive function called "crazy" that akes a list of integers. The function should return a list such that:
+- 1 is added to each EVEN number of the list
+- 2 is added to each ODD number of the list
+Skill:
+Description
+
+
+=======================
+Question 9:
+Programming question:
+Write a function that returns the result of x tetrated to the n
+(that is, x raised to istelf n times)
+
+=======================
+Question 10:
+Programming question: 
+Skill: 3, 4, 10
+Description
+Create a function that takes a list and returns a list of values in the first list that are not divisible by 3.
+
+=======================
+Question 11:
+Programming question: 
+Skill: 3. Writing functions/procedures, 4. Understanding algorithsm, 10
+Description
+Create a function that takes a list and returns
+a list of only the values in the first list that aren't divisible by 3. 
+
+=======================
+Question 12:
+Programming question: Write a function that returns the element of a certain position in a list. 
+Skill: 3, 10
+
+Description :
+
+Ex test case. (returnlist (list 0 1 2 3) 0) --> 0
+
+
+=======================
+Question 13:
+
+=======================
+Question 14:
+Programming question: Write a function that has a 50% chance of multiplying or adding all the values in a list.
+Skill: 2, 3, 6, 10, 23
+Description
+
+
+=======================
+Question 15:
+3) Assuming that a list consists of only numbers
+      Make a function that adds all the numbers together
+      in addition to adding 1 if the number is odd and 2 if the number is even.
+=======================
+Question 16:
+Programming question:
+Skill:
+Description
+
+
+=======================
+Question 17:
+Programming question:
+Create a recursive function that converts binary into decimal. 
+Skill: 2,3,6,10,22
+Description
+Binary is the base 2 number system, while decimal is the base 10 system.
+Using skill that you learned in class, write a function that converts a binary number to decimal.
+
+=======================
+Question 18:
+Programming question: Write a recursive function that would return the value of
+all the elements in a list?
+Skill: 4, 3
+Description
+
+Po
+=======================
+Question 19:
+Programming question: Write a function that returns n+(n-1)+...+0
+Skill: 3, 10
+Description
+
+
+=======================
+Question 20:
+define append (lambda (g n) (if (null? g) '(n) (cons (first g) (append2 (rest g) n))))
+=======================
+Question 21:
+Programming question:
+Write a recursive function gCF that finds greatest common factor using Eucledian agorythm.
+Do not use foldl or filter.
+
+Skill: 2, 4, 5, 6, 10, 22, 23
+Description
+Eucledian algorythm says that gcf(a,b) = gcf( a, (remainder a,b)).
+The recursion should stop when the remainder is zero, then a is the gcf.
+For example,
+   252 = 105*2 + 42 so gcf(105, 252)=gcf(105, 42), then
+   105 = 42*2 + 21 so gcf(42,105)=gcf(42, 21) which is
+   21 as remainder in dividing 42 by 21 is zero.
+For testing, use gCF to test on 105 and 252
+
+=======================
+Question 22:
+Programming question:
+Skill: 3, 4, 6
+Write a function that takes a list of numbers and returns the sum of all positive numbers in the list.
+Use recursion and a conditional statement to check if each number is positive before adding it to the total.
+
+
+=======================
+Question 23:
+Programming question: Write a recursive function to reverse a list.
+Skill: 10
+Description
+
+(define reverse (lambda (g)
+                  (if (null? g)
+                      null
+                      (append (reverse (rest g)) (list (first g))))))
+(reverse '(21 24 3))
+=======================
+Question 24:
+Programming question:
+Skill:
+Description
+
+
+=======================
+Question 25:
+Programming question:
+Make a recursive function calledlist_tester in
+which there are perimeters integer n and list g.
+Have the function test and record how many times
+n shows up in g.
+Skill: 10
+Description
+
+
+=======================
+Question 26:
+
+=======================
+Question 27:
+Programming question:
+Skill:
+
+Write a recursive function that takes a list and a function and applies that function to each element of the list. foldl may not be used
+
+
+=======================
+Question 28:
+Programming question:
+Skill: 2,3
+Write a function that takes the radius of a
+circle and returns it's area.
+area = pi * r^2
+
+
+=======================
+Question 29:
+Programming question: Write a recursive function that calculates the nth term in a geometric sequence.
+Skill: 4, 10
+Description: Geometric sequences fines any term of a sequence in terms of its preceding term(s). 
+(geometricSeq n ratio)
+
+
+=======================
+Question 30:
+Programming question: Recursively create a function that evaluates whether or not every value in a list is within a certain range.
+Skill: 10, 2, 5, 6, 22
+Description
+First parameter is a list, second is the lower bound of the range, third is the upper bound.
+
+=======================
+Question 31:
+Programming question: 
+Skill: 10 22 3 2
+Description
+Make a function called sum of cubes, takes integer n
+and returns the sum of all the cubes that are between 1 and n
+
+
+=======================
+Question 32:
+Programming question: Write a recursive function that takes a list and applies a function to each element of the list.
+Skill: 
+Description
+
+
+=======================
+Question 33:
+Programming question: Write a recursively-defined function that takes in a list of positive integers and returns a list containing only the sum of the digits of all the even integers in the list. (First, write the function that outputs the sum of digits of an integer)
+Skill: 2, 6, 9, 10, 23 
+Example:
+(funcF '(2 12 6 3 42)) --> '(2 3 6 6)
+
+=======================
+Question 34:
+Programming question: 
+Skill: 
+Description
+
+
+=======================
+Question 35:
+Programming question: 
+Write a function using recursion to return the negative numbers of a list.
+Skill: 10
+Description
+
+
+(define negNum
+	(lambda (g)
+		(if (null? g)
+				(if (< 0 (first g))
+						(cons (first g) (negNum (rest g)))
+						(negNum (rest g))))))
+=======================
+Question 36:
+Programming question: 
+Skill: 10, 3, 4
+Write functions to output if a number is prime: (isPrime 2) = true
+
+
+=======================
+Question 37:
+Programming question:
+Skill: 10
+Write a recursive function that returns a list contaning only the odd numbers from a list.
+
+
+
+=======================
+Question 38:
+Programming question: Write a function that matches the trace function below.
+Skill: 10
+Description
+(function 4)
+(* 4 (function 3))
+(* 4 (* 3 (function 2)))
+(* 4 (* 3 (* 2 (function 1))))
+(* 4 (* 3 (* 2 1)))
+(* 4 (* 3 2))
+(* 4 6)
+24
+
+=======================
+Question 39:
+Programming question:
+Skill: 10, 22
+Write a function that returns of the sum of the elements in a list
+without using foldl.
+
+
+=======================
+Question 40:
+Programming question:
+Skill: 2, 3, 10, 23
+Description
+Write a recursive function that takes two positive integers and makes a list
+of all the numbers in between including those two numbers. 
+

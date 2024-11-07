@@ -1,0 +1,914 @@
+
+=======================
+Question 0.a:
+MC Question: What does the cons function do?
+Skill: 10,23
+Options:
+A) Makes a list
+B) Combines lists
+C) Adds values in a list
+D) Adds a single element to a list
+Answer
+D
+=======================
+Question 0.b:
+MC Question: What is a recursive function?
+Options:
+A) A function that calls itself
+B) A function that has a set value
+C) A function that is built into racket
+D) No such thing
+Skill: 10
+Answer
+A
+=======================
+Question 1.a:
+MC Question:
+Skill:
+Options:
+Answer
+=======================
+Question 1.b:
+MC Question:
+Options:
+Skill:
+Answer
+=======================
+Question 2.a:
+MC Question: Which function produces a list with no strings? 
+Skill: 2, 3, 9
+Options:
+A. (cons 1 2)
+B. (cons happy sad)
+C. (cons "t" "f")
+D. (cons 1 (list "happy" "sad"))
+Answer
+D
+=======================
+Question 2.b:
+MC Question: What is not a valid list in a recursive function?
+Skill: 2, 3, 10
+Options:
+a. '()
+b. (list 2 3 4)
+c. null
+d. (list happy list)
+Answer : D
+=======================
+Question 3.a:
+MC Question: Which of the following is a valid base case?
+Skill:
+Options:
+A if (= 0 n)
+    3 4
+B (if (= 0 n)
+      null
+      (cons 1 (f (- n 1))))
+C (if (= 0 n)
+      (+ 1 (f (- n 1)))
+       0)
+D (if (- 4 2)
+      (+ 1 (f n))
+      (+ 2 (f n)))
+Answer
+=======================
+Question 3.b:
+MC Question:
+Options:
+Skill:
+Answer
+=======================
+Question 4.a:
+MC Question: What is true about recursion?
+Skill: 10
+Options:A. It breaks a problem into easier ones to solve it B. Recursion is only useful when there are large datasets being used C. Recursion always causes an infinite loop D. Recursion can only be used with lists
+Answer: A
+=======================
+Question 4.b:
+MC Question: What is wrong with the following function?
+(define (sum-list lst)
+ (+ (first lst) (sum-list (rest lst))))
+Options: A. Nothing is wrong with the function B.Recursion does not work with lists C.There is no base case D.The parentheses are not correct
+Skill:10
+Answer: C
+=======================
+Question 5.a:
+MC Question: What will be the result of (if (< x 5) #f #t) when x=5?
+Skill:5, 6
+Options:
+A. #t
+B. #f
+C. Either
+D. Neither
+Answer A
+=======================
+Question 5.b:
+MC Question: What is the usage of cons?
+Options:
+A. construct a list
+B. build a list
+C. +
+D. -
+Skill: 9
+Answer A
+=======================
+Question 6.a:
+MC Question:
+Which of the following is a recurive function?
+Skill: 10
+Options:
+A) (lambda (m n) (if (< 2 m) #f #t))
+B) (define recursive (if (null? a) (+ (first a b) (recursive (rest a)))))
+C) (define recursive (lambda (a g) (if (null? g) '() (cons (+ (first g) a) (recursive (rest g))))))
+D) (define recursive (lambda (x) (cons (first x) (recursive x))))
+Answer
+C
+=======================
+Question 6.b:
+MC Question: What correction should be made to this recursive function to output a list containing string values?
+(define mList
+(lambda ()
+(if (< 0 (random 2))
+    "noun"
+    (append (list "cat" "friend" "house") (mList))
+)))
+Options:
+A. (random 2) --> (random 4)
+B. append --> cons
+C. "noun" --> (list "noun")
+D. append --> string-join
+Skill: 23
+Answer C
+=======================
+Question 7.a:
+MC Question: Which of the following will return a "correct" value
+Skill: 2
+Options:
+a) (cons 2 0)
+b) (cons '(4))
+c) (cons '(6 7 8) 12)
+d) (cons '(1 2 3) '(4 5 6))
+Answer
+D
+=======================
+Question 7.b:
+MC Question: which of the following is a recursive function
+Options:
+a) (define func1 (lambda (x) (+ x 1)))
+b) (define func1 (lambda (x y) (cons x y)))
+c) (define func1 (lambda (x) (cons (first x) (func1 (rest x)))
+d) (define func1 (lambda (x) (foldl + 0 x)))
+Skill:10
+Answer C
+=======================
+Question 8.a:
+MC Question: What is a recurssive function?
+Skill:10
+Options:
+A) A function that is called multiple times with no end
+B) A function that calls itself to definition
+C)A function whose name is "recurrsion"
+D) A function that runs infinite times
+Answer
+B
+=======================
+Question 8.b:
+MC Question: Which of the following does not return a list?
+Options:
+A) (cons 99 ()' )
+B) (cons (cons 0 (1 2 3)')) 4)))
+C) (cons 0 (cons 1 '(2 3 4)))
+D)(cons 0 (cons 1 (cons 2 '(3 4)))))
+Skill:2
+Answer
+B
+=======================
+Question 9.a:
+MC Question: Which version of the function func is a proper example of recursion
+Skill: 10
+Options:
+A) (lambda (a) (if (< a 1) (* a (func (- a 2))) (func (+ a 1))))
+B) (lambda (a) (* a (func (- a 1))))
+C) (lambda (if (< a 1) (* a (func (- a 2))) 1))
+D) (lambda (a) (if (< a 1) (* a (func (- a 2))) 1))
+
+Answer: D
+=======================
+Question 9.b:
+MC Question:
+What is the maximum number of times a recursive function can run
+Options:
+A) 1
+B) 2
+C) Infinite
+D) 10
+
+Answer: C
+=======================
+Question 10.a:
+MC Question:
+What does append do?
+Skill: 2, 9
+Options:
+A) Combines a list and a string
+B) Combines two lists into a single list
+C) Makes a list from two strings
+D) Makes a string from two lists
+Answer: B
+=======================
+Question 10.b:
+MC Question: What would be an appropriate name for the following function?
+(define mystery
+  (lambda (n)
+    (if (= n 0)
+        0
+        (+ (expt n 2) (mystery (- n 1))))))
+Skill: 23, 10
+Options:
+A) sumofIntegers
+B) factorial
+C) sumofSquares
+D) fibonacci
+Answer: C
+=======================
+Question 11.a:
+MC Question: What does append do?
+Skill: 9. Data Structures, 2. Using Functions
+Options:
+1. Combines a list and a string
+2. Combines two lists
+3. Makes a list from two strings
+4. Makes a string from two lists
+Answer: 2
+=======================
+Question 11.b:
+MC Question: The function below uses recursion:
+(define mystery
+  (lambda (n)
+    (if (= n 0)
+        0
+        (+ (expt n 2) (mystery (- n 1))))))
+Options:
+1. SumOfIntegers
+2. Factorial
+3. SumOfSquares
+4. Fibonacci
+Skill: 23. How functions operate, 10. Recursion
+Answer: 3
+=======================
+Question 12.a:
+MC Question: What is not a valid list in a recursive function?
+Skill: 2, 3, 10
+Options:
+a. '()
+b. (list 2 3 4)
+c. null
+d. (list happy list)
+Answer : D
+=======================
+Question 12.b:
+MC Question: Which function produces a list with no strings? 
+Skill: 2, 3, 9
+Options:
+A. (cons 1 2)
+B. (cons happy sad)
+C. (cons “t” “f”)
+D. (cons 1 (list “happy” “sad”))
+Answer : D
+=======================
+Question 13.a:
+MC Question: Which of these values is a possible output for
+             (append a b) when both arguments are lists?
+Skill: 9
+Options:
+A) '(90)
+B) (334 "man" 0.7)
+C) (+ "a" "b")
+D) (list "uno" "dos" "tres")
+Answer: A
+=======================
+Question 13.b:
+
+=======================
+Question 14.a:
+MC Question: What does the cons function do?
+Skill: 10, 23
+Options:
+A) Makes a list
+B) Combines a list
+C) Adds values in a list
+D) Adds a single element to a list
+Answer D
+=======================
+Question 14.b:
+MC Question: What is a recursive function?
+Options:
+A) A function that has a set value
+B) A function that calls itself
+C) A function that is built into racket
+D) There is no such thing
+Skill: 10
+Answer B
+=======================
+Question 15.a:
+placeholder
+=======================
+Question 15.b:
+2) (define question2function
+  (lambda (g)
+    (if (null? g)
+        null
+        (if (> (first g) 0)
+            (cons (first g) (question2function (rest g)))
+            (question2function (rest g))))))
+
+A) This is a function that returns the sum of all values greater than 0
+B) This is a function that returns a list of a values greater than 0
+C) This is a function that returns a list of all values less than 0
+D) This is a function that returns the sum of all value less than 0
+=======================
+Question 16.a:
+MC Question: What is a recursive function?
+Skill: 10
+Options:
+A) A function that gets called multiple times.
+B) A function that calls itself in its definition.
+C) A function whose name is "recursive."
+D) A function that runs infinitely many times.
+Answer B
+=======================
+Question 16.b:
+MC Question: Which of the following will not return an appropriately constructed list?
+Skill: 2
+Options:
+A) (cons 99 '())
+B) (cons (cons 0 '(1 2 3)) 4)
+C) (cons 0 (cons 1 '(2 3 4)))
+D) (cons 0 (cons 1 (cons 2 '(3 4))))
+Answer B
+=======================
+Question 17.a:
+MC Question:
+What line has an error in the function below and why?
+1 (define count
+2   (lambda (list)
+3     (if (null? list)
+4         0
+5         (count (rest list)))))
+Skill: 6,10
+Options:
+a) 2, it needs two parameters.
+b) 3, it does not need a conditional. 
+c) 4, it should not be a number.
+d) 5, it is missing what the function does.
+Answer: d
+=======================
+Question 17.b:
+MC Question: 
+Why is it important to include a base case in recursive functions?
+Options:
+a) To stop the function from calling itself forever.
+b) To make the function only work with certain values.
+c) To make the function more difficult. 
+d) It is not needed. 
+Skill: 10
+Answer: a
+=======================
+Question 18.a:
+MC Question: What returns a 50/50 chance?
+Skill: 4, 6
+Options:
+a) (= 0 (random 4))
+b) (= 0 (random 3))
+c) (= 0 (random 2))
+d) (= 0 (random))
+Answer
+c
+=======================
+Question 18.b:
+MC Question: Which statement returns false?
+Options:
+a) (and #t #t)
+b) (or #f #t)
+c) (if (= 2 0)
+     #t
+     #f
+d) (and #t (or #t #f))
+Skill: 5, 22
+Answer
+c
+=======================
+Question 19.a:
+MC Question: Which returns a 50/50 chance?
+Skill: 4, 6
+Options:
+a) (= 0 (random 4))
+b) (= 0 (random 3))
+c) (= 0 (random 2))
+d) (= 0 (random))
+Answer
+C
+=======================
+Question 19.b:
+MC Question: Which statement returns true?
+Options:
+a) (and #t #f)
+b) (not #t)
+c) (or #f #f)
+d) (not #f)
+Skill: 5
+Answer
+D
+=======================
+Question 20.a:
+Programming question:
+Skill: 10
+Description: Write an append function named append whose arguments are a list, g, and any data value, n, to return a list containing all elements of g and n at the end. Essentially cons but from the back.
+
+Possible solution:
+=======================
+Question 20.b:
+(define append (lambda (g n) (if (null? g) '(n) (cons (first g) (append2 (rest g) n))))
+=======================
+Question 21.a:
+MC Question:What is a key characteristic of a recursion function?
+Skill: 10
+Options:
+A. It never uses a loop
+B. It calls itself within its own definition
+C. It always has a fixed number of iterations
+D. It returns a function call, not value
+Answer: B
+=======================
+Question 21.b:
+MC Question: What is essential for eventual termination of a recursive function?
+Options:
+A. Use of global variables defined outside of the recursive function
+B. Having a "base case" (e.g. 0!=1 in factorial)
+C. Iteration over elements of a list
+D. Utilizing a stop on error command
+Skill: 10
+Answer: B
+=======================
+Question 22.a:
+MC Question:
+What is the result of evaluating the expression (+ 2 (* 3 4)) in Racket?
+Skill: 22. Using Variables
+Options:
+A) 14
+B) 12
+C) 24
+D) 18
+
+Answer: A
+=======================
+Question 22.b:
+MC Question:
+Which function in Racket can be used to determine if a number is even?
+Skill: 5. Working with Boolean Values
+Options:
+A) (even?)
+B) (odd?)
+C) (is-even?)
+D) (modulo 2)
+
+Answer: A
+=======================
+Question 23.a:
+MC Question:
+What does (cons (append '(6) '(3 5 2 9)) '(2 3)) return?
+Skill: 9
+Options:
+A) '(3 5 2 9 6 2 3)
+B) '(6 3 5 2 9 2 3)
+C) '((6 3 5 2 9) 2 3)
+D) '((3 5 2 9 6) 2 3)
+Answer: C
+=======================
+Question 23.b:
+MC Question:
+Which of the following is valid?
+Options:
+A) (append 3 '(3 1 4))
+B) (append '() true)
+C) (append 2 5 1)
+D) (append list(12) '())
+Skill: 22
+Answer: D
+=======================
+Question 24.a:
+MC Question: What parameters does cons take?
+Skill: 22, 9
+Options:
+A) A function and a base case
+
+Answer: B
+=======================
+Question 24.b:
+MC Question:
+Options:
+Skill:
+Answer
+=======================
+Question 25.a:
+MC Question: What would (cons '(1 2 3) '(4 5 6)) return?
+Skill: 9
+Options:
+a) '(1 2 3 4 5 6)
+b) '(4 5 6 1 2 3)
+c) '((4 5 6) 1 2 3)
+d) '((1 2 3) 4 5 6)
+Answer
+=======================
+Question 25.b:
+MC Question: What is the lowest effort case possible? 
+Options:
+a) recursive case
+b) base case
+c) suit case
+d) lower case
+Skill: 10
+Answer
+=======================
+Question 26.a:
+MC Question: What is the result of the function call (cons g1 g2)if g1 and g2 are linked lists?
+Skill: 9
+Options:
+a.) '(g1 g2)
+b.) '((g1) g2)
+c.) '((g1) (g2))
+d.) '(g1 (g2))
+Answer
+b
+=======================
+Question 26.b:
+MC Question: What is absolutely necessary for recursion to be useful?
+Options:
+a.) define
+b.) (and), filter
+c.) not, odd?
+d.) if, null
+Skill: 22, 23
+Answer
+d
+=======================
+Question 27.a:
+MC Question:
+What does the function `cons` do?
+Skill: 9, 23
+Options:
+A) constructs a new list and adds a given argument to it
+B) hires a construction worker
+C) joins two lists together
+D) adds a given argument to a given list
+
+Answer: D
+=======================
+Question 27.b:
+MC Question:
+What is a recursive function?
+Skill: 10
+Options: 
+A) When a function calls itself
+B) When a function calls iteself repeatedly until a case occurs where the function does not call itself
+C) Anything that uses cons or append
+D) When a function calls itself repeatedly until its purpose has been fulfilled
+
+Answer: B
+=======================
+Question 28.a:
+MC Question:
+(cons '(1 2 3 4) '(5 6 7 8))
+Skill: 6
+Options:
+A) 
+B) 20 mph
+C) 200 mph
+D) African or European?
+
+Answer: D
+=======================
+Question 28.b:
+MC Question:
+Who you gonna call?
+Skill: 9001
+Options:
+A) Transformers
+B) Ghostbusters
+C) Thundercats
+D) Teenage Mutant Ninja Turtles
+
+Answer: B
+=======================
+Question 29.a:
+MC Question: Which of the following is true about recursive functions?
+Skill: 10
+Options:
+A) does not always reach the base case
+B) usually performs an operation on the first value in the list
+C) uses a different operation on the rest of the values in the list
+D) does not involve self-reference
+Answer: B
+=======================
+Question 29.b:
+MC Question: The function, map, performs which of the following?
+Options:
+A) If you give 'map' a function with two parameters and two lists, it will call the function using one element from each list at a time
+B) 'Map' will run with lists of different lengths
+C) The number of list arguments to 'map' does not have to equal the number of arguments to the provided function
+D) More than one of the above choices is true.
+Skill:
+Answer: A
+=======================
+Question 30.a:
+MC Question: Which is the output of (append '(1 2) '(7 8 9))?
+Skill: 9
+Options:
+A)'((1 2) 7 8 9)
+B)'((1 2) (7 8 9))
+C)'(1 2 7 8 9)
+D)'('(1 2) '(7 8 9))
+
+Answer:
+C)
+=======================
+Question 30.b:
+MC Question: The base case of a recursive function is..
+Skill: 10
+Options:
+A)The condition where the recursion stops and a output is given
+B)The lowercase naming of the function
+C)The first time the function is called again
+D)The input of the function
+Answer:
+A)
+=======================
+Question 31.a:
+MC Question: What is a possible trace diagram for (RiceKrisp '(3 6 4 5))
+
+(define RiceKrisp
+  (lambda (f)
+    (if (null? f)
+        '()
+        (cons (*10 (first f)) (RiceKrisp (rest f)))))
+
+Skill: 10
+Options:
+A) (RiceKrisp '(3 6 4 5))
+(cons (* 10 3) (RiceKrisp '(6 4 5)))
+(cons (* 10 6) (RiceKrisp '(4 5)))
+(cons (* 10 4) (RiceKrisp '(5)))
+(cons (* 10 5) (RiceKrisp '()))
+
+B) (RiceKrisp '(3 6 4 5))
+(cons (* 10 3) (RiceKrisp '(6 4 5)))
+(cons (* 10 6) (RiceKrisp '(4 5)))
+(cons (* 10 4) (RiceKrisp '(5)))
+(cons (* 10 5) (RiceKrisp '()))
+(cons (* 10 0) (RiceKrisp '()))
+
+C) (RiceKrisp '(3 6 4 5))
+(cons 3 (RiceKrisp '(6 4 5)))
+(cons 6 (RiceKrisp '(4 5)))
+(cons 4 (RiceKrisp '(5)))
+(cons 5 (RiceKrisp '()))
+
+D) (RiceKrisp '(3 6 4 5))
+(cons (* 3 6) (RiceKrisp '(6 4 5)))
+(cons (* 6 4) (RiceKrisp '(4 5)))
+(cons (* 4 5) (RiceKrisp '(5)))
+(cons (* 5 0) (RiceKrisp '()))
+Answer
+A
+=======================
+Question 31.b:
+MC Question: Which of the functions gives you
+the sum of all elements in list x in the best way?
+Options:
+A) (define sumx 
+      (lambda (x)
+        (if (null? x)
+         0
+         (+ (first x) (sum (rest x)))))
+B) (define sumx 
+      (lambda (x)
+        (if (= null? x)
+         0
+         (+ (first x) (sum (rest x)))))
+C) (define sumx 
+      (lambda (x)
+        (if (null? x)
+         1
+         (+ (first x) (sum (rest x)))))
+D) (define sumx 
+      (lambda (x)
+        (if (null? x)
+         '()
+         (+ (first x) (sum (rest x)))))
+
+Skill: 10
+Answer
+
+A
+=======================
+Question 32.a:
+MC Question: Which of the following is necessary in a recursive function?
+Skill: 3, 10
+Options:
+A) Recursive function call
+B) Base case
+C) Exit clause
+D) All of the above
+Answer
+D) All of the above
+=======================
+Question 32.b:
+MC Question: Which option has a 65% chance of returning b?
+Skill: 4, 6
+Options:
+A) (if (< (random 99) 65)
+      a
+      b)
+B) (if (<= (random 100) 65)
+      a
+      b)
+C) (if (<= (random 99) 65)
+      a
+      b)
+
+D) (if (< (random 100) 65)
+      a
+      b)
+Answer
+B) (if (<= (random 100) 65)
+      a
+      b)
+=======================
+Question 33.a:
+MC Question: Which of the following functions is defined recursively and takes the factorial of the input?
+Skill: 4, 9, 10
+Options:
+A) (define funcA (lambda (n) (if (= n 0) 0 (+ (funcA (- n 1)) n))))
+B) (define funcB (lambda (n) (foldl + 0 (build-list n (lambda (a) (+ a 1))))))
+C) (define funcC (lambda (n) (if (= n 0) 1 (* (funcC (- n 1)) n))))
+D) (define funcD (lambda (n) (foldl * 1 (build-list n (lambda (a) (+ a 1))))))
+Answer: C
+=======================
+Question 33.b:
+MC Question: The following function has two arguments: a numerical value (n) and a list (g); it returns #t when n is greater than all values in g:
+(define funcE (lambda (n g) (if (null? g) #t (x y (if (> n (first g)) (funcE n (rest g)) #f)))))
+The function above is incomplete. x represent a function that only allows for boolean arguments, and y is a boolean. Which of the following are valid values of x and y such that funcE performs to the given description?
+Options:
+A) or; #f
+B) and; #t
+C) or; #t
+D) and; #f
+Skill: 4, 5, 6, 10, 22
+Answer: B
+=======================
+Question 34.a:
+MC Question: Which is not a valid list?
+Skill: 5
+Options:
+A) (2 4 6 8 10)
+B) '(fifteen eleven excellent)
+C) (list (44 58 19 22))
+D) (list (#t five #f the a))
+ 
+Answer A
+=======================
+Question 34.b:
+MC Question:
+Options:
+Skill:
+Answer
+=======================
+Question 35.a:
+MC Question:
+What does (cons (append '(6) '(3 5 2 9)) '(2 3)) return?
+Skill: 9
+Options:
+A) '(3 5 2 9 6 2 3)
+B) '(6 3 5 2 9 2 3)
+C) '((6 3 5 2 9) 2 3)
+D) '((2 3) 6 3 5 2 9)
+Answer
+=======================
+Question 35.b:
+MC Question: What parameter types does the function cons take (in order)?
+Options:
+A) An element and a list
+B) A list and an element
+C) A list and a list
+D) An element and an element
+Skill: 23
+Answer
+B
+=======================
+Question 36.a:
+MC Question: Which of the following will return #f when #f is entered?
+Skill: 5
+Options:
+A) (lambda (a) (> a 5))
+B) (lambda (a) (or (not (not a)) (a)))
+C) (lambda (a) (if a #f #t))
+D) (lambda (a) (not (not a)))
+Answer: D
+=======================
+Question 36.b:
+MC Question: Which of the following functions will build a list of the first ten positive squares in increasing order?
+Options:
+A) (build-list 10 (lambda (x) (expt x 2)))
+B) (build-list 10 (lambda (x) (expt (+ x 1) 2)))
+C) (build-list 10 (lambda (x) (expt (- x 10) 2)))
+D) (build-list 10 sqrt)
+Skill: 9
+Answer: B
+=======================
+Question 37.a:
+MC Question:
+What must be the second argument of build-list?
+Skill: 9
+Options:
+A) A list
+B) A function
+C) A single value 
+D) A lambda  
+
+Answer: B
+=======================
+Question 37.b:
+MC Question:
+What is a base case in recursion?
+Skill: 10
+Options:
+A) The value returned (output)
+B) The input(s)
+C) Case that stops the recursion
+D) The function
+
+Answer: C
+=======================
+Question 38.a:
+MC Question: Which of the following creates a 30 percent probability of something occuring?
+Skill: 2
+Options:
+A) (< (random) .7)
+B) (< (random) .3)
+C) (< .3 (random))
+D) (< 30 (random))
+Answer: C
+=======================
+Question 38.b:
+MC Question: What does cons do?
+Skill: 4, 9
+Options:
+A) Takes 2 parameters, an element and a list, and makes a new list with the element at the end of the list
+B) Takes 2 parameters, two lists, and adds the first to the beginning of the second
+C) Takes 2 parameters, an element and a list, and adds the prior to the beginning of the latter
+D) Takes 2 parameters, two elements, and creates a list using them both.
+Answer: C
+=======================
+Question 39.a:
+MC Question: What is an appropriate application of the cons function?
+Skill: 2
+Options:
+A) (cons `(3) `(4))
+B) (cons 3 `(4))
+C) (cons `(3) 4))
+D) (cons 3 4)
+
+Answer: B
+=======================
+Question 39.b:
+MC Question: Which of these does not return an empty list?
+Skill: 2
+Options:
+A) null
+B) (list)
+C) `()
+D) (empty)
+
+Answer: D
+
+Answer: B
+=======================
+Question 40.a:
+MC Question:
+Which function correctly outputs the sum of all the values in a list? 
+Skill: 10, 2, 3, 23
+Options:
+A) (define sum (lambda (g) (if (null? g) null (+ (first g) (sum (rest g)))))
+B) (lambda (g) (+ (first g) (sum (rest g))))
+C) (lambda (g) (- (first g) (sum (rest g))))
+D) (define sum (lambda (g) (if (null? g) null (- (first g) (sum (rest g)))))
+Answer: A
+=======================
+Question 40.b:
+MC Question:
+What is the definition of recursion in terms of CS?
+Skill: 10
+Options:
+A) Using a function within itself
+B) Repeating something
+Answer: A

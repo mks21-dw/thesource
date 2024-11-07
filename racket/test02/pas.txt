@@ -1,0 +1,300 @@
+
+=======================
+Question 0:
+(define mult
+  (lambda (g)
+    (if (null? g)
+        1
+        (* (first g) (mult (rest g))))))
+(define add
+  (lambda (g)
+    (if (null? g)
+        0
+        (+ (first g) (add (rest g))))))
+(define operation
+  (lambda (g)
+    (if (= 0 (random 2))
+        (mult g)
+        (add g))))
+=======================
+Question 1:
+(define GenerateBookID
+  (lambda (a)
+    (if null? a
+        '()
+        (if (< (first a) 51)
+            (cons (expt (+ 2 (expt (first a)
+=======================
+Question 2:
+CODE GOES HERE
+=======================
+Question 3:
+
+=======================
+Question 4:
+(define (product-of-evens g)
+  (if (null? g)
+      1
+      (if (even? (first g))
+          (* (first g) (product-of-evens (rest g)))
+             (product-of-evens (rest g)))))
+(product-of-evens '(1 2 3 4 5))
+=======================
+Question 5:
+(define oddList (lambda (n)
+                  (if (<= n 0)
+                  '()
+                  (if (= (remainder n 2) 0)
+                      (cons (- n 1) (oddList (- n 2)))
+                            (cons n (oddList (- n 2)))))))
+(oddList 10)
+(oddList 11)
+=======================
+Question 6:
+(define sorts (lambda (g) (if (null? g) '()
+                              (if (even? (first g))
+                                         (cons (first g) (sorts (rest g)))
+                                         (sorts (rest g))))))
+=======================
+Question 7:
+(define listgen
+  (lambda (n d)
+    (if (= n 0)
+        null
+        (cons d (listgen (- n 1)
+                         (if (even? d)
+                             (/ d 2)
+                             (+ (* d 3) 1)))))))
+=======================
+Question 8:
+(define crazy
+  (lambda (lst)
+    (if (null? lst)
+        null
+        (if (even? (first lst))
+            (cons (+ 1 (first lst) (crazy (rest lst))))
+            (cons (+ 2 (first lst) (crazy (rest lst))))))))
+=======================
+Question 9:
+(define tetration
+  (lambda (x n)
+    (if (= n 1)
+        x
+        (exp x (tetration x (- n 1))))))
+(tetration 3 3)
+=======================
+Question 10:
+(define div3
+  (lambda (g)
+    (if (null? g)
+        '()
+        (if ( = (remainder (first g) 3) 0)
+            (cons (first g) (div3 (rest g)))
+            (div3 (rest g))))))
+=======================
+Question 11:
+(define div3
+  (lambda (g)
+    (if (null? g)
+        null
+        (if (= (remainder (first g) 3) 0)
+            (cons (first g) (div3 (rest g)))
+            (div3 (rest g))))))
+=======================
+Question 12:
+(define returnnum
+  (lambda (l position)
+    (if (null? l)
+        null
+        (if (= 1 position)
+            (first l)
+            (returnnum (rest l)(- position 1))))))
+
+(define g (list 1 4 7 6 5))
+(returnnum g 4)
+=======================
+Question 13:
+
+=======================
+Question 14:
+
+=======================
+Question 15:
+(define question2function
+  (lambda (g)
+    (if (null? g)
+        null
+        (if (> (first g) 0)
+            (cons (first g) (question2function (rest g)))
+            (question2function (rest g))))))
+
+(question2function (list 0 -1 -2 1))
+=======================
+Question 16:
+
+=======================
+Question 17:
+(define binSolver
+  (lambda (b)
+    (if (= 0 b)
+        b
+        (+ (remainder b 10)
+           (* 2 (binSolver (quotient b 10)))
+           ))))
+=======================
+Question 18:
+#|
+Programming question: Write a recursive function that would return the value of
+all the elements in a list?
+Skill: 4, 3
+Description
+
+Pos
+=======================
+Question 19:
+(define addAll
+  (lambda (n)
+    (if (= n 0)
+        0
+        (+ n (addAll (- n 1))))))
+=======================
+Question 20:
+define append (lambda (g n) (if (null? g) '(n) (cons (first g) (append2 (rest g) n)))))
+=======================
+Question 21:
+(define gCF
+  (lambda (m n)
+  (if (= n 0) m
+      (gCF n (remainder m n)))))
+(gCF 105 252)
+=======================
+Question 22:
+(define (sum-positive list)
+  (cond
+    [(empty? list) 0]
+    [(> (first list) 0) (+ (first list) (sum-positive (rest list)))]
+    [else (sum-positive (rest list))]))
+(sum-positive '(3 -1 4 5 -2)) ; should return 12
+=======================
+Question 23:
+
+=======================
+Question 24:
+
+=======================
+Question 25:
+(define list_tester
+=======================
+Question 26:
+
+=======================
+Question 27:
+
+=======================
+Question 28:
+(define areaC
+  (lambda (radius)
+    (* pi radius radius)))
+(areaC 10)
+(cons '(1 2 3 4) '(5 6 7 8))
+=======================
+Question 29:
+(define geometricSeq
+  (lambda (n ratio a_1)
+    (if (= n 0)
+        1
+        (* a_1 (expt ratio (- n 1))))))
+        
+; test cases for geometricSeq
+;(geometricSeq 2 2 6) --> 12
+;(geometricSeq 3 5 7) --> 175
+=======================
+Question 30:
+(define range (lambda (g x y)
+                (if (null? g)
+                    #t
+                    (and (and (> (first g) x) (< (first g) y)) (range (rest g) x y)))))
+(range '(5 6 7) 1 10)
+(range '(1 2 3) 0 2)
+=======================
+Question 31:
+CODE GOES HERE
+
+(define cheesecubes
+  (lambda (n)
+    (if (= 0 n)
+        0
+        (+ (* n (* n n)) (cheesecubes (- n 1))))))
+=======================
+Question 32:
+(define listTransform
+  (lambda (g f)
+    (if (null? g)
+        '()
+        (cons (f (first g)) (listTransform (rest g) f)))))
+
+(listTransform '(10 12 3) (lambda (n) (* n 2)))
+=======================
+Question 33:
+(define digitSum (lambda (x) (if (= x 0)
+                                 0
+                                 (+ (remainder x 10) (digitSum (quotient x 10))))))
+
+(define funcF (lambda g (if (null? g)
+                            '()
+                            (if (even? (first g))
+                                (cons (digitSum (first g)) (funcF (rest g)))
+                                (funcF (rest g))))))
+=======================
+Question 34:
+CODE GOES HERE
+=======================
+Question 35:
+
+=======================
+Question 36:
+(define primeHelper
+  (lambda (x n)
+    (if (< n 1)
+        #f
+        (if (= (remainder x n) 0)
+            (if (= n 1)
+                #t
+                #f)
+            (primeHelper x (- n 1))))))
+(define isPrime
+  (lambda (x)
+    (primeHelper x (- x 1))))
+=======================
+Question 37:
+(define (oddnumbers)
+  (lambda (list)
+      (if (null? list)
+          null
+          (if (odd? (first list))
+              (cons (first list)(oddnumbers (rest list)))
+              (oddnumbers (rest list))))))
+=======================
+Question 38:
+(define factorial
+  (lambda (n)
+  (if (<= n 1)
+      1
+      (* n (factorial (- n 1))))))
+(factorial 4)
+=======================
+Question 39:
+(define SumOfElements
+  (lambda (n)
+    (if (null? n)
+        0
+        (+ (first n) (SumOfElements (rest n))))))
+(SumOfElements (list 1 2 3 4 5 6))
+=======================
+Question 40:
+(define between
+  (lambda (x y)
+    (if (= x y)
+        (cons y null)
+        (cons x (between (+ x 1) y)))))
+(between 1 3)
