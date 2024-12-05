@@ -1,0 +1,48 @@
+
+=======================
+Question 0:
+
+=======================
+Question 1:
+ANSWER GOES HERE
+=======================
+Question 2:
+1111101000
+=======================
+Question 3:
+
+=======================
+Question 4:
+Hexadecimal is a numbering system with 16 symbols: 0-9 and A-F. To convert binary to hexadecimal, group the binary digits into sets of four, then match each group to its hexadecimal value. It's used in programming for things like memory addresses and color codes because it's shorter and easier to read than binary
+=======================
+Question 5:
+ANSWER GOES HERE
+=======================
+Question 6:
+
+=======================
+Question 7:
+Processor, memory, storage, input/output
+=======================
+Question 8:
+Radio waves, electricity, and light.
+=======================
+Question 9:
+
+=======================
+Question 10:
+ANSWER GOES HERE
+72
+=======================
+Question 11:
+
+=======================
+Question 12:
+base 16
+=======================
+Question 13:
+
+=======================
+Question 14:
+ANSWER GOES HERE
+CD47

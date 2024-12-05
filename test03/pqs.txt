@@ -1,0 +1,103 @@
+
+=======================
+Question 0:
+Open Ended Question: 
+Skill: 14
+How does RAM differ from Storage?
+
+ RAM is a faster way of accessing data but unlike storage, RAM is wiped every time you shut down your computer making it an unviable option for long-term data storage.
+=======================
+Question 1:
+Open Ended Question: 
+Skill: 14
+Description
+What is the key difference between memory and storage? What are examples of each?
+ 
+Memory needs a power supply to store data, while storage does not. 
+An example of memory is RAM and an example of storage are DVDS.
+=======================
+Question 2:
+111110100
+=======================
+Question 3:
+Open Ended Question:
+Skill: 9002
+What numeral represents 14 in hexadecimal?
+
+
+e
+=======================
+Question 4:
+Hexadecimal is a numbering system with 16 symbols: 0-9 and A-F. To convert binary to hexadecimal, group the binary digits into sets of four, then match each group to its hexadecimal value. It's used in programming for things like memory addresses and color codes because it's shorter and easier to read than binar
+=======================
+Question 5:
+Open Ended Question:
+Skill: 
+Description
+How does binary number system enable computesr to represent and process types of data like numbers, texts, and images. Provide explanation for all. 
+
+numbers are represented in binary, texts are represented as a sequence of letters which are represented in bytes, images are an array of sequences modeling rgb colors
+=======================
+Question 6:
+Open Ended Question: Solve for 785 decimal to a hexadecimal value.
+Skill: 12
+Description
+Answer : 311
+
+(1 * 16^0)(1*16^1)(3*16^2) = 785
+=======================
+Question 7:
+Open Ended Question:
+What is one necessary hardware component of a computer and it's function?
+Skill: 14
+
+=======================
+Question 8:
+Open Ended Question: What are the three common network connection types?
+Skill: 16
+Description
+
+=======================
+Question 9:
+Open-ended question:
+Skill: 12, 13
+An advertisement for a flash drive said it had a groundbreaking capacity to store 10* TB**. The fine
+print explained that the first asterisk meant that the number was in the octal base, while
+TB** was counting trillions of bits, not bytes.
+How many TB does the drive really have (TB understood as "traditional" trillion bytes)?
+
+Answer: 10 TB** in base 8 is 8 TB**, divided by 8 bits in a byte 8 equals 1 "traditional" TB.
+=======================
+Question 10:
+Open Ended Question: 
+Skill: 12
+Convert 114 to hexadecimal
+
+=======================
+Question 11:
+Open Ended Question:
+Skill: 14, 13
+Description: Describe the movement of data when loading and saving files?
+
+ When loading a file, the bits that make up the file are transferred from the Storage to the Memory. When saving a file, the bits that make up the file are transferred from the Memory to teh Storage.
+=======================
+Question 12:
+Open Ended Question:
+Skill: 12
+Wht base is used for hexadecimal number system? (ex : base (a number))
+
+
+=======================
+Question 13:
+Open Ended Question:
+Skill: 12
+What is 257 in binary?
+
+
+100000001
+=======================
+Question 14:
+Open Ended Question: Convert 1100110101000111 base to to hexadecimal.
+Skill: 12
+
+ 1100 = C, 1101 = D, 0100 = 4, 0111 = 7

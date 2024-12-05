@@ -1,0 +1,331 @@
+
+=======================
+Question 0.a:
+MC Question 1: Which of these is the fastest, and most efficient form of data transfer?
+Skill: 16
+Options:
+a) Copper Wire
+b) Fiber-Optic Cable
+c) Wi-Fi
+d) Bluetooth
+Answer B
+=======================
+Question 0.b:
+MC Question 2: How many bits are in a gigabyte
+Options: 
+a) One Billion
+b) One Million
+c) 8 Billion
+d) 8 Million
+Skill: 13
+Answer C
+=======================
+Question 1.a:
+MC Question: Which of the following network connection types does not use electricity? 
+Skill: 16 
+Options:
+A Fiber Optic Cables 
+B Ethernet 
+C Telephone Lines 
+D DSL 
+Answer
+A
+=======================
+Question 1.b:
+MC Question: Which of the following is the correct binary value for the hexadecimal number 4b? 
+Options:
+A 0100 1011
+B 0101 1011
+C 0011 1100
+D 0110 0101
+Skill: 12
+Answer
+A
+=======================
+Question 2.a:
+MC Question: 1 byte = ? bit(s)
+Skill:13
+Options:
+A. 0.125
+B. 8
+C. 4
+D. 0.25
+Answer B
+|
+
+#|
+MC Question: Which of the following letters cannot be included in a hexadecimal system?
+Options:
+A. A
+B. E
+C. F
+D. G
+Skill:12
+Answer D
+=======================
+Question 2.b:
+Open Ended Question: 
+Skill:12
+Description
+Convert 1000 in base 10 into a number in binary system.
+Possible solution:
+=======================
+Question 3.a:
+MC Question:
+What is the computer component that serves to connect all of the components?
+Skill: 9001
+Options:
+A) Motherboard
+B) Fatherboard
+C) Processor
+D) Casing
+
+Answer: A
+=======================
+Question 3.b:
+MC Question:
+Who is responsible for the invention of the world wide web?
+Skill: 9001
+Options:
+A) Bob McAdoo
+B) Tim Berners-Lee
+C) Pete Maravich
+D) Bill Cartwright
+
+Answer: B
+=======================
+Question 4.a:
+MC Question:
+What is the hexadecimal equivalent of the binary number 1010? 
+Skill: 12
+Options:
+A) 8
+B) 10 
+C) A
+D) F 
+Answer: C) A
+=======================
+Question 4.b:
+Open Ended Question:
+Skill: 12,
+What is hexadecimal numbering, how do you convert binary into hexadecimal, and how is hexadecimal numbering used in programming and computing?
+
+Possible solution:
+=======================
+Question 5.a:
+MC Question: What is the primary role of an IP address in the internet
+Skill: 16
+Options:
+a) To secure a computer from viruses
+b) to connect multiple devices on a network
+c) to measure internet speed
+d) to identify devices on a network
+Answer: D
+=======================
+Question 5.b:
+MC Question: How is data represented differently in IPv4 vs IPv6 
+Options:
+a) represented in different base
+b) one is lights the other is charges
+c) uses analog versus continous data 
+d) as a sequence of ones and zeros
+Skill: 13
+Answer
+=======================
+Question 6.a:
+MC Question: Which of the following is true about storage
+Skill: 14
+Options: 
+a. short term
+b. used for efficiency and quicker results
+c. is involatile 
+d. saved temporarily 
+Answer C
+=======================
+Question 6.b:
+MC Question: What is HTTP?
+Options: 
+a. a subdomain
+b. a request
+c. a domain
+d. a domain name system
+Skill: 16
+Answer B
+=======================
+Question 7.a:
+MC Question: How many Bytes are in a Megabyte?
+Skill:
+Options:
+A) 8
+B) One Thousand
+C) One Million
+D) One Billion
+Answer C
+=======================
+Question 7.b:
+MC Question: What is 11111 base 2 in base 10?
+Options:
+A) 16
+B) 15
+C) 32
+D) 31
+Skill:
+Answer D
+=======================
+Question 8.a:
+MC Question: What is not one of the 4 main components of computers?
+Skill: 14
+Options:
+a) Processor
+b) Memory
+c) CPU
+d) Storage
+Answer
+C
+=======================
+Question 8.b:
+MC Question: What type of server stores and provides IP addresses based off a domain name?
+Skill: 16
+Options:
+a) Web server
+b) SSH server
+c) DNS server
+d) Database server
+Answer
+C
+=======================
+Question 9.a:
+MC Question: 
+Skill: 14
+Typical binary data cannot be represented in the following ways on storage devices:
+A. Magnetic charges (+/-)
+B. Atoms' quantum states
+C. Electricity (low/high voltage)
+D. Optical
+
+Answer: B
+=======================
+Question 9.b:
+MC Question: 
+Skill: 14
+Below is not an example of long-term memory hardware:
+
+A. 8 GB Flash drive
+B. 8 GB Intel Core i7 2.5 Ghz processor's cash
+C. Old 3 1/2" 1.44 MB floppy disk
+D. 4.3 Gb DVD (read only, not write to)
+
+Answer: B
+=======================
+Question 10.a:
+MC Question: 
+You download a pdf from the internet. Where is that pdf stored in the computer?
+Skill:
+14
+Options:
+A) CPU
+B) Memory
+C) Storage
+D) Output
+Answer
+C
+=======================
+Question 10.b:
+MC Question:
+What does a website link really represent?
+Skill: 16
+Options:
+A) Your ISP
+B) The website owner's ISP
+C) A Router
+D) An IP Address	
+Answer
+=======================
+Question 11.a:
+MC Question: Which of the following is a representation of 49 is hexadecimal?
+Skill: 12
+Options:
+A) 110001
+B) 31
+C) 61
+D) 1211
+Answer: B
+=======================
+Question 11.b:
+MC Question: Which part of the computer stores information for current use?
+Options:
+A) Memory
+B) Storage
+C) Processor
+D) Motherboard
+Skill: 14
+Answer: A
+=======================
+Question 12.a:
+MC Question: How many bits does a byte have? 
+
+Skill: 13
+Options:
+A) 4 bits
+B) 2 bits
+C) 10 bits
+D) 8 bits 
+
+Answer: D
+=======================
+Question 12.b:
+MC Question Which is NOT an example of a protocol? 
+
+Skill: 16
+Options:
+A) HTTP
+B) CSS
+C) NFS
+D) ICMP
+
+Answer: B
+=======================
+Question 13.a:
+MC Question:
+Which of the following is a correct IPv4 address?
+Skill: 16
+Options:
+A) 2001:0db8:85a3:0000:0000:8a2e:0370:7334
+B) 192.168.1.1
+C) 00:1A:2B:3C:4D:5E
+D) Nates-PC
+
+Answer: B
+=======================
+Question 13.b:
+MC Question:
+Which one of the following is NOT a valid hexadecimal?
+Skill: 12
+Options:
+A) BEEFFACE
+B) 1A3B4F
+C) 0
+D) ABCDEFG
+
+Answer: D
+=======================
+Question 14.a:
+MC Question: What is 1111 base 2 in base 16?
+Skill: 12
+Options:
+1. F
+2. E
+3. D
+4. C
+Answer: 1
+=======================
+Question 14.b:
+MC Question: Which computer component stores short-term, fast-access data?
+Options:
+1. Storage
+2. CPU
+3. Motherboard
+4. RAM
+Skill: 14
+
+Answer: 4
