@@ -23,7 +23,7 @@ end
 to turtle_spread
   set heading 0
   set xcor 0
-  set ycor ((33 / count turtles) * who) - 32
+  set ycor ((33 / count turtles) * who) - 16
 end
 @#$#@#$#@
 GRAPHICS-WINDOW
