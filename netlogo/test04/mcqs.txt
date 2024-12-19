@@ -1,0 +1,894 @@
+
+=======================
+Question 0.a:
+
+=======================
+Question 0.b:
+
+=======================
+Question 1.a:
+;MC Question:
+;Skill: 18
+;Which of the following contexts is the code "ca" in?
+;Options:
+; a) patch
+; b) observer
+; c) turtle
+; d) all of them
+;Answer
+; b
+=======================
+Question 1.b:
+;MC Question:
+;Skill: 5, 6, 22
+;Which component is redundant is "[(pcolor != 5) and (pxcor >= 10)]
+;Options:
+; a) the (s and )s
+; b) the ! in !=
+; c) the p in pxcor
+; d) the [s and ]s 
+;Answer
+; a
+=======================
+Question 2.a:
+;MC Question: Does the type of context in which a procedure is written affect the amount of times a code is run?
+;Skill: 18
+;Options:
+;A) Yes
+;B) No
+;Answer
+;A) Yes
+=======================
+Question 2.b:
+;MC Question: What does the procedure
+;Skill:
+;Options:
+;
+;Answer
+;
+=======================
+Question 3.a:
+;MC Question: Which of the following commands cannot be shortened into an acronym in netlogo? 
+;Skill:19 
+;Options:
+;
+A)ask 
+B)create-turtles
+C)clear-all 
+D)pen-up
+;Answer
+;
+A
+=======================
+Question 3.b:
+;MC Question: Which command creates a group of random numbers from -100 to 100. 
+;Skill:
+;Options:
+;
+A) random 100 
+B) random 90 - 45 
+C) random 100 + 100 
+D) random 200 - 100 
+;Answer
+;
+=======================
+Question 4.a:
+;MC Question: What is the correct format for the "let" command?
+;Skill:22
+;Options:
+A. let PROPERTY AGENT
+B. let VARIABLE NAME VALUE
+C. let PROPETY VALUE
+D. let NUMBER AGENTS
+;
+;Answer
+B. let VARIABLE NAME VALUE
+;
+=======================
+Question 4.b:
+;MC Question: Which command can be used to change context to turtles, patches, or links?
+;Skill: 18 20
+;Options:
+A: ask
+B: if
+C: ifelse 
+D: set
+;
+;Answer
+A: ask
+;
+=======================
+Question 5.a:
+##########
+;MC Question: In netlogo, how many types of agents do we have?
+;Skill:18
+;Options:
+;A. 1
+;B. 2
+;C. 3
+;D. 4
+;Answer D
+;
+;##########
+
+;##########
+;MC Question: When we want to rotate a turtle randomly, what is command we have to use?
+;Skill:20
+;Options:
+;A. fd
+;B. rt
+;C. pd
+;D. ca
+;Answer B
+;
+;##########
+
+;##########
+;Programming question: 
+;Skill: 5, 6, 7, 17
+;Description
+;Create a turtle move randomly. If it goes above y=x, turn the color of the turtle to be red. If it goes below y=x,
+;turn the color to be blue.
+;Possible solution:
+;##########
+to tColor
+ca
+crt 1
+ask turtles [fd 10
+rt random 360]
+ask turtles with [ycor >= xcor]
+[set color red]
+ask turtles with [xcor > ycor]
+[set color blue]
+en
+=======================
+Question 5.b:
+#########
+;MC Question: In netlogo, how many types of agents do we have?
+;Skill:18
+;Options:
+;A. 1
+;B. 2
+;C. 3
+;D. 4
+;Answer D
+;
+;##########
+
+;##########
+;MC Question: When we want to rotate a turtle randomly, what is command we have to use?
+;Skill:20
+;Options:
+;A. fd
+;B. rt
+;C. pd
+;D. ca
+;Answer B
+;
+;##########
+
+;##########
+;Programming question: 
+;Skill: 5, 6, 7, 17
+;Description
+;Create a turtle move randomly. If it goes above y=x, turn the color of the turtle to be red. If it goes below y=x,
+;turn the color to be blue.
+;Possible solution:
+;##########
+to tColor
+ca
+crt 1
+ask turtles [fd 10
+rt random 360]
+ask turtles with [ycor >= xcor]
+[set color red]
+ask turtles with [xcor > ycor]
+[set color blue]
+en
+=======================
+Question 6.a:
+;MC Question:
+;Skill:18
+;What is the agent in NetLogo who has a property called who?
+;Options:
+;A)
+;B)
+;C)
+;D)
+;Answer
+;
+=======================
+Question 6.b:
+;MC Question:
+;Skill:
+;Options:
+;
+;Answer
+;
+=======================
+Question 7.a:
+;MC Question: Which code contains an error?
+;Skill:19 20
+;Options:
+;A)  set pcolor blue
+;B) set tcolor blue
+;C) set color blue
+;D) set color 105
+;Answer B
+;
+=======================
+Question 7.b:
+;MC Question: This code has multiple errors. It is meant to set the pcolor of patches to the xcor value plus the ycor value if the xcor is divisible by 5)
+;Select the following options if they contain the error.
+;to color
+;  ask patches [
+;  let change xcor + ycor
+;  if remainder xcor 5 < 0 [
+;  set pcolor change
+;  ]
+;  ]
+;end
+;Skill: 6, 22
+;Options:
+;A. to color
+;B. let change xcor + ycor
+;C. if remainder xcor 5 !> 0 [
+;D. set pcolor change
+;Answer A (color is an existing variable - for turtles!), B and C (xcor and ycor are turtle-context, pxcor and pycor are patch-context)
+;
+=======================
+Question 8.a:
+;MC Question:
+;Skill: 5,6
+;given the procedure
+to paint
+ifelse remainder pxcor 2 = 0 and remainder pycor 3 = 0
+[set pcolor red]
+[set pcolor yellow]
+end
+;what color would patch (9, 10) be?
+;Options:
+;A) Yellow
+;B) Red
+;C) Black
+;D) Cannot be determined
+;Answer
+; A
+=======================
+Question 8.b:
+;MC Question:
+;Skill: 18
+; the following commands is for what agent type?
+; fd 1
+; stamp
+; ask neighbors [set pcolor red]
+;pd
+;Options:
+;A) Turtles
+;B) Patches
+;C) Observer
+;D) links
+;Answer
+;A
+=======================
+Question 9.a:
+;MC Question: This code has multiple errors. It is meant to set the pcolor of patches to the xcor value plus the ycor value if the xcor is divisible by 5)
+;Select the following options if they contain the error.
+;to color
+;  ask patches [
+;  let change xcor + ycor
+;  if remainder xcor 5 < 0 [
+;  set pcolor change
+;  ]
+;  ]
+;end
+;Skill: 6, 22
+;Options:
+;A. to color
+;B. let change xcor + ycor
+;C. if remainder xcor 5 !> 0 [
+;D. set pcolor change
+;Answer A (color is an existing variable - for turtles!), B and C (xcor and ycor are turtle-context, pxcor and pycor are patch-context)
+;
+=======================
+Question 9.b:
+;MC Question: Which code contains an error?
+;Skill:19 20
+;Options:
+;A)  set pcolor blue
+;B) set tcolor blue
+;C) set color blue
+;D) set color 105
+;Answer B
+;
+=======================
+Question 10.a:
+;MC Question: Which of the following is not an agent set?
+;Skill: 20
+;Options:
+;A) turtles
+;B) n-of 15 patches
+;C) patch 1 4
+;D) patches
+;
+;Answer: C
+=======================
+Question 10.b:
+;MC Question: Which of the following correctly generates a value between n and -n, generating all values with equal probability?
+;Skill: 7
+;Options:
+;A) random n + random -n
+;B) -n + random 2 * n
+;C) -2 * n + random n
+;D) -n / 2 + random n 
+;
+;Answer: B
+=======================
+Question 11.a:
+;MC Question: which of the following is not an agent?
+;Skill: 18
+;Options:
+;A) observer
+;B) color
+;C) patches
+;D) turtle
+;
+;Answer: B
+=======================
+Question 11.b:
+;MC Question: what can't you use in turtle
+;Skill: 20
+;Options:
+;A) ask
+;B) set
+;C) pcolor
+;D) ca
+;
+;Answer: D
+=======================
+Question 12.a:
+;MC Question:
+;Skill: 6
+;
+;ifelse pcolor = black
+;  [
+;    fd 1
+;    set pcolor blue
+;  ]
+;  [
+;    if pcolor = blue
+;      pd
+;      [set color green]
+;  ]
+;end
+;
+;Which agent context would this procedure
+;run under?
+;Options:
+;A) observer
+;B) turtles
+;C) patches
+;D) links
+;
+;Answer: B
+=======================
+Question 12.b:
+;MC Question:
+;Skill: 22
+;This is a procedure that moves a turtle
+;to an x-coordinate on the screen.
+;
+;to teleportTurtle
+;   let new_xcor xcor
+;   repeat 5 [set new_xcor (new_xcor + 1)]
+;   set xcor new_xcor
+;end
+;
+;Where would a turtle at patch 1 3 move to
+;if it ran this procedure?
+;Options:
+;A) -4 3
+;B) 1 8
+;C) 6 3
+;D) 1 -2
+;
+;Answer: C
+=======================
+Question 13.a:
+;MC Question: Which answer best describes what ask turtles [ fd 1 ] does?
+;Skill:
+;Options:
+;A: Each Turtle moves forward one time
+;B: Every turtle moves forward as many times as there are turtles
+;C: Every turtle moves a different amount based on order
+;D: Every turtle asks surrounding turtles to move forward once, this results in each turtle moving forward as many times as there are turtles
+;Answer
+;
+=======================
+Question 13.b:
+;MC Question: What value is valid for x in "with [ x ]"
+;Skill:
+;Options:
+;A: 7
+;B: red
+;C: patch 1 7
+;D: ycor = 7
+;Answer
+;
+=======================
+Question 14.a:
+######
+; 1. MC Question. What observer command would set every patch to either red or orange?
+
+; A) set pcolor one-of [ red orange ] 
+; B) set pcolor randomcolor
+; C) ask patches [ set pcolor one-of [ red orange ] ]
+; D) set pcolor (15 + 10* random 1)
+
+; Answer: C)
+=======================
+Question 14.b:
+######
+; 3. Write setup procedure that clears screen to be black, then after a ntoiceable delay 
+; as an observer, color every patch in a random color (out of all possible colors).
+; create a buttone that is called setup calling this procedure (or assume that one exists)
+; Skill: 7, 18, 19, 20, 
+; Possible solution:
+
+to setup
+  clear-all
+  wait 1.0
+  ask patches [ set pcolor random 140 ]
+e
+=======================
+Question 15.a:
+;MC Question:
+;Skill: 20
+;Which line of code ran im the observer context will
+;return two times the y coordinate of patch 1 2?
+;Options:
+;A) patch 1 (y * 2)
+;B) ([ycor] of patch 1 2) * 2
+;C) [pycor * 2] of patch 1 2
+;D) pycor * 2
+;
+;Answer: C
+=======================
+Question 15.b:
+;MC Question:
+;Skill:
+;Which line of code will return a set of patches only
+;with positive integer coordinates?
+;Options:
+;A) patches with [pxcor > 0 and pycor > 0]
+;B) patches of [pxcor > 0 and pycor > 0]
+;C) [pxcor > 0 and pycor > 0] of patches
+;D) [pxcor > 0 and pycor > 0] with patches
+;
+;Answer: A
+=======================
+Question 16.a:
+;MC Question: How can you set the color of one turtle to all the turtles in an observer-type procedure?
+;Skill: 18, 20, 19
+;Options:
+;A ) ask turtles [set color [color] of turtle 0]
+;A ) ask turtles [set color [color] of turtle 0]
+;A ) ask turtles [set color [color] of turtle 0]
+;A ) ask turtles [set color [color] of turtle 0]
+;Answer
+; Choice A
+=======================
+Question 16.b:
+;MC Question: With with commmand can you specify which agents you want to use?
+;Skill:
+;Options:
+;
+;Answer
+;
+=======================
+Question 17.a:
+;MC Question: How does NetLogo represent colors?
+;Skill: 19
+;Options:
+;A) 255, 255, 255 (Red, Green, Blue)
+;B) Words (tan, orange, sky, pink, etc.)
+;C) 0 to 139.9
+;D) 256, 256, 256 (Red, Green, Blue)
+;
+;Answer: C
+=======================
+Question 17.b:
+;MC Question: What is the difference between crt and cro?
+;Skill: 9002
+;Options:
+;A) cro creates one turtle, while crt creates ten
+;B) crt creates random turtles, while cro is ordered
+;C) You can decide how many turtles to make with crt, but cro creates a fixed number of turtles
+;D) crt and cro are unrelated commands
+;
+;Answer: B
+=======================
+Question 18.a:
+;MC Question: You are in observer context. How do you make turtles with a who value
+; of 5 or less change their color to sky?
+;Skill:
+;Options:
+; A) ask turtles with (who <= 5) [set color sky]
+; B) ask turtles with [who <= 5] [set color sky]
+; C) ask turtles [set [color] of turtles with (who <= 5) [sky]]
+; D) ask turtles [set [color] of turtles with [who <= 5] [sky]]
+;
+;Answer
+;B
+=======================
+Question 18.b:
+;MC Question:
+;Skill:
+;Options:
+;
+;Answer
+;
+=======================
+Question 19.a:
+;MC Question: Which of the following is true?
+;Skill: 5, 6, 18
+;Options:
+; A) 'if' runs command when boolean value is false
+; B) In turtle context, a turtle will move in the opposite direction it is facing d steps if d is negative.
+; C) 'set' can be used to directly change any property in observer context
+; D) All of the above.
+;Answer: B
+;
+=======================
+Question 19.b:
+;MC Question: Which of the following is false about color?
+;Skill: 
+;Options:
+; A) There are 14 names colors, including black and white.
+; B) Each row is a gradient of a named color.
+; C) Named color are defined by a constant, ending in 5.
+; D) Non-integer values can be used to go between shades.
+;Answer: A
+;
+=======================
+Question 20.a:
+;MC Question:
+;Skill: 18
+;Which of the following can only be used in observer context?
+;Options:
+;A) neighbors
+;B) pcolor
+;C) fd
+;D) ca
+;
+;Answer: D
+=======================
+Question 20.b:
+;MC Question:
+;Skill: 7
+;Which of the following would result in the patches to turn a random real netlogo color
+;Options:
+;A) ask patches [set pcolor random colors * 10 + 5]
+;B) set pcolor colors * 10 + 5
+;C) ask patches [set pcolor random colors + 5]
+;D) set pcolors random 150
+;
+;Answer: A
+=======================
+Question 21.a:
+;MC Question: What is the difference between running [set pcolor x] in observer context rather than patch?
+;Skill: 18
+;Options:
+; No difference
+; set pcolor x will not run in observer context
+; in turtle context set pcolor x will run 1089 times, compared to the observers 1 time
+; set pcolor x won't work in either context
+;Answer
+;set pcolor x will not run in observer context
+=======================
+Question 21.b:
+;MC Question: Which of the following will be used in a procedure that uses the agent set of blue patches?
+;Skill: 20
+;Options:
+; patches with [pcolor = blue]
+; [pcolor] of patches
+; n-of blue patches
+; let blue [blue patches]
+;
+;Answer
+;patches with [pcolor = blue]
+=======================
+Question 22.a:
+;MC Question: What does "neighbors" in netlogo return? 
+;Skill:
+;Options:
+A) all the pacthes surrounding a turtle
+B) All the turtles in the same patch
+C) All the turtles adjacent to the current turtle 
+D) All the pactches diagonal to the turtle 
+;
+;Answer
+A
+;
+=======================
+Question 22.b:
+;MC Question: What is the right syntax to create a red turtle and move it forward 10 steps?
+;Skill:
+;Options:
+A) create-turtles 1 [ set color = red forward 10 ]
+B) create-turtle [ set color red forward 10 ]
+C) create-turtles 1 [ set color red forward 10 ]
+D) create-turtles 1 set color red forward 10
+;
+;Answer
+C
+;
+=======================
+Question 23.a:
+##########
+;MC Question: which context(s) would the following function run in?
+;to randpcolor
+;  ask patches [set pcolor random 140]
+;  crt 1 [set size 2]
+;end
+
+;Skill: 18
+;Options:
+;A) patch, because the first command directs the patches
+;B) observer, because the first command directs the observer
+;C) turtle, because it creates a turtle
+;D) patch, observer, or turtle; it will do different things depending on the context
+;Answer: B
+;
+;##########
+
+;##########
+;MC Question: Which of the following does not result in a turtle moving?
+;Skill: 18
+;Options:
+;A) fd 6
+;B) forward 6
+;C) setxy (x + 3) (y + 3)
+;D) right 6
+;
+;Answer: D
+;
+;##########
+
+;##########
+;Programming question: Create a procedure puts a randomized amount of turtles (0 - 10) to a circle (diameter 8).
+;Skill: 5, 18, 19
+;Description
+;
+;Possible solution:
+;to turtCircle
+;  ct
+;  let numTurtles random 10
+;  crt numTurtles 
+;  [
+;    set heading who * (360 / numTurtles)
+;    fd 10
+;  ]
+;end
+;#########
+=======================
+Question 23.b:
+#########
+;MC Question: which context(s) would the following function run in?
+;to randpcolor
+;  ask patches [set pcolor random 140]
+;  crt 1 [set size 2]
+;end
+
+;Skill: 18
+;Options:
+;A) patch, because the first command directs the patches
+;B) observer, because the first command directs the observer
+;C) turtle, because it creates a turtle
+;D) patch, observer, or turtle; it will do different things depending on the context
+;Answer: B
+;
+;##########
+
+;##########
+;MC Question: Which of the following does not result in a turtle moving?
+;Skill: 18
+;Options:
+;A) fd 6
+;B) forward 6
+;C) setxy (x + 3) (y + 3)
+;D) right 6
+;
+;Answer: D
+;
+;##########
+
+;##########
+;Programming question: Create a procedure puts a randomized amount of turtles (0 - 10) to a circle (diameter 8).
+;Skill: 5, 18, 19
+;Description
+;
+;Possible solution:
+;to turtCircle
+;  ct
+;  let numTurtles random 10
+;  crt numTurtles 
+;  [
+;    set heading who * (360 / numTurtles)
+;    fd 10
+;  ]
+;end
+;#########
+=======================
+Question 24.a:
+;MC Question:
+;Skill: 18, 20
+;Which of these is valid code for a button in observer context?
+;Options:
+;A) ask neighbors [set pcolor 0]
+;B) ask [neighbors] of turtle 0 [set color orange]
+;C) ask [neighbors] of turtle 0 [set pcolor 1005]
+;D) ask turtle 0 with [neighbors] [rt random 360]
+;
+;Answer: C
+=======================
+Question 24.b:
+;MC Question:
+;Skill:
+;Which of these includes the number value of every color possible in NetLogo?
+;Options:
+;A) random 140
+;B) random 14 * 10 + 5
+;C) random 150
+;D) random 15 * 10 + 5
+;Answer: A
+;
+=======================
+Question 25.a:
+##########
+;MC Question: How many patches are there?
+;Skill: 18
+;Options: 
+;
+A: 33
+B: 32
+C: 1089
+D: 1024
+;Answer
+;1089
+;##########
+
+;##########
+;MC Question: What happens if a command does not contain any agent-specific instructions?
+;Skill: 7
+;Options:
+; A) An error message
+B) The command can be used with any agent context
+C) The command does nothing
+D) The command defaults to only workihg with observers
+;Answer
+; B
+;##########
+
+;##########
+;Programming question: Create a program that turns all odd numbered patches red, and all even numbered patches green.
+;Skill: 17
+;Description
+;
+;Possible solution:
+;to patchcolor []
+    if (pcolor mod 2 = 0)
+        [set pcolor green]
+    if (pcolor mod 2 = 1)
+        [set pcolor red]
+end
+;#########
+=======================
+Question 25.b:
+#########
+;MC Question: How many patches are there?
+;Skill: 18
+;Options: 
+;
+A: 33
+B: 32
+C: 1089
+D: 1024
+;Answer
+;1089
+;##########
+
+;##########
+;MC Question: What happens if a command does not contain any agent-specific instructions?
+;Skill: 7
+;Options:
+; A) An error message
+B) The command can be used with any agent context
+C) The command does nothing
+D) The command defaults to only workihg with observers
+;Answer
+; B
+;##########
+
+;##########
+;Programming question: Create a program that turns all odd numbered patches red, and all even numbered patches green.
+;Skill: 17
+;Description
+;
+;Possible solution:
+;to patchcolor []
+    if (pcolor mod 2 = 0)
+        [set pcolor green]
+    if (pcolor mod 2 = 1)
+        [set pcolor red]
+end
+;#########
+=======================
+Question 26.a:
+;MC Question: Which of the following is not an agent set?
+;Skill: 20
+;Options:
+;A) patch 0 1
+;B) n-of 36 patches
+;C) patches with [pcolor = yellow]
+;D) patches
+;Answer: A
+;
+=======================
+Question 26.b:
+;MC Question: Which of the following commands will always return "4"?
+;Skill: 18
+;Options:
+;A) random 5
+;B) count neighbors
+;C) count neighbors4
+;D) count patches
+;Answer
+;
+=======================
+Question 27.a:
+;MC Question:
+;Skill: 20
+;What is the difference between neighbors and neighbors4? 
+;Options:
+;A) Neighbor reports an agentset containing the 8 patches, neighbors4 reports an agentset containing the 4 patches  
+;B) Neighbor reports an agentset containing the 4 patches, neighbors4 reports an agentset containing the 8 patches
+;C) Neighbor reports an agentset containing the 10 patches, neighbors4 reports an agentset containing the 4 patches
+;D) Neighbor reports an agentsset containig the 16 patches, neighbors4 reports an agentsent containing the 4 patches
+;
+;Answer:A
+=======================
+Question 27.b:
+;MC Question:
+;Skill: 
+;What is sliders? 
+;Options:
+;A) Global Boolean variables.
+;B) Global variables (with specified options)
+;C) Global Number variables.
+;D) Reporter values.
+;
+;Answer: C
+=======================
+Question 28.a:
+;MC Question:
+;Skill: 5, 6, 7
+;What does this code mean: if random 100 < 10 [set color red]
+;A) A 10% chance for the turtle to turn red
+;B) A 90% chance for the turtle to turn red
+;C) A syntax error
+;D) A 10% chance for the patch to turn red
+;
+;Answer: A
+=======================
+Question 28.b:
+;MC Question:
+;Skill: 20
+;What is the correct usage of 'of'?
+;Options:
+;A) [pcolor] of -1 3
+;B) [color] of turtle 1
+;C) [count turtles] of patch 0 0
+;D) [pxcor] of turtles with [color = red]
+;
+;Answer: B

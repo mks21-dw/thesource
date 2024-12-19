@@ -1,0 +1,408 @@
+
+=======================
+Question 0:
+to WontYouBeMyNeighbor
+  ca
+  ask patch 0 0 [ask neighbors [set pcolor yellow]]
+  ask patches
+  [if pcolor = yellow
+          [ask neighbors [set pcolor yellow]]]
+e
+=======================
+Question 1:
+;Programming question:
+;Skill:
+;Description:
+; Write a command call christmas that will make the 1st quadrant of the screen lime green and the 4th quadrant red
+;
+;to christmas
+;ask patches with [pxcor >= 1 and pycor >= 1]
+;[
+; set pcolor lime]
+; ask patches with [pxcor >= 1 and pycor <= -1]
+;[
+;set pcolor red]
+;end
+;########
+=======================
+Question 2:
+;Programming question:
+;Skill:
+;Description
+;
+;
+;
+;########
+=======================
+Question 3:
+;Programming question:
+;Skill:
+;Description
+;
+;
+;
+;########
+=======================
+Question 4:
+;Programming question: Write a program that randomizes the background and creates 10 turtles.
+Then make a second program that makes each turtle become the color of the patch it's on and 
+move randomly and make this command a forever button.
+;Skill:19, 7, 20
+;Description
+;
+;
+to Setup
+  ca
+  ask patches [set pcolor random 140]
+  crt 10 [
+    setxy random-xcor random-ycor
+  ]
+end
+
+to sameColor
+    ask turtles [
+    set color [pcolor] of patch pxcor pycor
+  ]
+  ask turtles [fd 1
+    rt 360]
+end
+;
+;########
+=======================
+Question 5:
+########
+;MC Question: In netlogo, how many types of agents do we have?
+;Skill:18
+;Options:
+;A. 1
+;B. 2
+;C. 3
+;D. 4
+;Answer D
+;
+;##########
+
+;##########
+;MC Question: When we want to rotate a turtle randomly, what is command we have to use?
+;Skill:20
+;Options:
+;A. fd
+;B. rt
+;C. pd
+;D. ca
+;Answer B
+;
+;##########
+
+;##########
+;Programming question: 
+;Skill: 5, 6, 7, 17
+;Description
+;Create a turtle move randomly. If it goes above y=x, turn the color of the turtle to be red. If it goes below y=x,
+;turn the color to be blue.
+;
+;##########
+to tColor
+ca
+crt 1
+ask turtles [fd 10
+rt random 360]
+ask turtles with [ycor >= xcor]
+[set color red]
+ask turtles with [xcor > ycor]
+[set color blue]
+en
+=======================
+Question 6:
+;Programming question:
+;Skill:
+;Description
+;
+;
+;
+;########
+=======================
+Question 7:
+;Programming question: Code a code that sets each patch to a random color between 0 and 100
+;Skill: 19 20
+;Description
+;Create a code coding all patches random colors of value 0-100
+;
+to setup
+  set pcolor random 100
+end
+=======================
+Question 8:
+;Programming question:
+;Skill:7, 18, 19
+;Description
+;Create a program called cool where everytime you create 10 turtles they are all the same random color and move foward 5 patches with pen down
+;
+to cool
+ ca
+ crt 10
+ let randomC random 140
+  ask turtles [set color randomC]
+  ask turtles [pd]
+  ask turtles [fd 5]
+end
+=======================
+Question 9:
+;MC Question:
+;Skill:
+;Options:
+;
+;Answer
+;
+=======================
+Question 10:
+;Programming question: 
+;Write a procedure in turtle context that will make a turtle randomly move 20 times, and on each move color the patch it is on in an alternating red and green pattern
+;Skill: 6, 7, 18, 19, 22
+;
+=======================
+Question 11:
+;MC Question: write a code so that patches display rainbow colors
+;Skill: 17
+;Options:
+;
+;Answer
+;
+;########
+=======================
+Question 12:
+;Programming question:
+;Write a procedure that will make the
+;screen a random color, and create 5 turtles
+;facing to the right of the screen
+;Skill: 7, 17, 18
+;
+to setup
+  ca
+  let randomColor (random 140)
+  ask patches [set pcolor randomColor]
+  crt 5
+  ask turtles [set heading 90]
+end
+=======================
+Question 13:
+;Programming question:
+;Skill:
+;Description
+;
+;
+;
+=======================
+Question 14:
+######
+; 3. Write setup procedure that clears screen to be black, then after a ntoiceable delay 
+; as an observer, color every patch in a random color (out of all possible colors).
+; create a buttone that is called setup calling this procedure (or assume that one exists)
+; Skill: 7, 18, 19, 20, 
+; 
+
+to setup
+  clear-all
+  wait 1.0
+  ask patches [ set pcolor random 140 ]
+e
+=======================
+Question 15:
+;Programming question:
+;Write a program that will create a checkerboard pattern
+;with patches.
+;Skill: 19, 20
+;
+=======================
+Question 16:
+;Programming question:
+;Skill:
+;Description
+;
+;
+;
+=======================
+Question 17:
+;Programming question:
+;Write a procedure that will clear the
+;screen and draw a square
+;Skill: 17, 18
+;
+=======================
+Question 18:
+;Programming question:
+;Skill:
+;Description
+;
+;
+;
+=======================
+Question 19:
+;Programming question: Write a procedure that changes the color of patches,
+;such that there are exactly 4 lines of symmetry dividing the world.
+; On each side of the symmetry, the pcolor and neighbors is identical.
+;Skill: 19
+; ask patches [set pcolor pxcor * pycor]
+;
+;########
+=======================
+Question 20:
+;Programming question:
+;Write a procedure that will clear then
+;divide the world into four sections, changing the color into a cross
+;Skill: 17, 18
+;
+=======================
+Question 21:
+;Programming question: write a procedure that creates n amount of triangles of "side" size.
+;Skill: 19, 18, 5, 6
+;Description
+; procedure takes in n and creates n triangles. orientation does not matter.
+;procedure takes in "side" which will determine the length of each size.
+;must all be created at once. Create a button and sliders for the procedure and both variables.
+;
+to triangle
+  ca
+  create-ordered-turtles num
+  ask turtles [
+    fd 15
+    pendown
+    repeat 3
+    [
+      right 120
+      fd side
+    ]
+  ]
+end
+=======================
+Question 22:
+;Programming question: Write a program that creates 5 turtles, each of which moves forward by 10 steps.
+;Skill:
+;Description
+;
+;
+to setup
+  clear-all
+  create-turtles 5 
+  ask turtles [
+    forward 10  
+  ]
+end
+;
+;########
+=======================
+Question 23:
+########
+;MC Question: which context(s) would the following function run in?
+;to randpcolor
+;  ask patches [set pcolor random 140]
+;  crt 1 [set size 2]
+;end
+
+;Skill: 18
+;Options:
+;A) patch, because the first command directs the patches
+;B) observer, because the first command directs the observer
+;C) turtle, because it creates a turtle
+;D) patch, observer, or turtle; it will do different things depending on the context
+;Answer: B
+;
+;##########
+
+;##########
+;MC Question: Which of the following does not result in a turtle moving?
+;Skill: 18
+;Options:
+;A) fd 6
+;B) forward 6
+;C) setxy (x + 3) (y + 3)
+;D) right 6
+;
+;Answer: D
+;
+;##########
+
+;##########
+;Programming question: Create a procedure puts a randomized amount of turtles (0 - 10) to a circle (diameter 8).
+;Skill: 5, 18, 19
+;Description
+;
+;
+;to turtCircle
+;  ct
+;  let numTurtles random 10
+;  crt numTurtles 
+;  [
+;    set heading who * (360 / numTurtles)
+;    fd 10
+;  ]
+;end
+;#########
+=======================
+Question 24:
+;Programming question:
+;Write a procedure named turbo that will be called in a forever button in observer context. Assume this is set up with one turtle and a background of a random color. For every time this procedure is called, the turtle moves in a random direction, leaving behind a trail of neighbouring patches that are lighter than the current color of the background.
+;Skill:
+;
+=======================
+Question 25:
+########
+;MC Question: How many patches are there?
+;Skill: 18
+;Options: 
+;
+A: 33
+B: 32
+C: 1089
+D: 1024
+;Answer
+;1089
+;##########
+
+;##########
+;MC Question: What happens if a command does not contain any agent-specific instructions?
+;Skill: 7
+;Options:
+; A) An error message
+B) The command can be used with any agent context
+C) The command does nothing
+D) The command defaults to only workihg with observers
+;Answer
+; B
+;##########
+
+;##########
+;Programming question: Create a program that turns all odd numbered patches red, and all even numbered patches green.
+;Skill: 17
+;Description
+;
+;
+;to patchcolor []
+    if (pcolor mod 2 = 0)
+        [set pcolor green]
+    if (pcolor mod 2 = 1)
+        [set pcolor red]
+end
+;#########
+=======================
+Question 26:
+;Programming question: Write a program to set every patch to a random "true" color except gray
+;Skill: 7
+;Description
+;
+;
+;set pcolor ((random 13) + 1) * 10 + 5
+=======================
+Question 27:
+;Programming question:
+;
+;
+;Skill: 
+;
+;########
+=======================
+Question 28:
+;Programming question:
+;Write a program that sets all patches on the screen to a random true color
+;Skill: 7, 20
+;

@@ -1,0 +1,380 @@
+
+=======================
+Question 0:
+ing question:
+;Write a procedure that will clear the screen and create a pseudo random,
+;yellow blotch out of patches
+;Skill: 17, 18
+;Possible solution:
+;##########
+
+to WontYouBeMyNeighbor
+  ca
+  ask patch 0 0 [ask neighbors [set pcolor yellow]]
+  ask patches
+  [if pcolor = yellow
+          [ask neighbors [set pcolor yellow]]]
+en
+=======================
+Question 1:
+###
+;Programming question:
+;Skill:
+;Description:
+; Write a command call christmas that will make the 1st quadrant of the screen lime green and the 4th quadrant red
+;Possible solution:
+;to christmas
+;ask patches with [pxcor >= 1 and pycor >= 1]
+;[
+; set pcolor lime]
+; ask patches with [pxcor >= 1 and pycor <= -1]
+;[
+;set pcolor red]
+;end
+;#########
+=======================
+Question 2:
+###
+;Programming question:
+;Skill:
+;Description
+;
+;Possible solution:
+;
+;#########
+=======================
+Question 3:
+###
+;Programming question:
+;Skill:
+;Description
+;
+;Possible solution:
+;
+;#########
+=======================
+Question 4:
+###
+;Programming question: Write a program that randomizes the background and creates 10 turtles.
+Then make a second program that makes each turtle become the color of the patch it's on and 
+move randomly and make this command a forever button.
+;Skill:19, 7, 20
+;Description
+;
+;Possible solution:
+to Setup
+  ca
+  ask patches [set pcolor random 140]
+  crt 10 [
+    setxy random-xcor random-ycor
+  ]
+end
+
+to sameColor
+    ask turtles [
+    set color [pcolor] of patch pxcor pycor
+  ]
+  ask turtles [fd 1
+    rt 360]
+end
+;
+;#########
+=======================
+Question 5:
+########
+;MC Question: In netlogo, how many types of agents do we have?
+;Skill:18
+;Options:
+;A. 1
+;B. 2
+;C. 3
+;D. 4
+;Answer D
+;
+;##########
+
+;##########
+;MC Question: When we want to rotate a turtle randomly, what is command we have to use?
+;Skill:20
+;Options:
+;A. fd
+;B. rt
+;C. pd
+;D. ca
+;Answer B
+;
+;##########
+
+;##########
+;Programming question: 
+;Skill: 5, 6, 7, 17
+;Description
+;Create a turtle move randomly. If it goes above y=x, turn the color of the turtle to be red. If it goes below y=x,
+;turn the color to be blue.
+;Possible solution:
+;##########
+to tColor
+ca
+crt 1
+ask turtles [fd 10
+rt random 360]
+ask turtles with [ycor >= xcor]
+[set color red]
+ask turtles with [xcor > ycor]
+[set color blue]
+end
+=======================
+Question 6:
+###
+;Programming question:
+;Skill:
+;Description
+;
+;Possible solution:
+;
+;#########
+=======================
+Question 7:
+
+=======================
+Question 8:
+
+=======================
+Question 9:
+;##########
+;Programming question: Code a code that sets each patch to a random color between 0 and 100
+;Skill: 19 20
+;Description
+;Create a code coding all patches random colors of value 0-100
+;Possible solution:
+to setup
+  set pcolor random 100
+end
+;##########
+=======================
+Question 10:
+to colortrail 
+  let colortracker 0
+  repeat 20 [
+    wait 0.1
+    fd 1
+    rt -45 + random 90 
+    let patchx xcor
+    let patchy ycor
+    set colortracker (colortracker + 1)
+    ifelse colortracker mod 2 = 1
+    [ask patch patchx patchy [set pcolor green]]
+    [ask patch patchx patchy [set pcolor red]]
+  ]
+en
+=======================
+Question 11:
+###
+;MC Question: write a code so that patches display rainbow colors
+;Skill: 17
+;Options:
+;
+;Answer
+;
+;#########
+=======================
+Question 12:
+
+=======================
+Question 13:
+
+=======================
+Question 14:
+ion. How can we find the properties of an agent in NetLogo? 
+; Select all that are incorrect
+; Skills: 6, 17, 18, 19, 20, 22
+
+; A) by inspecting the agent
+; B) in the command center switch to the agent and write WHO AM I
+; C) by using commands in the Code tab to query properties
+; D) By modifying properties programmatically to desired if they are of different values
+
+; Answer: B)
+
+;################
+; 3. Write setup procedure that clears screen to be black, then after a ntoiceable delay 
+; as an observer, color every patch in a random color (out of all possible colors).
+; create a buttone that is called setup calling this procedure (or assume that one exists)
+; Skill: 7, 18, 19, 20, 
+; Possible solution:
+
+to setup
+  clear-all
+  wait 1.0
+  ask patches [ set pcolor random 140 ]
+en
+=======================
+Question 15:
+to checkerboard []
+  if pxcor mod 2 = 0 and pycor mod 2 = 0
+  [ set pcolor white ]
+  if pxcor mod 2 = 1 and pycor mod 2 = 1
+  [ set pcolor white ]
+end
+=======================
+Question 16:
+
+=======================
+Question 17:
+to square
+  ca
+  crt 1
+  ask turtles [pd]
+  ask turtles [repeat 4 [fd 8 rt 90]]
+en
+=======================
+Question 18:
+
+=======================
+Question 19:
+###
+;Programming question: Write a procedure that changes the color of patches,
+;such that there are exactly 4 lines of symmetry dividing the world.
+; On each side of the symmetry, the pcolor and neighbors is identical.
+;Skill: 19
+;Possible solution: ask patches [set pcolor pxcor * pycor]
+;
+;#########
+=======================
+Question 20:
+to cross
+  ca
+  ask patches with [pxcor = 0] [set pcolor white]
+  ask patches with [pycor = 0] [set pcolor white]
+end
+=======================
+Question 21:
+
+=======================
+Question 22:
+###
+;Programming question: Write a program that creates 5 turtles, each of which moves forward by 10 steps.
+;Skill:
+;Description
+;
+;Possible solution:
+to setup
+  clear-all
+  create-turtles 5 
+  ask turtles [
+    forward 10  
+  ]
+end
+;
+;#########
+=======================
+Question 23:
+########
+;MC Question: which context(s) would the following function run in?
+;to randpcolor
+;  ask patches [set pcolor random 140]
+;  crt 1 [set size 2]
+;end
+
+;Skill: 18
+;Options:
+;A) patch, because the first command directs the patches
+;B) observer, because the first command directs the observer
+;C) turtle, because it creates a turtle
+;D) patch, observer, or turtle; it will do different things depending on the context
+;Answer: B
+;
+;##########
+
+;##########
+;MC Question: Which of the following does not result in a turtle moving?
+;Skill: 18
+;Options:
+;A) fd 6
+;B) forward 6
+;C) setxy (x + 3) (y + 3)
+;D) right 6
+;
+;Answer: D
+;
+;##########
+
+;##########
+;Programming question: Create a procedure puts a randomized amount of turtles (0 - 10) to a circle (diameter 8).
+;Skill: 5, 18, 19
+;Description
+;
+;Possible solution:
+;to turtCircle
+;  ct
+;  let numTurtles random 10
+;  crt numTurtles 
+;  [
+;    set heading who * (360 / numTurtles)
+;    fd 10
+;  ]
+;end
+;##########
+=======================
+Question 24:
+to turbo ask [neighbors] of turtle 0
+=======================
+Question 25:
+########
+;MC Question: How many patches are there?
+;Skill: 18
+;Options: 
+;
+A: 33
+B: 32
+C: 1089
+D: 1024
+;Answer
+;1089
+;##########
+
+;##########
+;MC Question: What happens if a command does not contain any agent-specific instructions?
+;Skill: 7
+;Options:
+; A) An error message
+B) The command can be used with any agent context
+C) The command does nothing
+D) The command defaults to only workihg with observers
+;Answer
+; B
+;##########
+
+;##########
+;Programming question: Create a program that turns all odd numbered patches red, and all even numbered patches green.
+;Skill: 17
+;Description
+;
+;Possible solution:
+;to patchcolor []
+    if (pcolor mod 2 = 0)
+        [set pcolor green]
+    if (pcolor mod 2 = 1)
+        [set pcolor red]
+end
+;##########
+=======================
+Question 26:
+
+=======================
+Question 27:
+###
+;Programming question:
+;
+;
+;Skill: 
+;Possible solution:
+;#########
+=======================
+Question 28:
+to truecolor
+  ca
+  let truecolors 10 * random 14 + 5
+  ask patches
+  [set pcolor truecolors ]
+en
