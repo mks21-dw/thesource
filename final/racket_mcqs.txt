@@ -1,0 +1,1588 @@
+
+=======================
+Question 0.a:
+MC Question: Which function results in 6 (n=3)
+Skill: 2, 6, 10, 22, 23
+Options:
+A. (define fA (lambda (n) (if (<= n 2) (* n 2) (* n 3))))
+B. (define fB (lambda (n) (if (<= n 1) 1 (* n (fA (- n 1))))))
+C. (define fC (lambda (n) (if (= n 6 ) (/ 2) (/ 3))))
+D. (define fD (lambda (n) (if (= n 0) 1 (* 2 (fD ( - n 3))))))
+
+Answer B. (define fB (lambda (n) (if (<= n 1) 1 (* n (fA (- n 1))))))
+=======================
+Question 0.b:
+MC Question: Which function results in an error? 
+Skill:
+Options:
+A.(define fE (lambda (x) (if (= x 0) (cons x) (* 10 x))))
+B.(define fF (lambda (x) (if (> x 8) and ( x = #f))))
+C. (define fG (lambda (x) (sqrt x)))
+D. (define fH (lambda (x) (if (= x 0) 1 (if (> x 4) 0 2))))
+
+Answer
+=======================
+Question 0.b:
+MC Question:
+Skill:
+Options:
+Answer
+=======================
+Question 0.b:
+(define fE (lambda (x) (if (= x 0) (cons x) (* 10 x)))
+=======================
+Question 1.a:
+MC Question: Which one is 6?
+Skill:
+Options:
+A) ;6
+B) 2 * 2
+C) 2 * 3
+D) (* 2 3)
+Answer
+C
+=======================
+Question 1.b:
+MC Question: Which one is different?
+Skill: 
+Options:
+A) (not #f)
+B) (#true)
+C) (#t)
+D) (true)
+Answer
+D
+=======================
+Question 1.b:
+MC Question: What does first return?
+Skill:
+Options:
+A) A list with the first digits of each numbers in a list
+B) The first digit of a number
+C) The result of the first function that was ran
+D) The first node in a list
+Answer
+D
+=======================
+Question 1.b:
+MC Question: What does rest do?
+Skill:
+Options:
+A) Wait for a certian amount of time
+B) Do everything except for the target thing
+C) Return a list with everything but a target thing
+D) Close DrRacket
+Answer
+C
+=======================
+Question 2.a:
+MC Question: Which of the following functions provides the area of a square with a radius of r?
+Skill: 2
+Options:
+A)
+(define polygon_area
+  (lambda (r)
+    (expt (sqrt (* 2 r r)) 3)))
+B)
+(define polygon_area
+  (lambda (r)
+    (expt (sqrt (* 2 r r)) 2)))
+C)
+(define polygon_area
+  (lambda (r)
+    (expt (expt (r 2)) 3)))
+D)
+(define polygon_area
+  (lambda (r)
+    (expt (sqrt (/ r 2)) 2)))
+Answer: B
+=======================
+Question 2.b:
+MC Question:
+What does random do with 2 arguments?
+Skill: 2
+Options:
+A) Provides one random integer between
+B) Provides an amount of random floating points equal to the first argument, all of which are between zero and the second argument.
+C) Provides one random floating point between the first argument and the second argument, with the range including the first and not including the second.
+D) Provides one integer between the first argument and the second argument, with the range including the first and not including the second.
+
+Answer: D
+=======================
+Question 2.b:
+
+=======================
+Question 2.b:
+
+=======================
+Question 3.a:
+MC Question: Which function will divide an integer by its one digit plus 1? 
+Skill: 2, 3
+Options:
+A. (define onesdigitplusone
+      (lambda (n)
+   (/ n(+ 1(remainder n 100)))))
+
+B. (define onesdigitplusone
+      (lambda (n)
+   (remainder n 10) + 1) / n)
+
+C. (define onesdigitplusone
+      (lambda (n)
+   (/ n ( + 1 (remainder n 10)))))
+
+D. (define onesdigitplusone
+       (lambda n)
+   (/ n ( + 1 (remainder n 10))))
+Answer
+C
+=======================
+Question 3.b:
+MC Question: Which function always provides a negative number? 
+Skill: 2, 3, 7 
+Options:
+A. (- 10 (random 10))
+B. (/ 0 (random 100))
+C. (* 6 (random 1))
+D. (- (random 10) 10)
+Answer
+D
+=======================
+Question 3.b:
+
+=======================
+Question 3.b:
+
+=======================
+Question 4.a:
+;MC Question: Which of the following cannot be used in turtle context?
+;Skill: 18, 20
+;Options:
+A forward
+B pen-up
+C import-colors
+D stamp
+;
+;Answer
+C
+;
+=======================
+Question 4.b:
+;MC Question: Which of the following is a "true" Netlogo colors?
+;Skill: 18, 20
+;Options:
+A. 20
+B. 35
+C. 0
+D. 99
+;
+;Answer
+B
+;
+=======================
+Question 4.b:
+
+=======================
+Question 4.b:
+
+=======================
+Question 5.a:
+MC Question: If you use the command random without a second argument, what will the result be?
+Skill: 7
+Options:
+A A value between [0,1]
+B A value between [-100,100]
+C An error message saying (the expected number of arguments does not match the given number)
+D A value between [0,1)
+Answer
+D
+=======================
+Question 5.b:
+
+=======================
+Question 5.b:
+
+=======================
+Question 5.b:
+
+=======================
+Question 6.a:
+MC Question: What would the code (build-list 5 (lambda (x) (+ 1 x)))
+Skill: 2 3
+Options:
+A:'(0 1 2 3 4 5)
+B:'(1 2 3 4 5)
+C:'(0 1 2 3 4)
+D:'(2 3 4 5 6)
+Answer
+B:'(1 2 3 4 5)
+=======================
+Question 6.b:
+MC Question:  In the code (foldl + 1 g), what would be an appropriate value for g?
+Skill: 2 3
+Options:
+A. (build-list 5 (lambda (x) (+ x 2)))
+B. (list "penguin" "cat" "seal")
+C. (list 1 2 3 4 5)
+D. A and C
+Answer
+D. A and C
+=======================
+Question 6.b:
+MC Question: Which of these functions is not a conditional?
+Skill: 6
+Options:
+A. If
+B. cond
+C. =
+D. All of these are conditionals
+Answer
+C. =
+=======================
+Question 6.b:
+MC Question: In the code (if (1 > 0) Function1 Function2) which function is run
+Skill: 6
+Options:
+A. Function1
+B. Function2
+C. Neither
+D. Both
+Answer
+A. Function1
+=======================
+Question 7.a:
+MC Question:
+What is the result of (define h (lambda () (< 5 3)))?
+Skill: 5
+Options:
+A. #t
+B. #f
+C. The code doesn't work
+D. h
+Answer: D
+=======================
+Question 7.b:
+MC Question:
+What command do you need to use to check if 3 > 5 or not in Racket?
+Skill: 5
+Options:
+A. if
+B. ifelse
+C. Both work
+D. None of the above
+Answer: A
+=======================
+Question 7.b:
+MC Question:
+Which procedure would return a random decial to the nearest 1/10 in [0, 10)?
+Skill:7
+Options:
+A. (random 10)
+B. (random 9.9)
+C. (/ (random 100) 10)
+D. None of the above
+Answer: C
+=======================
+Question 7.b:
+MC Question:
+What is 1000 in base 16?
+Skill: 12
+Options:
+A. 1000
+B. 3148
+C. 3E8
+D. 3F8
+Answer: C
+=======================
+Question 8.a:
+MC Question: To create a global variable in netlogo, what would you do?
+Skill: 22
+Options:
+A) patches-own
+B) let
+C) create a slider
+D) turtles-own
+Answer
+Create a slider
+=======================
+Question 8.b:
+MC Question: In netlogo, what range of values could result from the command random 8?
+Skill: 7
+Options:
+A) [1,8]
+B) [0,7]
+C) [1,7]
+D) [0,8]
+Answer
+[0,8]
+=======================
+Question 8.b:
+MC Question: What is the output of a function in racket if x is the input: (lambda f (x) (+ x (f x))
+Skill: 10
+Options:
+A) Error, not enough memory
+B) Error, f is not defined
+C) 2x
+D) 2x + 1
+Answer
+Error, f is not defined
+=======================
+Question 8.b:
+MC Question: What is a possible value of x in (append x c)
+Skill: 2
+Options:
+A) (4 5 6)
+B) '(5 6)
+C) [2 3]
+D) 4 3
+Answer
+=======================
+Question 9.a:
+MC Question: What is the breakdown of a build-list function
+Skill: 5, 6
+Options:
+A) (build-list num num)
+B) (build-list num func)
+C) (build-list func num)
+D) (build-list func func)
+Answer
+B
+Answer: D
+=======================
+Question 9.b:
+MC Question: Which list fits the function below?
+(build-list  5 (lambda (n) (random 10 20)))
+Options:
+A) 1 2 3 4 5
+B) 13.4 16.5 17.8 19.3 10.2
+C) 11 13 14 17 19
+D) The function does not create a list
+Skill:Data Structures
+Answer
+C
+=======================
+Question 9.b:
+MC Question: Which list fits the function below?
+(build-list  5 (lambda (n) (random 10 20)))
+Options:
+A) 1 2 3 4 5
+B) 13.4 16.5 17.8 19.3 10.2
+C) 11 13 14 17 19
+D) The function does not create a list
+Skill:Data Structures
+Answer
+C
+=======================
+Question 9.b:
+MC Question:
+What is the definition of recursion in terms of CS?
+Skill: 10
+Options:
+A) Using a function within itself
+B) Repeating something
+Answer: A
+=======================
+Question 10.a:
+MC Question: Which of the following does not return a boolean value?
+Skill: 5
+Options:
+A. and
+B. or
+C. with
+D. not
+Answer
+C
+=======================
+Question 10.b:
+MC Question: Which of the following returns a random value between 1 and 100 inclusive?
+Skill: 2,3,7
+Options:
+A. (random 1 100)
+B. (random 101)
+C. random 101
+D. (random 1 101)
+Answer
+D
+=======================
+Question 10.b:
+MC Question: Which of the following correctly correctly creates the function add in which a and b are summed?
+Skill: 2,3,4
+Options:
+A. (lambda (a + b))
+B. (define add (lambda (a b) (+ a b)))
+C. (define add (lambda (a, b) (+ a b)))
+D. (define add (lambda (a b) (a + b)))
+Answer
+B
+=======================
+Question 10.b:
+MC Question: Which of the follwing is not used to comment in code
+Skill: 1,3
+Options:
+A. #|
+B.
+=======================
+Question 11.a:
+MC Question:  What is the hexadecimal representatino of the decimal number 12345
+Skill: 12
+Options:
+A) 3309
+B) 3903
+C) 3039
+D) 3390
+Answer
+C
+=======================
+Question 11.b:
+MC Question: Which of the following will return a "correct" value
+Skill: 2
+Options:
+a) (cons 2 0)
+b) (cons '(4))
+c) (cons '(6 7 8) 12)
+d) (cons '(1 2 3) '(4 5 6))
+Answer
+D
+=======================
+Question 11.b:
+MC Question: which of the following is a recursive function
+Options:
+a) (define func1 (lambda (x) (+ x 1)))
+b) (define func1 (lambda (x y) (cons x y)))
+c) (define func1 (lambda (x) (cons (first x) (func1 (rest x)))
+d) (define func1 (lambda (x) (foldl + 0 x)))
+Skill:10
+Answer C
+=======================
+Question 11.b:
+MC Question: What is the breakdown of a build-list function
+Skill: 5, 6
+Options:
+A) (build-list num num)
+B) (build-list num func)
+C) (build-list func num)
+D) (build-list func func)
+Answer
+B
+=======================
+Question 12.a:
+MC Question: What does the lambda function do?
+Skill:
+Options:
+A) Set a function to some specific value that can be able to be used later
+B) Creates a function
+C) Acts as a setup that allows the entire code to run
+D) Ends a function
+Answer: B
+=======================
+Question 12.b:
+MC Question: What does the "let" function do?
+Skill:
+Options:
+A) Creates a function
+B) Sets a variable
+C) Sets a variable and adds the two inputs given automatically
+D) Changes a function's name
+Answer: B
+=======================
+Question 12.b:
+MC Question: Which one below does NOT output a list?
+Skill:
+Options:
+A) (cons 1 '())
+B) '()
+C) (build-list 5 (lambda (x) (* x x)))
+D) (xor 11 #f)
+Answer
+=======================
+Question 12.b:
+MC Question: What is the output of (= 248 (* (- 3 (+ 4 3)) (2 6))
+Skill:
+Options:
+A) #t
+B) #f
+C) no solution
+D) something else
+Answer
+=======================
+Question 13.a:
+MC Question: Which of the following functions returns false 
+Skill: 5 2 
+Options:
+A) (= (+ 2 8) (/ (* 3 11) 3))
+B) (>= ( remainder 6 3) (- 10 ( * 5 2)))
+C) (and ( > 7 5) (< (- 9 5) 8))))
+D) ( or ( < 8 9) (< (/ 9 3) 7))
+Answer
+A
+=======================
+Question 13.b:
+MC Question: Imagine you were writing a recursion funtion called Monty where it returns the smallest value in a list. The start looks like this:
+(define Monty
+(lambda (g value)
+(if ( ____ )
+0 
+( if (< ( first g ) value)
+(Monty (rest g) ( first g))
+(Monty (rest g) value))))))
+
+What is the missing blank?
+   
+Skill: 4 3 10
+Options:
+A) (= 0 g)
+B) null? g
+C) g
+D) (= (first g) 0))
+Answer
+B
+
+
+#|
+MC Question: (filter f g) represents the basic outline of how filter works. What is f and what must be true about it?
+
+Skill: 2,3,9
+Options:
+A) f represents a boolean value that each element of g could compare to.
+B) f represents a function that must take an argument and return a boolean value
+C) f represents a list that must not be null.
+D) f represents a function that must take an element from g and return a new numeric value 
+Answer
+B
+=======================
+Question 13.b:
+
+=======================
+Question 13.b:
+
+=======================
+Question 14.a:
+MC Question: Which of the following syntax commands can be used to return a list (in the way which it is used).
+Skill: 3
+Options:
+A. filter
+B. null
+C. foldl
+D. cons
+Answer
+C. foldl combines list values into a single value, null is the base case used in recursion to build lists, build list literally builds a list on certain parameters - numerical, cons combines values to form lists
+=======================
+Question 14.b:
+
+=======================
+Question 14.b:
+
+=======================
+Question 14.b:
+
+=======================
+Question 15.a:
+MC Question:
+What does the following function do?
+(define mystery
+  (lambda (n)
+    (if (= n 1)
+        1
+    (+ (expt n 3) (mystery (- n 1))))))
+Skill: 2, 6, 10
+Options:
+A) Returns the sum of all the integers from 1 to n
+B) Returns n!
+C) Returns the sum of all the cubes of the integers from 1 to n
+D) Returns the sum of the cube roots of the integers from 1 to n
+
+Answer: C
+=======================
+Question 15.b:
+MC Question:
+Convert 45 (base 8) to binary. 
+Skill: 12
+Options:
+A) 100111
+B) 100101
+C) 101100
+D) 100001
+Answer: B
+=======================
+Question 15.b:
+MC Question:
+
+Skill: 
+Options:
+A) 
+B) 
+C) 
+D) 
+
+Answer:
+=======================
+Question 15.b:
+MC Question:
+
+Skill: 
+Options:
+A) 
+B) 
+C) 
+D) 
+
+Answer:
+=======================
+Question 16.a:
+MC Question: Which one of these functions subtract a value by 25 and then divide by 5.
+Skill: 2 3 5
+Options:
+
+a)
+(define quest1
+  (lambda (a)
+   (/ (- 5 a) 25 )))
+
+b)
+(define quest1
+  (lambda (a)
+   (/ (+ 5 a) 25 )))
+
+c)
+(define quest1
+  (lambda (a)
+   (/ (- 25 a) 5)))
+
+d)
+(define quest1
+  (lambda (a)
+   (/ (- a 25) 5)))
+
+Answer : D
+=======================
+Question 16.b:
+MC Question: Which of these can be associated with iteration?
+Skill: 11
+Options:
+
+a) define
+
+b) forever button
+
+c) patches
+
+d) tick counter
+
+Answer : B
+=======================
+Question 16.b:
+MC Question: What is a parameter?
+Skill: 23
+Options:
+
+a)the name of a variable
+
+b)the return of a function
+
+c)a variable used to represent input to a function
+
+d)a value passed into a function when it is called
+
+Answer : C
+=======================
+Question 16.b:
+MC Question: In a linked list, a node contains...
+Skill: 9
+Options:
+
+a) a value and multiple links to all other nodes
+
+b) a value and a link to the last node only
+
+c) a value and a link to the first node only
+
+d) a value and a link to the rest of the list
+
+Answer : D
+=======================
+Question 17.a:
+Final Exam Prep!
+Due: Thursday 1/17 10:00am
+Submission name: final0.rkt
+=======================
+Question 17.b:
+MC Question:
+Given the following code:
+
+(define dumbPlus
+  (lambda (a b)
+    (if (> b 0)
+        (dumbPlus (+ a 1) (- b 1))
+        a)))
+
+If x is 5 and y is 6, what does the function return?
+Skill: 10
+Options:
+A) 5
+B) 10
+C) 11
+D) The code results in an error.
+
+Answer: C
+=======================
+Question 17.b:
+MC Question:
+Which function must take a list as a parameter?
+Skill: 9
+Options:
+A) build-list
+B) foldl
+C) list
+D) lambda
+
+Answer: B
+=======================
+Question 17.b:
+MC Question:
+Which of the following can return a value of 11?
+Skill: 7
+Options:
+A) (* -1 (random 0 11))
+B) (random 0 -15)
+C) (* (random 11 10) -1)
+D) (- (random 0 2) 12)
+
+Answer: D
+=======================
+Question 18.a:
+MC Question: What is needed to write a function with recursion?
+Skill: 3,10
+Options:
+A) exit condition
+B) calling the function in the function
+C) an if statement
+D) all of the above
+Answer: D
+=======================
+Question 18.b:
+MC Question: What does an ISP do?
+Skill: 16
+Options:
+A) Steal your data
+B) Give you connection to the internet through the backbone of the internet
+C) Sell hardware
+D) Store inputs
+Answer: B
+=======================
+Question 18.b:
+MC Question: What does rest do?
+Skill:8,9
+Options:
+A) return a list
+B) Pause the program
+C) return the rest of the list
+D) A and C
+Answer: D
+=======================
+Question 18.b:
+MC Question:What does this function return (define ture (not (true and false))) (ture)
+Skill:5
+Options:
+A) True
+B) false
+C) error
+D) Ture
+Answer: A
+=======================
+Question 19.a:
+MC Question:
+(define fib
+  (lambda (n)
+  (if (<= n 2)
+      1
+      (+ (fib (- n 1)) (fib (- n 2)))
+      )))
+(define fiblist
+  (lambda (n)
+    (build-list n fib)
+    ))
+Skill:
+Options:
+Answer
+=======================
+Question 19.b:
+MC Question:
+
+Skill:
+Options:
+Answer
+=======================
+Question 19.b:
+
+=======================
+Question 19.b:
+
+=======================
+Question 20.a:
+Question 1
+What is the result of the following expression (+ 5 3 2)
+Skills: 8, 12, 11
+Options:
+a) 8
+b) 10
+c) 15
+d) 5
+
+Answer: b) 10
+
+Question 2
+Which of the following is a correct way to define a function in Racket?
+Skills: 2, 3, 10
+Options:
+a) (define (square x) (* x x))
+b) (def (square x) (* x x))
+c) (function square x: (* x x))
+d) (defun square (x) (* x x))
+
+Answer: a) (define (square x) (* x x))
+
+Question 3
+What does the following Racket expression evaluate to?
+(list 'a 'b 'c)
+Skills: 8, 9
+Options:
+a) (a b c)
+b) 'a 'b 'c
+c) (quote a quote b quote c)
+d) a b c
+
+Answer: a) (a b c)
+
+Question 4
+What does the following Racket expression evaluate to?
+(or (and #t #f) (not (or #f #f)))
+Skills: 5, 6
+Options:
+a) #t
+b) #f
+c) #t #f
+d) #f #t
+
+Answer: a) #t
+=======================
+Question 20.b:
+
+=======================
+Question 20.b:
+
+=======================
+Question 20.b:
+
+=======================
+Question 21.a:
+MC Question:
+Which of the following is the correct way to define a variable in DrRacket?
+Skill: 2
+Options:
+A) (var x = 10)
+B) (x = 10)
+C) (let x 10)
+D) (define x 10)
+Answer: D
+=======================
+Question 21.b:
+#lang racket
+#|
+MC Question:
+How would you write a function in DrRacket that adds two numbers?
+Skill: 2
+Options:
+A) a + b
+B) (define a b (+ a b))
+C) (define a b (a + b))
+D) (+ a b)
+Answer: B
+=======================
+Question 21.b:
+#lang racket
+#|
+MC Question:
+Which one does not return a valid list in DrRacket?
+Skill: 9
+Options:
+A) (build-list 5 sqrt)
+B) (list (sqrt 0) (sqrt 1) (sqrt 2) (sqrt 4) (sqrt 5))
+C) (build-list (lambda (n) (expt 2 n)))
+D) (foldl + 2 '())
+Answer: C
+=======================
+Question 21.b:
+#lang racket
+#|
+MC Question: 
+Which is the correct function that returns the number of times value appears in list g?
+Skill: 3, 9
+Options:
+A)(define count
+  (lambda (value nums)
+    (if (null? nums)
+        0
+        (if (= value (first nums))
+            (+ 1 (count value (rest nums)))
+            (count value (rest nums))))))
+B)(define count
+  (lambda (value nums)
+        (if (= value (first nums))
+            (+ 1 (count value (rest nums)))
+            (count value (rest nums)))))
+C)(define count
+  (lambda (value nums)
+    (if (null? nums)
+        null
+        (if (= value (first nums))
+            (+ 1 (count value (rest nums)))
+            (count value (rest nums))))))
+D)(define count
+  (lambda (value nums)
+    (if g = 0
+        null
+        (if (= value (first nums))
+            (+ 1 (count value (rest nums)))
+            (count value (rest nums))))))
+Answer
+=======================
+Question 22.a:
+MC Question:
+Which of the following is not part of a function contract?
+Skill: 3
+Options:
+A) Sample test cases with their inputs and expected outputs
+B) The correct URL
+C) The types of values of the parameters
+D) A description of what the function does
+
+Answer: B
+=======================
+Question 22.b:
+MC Question:
+Which of these statements returns #t ?
+Skill: 5
+Options:
+A) (not (or #f (and #t (not #f))))
+B) (and #t (or #t (not #f)))
+C) (or (and (not #f) #f) (not #t))
+D) (and (not #t) (or #f #t))
+
+Answer: B
+=======================
+Question 22.b:
+MC Question:
+Which of the following base 8 numbers has a value of A2F in hexadecimal?
+Skill: 12
+Options:
+A) 3067
+B) 3057
+C) 5067
+D) 5057
+
+Answer: D
+=======================
+Question 22.b:
+MC Question:
+What are the inputs of the if function?
+Skill: 22
+Options:
+A) A boolean, a value, and a function
+B) A boolean followed by two values
+C) A conditional statement followed by a value
+D) A function followed by two values
+
+Answer: B
+=======================
+Question 23.a:
+MC Question:
+The following is code that calculates the air speed of an unladen swallow:
+(define african #t)
+(define european #f)
+(define x
+  (if african
+      20
+      (if european
+          28
+          "African or European?")))
+(display x)
+(display " mph")
+What would the terminal display?
+Skill: 5
+Options:
+A) 2 mph
+B) 20 mph
+C) 200 mph
+D) African or European?
+
+Answer: B
+=======================
+Question 23.b:
+MC Question:
+Who you gonna call?
+Skill: 9001
+Options:
+A) Transformers
+B) Ghostbusters
+C) Thundercats
+D) Teenage Mutant Ninja Turtles
+
+Answer: B
+=======================
+Question 23.b:
+
+=======================
+Question 23.b:
+
+=======================
+Question 24.a:
+lang racket
+;##########
+;MC Question: What does not create a list? 
+;Skill: 8, 3, 2
+;Options:
+;a.) (build-list 5 (lambda (x) (random 10)))
+;b.) (cons 1 '(2 3))
+;c.) (foldl (lambda (x Y) (+ x 1 Y)) 2 '(1 2 3))
+;d.) '(1 5 2 3)
+;Answer C
+;
+;##########
+
+;##########
+;MC Question: Which one has bad syntax?
+;Skill:2, 3, 5, 6
+;Options:
+;a.) (if (> 2 3) (10) else (0))
+;b.) (lambda (x) (if (x > 1) 255 (+ x 1)))
+;c.) (lambda (x)(cond ((> x 1) 67) ((> x 50) 23) ((< x 1) -289) (else -2)))
+;d.) (if (< 3 5) (- 3 5) 0)
+;Answer A
+;
+;########
+=======================
+Question 24.b:
+ang racket
+;##########
+;MC Question: What does not create a list? 
+;Skill: 8, 3, 2
+;Options:
+;a.) (build-list 5 (lambda (x) (random 10)))
+;b.) (cons 1 '(2 3))
+;c.) (foldl (lambda (x Y) (+ x 1 Y)) 2 '(1 2 3))
+;d.) '(1 5 2 3)
+;Answer C
+;
+;##########
+
+;##########
+;MC Question: Which one has bad syntax?
+;Skill:2, 3, 5, 6
+;Options:
+;a.) (if (> 2 3) (10) else (0))
+;b.) (lambda (x) (if (x > 1) 255 (+ x 1)))
+;c.) (lambda (x)(cond ((> x 1) 67) ((> x 50) 23) ((< x 1) -289) (else -2)))
+;d.) (if (< 3 5) (- 3 5) 0)
+;Answer A
+;
+;########
+=======================
+Question 24.b:
+ng racket
+;##########
+;MC Question: What does not create a list? 
+;Skill: 8, 3, 2
+;Options:
+;a.) (build-list 5 (lambda (x) (random 10)))
+;b.) (cons 1 '(2 3))
+;c.) (foldl (lambda (x Y) (+ x 1 Y)) 2 '(1 2 3))
+;d.) '(1 5 2 3)
+;Answer C
+;
+;##########
+
+;##########
+;MC Question: Which one has bad syntax?
+;Skill:2, 3, 5, 6
+;Options:
+;a.) (if (> 2 3) (10) else (0))
+;b.) (lambda (x) (if (x > 1) 255 (+ x 1)))
+;c.) (lambda (x)(cond ((> x 1) 67) ((> x 50) 23) ((< x 1) -289) (else -2)))
+;d.) (if (< 3 5) (- 3 5) 0)
+;Answer A
+;
+;########
+=======================
+Question 24.b:
+g racket
+;##########
+;MC Question: What does not create a list? 
+;Skill: 8, 3, 2
+;Options:
+;a.) (build-list 5 (lambda (x) (random 10)))
+;b.) (cons 1 '(2 3))
+;c.) (foldl (lambda (x Y) (+ x 1 Y)) 2 '(1 2 3))
+;d.) '(1 5 2 3)
+;Answer C
+;
+;##########
+
+;##########
+;MC Question: Which one has bad syntax?
+;Skill:2, 3, 5, 6
+;Options:
+;a.) (if (> 2 3) (10) else (0))
+;b.) (lambda (x) (if (x > 1) 255 (+ x 1)))
+;c.) (lambda (x)(cond ((> x 1) 67) ((> x 50) 23) ((< x 1) -289) (else -2)))
+;d.) (if (< 3 5) (- 3 5) 0)
+;Answer A
+;
+;########
+=======================
+Question 25.a:
+MC Question:
+Given the following code:
+
+(define foo
+  (lambda (n)
+    (if (= n -1)
+        null
+        (cons n (foo (- n 1))))))
+
+Which choice completely describes what's happening in the function?
+
+Skills: 9, 10, 2
+Options:
+A) Counts down from n-1 to n
+B) Calls foo recursively
+C) Counts down from n to 0 using recursion
+D) Uses null and a conditional to stop recursion in foo
+
+Answer: C
+=======================
+Question 25.b:
+MC Question:
+Given the following code:
+
+(define getNthDigit
+  (lambda (n digit)
+    (remainder ______________________________)
+
+Which choice correctly fills in the code needed in the blanks?
+
+Skills: 9, 10, 2
+Options:
+A) (quotient n (expt 10 (- digit 1)) 10
+B) (quotient n (remainder 10 (+ digit 1)) 10
+C) (quotient n (quotient 10 (- digit 1)) 10
+D) (quotient n (- digit 1)) 10
+
+Answer: A
+=======================
+Question 25.b:
+MC Question:
+What is the keyword needed to make a function specifically?
+Skill: 2, 23
+Options:
+A) define
+B) lambda
+C) n
+D) foo
+
+Answer: B
+=======================
+Question 25.b:
+MC Question: What is a nested conditional statement?
+Skill: 5
+
+Options:
+A) an "if" within an "if"
+B) an "if" where one or both of the returned booleans runs another "if"
+C) "conditional
+      conditional"
+D) (= 8  (+ 6 7))
+
+Answer B)
+=======================
+Question 26.a:
+MC Question:
+When should you use foldl, and how?
+Skill: 2,9
+Options:
+A) To compress a list into one value.
+B) To implement recursiveness into a function.
+C) To remove values from a list that don't meet certain criteria.
+D) Combines two lists into one list of all the elements.
+Answer: D
+=======================
+Question 26.b:
+MC Question:
+You are trying to make a list of integers from 5 to 0. But when you try to make the list, you get this:
+'(5 4 3 2 1 . 0)
+That dot isn't supposed to be there. What did you do wrong?
+Skill: 8,9
+Options:
+A) You tried to add a different data type from the ones already in the list.
+B) The 0 was added as a float, not an integer.
+C) You tried to cons a list onto a non-list value.
+D) You accidentally put a null inbetween the 1 and 0.
+Answer: C
+=======================
+Question 26.b:
+MC Question:
+Skill: 2,3,6,8 
+Options: Two of these are not proper syntax, and either return bad data or throw errors! Which ones are NOT written correctly?
+A) (+ (if #t 2 4) 1)
+B) (filter (lambda (a) (not a)) '(#t #f #f))
+C) (foldl (- x 1) 0 (list 3 1 17 4))
+D) (cons '(98 7) 40)
+Answer: A,B
+=======================
+Question 26.b:
+
+=======================
+Question 27.a:
+MC Question: The function, map, performs which of the following?
+Options:
+A) If you give 'map' a function with two parameters and two lists, it will call the function using one element from each list at a time
+B) 'Map' will run with lists of different lengths
+C) The number of list arguments to 'map' does not have to equal the number of arguments to the provided function
+D) More than one of the above choices is true.
+Skill: 2, 10, 23
+Answer: A
+=======================
+Question 27.b:
+MC Question: How is the function, cond, able to produce different results based on boolean values?
+Options:
+A) If all the boolean tests of the cond are false, the result attached else will not not be returned.
+B) The function will return the result of the first test if the boolean is true.
+C) All subsequent functions will also be ran.
+D) All results are the same no matter the different tests.
+Skill: 2, 3, 5, 6
+Answer: B
+=======================
+Question 27.b:
+MC Question: Which of the following is not a method in which binary data can be represented?
+Options:
+A) Electrical voltage
+B) Magnetic charges
+C) Optical changes
+D) Wavelengths
+Skill: 7, 8
+Answer: D
+=======================
+Question 27.b:
+MC Question: Duckie is recording a 20 hour audio file as MP3 files. About how much data will that be (expressed in GB)?
+Options: 8, 13
+A) 0.6 GB
+B) 1200 GB
+C) 15 GB
+D) 1.5 GB
+Skill: 
+Answer: D
+=======================
+Question 28.a:
+MC Question:
+Which of the following functions can be used to check if a list is empty in Racket?
+
+Skill: 
+
+Options:
+A) empty?
+B) null?
+C) is-empty?
+D) list-empty?
+
+
+#lang racket
+#|
+MC Question:
+What number do you get from this code 
+(define (sum a b) (+ a b))
+(sum 3 5)
+
+Skill: 
+
+Options:
+A) 35
+B) 5
+C) 8
+D) 3
+
+Answer: 8
+=======================
+Question 28.b:
+MC Question:
+Which is used to create a conditional expression?
+
+Skill: 
+
+Options:
+A) if
+B) for
+C) and
+D) or
+
+Answer: A
+=======================
+Question 28.b:
+
+=======================
+Question 28.b:
+
+=======================
+Question 29.a:
+MC Question: Which is NOT a necessity for a successful recursive function?
+Skill: 10
+Options:
+A)exit condition
+B)input
+C)self call
+D)all of the above
+Answer
+=======================
+Question 29.b:
+MC Question: What does every function include?
+Skill: 23
+Options:
+A) perameter
+B) output
+C) recursion
+D) logical condition
+Answer: B
+=======================
+Question 29.b:
+MC Question: Which of the following would successfuly return the smallest value in a list?
+Skill: 3, 11
+Options:
+A) (foldl (lambda (value prev)
+         (if (< value prev)
+             value
+             prev))
+         (first listVar)
+         listVar)
+B) (foldl (lambda (prev value)
+         (if (> prev value)
+             value
+             prev))
+         (first listVar)
+         listVar)
+C) (foldl (if (< value prev)
+             value
+             prev)
+          (first listVar)
+          listVar)
+D) (foldl (if (< prev value)
+             value
+             prev))
+          (first listVar)
+          listVar)
+Answer: A
+=======================
+Question 29.b:
+MC Question: What is NOT required in a function contract?
+Skill: 3
+Options:
+A) input type
+B) description of function purpose
+C) description of how function accomplishes goal
+D) output type
+Answer: C
+=======================
+Question 30.a:
+MC Question:
+What data type will the folowing line of code return?
+(foldl cons null (list 1 2 3))
+Skill: 8
+Options:
+A) integer
+B) list
+C) boolean
+D) string
+
+Answer: B
+=======================
+Question 30.b:
+MC Question:
+What is the range of the possible outputs of the following line of code?
+(random 5)
+Skill: 7
+Options:
+A) [0,5], integers only
+B) [0,5), integers only
+C) [0,5], decimals included
+D) [0,5), decimals included
+Answer: B
+=======================
+Question 30.b:
+MC Question:
+What will the following line of code return?
+(if (or (and #t (or #f #f)) (and #t #t)) (and #t #f) (or #f (or #f (or #f (not #f)))))
+Skill: 9001
+Options:
+A) #t
+B) #f
+C) #maybe
+D) null
+
+Answer: B
+=======================
+Question 30.b:
+MC Question:
+Which of the following functions is iterative?
+Skill: 9001
+Options:
+A) +
+B) foldl
+C) (define function (lambda (g) (function (rest g))))
+D) filter
+
+
+Answer: B
+=======================
+Question 31.a:
+MC Question: Which of the following will return true (given that p is true and q is false)?)
+Skill: 5
+Options:
+A) (p and q)
+B) (not (p or q))
+C) (p > q)
+D) (p or (not q))
+Answer: D
+=======================
+Question 31.b:
+MC Question: Given the command (foldl f g h), with correctly predifined variables, which of the following represents a list? 
+Skill: 9
+Options:
+A) foldl
+B) h
+C) g
+D) f
+Answer: B
+=======================
+Question 31.b:
+MC Question: Which of the following functions will not always return the absolute value of an input.
+Skill: 2 and 3
+Options:
+A) (define func (lambda (a) (sqrt (expt a 2))))
+B) (define func (lambda (a) (abs a)))
+C) (define func (lambda (a) (abs (* (/ 1 a) a a))))
+D) (define func (lambda (a) (length (build-list (abs a) +))))
+Answer: C
+=======================
+Question 31.b:
+MC Question: How does a recursive function end and return a value?
+Skill: 10
+Options:
+A) A recursive function never ends.
+B) A recursive function reaches its base case.
+C) Press the STOP button at the top right of the window.
+D) Wait for an error.
+Answer: B
+=======================
+Question 32.a:
+MC Question:
+What will (null? g) return if g is an empty list?
+Skill: 10
+Options:
+A) #t
+B) #f
+C) error
+D) list
+
+Answer: A
+=======================
+Question 32.b:
+MC Question:
+What must be true about f in (foldl f startValue g)?
+Skill: 9
+Options:
+A) f must be an argument
+B) f must be a function that takes one argument
+C) f must be a function that takes two values
+D) f must be a function that takes two arguments 
+
+Answer: D
+=======================
+Question 32.b:
+MC Question:
+What is google.com
+Skill: 16
+Options:
+A) Top level domains
+B) second level domains
+C) subdomains
+D) IP address
+
+Answer: B
+=======================
+Question 32.b:
+MC Question:
+What do bits and bytes measure? 
+Skill: 13
+Options:
+A) size
+B) speed
+C) Both A aned B
+D) Neither
+Answer: C
+=======================
+Question 33.a:
+MC Question:
+In DrRacket, what arguments does lambda have?
+Skill: 3
+Options:
+A) 2 arguments: name of function and a variable
+B) lambda does not require any parameters
+C) 1 argument: a variable
+D) 1 argument: a value
+
+Answer: B
+=======================
+Question 33.b:
+MC Question:
+Which of the following is true of lists in Racket?
+Skill: 8
+Options:
+A) they can take an infinite amount of arguments, but they have to be the same type of data
+B) they can take a limited amount of arguments, but they have to be the same time of data
+C) there is no requirement for the amount of arguments it takes
+D) it takes two arguments, a list and the value you want to add to the end of it.
+
+Answer: C
+=======================
+Question 33.b:
+MC Question:
+Which of the following is true of the function foldl in Racket?
+Skill: 11
+Options:
+A) exactly 3 parameters: a function (that only takes 2 arguments), a start value, and a list.
+B) exactly 3 parameters: a function (no restrictions on the # of arguments it takes), a start value, and a list
+C) exactly 2 parameters: a function (no restrictions on the # of arguments it takes), and a list.
+D) exactly 4 parameters: a function (that only takes 2 arguments), a start value, a list, and an incremental value.
+
+Answer: A
+=======================
+Question 33.b:
+MC Question:
+In DrRacket, what is the correct syntax for if?
+Skill: 6
+Options:
+A) (if BOOLEAN
+  #TRUE
+  #FALSE
+)
+B) (if BOOLEAN
+  #FALSE
+  #TRUE
+)
+C) (if BOOLEAN
+  ANYTHING_YOU_WANT
+  ANYTHING_YOU_WANT
+)
+D) (if BOOLEAN
+  RESULT_IF_TRUE
+  RESULT_IF_FALSE
+)
+
+Answer: D
