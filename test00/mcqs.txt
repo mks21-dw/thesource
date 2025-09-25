@@ -58,9 +58,9 @@ Question 1.a:
 ; Skill: 1, 2, 3
 ; Possible solution:
 ; x: positive or negative number
-; y: must be positive number (since parabola is facing upwards)
+; p: must be positive number (since parabola is facing upwards)
 ; (define parbConic (lambda (p x) (* p (/ 1 4) (* x x))))
-; (parabConic 3 4)---> 1
+; (parabConic 3 4)---> 12
 =======================
 Question 1.b:
 
