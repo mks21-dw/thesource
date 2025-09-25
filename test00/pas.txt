@@ -1,0 +1,433 @@
+
+/ahmetaj.kevin
+=======================
+Question 0:
+
+(define TriSidesTest
+  (lambda (a b c)
+    (and
+     (> (+ a b) c)
+        (> (+ b c) a)
+           (> (+ a c) b))))
+(TriSidesTest 10 12 9)
+/brinzensky.roman
+=======================
+Question 1:
+
+ng racket
+; #|
+; MC Question:
+; Given the following boolean function, which set of arguments would result in a true return value?
+; (define boolean (lambda (a b)
+;    (and (not (> a b)) (> a (sqrt b)))))
+; Skill: 5
+; Options:
+; A) (boolean 2 7)
+; B) (boolean 3 1)
+; C) (boolean 8 10) 
+; D) (boolean 3 10)
+; Answer: C
+
+; #|
+; MC Question:
+; What is wrong with the racket code below, and what is the reasoning for the issue?
+; (sqArea (lambda
+;    (b h) (* b h)))
+; Skills: 1 and 3
+; Options:
+; A) The function is used incorrectly-functions are never placed after paranthesis.
+; B) The sqArea function is not defined- there is not value assigned to the sqArea identifier
+; C) The lambda function is not used properly- the function is not anonymous
+; D) The function is not defined properly- the function return value doesn't have an assigned identifier
+; Answer: B
+
+; #|
+; Programming Question: Given that the conic form of a parabola is y = (1/4p) x^2, with the parabola having its vertex at point (0,0)
+; and facing upwards, write paramter restrictions on the first line (not the whole contract), function definition, and test cases
+; for your function. Make sure to give your function a name!
+; Skill: 1, 2, 3
+; Possible solution:
+; x: positive or negative number
+; y: must be positive number (since parabola is facing upwards)
+; (define parbConic (lambda (p x) (* p (/ 1 4) (* x x))))
+; (parabConic 3 4)---> 12
+/chan.cassandra
+=======================
+Question 2:
+
+
+/chen.cherie
+=======================
+Question 3:
+
+(define hypotenuse
+  (lambda (a b)
+    (sqrt (+ (* a a) (* b b)))))
+(hypotenuse 3 4)
+/chen.ethan
+=======================
+Question 4:
+
+
+/cheng.eason
+=======================
+Question 5:
+
+(define square-plus-10
+  (lambda (n)
+    (+ (* n n) 10)))
+/cho.wilson
+=======================
+Question 6:
+
+(define exor
+  (lambda (a b)
+    (and (or a b) (not (and a b)))))
+(exor #true #false)
+(exor #true #true)
+/chosang.tenzin
+=======================
+Question 7:
+
+(define kiloToMilligrams
+  (lambda (k)
+    (* k 1000000)))
+(display "this should equal 4000000: ")
+(kiloToMilligrams 4)
+/chowdhury.adyan
+=======================
+Question 8:
+
+(define evenOrOdd
+  (lambda (n)
+    (= (remainder n 2) 0)))
+(evenOrOdd 6)
+(evenOrOdd 7)
+(evenOrOdd 0)
+/hafeez.arzan
+=======================
+Question 9:
+
+(define hexagonalPrismVolume
+  (lambda (sidelength height)
+    (* (/ (* 3 (sqrt 3)) 2) (expt sidelength 2) height)))
+(hexagonalPrismVolume 1 2)
+/kalantry.krish
+=======================
+Question 10:
+
+
+/kano.nene
+=======================
+Question 11:
+
+(define halfAvg
+  (lambda (a b)
+    (/ (/ (+ a b) 2) 2)))
+(halfAvg 6 10)
+/lee.caitlyn
+=======================
+Question 12:
+
+; (volumesP base height) - -> positive number
+; base height: positive number 
+;
+; Returns the volume of a square pyramid with side lengths base and height
+; The formula:  (1/3) × (Base x Base) × (Height)
+; (volumesP 18 5)
+; should display 540
+; (volumesP 6 5)
+; should display 60
+/lee.nathan
+=======================
+Question 13:
+
+(define squareAndCircle
+  (lambda (length)
+    (+ (expt length 2)(* pi length length))))
+(squareAndCircle 5)
+/lim.tj
+=======================
+Question 14:
+
+
+/mui.hayden
+=======================
+Question 15:
+
+(define
+  (lambda (x)
+    (expt (sqrt (sqrt x)) 2)))
+/ng.sophia
+=======================
+Question 16:
+
+(define ifGreaterThan
+  (lambda (a b)
+    (and (> a b) (> a 2))))
+(ifGreaterThan 5 3)
+/opara.daniel
+=======================
+Question 17:
+
+
+/opara.daniel
+=======================
+Question 18:
+
+(define molMine
+  (lambda (particles)
+    (/ particles (* 6.022 (expt 10 23)))))
+/shen.aaron
+=======================
+Question 19:
+
+(define even
+  (lambda (number)
+    (= (remainder number 2) 0)))
+(even 6)
+(even 7)
+/shih.thomas
+=======================
+Question 20:
+
+(define calcBags
+  (lambda (n)
+    (+
+      (quotient n 2)
+      (remainder n 2))))
+
+  (calcBags 4)
+   (calcBags 5)
+/tong.olivia
+=======================
+Question 21:
+
+(define areaT
+  (lambda (base1 base2 height)
+    (* 0.5 (+ base1 base2) height)))
+(areaT 10 6 5)
+/zhang.william
+=======================
+Question 22:
+
+(define quadratic
+  (lambda (x)
+    (+ (* 2 x x) (* 3 x) -5)))
+
+;; Example usage:
+(quadratic 4) ; Returns 43
+/zou.wilson
+=======================
+Question 23:
+
+(define RoundUp
+  (lambda (number)
+    (>= (remainder number 10) 5)))
+/berman.jaffee
+=======================
+Question 24:
+
+(define perim 
+  (lambda (l w) 
+    (+ l l w w)))
+/bhowmik.mouri
+=======================
+Question 25:
+
+(define areaT
+  (lambda (base1 base2 height)
+      (* (/ (+ base1 base2) 2) height)))
+/chan.angeline
+=======================
+Question 27:
+
+(define min
+  (lambda (a b)
+    (/ (+ (* (sqrt (expt (- a b) 2)) (- 0 1)) a b) 2)))
+/chan.brandon
+=======================
+Question 28:
+
+(define sumGreater
+  (lambda (a b c)
+    (> (+ a b) c)))
+/chen.fiona
+=======================
+Question 29:
+
+(define falseSum (lambda (a b c)
+                     (not (= (+ a b) c))))
+/chen.janice
+=======================
+Question 30:
+
+(define bothFalse
+  (lambda (a b)
+    (and (not a)
+         (not b))))
+/fung.william
+=======================
+Question 31:
+
+
+/jen.dylan
+=======================
+Question 32:
+
+(define areaHex
+  (lambda (s)
+    (* (/ (* 3 (sqrt 3)) 2) (sqr s))
+  )
+)
+(areaHex 5)
+/jensen.eske
+=======================
+Question 33:
+
+CODE GOES HERE
+/jiang.alvin
+=======================
+Question 34:
+
+(define divide2 (lambda ( a ) (/ a 2)))
+CODE GOES HERE
+/khan.uthsho
+=======================
+Question 35:
+
+; (rightTriLeg c a) --> number
+; c : number
+; a : number
+; Returns the second leg of a right triangle when given the hypotenuse and first leg
+; (rightTriLeg 5 3) --> 4
+; (right TriLeg 13 12) --> 5
+/kye.erin
+=======================
+Question 36:
+
+ng racket
+MC Question: In order to write a contract you must have,
+Skill: 3
+Options:
+A) semi-colons
+B) a function
+C) parenthesis
+
+Answer: A
+
+MC Question: A boolean function...
+Skill: 5
+Options:
+A) Has multiple possible output values
+B) Has only true possible output values
+C) Has only true and false possible output values
+D) Has only false possible output values
+
+Answer: C
+
+Programming question:
+Write a function that takes the side length of a cube and returns the surface area
+surface area of a cube: 6side^2
+Skills: 1, 3
+
+Possible solution:
+(define surface_area_c 
+  (lambda (side)
+    (* (expt side 2)6)))
+/lin.angie
+=======================
+Question 37:
+
+; (evenOrnot n) --> boolean
+; (n) --> integer
+; Takes an interger and determines if it is divisible by 2
+; ex: (evenOrnot 2) --> true
+; ex: (evenOrnot 5) --> false
+
+(define evenOrnot
+  (lambda (n)
+    (= (remainder n 2) 0)))
+/murtoza.irfan
+=======================
+Question 38:
+
+(define triArea
+  (lambda (base height)
+    (* 1/2 base height)))
+
+(triArea 10 5) ; should return 25
+/nurullaeva.sabrina
+=======================
+Question 39:
+
+; (canVote age citizen) --> boolean value
+; age --> positive integer
+; citizen --> boolean value
+; Returns whether or not a person can vote given age and citizen status
+; (canVote 20 true) --> true
+; (canVote 16 true) --> true
+; (canVote 20 false) --> false
+; (canVote 16 false) --> false
+(define canVote
+  (lambda (age citizen)
+    (and (>= 18) citizen)))
+/peng.alex
+=======================
+Question 40:
+
+(define QuadraticFormula+
+  (lambda (a b c)
+    (/ (+ (- 0 b) (sqrt (- (expt b 2) (* 4 a c))))
+       (* 2 a))))
+(define QuadraticFormula-
+  (lambda (a b c)
+    (/ (- (- 0 b) (sqrt (- (expt b 2) (* 4 a c))))
+       (* 2 a))))
+/royce.sophie
+=======================
+Question 41:
+
+(define AreaTrap
+  (lambda (B1 B2 h)
+    (* (/ (+ B1 B2) 2) h)))
+(AreaTrap 6 8 10)
+/schaible.anna
+=======================
+Question 42:
+
+
+/shahid.maryam
+=======================
+Question 43:
+
+
+/sukhdeo.dylan
+=======================
+Question 44:
+
+
+/tissera.shanya
+=======================
+Question 45:
+
+(define max
+  (lambda (a b)
+    (/(+ (sqrt (expt (- a b) 2)) a b)2)))
+(define min
+  (lambda (a b)
+    (/(+ (* (- 0 1)(sqrt (expt (- a b) 2))) a b)2)))
+/woodward.teo
+=======================
+Question 46:
+
+
+/zeng.john
+=======================
+Question 47:
+
+(define IneqTest
+  (lambda (x y)
+    (and (> y (+ (* 9 x) 6)) 
+        (< (+ (* 8 x) (* 19 y)) 6))))
+(IneqTest -30 1)

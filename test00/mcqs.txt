@@ -1,0 +1,1247 @@
+
+/ahmetaj.kevin
+=======================
+Question 0.a:
+MC Question: What does the function (expt 2 2) do?
+Skill:1,2
+Options:
+A) Multiplies 2 by 2 
+B) Divides 2 by 2 
+C) Raises 2 to the 2nd power
+D) Finds the square root of 2
+Answer C
+=======================
+Question 0.b:
+
+MC Question:
+In the function (and (> 15 10) (> (sqrt 2) 1)),
+what result does (and) have on the function.
+Skill:2,5
+Options:
+A) Returns false since both are false
+B) Returns true since both are true
+C) Returns false since one is false
+D) Returns true since one is true.
+Answer B
+/brinzensky.roman
+=======================
+Question 1.a:
+; MC Question:
+; Given the following boolean function, which set of arguments would result in a true return value?
+; (define boolean (lambda (a b)
+;    (and (not (> a b)) (> a (sqrt b)))))
+; Skill: 5
+; Options:
+; A) (boolean 2 7)
+; B) (boolean 3 1)
+; C) (boolean 8 10) 
+; D) (boolean 3 10)
+; Answer: C
+
+; #|
+; MC Question:
+; What is wrong with the racket code below, and what is the reasoning for the issue?
+; (sqArea (lambda
+;    (b h) (* b h)))
+; Skills: 1 and 3
+; Options:
+; A) The function is used incorrectly-functions are never placed after paranthesis.
+; B) The sqArea function is not defined- there is not value assigned to the sqArea identifier
+; C) The lambda function is not used properly- the function is not anonymous
+; D) The function is not defined properly- the function return value doesn't have an assigned identifier
+; Answer: B
+
+; #|
+; Programming Question: Given that the conic form of a parabola is y = (1/4p) x^2, with the parabola having its vertex at point (0,0)
+; and facing upwards, write paramter restrictions on the first line (not the whole contract), function definition, and test cases
+; for your function. Make sure to give your function a name!
+; Skill: 1, 2, 3
+; Possible solution:
+; x: positive or negative number
+; y: must be positive number (since parabola is facing upwards)
+; (define parbConic (lambda (p x) (* p (/ 1 4) (* x x))))
+; (parabConic 3 4)---> 1
+=======================
+Question 1.b:
+
+; MC Question:
+; Given the following boolean function, which set of arguments would result in a true return value?
+; (define boolean (lambda (a b)
+;    (and (not (> a b)) (> a (sqrt b)))))
+; Skill: 5
+; Options:
+; A) (boolean 2 7)
+; B) (boolean 3 1)
+; C) (boolean 8 10) 
+; D) (boolean 3 10)
+; Answer: C
+
+; #|
+; MC Question:
+; What is wrong with the racket code below, and what is the reasoning for the issue?
+; (sqArea (lambda
+;    (b h) (* b h)))
+; Skills: 1 and 3
+; Options:
+; A) The function is used incorrectly-functions are never placed after paranthesis.
+; B) The sqArea function is not defined- there is not value assigned to the sqArea identifier
+; C) The lambda function is not used properly- the function is not anonymous
+; D) The function is not defined properly- the function return value doesn't have an assigned identifier
+; Answer: B
+
+; #|
+; Programming Question: Given that the conic form of a parabola is y = (1/4p) x^2, with the parabola having its vertex at point (0,0)
+; and facing upwards, write paramter restrictions on the first line (not the whole contract), function definition, and test cases
+; for your function. Make sure to give your function a name!
+; Skill: 1, 2, 3
+; Possible solution:
+; x: positive or negative number
+; y: must be positive number (since parabola is facing upwards)
+; (define parbConic (lambda (p x) (* p (/ 1 4) (* x x))))
+; (parabConic 3 4)---> 1
+/chan.cassandra
+=======================
+Question 2.a:
+MC Question:
+
+Which is not a Boolean Function?
+Skill: 5
+
+Choices:
+A) And
+B) Not
+C) Exor
+D) Or
+
+Answer: C
+=======================
+Question 2.b:
+
+MC Question:
+
+What would this function return: (not(or (not(and #t #t)) #f))?
+Skill: 2 & 5
+
+Choice:
+A) true
+B) false
+C) #f
+D) #t
+
+Answer: D
+/chen.cherie
+=======================
+Question 3.a:
+MC Question:
+What is true about the boolean function: and?
+Skill: 5
+Options:
+A) Returns false if all arguments are false
+B) Returns true is any argument is true
+C) Returns false if any argument is false
+D) Takes one argument and returns the opposite boolean value
+Answer: C
+=======================
+Question 3.b:
+
+MC Question:
+What is not a possible identifier name?
+Skill: 3
+Options:
+A) pentagonArea
+B) PentagonArea123
+C) 123pentagonArea
+D) _pentagonArea
+Answer: C
+/chen.ethan
+=======================
+Question 4.a:
+MC Question:
+What should not be included when writing a function contract?
+Skill: 3
+Options:
+A) What the return value is expected to be
+B) Arguments to pass into the function
+C) Examples of the return value of the argument
+D) Guidelines to the parameters
+
+Answer: B
+=======================
+Question 4.b:
+
+MC Question:
+A student writes the following function contract for his homework.
+
+; (prize a b) --> counting numbers
+; a: counting number
+; b: counting number
+; Assumes a and b are positive integers 
+; Returns the sum of the square roots of a and b
+
+What is wrong with his function contract?
+
+Skill: 3
+Options:
+A) Return type should be positive rational number
+B) Missing define 
+C) No line break after the third line
+D) There should be a colon instead of an arrow
+
+Answer: A
+/cheng.eason
+=======================
+Question 5.a:
+MC Question: Which function returns true if 1 parameter is true?
+Skill: 5
+Options: 
+A) and
+B) or
+C) not
+D) All of the above
+Answer: B
+=======================
+Question 5.b:
+
+MC Question: In the function (define (add a b) (+ a b)), which parts are the parameters?
+Skill: 2
+Options: 
+A) add
+B) (+ a b)
+C) a and b
+D) (add 3 4)
+Answer C
+/cho.wilson
+=======================
+Question 6.a:
+MC Question: What is the density of a cube when it's mass is 2 grams and it's volume is 4 cm^3?
+Skill:1 or density formula
+Options:
+A) 2 grams/cm^3
+B) 1/2 grams/cm^3
+C) 4 grams/cm^3
+D) 8 grams/cm^3
+Answer: B
+=======================
+Question 6.b:
+
+MC Question: What is the value of the remainder when 4132 is divided by 10
+Skill: 1,3, remainders
+Options:
+A) 413
+B) 2
+C) 32
+D) 10
+Answer: b
+/chosang.tenzin
+=======================
+Question 7.a:
+What is the operator symbol for "less than or equal to"?
+SKILL:5 (Working with boolean values)
+a) <|
+b) <_
+c) <^
+d) <=
+Answer: d)
+=======================
+Question 7.b:
+
+How is 12*1+3 written in Racket?
+SKILL:4 (Understanding Algorithims
+a) (((12*1+3)))
+b) (* 12 1 + 3)
+c) (+ 3 (*12 1))
+d) (* 12 (+ 1 3))
+Answer: c)
+/chowdhury.adyan
+=======================
+Question 8.a:
+MC Question: What are comparison operators?
+Skill: 5
+Options:
+A) operators that take in boolean arguments and return boolean values
+B) operators that take in numeric argements and return numeric values
+C) operators that take in boolean arguments and return numeric values
+D) operators that take in numeric arguments and return boolean values
+Answer: D
+=======================
+Question 8.b:
+
+MC Question: What are boolean functions?
+Skill: 5
+Options:
+A) operators that take in boolean arguments and return boolean values
+B) operators that take in numeric argements and return numeric values
+C) operators that take in boolean arguments and return numeric values
+D) operators that take in numeric arguments and return boolean values
+Answer: A
+/hafeez.arzan
+=======================
+Question 9.a:
+MC Question:
+Which of these function calls will return #true when inputted into Racket? (Note that, in Racket syntax, xor denotes the 'exclusive or' operator.)
+Skill: 5
+Options:
+A) (> 5 10)
+B) (and (= 3 3) (< 4 5))
+C) (xor (< 5 6) (= 7 7))
+D) (or #f (and #f #f))
+
+Answer: B
+=======================
+Question 9.b:
+
+MC Question:
+Which of these best describes the difference between an argument and a parameter?
+Skill: 2
+Options:
+A) A parameter is a value passed to a function when it is called, whereas an argument is a variable used inside the function.
+B) An argument is a value passed to a function when it is called, whereas a parameter is a variable used as a placeholder for an argument.
+C) A parameter is only used in functions that are built into Racket’s library, whereas arguments are only used when a function is user-defined.
+D) Arguments and parameters are terms that can be used interchangeably in Racket.
+
+Answer: B
+/kalantry.krish
+=======================
+Question 10.a:
+MC Question:
+Consider the following program:
+(define mystery
+ (lambda (p q)
+   (and (and p q)
+        (or p q)
+        p)))
+Which of the following will result in a true output?
+Skill: 5
+Options:
+A) (mystery #t #f)
+B) (mystery #t #t)
+C) (mystery #f #t)
+D) (mystery #f #f)
+
+Answer: B
+=======================
+Question 10.b:
+
+MC Question:
+Which of the following correctly calls a function named square that takes one parameter x?
+Skill: 2
+Options:
+A) (define square (lambda (x) (* x x)))
+B) (square x)
+C) (square 4)
+D) define square 4
+
+Answer: C
+/kano.nene
+=======================
+Question 11.a:
+; MC Question:
+; Given the following function, which set of arguments would
+; result in a return value of true?
+; (define boolean (lambda (a b)
+; (or (> a (+ b b)) (< b (- b a))))
+; Skill: 5
+; Options:
+; A) (boolean 6 3)
+; B) (boolean 5 3)
+; C) (boolean 9 4)
+; D) (boolean 8 5)
+; Answer: C
+;
+=======================
+Question 11.b:
+
+; MC Question: Which of the following is NOT considered a valid literal value? 
+; Skill:  2
+; Options:
+; A) 5
+; B) hello, world
+; C) true
+; D) "hello, world"
+; Answer: B
+;
+/lee.caitlyn
+=======================
+Question 12.a:
+MC Question: What is an example of what you cannot have in an identifier name?
+Skill: 2
+Options:
+A) A-Z
+B) no spaces
+C) #
+D) a-z
+Answer
+=======================
+Question 12.b:
+
+MC Question: Given the following racket code:
+(expt (*(+ (/ (* 20 6) 5) 32)) 2)
+Skill: 2
+Options: 
+A) +
+B) /
+C) *
+D) expt
+Answer
+/lee.nathan
+=======================
+Question 13.a:
+MC Question:
+Which is not a Boolean Function?
+Skill: 5
+Options:
+A) And
+B) Not
+C) Exor
+D) Or
+
+Answer: C
+=======================
+Question 13.b:
+
+MC Question:
+What would this function return:
+(not (or (not (and #t #t)) #f))
+Skills: 2 5
+Options:
+A) #t
+B) #f
+C) Erro
+D) (and #f #f)
+
+Answer: B
+/lim.tj
+=======================
+Question 14.a:
+MC Question:
+Which of the following expressions equals #true in Racket?
+Skill:5
+Options:
+A. (and #true #false)
+B. (or #false #false)
+C. (not #false)
+D. (= 3 4)
+Answer:
+C
+=======================
+Question 14.b:
+
+MC Question:
+What purpose does "Lambda" serve?
+Skill:2
+Options:
+A:To name a function
+B:To create anonymous functions
+C:To define perameters
+D:To answer a command
+Answer:
+B
+/mui.hayden
+=======================
+Question 15.a:
+MC Question:
+How tall is Lil Uzi Vert (5'4) when he's standing on his money (net worth in 100 dollar increments)?
+Skill: 9001
+Options:
+A) 6'6
+B) 9'10
+C) 94'10
+D) 15'7
+Answer: C
+=======================
+Question 15.b:
+
+MC Question: 70% of SAT takers get this question wrong: What's the value of x? y^y = 4^1024
+Skill: sat math
+Options:
+A)0
+B)40
+C)128
+D)256
+Answer: D
+/ng.sophia
+=======================
+Question 16.a:
+MC Question:
+What is true about the boolean function: and?
+Skill 5
+Options:
+A) Returns false if all arguments are false
+B) Returns true is any argument is true
+C) Returns false if any argument is false
+D) Takes one argument and returns the opposite boolean value
+Answer: C
+=======================
+Question 16.b:
+
+MC Question:
+What is not a possible identifier name?
+Skill 3
+Options:
+A) pentagonArea
+B) PentagonArea123
+C) 123pentagonArea
+D) _pentagonArea
+
+Answer: C
+/opara.daniel
+=======================
+Question 17.a:
+MC Question:
+=======================
+Question 17.b:
+
+
+/opara.daniel
+=======================
+Question 18.a:
+MC Question: When p is true and q is false, which outputs true?
+Skill:5
+Options:
+A) (or (and p q) q)
+B) (not (or p q))
+C) (and (not (and p q)) p)
+D) (and (not p) (not q))
+
+Answer: C
+=======================
+Question 18.b:
+
+MC Question: x and y are arbitrary numbers. If i wanted to find
+out if x - y is equal to 2x + y, which function can fufill my
+needs?
+A) (equals...)
+B) (=...)
+C) (isEqualTo...)
+D) (is...)
+
+Answer: B
+/shen.aaron
+=======================
+Question 19.a:
+MC Question:
+What are comparison operators?
+Skill: 5
+Options:
+A) operators that take in boolean arguments and return boolean values
+B) operators that take in numeric arguments and return numeric values
+C) operators that take in boolean arguments and return numeric values
+D) operators that take in numeric arguments and return boolean values
+Answer: D
+=======================
+Question 19.b:
+
+MC Question:
+What are boolean functions?
+Skill: 5
+Options:
+A) operators that take in boolean arguments and return boolean values
+B) operators that take in numeric arguments and return numeric values
+C) operators that take in boolean arguments and return numeric values
+D) operators that take in numeric arguments and return boolean values
+Answer: A
+/shih.thomas
+=======================
+Question 20.a:
+MC Question:
+Evaluate what will be returned by the following function:
+(* 2 (+ 7 3) (expt 3 (/ 4 2)))
+Skill: 1
+Options:
+A) 180
+B) 120
+C) 60
+D) 20
+
+Answer: A
+=======================
+Question 20.b:
+
+MC Question:
+Evaluate what will be returned by the following function:
+(and (not (< 2202 1225)) (= (- 69 2) 67))
+Skill: 1, 4
+Options:
+A) "True"
+B) #t
+C) "False"
+D) #f
+
+Answer: B
+/tong.olivia
+=======================
+Question 21.a:
+MC Question:
+What is not included in a function contract?
+Skill: 3
+Options:
+A) Explanation of what the function will return
+B) Specific arguments to put into the function
+C) Guidelines for the parameters
+D) The function name
+Answer: B
+=======================
+Question 21.b:
+
+MC Question:
+Which of the following returns true?
+Skill: 5
+Options:
+A) (and (> 9 5) (= 4 77))
+B) (not (= (sqrt 64) (- 10 2)))
+C) (= (expt 6 2) 4)
+D) (= (expt 5 2) (+ (expt 4 2) (* 3 3)))
+Answer: D
+/zhang.william
+=======================
+Question 22.a:
+MC Question:
+How many countries are there in South America?
+Skill: Geography
+Options:
+A) 10
+B) 11
+C) 12
+D) 13
+
+Answer: C
+=======================
+Question 22.b:
+
+MC Question:
+Which element has the chemical symbol 'Sb'?
+Skill: Chemistry
+Options:
+A) Tin
+B) Antimony
+C) Samarium
+D) Scandium
+
+Answer: B
+/zou.wilson
+=======================
+Question 23.a:
+MC Question:
+Evaluate what would be returned by the code:
+(+ 5 (expt 2 2) (* 4 2)) 
+Skill: 1
+Options:
+A) 13
+B) 17
+C) 11
+D) 9
+Answer: B
+=======================
+Question 23.b:
+
+MC Question:
+Evaluate what would be returned by the code:
+(and (not (< 10 5)) (= 4 4))
+Skill: 1, 4
+Options:
+A) "True"
+B) #t
+C) "False"
+D) #f
+Answer: B
+/berman.jaffee
+=======================
+Question 24.a:
+MC Question:
+What are the two Boolean values?
+Skill: 5
+Options:
+A) True and Maybe
+B) False and Maybe
+C) True and False
+D) Defined and Undefined
+Answer: C
+=======================
+Question 24.b:
+
+MC Question:
+What two arguments are entered into the lambda function?
+Skill: 2
+Options: 
+A) The type of value it outputs and what it does
+B) The parameters and what it does
+C) The type of value it outputs and an example
+D) The parameters and an example
+Answer: B
+/bhowmik.mouri
+=======================
+Question 25.a:
+MC Question:
+Which operator is not a boolean operator?
+Skill: 5
+Options:
+A) AND
+B) IF
+C) OR
+D) NOT
+
+Answer: B
+=======================
+Question 25.b:
+
+MC Question:
+What are literal values?
+Skill: 2
+Options:
+A) A variable that stores information
+B) A function call that produces a result
+C) A value that is exactly as it appears to be
+D) A identifier that names a value in memory
+
+Answer: C
+/chan.angeline
+=======================
+Question 27.a:
+MC Question: What are boolean values
+Skill: 4
+Options: a) and, or, not
+b) +, -, /, *
+c) expt, sqrt
+d) true, false
+Answer: d
+=======================
+Question 27.b:
+
+MC Question: What are some boolean operators
+Skill: 4
+Options: a) and, or, not
+b) +, -, /, *
+c) expt, sqrt
+d) true, false
+Answer: a
+/chan.brandon
+=======================
+Question 28.a:
+MC Question:
+Which function (ignoring /) is evaluated LAST?
+(/ (expt 2 7) (quotient 5 3) (- 5 (sqrt 2) 8) 9)
+Skill: 2
+Options:
+a) -
+b) expt
+c) sqrt
+d) quotient
+Answer: A
+=======================
+Question 28.b:
+
+MC Question: 
+What are the characteristics of a comparison function?
+Skill: 5
+Options:
+a) Its arguments are numbers, and its return value is a number
+b) Its arguments are booleans, and its return value is a number
+c) Its arguments are numbers, and its return value is a boolean
+d) Its arguments are booleans, and its return value is a boolean
+Answer: C
+/chen.fiona
+=======================
+Question 29.a:
+MC Question: What type of numeric argument do the remainder and quotient functions accept?
+Skill: 3
+
+Options:
+A) positive numbers
+B) nonnegative numbers
+C) nonnegative integers
+D) positive integers
+
+Answer: C
+=======================
+Question 29.b:
+
+MC Question: What is the idenifier in (define triArea (lambda (* 0.5 base height)))
+Skill: 2
+
+Options:
+A) (lambda (* 0.5 base height)
+B) triArea
+C) define
+D) base height
+
+Answer: B
+/chen.janice
+=======================
+Question 30.a:
+MC Question: What is a function call?
+Skill: 2
+Options:
+A)The input of the function
+B)The output of the function
+C)When you execute a function in a program
+D)The name of a variable
+Answer: C
+=======================
+Question 30.b:
+
+MC Question: Given the following racket code:
+(sqrt (+ 9 (expt 12 2) (* (sqrt 25) 10) 22))
+which is the SECOND operation performed by racket? 
+Skill: 1, 2
+Options:
+A)sqrt
+B)*
+C)+
+D)expt
+Answer: D)expt
+/fung.william
+=======================
+Question 31.a:
+MC Question 0: 
+What does the lambda function do?
+Skill: 2 3
+Options:
+A) Lambda defines a function. 
+B) Lambda is a function that creates and names a function.
+C) Lambda is a function that creates an anonymous function.
+D) Lamdba returns the radioactive decay constant.
+Answer: (C)
+=======================
+Question 31.b:
+
+MC Question 1: Given the following Racket code, which expression is evaluated completely second?
+(or (> (sqrt 9) (+ 12 (remainder 22 5))) (not (= (expt 4 2) (quotient 250 10))))
+Skill: 1
+Options:
+A) sqrt
+B) remainder
+C) quotient
+D) not
+Answer: (B)
+/jen.dylan
+=======================
+Question 32.a:
+MC Question: What happens if a function with two parameters is called with only one argument in Racket?
+Skill: 2
+Options:
+A) The second argument is automatically set to 0
+B) An error is displayed because you can't append a number to a string
+C) An error is displayed because of a contract violation
+D) Racket converts the function into a one-argument version
+
+Answer: C
+=======================
+Question 32.b:
+
+MC Question: Which describes the difference between defining and calling a function?
+Skill: 2
+Options:
+A) Defining runs the function, calling saves it
+B) Defining saves the function, calling runs it
+C) Both do the same thing
+D) Calling deletes the function
+Answer: B
+/jensen.eske
+=======================
+Question 33.a:
+MC Question: What wil
+Skill: 5
+Options: 
+Answer
+=======================
+Question 33.b:
+
+MC Question: What will this code return? (- (expt 3 3) (sqrt 9) (+ 1 1 ))
+Skill: 2
+Options:
+a) 11
+b) 12
+c) 22
+d) 32
+
+Answer: C
+/jiang.alvin
+=======================
+Question 34.a:
+MC Question:What is an function?
+Skill:1
+Options:
+A. A system that gives an output.
+B. A system that takes a value and gives an output
+C. A system that takes a variable and gives an output. 
+D. An application of one or more operations on one or more inputs.
+Answer: D
+=======================
+Question 34.b:
+
+MC Question: What is needed for a function?
+Skill: 2
+Options: A variable and argument
+B. A variable and a Boolean function 
+C. A name and a variable
+D. A name, # of arguments, and what it does. 
+Answer: D
+/khan.uthsho
+=======================
+Question 35.a:
+MC Question: Which of the following best explains what this function does?
+
+(define unknown
+   (lambda a b)
+     (and (or a b) (not (or a b)))))
+
+Skill: 5
+Options:
+A) Always returns true
+B) Always returns false
+C) Returns true when a and b are both false
+D) Returns true when a is true and b is false
+Answer: B
+=======================
+Question 35.b:
+
+MC Question: What is 5(1 +6) - 4(1 + (4^3/2) in Racket syntax?
+Skill: 1
+Options:
+A)(- (* 5 (+ 1 6)) (* 4 (+ 1 (/ (expt 4 3) 2))))
+B)(+ (* 5 (+ 1 6)) (* 4 (- 1 (/ (expt 4 3) 2))))
+C)(- (* 5 (+ 1 6)) (* 4 (+ 1 (/ (expt 4 2) 3))))
+D)(+ (+ 5 (* 1 6)) (* 4 (- 1 (/ (expt 4 3) 2))))
+Answer A
+/kye.erin
+=======================
+Question 36.a:
+lang racket
+MC Question: In order to write a contract you must have,
+Skill: 3
+Options:
+A) semi-colons
+B) a function
+C) parenthesis
+
+Answer: A
+
+MC Question: A boolean function...
+Skill: 5
+Options:
+A) Has multiple possible output values
+B) Has only true possible output values
+C) Has only true and false possible output values
+D) Has only false possible output values
+
+Answer: C
+
+Programming question:
+Write a function that takes the side length of a cube and returns the surface area
+surface area of a cube: 6side^2
+Skills: 1, 3
+
+Possible solution:
+(define surface_area_c 
+  (lambda (side)
+    (* (expt side 2)6))
+=======================
+Question 36.b:
+
+ang racket
+MC Question: In order to write a contract you must have,
+Skill: 3
+Options:
+A) semi-colons
+B) a function
+C) parenthesis
+
+Answer: A
+
+MC Question: A boolean function...
+Skill: 5
+Options:
+A) Has multiple possible output values
+B) Has only true possible output values
+C) Has only true and false possible output values
+D) Has only false possible output values
+
+Answer: C
+
+Programming question:
+Write a function that takes the side length of a cube and returns the surface area
+surface area of a cube: 6side^2
+Skills: 1, 3
+
+Possible solution:
+(define surface_area_c 
+  (lambda (side)
+    (* (expt side 2)6))
+/lin.angie
+=======================
+Question 37.a:
+MC Question: What are boolean values
+Skill: 2, 5
+Options:
+A) A variable for an input
+B) The name of a variable
+C) True or False
+D) The return value of a function
+
+Answer C
+=======================
+Question 37.b:
+
+MC Question: In the function: (or (and a (not b) (and b (not a)))) what will the return value be if a and b are both true?
+Skill: 5, 1, 2
+Options:
+A) True
+B) False
+
+Answer B
+/murtoza.irfan
+=======================
+Question 38.a:
+MC Question:
+Which of the following correctly calls a function named "double" with the input 7?
+Skill: 2 (Understanding how functions operate)
+Options:
+A) (define double 7)
+B) (lambda (double 7))
+C) (double 7)
+D) (* 2 double)
+
+Answer: C
+=======================
+Question 38.b:
+
+MC Question:
+What will the following Racket expression return?  
+(= (+ 2 3) (* 1 5))
+Skill: 5 (Working with Boolean Values)
+Options:
+A) 2  
+B) 5  
+C) true  
+D) false  
+
+Answer: C
+/nurullaeva.sabrina
+=======================
+Question 39.a:
+MC Question:What type of numeric argument do the remainder and quotient functions accept?
+Skill: 1, 3
+Options:
+A) positive numbers
+B) nonnegative numbers
+C) nonnegative integers
+D) positive integers
+
+Answer: D
+=======================
+Question 39.b:
+
+MC Question: What is the identifier in the following function:
+(define triArea
+   (lambda (base height)
+       (* 1/2 base height)))
+Skill: 2
+Options:
+A) lambda
+B) triArea
+C) define
+D) *
+
+Answer: B
+/peng.alex
+=======================
+Question 40.a:
+MC Question:
+What is the "And" function?
+Skill: 5
+Options:
+A) A comparison function.
+B) A functino that can take more than two arguments.
+C) A function that returns true only if all arguments are true.
+D) A function that returns true if any arguments are true.
+
+Answer: C
+=======================
+Question 40.b:
+
+MC Question:
+Whch of the following statements about the "not" function is true.
+Skill: 5
+Options:
+A) It can take two or more arguments.
+B) It can take only two arguments.
+C) It returns the same boolean value.
+D) It returns the opposite boolean avlue.
+
+Answer: D
+/royce.sophie
+=======================
+Question 41.a:
+MC Question:
+ Which of the following is true about boolean funtions?
+Skill:5
+Options:
+ a) It has boolean arguments and returns boolean values
+ b) It has numerical arguments and returns boolean values
+ c) It has boolean arguments and returns boolean values
+ d) It has numerical arguments and returns numerical values
+Answer:
+ a)
+=======================
+Question 41.b:
+
+MC Question:
+ What is a variable?
+Skill: 2
+Options:
+ a) Data that is exactly what it appears to be
+ b) The application of one or more operations on one or more inputs
+ c) Data that has an identifier and a sepaeate value
+ d) The output of a function
+Answer:
+ c)
+/schaible.anna
+=======================
+Question 42.a:
+MC Question:
+How can we fix this function such that a test call "(TriArea3 36 4 18)" returns true?.
+For context, the function "TriArea" determines if a triangle exists with the three values if a b and c are the base, height, and area, respectivly.
+The new function "TriArea3" determines if the a triangle exists with a b and c being any part of the triangle.
+(define TriArea3
+ (lambda (a b c)
+   (and (TriArea a b c)
+        (TriArea b c a)
+        (TriArea c a b))))
+Skill: 5
+Options:
+A) add a variable "d"
+B) change "and" to "or"
+C) delete the function, this is impossible
+D) change the order of a b and c
+Answer: (B)
+=======================
+Question 42.b:
+
+MC Question:
+Given a>b>c, what does the following program return when run? 
+(not (and (not(> b a)) (< c a b)))
+Skill: 2, 1
+Options:
+A) #t
+B) 1
+C) #f
+D) c
+Answer: (A)
+/shahid.maryam
+=======================
+Question 43.a:
+MC Question:
+What is a function call?
+Skill: 2
+Options:
+A) The input of the function
+B) The output of the function
+C) When you execute a function in a program
+D) The name of a variable
+
+Answer: B
+=======================
+Question 43.b:
+
+MC Question:
+Given the following racket code:
+(sqrt (+ 9 (expt 12 2)))
+Which function is evalutated completely first?
+Skill: 2
+Options:
+A) sqrt
+B) +
+C) expt
+D) 12
+
+Answer: C
+/sukhdeo.dylan
+=======================
+Question 44.a:
+MC Question: Which of the following is true about boolean values/operators?
+Skill: 5
+Options:
+A) Boolean values can only be numbers.  
+B) Boolean values represent #true and #false.  
+C) Boolean operators can only be used with strings.  
+D) Boolean values and operators are unrelated to functions.
+Answer: B
+=======================
+Question 44.b:
+
+MC Question: What is the main difference between using define and lambda in Racket?
+Skill: 2
+Options:
+A) define is used to create a named function, while lambda creates an anonymous function.  
+B) lambda executes a function immediately, while define only declares it.  
+C) define can only be used for numbers.  
+D) There is no difference  
+Answer: A
+/tissera.shanya
+=======================
+Question 45.a:
+MC Question:
+Which of the following is proper comparison syntax?
+Skill: 5
+Options:
+A) <=
+B) =<
+C) =?
+D) ==
+
+Answer: A
+=======================
+Question 45.b:
+
+MC Question:
+Which is NOT an example of a literal value?
+Skill: 3
+Options:
+A) 2
+B) "hello, world!"
+C) x
+D) true
+
+Answer: C
+/woodward.teo
+=======================
+Question 46.a:
+MC Question: What is the definition of a Boolean
+Skill: 5
+A: The output value of a function
+B: The value plugged in when calling a function
+C: A true or false values
+D: A inbuilt function to racket
+Answer:C
+=======================
+Question 46.b:
+
+MC Question: Which of these is NOT a boolean function
+Skill: 5
+A: Either
+B: Or
+C: And
+D: Not
+Answer: A
+/zeng.john
+=======================
+Question 47.a:
+MC Question: How should you start a contract for a function named plus?
+Skill: 3
+Options:
+A) (plus n m)--> number
+B) n: number
+C) Returns sum of some stuff
+D) (plus 4 8)--> 12
+Answer: A
+=======================
+Question 47.b:
+
+MC Question: What is the name for "using a function?"
+Skill: 2
+Options:
+A) Functioning a function
+B) Putting an argument in a functioon
+C) Calling a function
+D) Eating a function
+Answer C

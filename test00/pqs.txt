@@ -1,0 +1,634 @@
+
+/ahmetaj.kevin
+=======================
+Question 0:
+
+Programming question:
+Write a function and contract that takes 3 lengths and
+returns either true or false based on if
+the 3 lengths could be sides of a triangle.
+Skill: 1,3, 5
+Description:
+The sum of the lengths of any two sides of a triangle
+must be greater than the length of the third side--> Formula needed 
+
+/brinzensky.roman
+=======================
+Question 1:
+
+; MC Question:
+; Given the following boolean function, which set of arguments would result in a true return value?
+; (define boolean (lambda (a b)
+;    (and (not (> a b)) (> a (sqrt b)))))
+; Skill: 5
+; Options:
+; A) (boolean 2 7)
+; B) (boolean 3 1)
+; C) (boolean 8 10) 
+; D) (boolean 3 10)
+; Answer: C
+
+; #|
+; MC Question:
+; What is wrong with the racket code below, and what is the reasoning for the issue?
+; (sqArea (lambda
+;    (b h) (* b h)))
+; Skills: 1 and 3
+; Options:
+; A) The function is used incorrectly-functions are never placed after paranthesis.
+; B) The sqArea function is not defined- there is not value assigned to the sqArea identifier
+; C) The lambda function is not used properly- the function is not anonymous
+; D) The function is not defined properly- the function return value doesn't have an assigned identifier
+; Answer: B
+
+; #|
+; Programming Question: Given that the conic form of a parabola is y = (1/4p) x^2, with the parabola having its vertex at point (0,0)
+; and facing upwards, write paramter restrictions on the first line (not the whole contract), function definition, and test cases
+; for your function. Make sure to give your function a name!
+; Skill: 1, 2, 3
+; 
+; x: positive or negative number
+; y: must be positive number (since parabola is facing upwards)
+; (define parbConic (lambda (p x) (* p (/ 1 4) (* x x))))
+; (parabConic 3 4)---> 1
+/chan.cassandra
+=======================
+Question 2:
+
+Programming Question:
+Write a function to determine if a number, n, is divisible by three and five, returning a boolean value.
+Skills: 1, 3, 5
+
+Possible Solution:
+(define divBy3And5
+  (lambda (n)
+    (and (= n (* 3 (quotient n 3))) (= n (* 5 (quotient n 5))))))
+(divBy3And5 15)
+(divBy3And5 5)
+/chen.cherie
+=======================
+Question 3:
+
+Programming question:
+Write a function that takes the two legs of a triangle and returns the hypotenuse.
+hypotenuse = sqrt(a^2 + b^2)
+Skills: 1, 3
+
+/chen.ethan
+=======================
+Question 4:
+
+Programming question:
+Write the function contract and function for the volume of a sphere
+
+Skill: 3
+Description
+v=4/3*pi*r^3
+Input pi as 3.14 
+
+
+
+;(volSphere r) --> rational number
+; r: rational number
+;
+; Returns the volume of a sphere
+
+(define volSphere
+(λ (r)
+(* (4/3)(3.14)(expt r 3))))
+/cheng.eason
+=======================
+Question 5:
+
+Programming question: Write a function that takes a number and returns
+its square plus 10.
+Skill: 1, 3 
+Description
+(square-plus-10 5)  ; returns 35
+(square-plus-10 2)  ; returns 14
+
+/cho.wilson
+=======================
+Question 6:
+
+Programming question: Write a function that takes
+two boolean values and returns
+true if exactly one of them is true, false otherwise
+Skill: 1, 3, 5
+Description: Use boolean operators
+
+
+/chosang.tenzin
+=======================
+Question 7:
+
+Write a function that returns k number of kilograms as milligrams.
+k must be an integer
+Formula: 1 kilogram = 1000000 milligrams
+SKILL: 3
+
+Possible Solution:
+/chowdhury.adyan
+=======================
+Question 8:
+
+Programming question: Write a function that determines if a number is even.                                                                                                   
+Skill: 1, 3, 5
+Description: If the number is even, return true, or return false in all other cases.
+
+
+/hafeez.arzan
+=======================
+Question 9:
+
+Programming question:
+Write a function that takes the side length of the base of a right regular hexagonal prism and the height of the prism and returns its volume.
+volume of prism = area of base * height
+area of regular hexagon = ((3 * sqrt(3))/2) * (side length)^2
+Skills: 1, 3
+
+/kalantry.krish
+=======================
+Question 10:
+
+Programming Question:
+Write (a) function(s) that take(s) three numbers, a, b, and c, and find(s) the solutions of the quadratic formula. Include test cases and their possible solutions.
+quadratric formula = [-b +- sqrt(b^2 - 4ac)] / 2a
+Skills: 1, 3
+
+(define discriminant
+  (lambda (a b c)
+    (- (expt b 2)
+       (* 4 a c))))
+
+(define quadratic-plus
+  (lambda (a b c)
+    (/ (+ (- 0 b)
+          (sqrt (discriminant a b c)))
+       (* 2 a))))
+
+(define quadratic-minus
+  (lambda (a b c)
+    (/ (- (- 0 b)
+          (sqrt (discriminant a b c)))
+       (* 2 a))))
+
+(quadratic-plus 1 -3 2) ;2
+(quadratic-minus 1 -3 2) ;1
+(quadratic-plus 1 8 16) ;-4
+(quadratic-minus 1 8 16) ;-4
+/kano.nene
+=======================
+Question 11:
+
+; Programming question: Write a function that takes two inputs and
+; returns half of the average of the two.
+; Skills: 1, 3
+; 
+;
+/lee.caitlyn
+=======================
+Question 12:
+
+Programming question: Given the following function definition, write a valid contract and provide function calls that would act as effective test cases.
+Skill: 3
+Description
+
+(define volumesP
+(lambda (base height)
+    (/(* height base base) 3)))
+
+/lee.nathan
+=======================
+Question 13:
+
+Programming question:
+Write a function that returns the area of a square added
+to a circle, when given the
+length of the square, which equals length of radius.
+Skills: 1, 3, 5
+Possible Solution:
+/lim.tj
+=======================
+Question 14:
+
+Programming question:
+Write a function that will solve any quadratic equation ax^2+bx+c
+Solution:
+(define quadFormula
+ (lambda (a b c)
+  (/ (+ -b (sqrt (- (expt b 2) (* 4 a c)))) 2)))
+and
+(define quadFormula
+ (lambda (a b c)
+  (/ (- -b (sqrt (- (expt b 2) (* 4 a c)))) 2)))
+/mui.hayden
+=======================
+Question 15:
+
+Programming question: program a function that finds the square of the square root of the square root of a given value
+Skill: ?
+Description
+
+
+/ng.sophia
+=======================
+Question 16:
+
+Programming question:
+Write a function that takes 2 expressions as inputs (a, b) and returns #true if a > b and a > 2 and #false in any other case
+Skills 1, 3, 5
+
+/opara.daniel
+=======================
+Question 17:
+
+
+/opara.daniel
+=======================
+Question 18:
+
+Programming question:
+Write a function named molMine that converts the number of particles to
+a number of mols (1 mol is 6.022 * 10^23 particles).
+
+Skills:1, 3
+
+Possible Solution:
+/shen.aaron
+=======================
+Question 19:
+
+Programming question:
+Write a function that determines if a number is even.
+Skill: 1, 3, 5
+Description:
+If the number is even, return true, or return false in all other cases.
+
+/shih.thomas
+=======================
+Question 20:
+
+Programming question:
+Write a function for the following contract:
+; (calcBags n) --> positive integer
+;   kg : positive integer
+;
+;   Returns the number of bags needed to carry n number of items of weight.
+;   Each bag has a capacity of 2 items.
+;   Include bags that would be partially filled if n is not divisible by 2.
+;
+;   (calcBags 4) --> 2
+;   (calcBags 5) --> 3
+Skill: 1, 3
+Description
+
+
+/tong.olivia
+=======================
+Question 21:
+
+Programming question:
+Write a function that returns the area of a trapezoid given two base lengths and the height.
+area = 1/2 * (base 1 + base 2) * height
+Skill: 1 and 2
+
+/zhang.william
+=======================
+Question 22:
+
+Programming question:
+Write a function that takes a number x and evaluates the quadratic expression:
+f(x) = 2x^2 + 3x - 5
+Skills: 1, 3
+Description: Return the value of the quadratic for any input x.
+
+
+/zou.wilson
+=======================
+Question 23:
+
+Programming question:
+Write a function that checks if you should round up to the nearest tens.
+(true if you should round up, false if you should round down) 
+Skill: 3, 5
+
+
+/berman.jaffee
+=======================
+Question 24:
+
+Programming Question:
+Write a function that takes the length and width of a rectangle and returns its perimeter.
+perimeter = 2l + 2w
+Skills: 1, 3
+
+/bhowmik.mouri
+=======================
+Question 25:
+
+Programming question:
+Write a function that gives the area of a trapezoid.
+area = (base1 + base2 / 2 ) * h
+Skills: 1, 3
+
+/chan.angeline
+=======================
+Question 27:
+
+Programming question: 
+Skill: 1 and 3
+Description
+
+Write a function that finds the min value given two numbers
+
+
+/chan.brandon
+=======================
+Question 28:
+
+Programming question:
+Given the function legalTriangle and its contract, write the function sumGreater:
+
+; (legalTriangle a b c) --> boolean
+; a --> positive number
+; b --> positive number
+; c --> positive number
+;
+; Returns whether a triangle with side lengths a, b, and c can exist
+; (legalTriangle 3 4 5) --> true
+; (legalTriangle 5 3 4) --> true
+; (legalTriangle 1 2 4) --> false
+(define legalTriangle
+  (lambda (a b c)
+    (and (sumGreater a b c)
+         (sumGreater a c b)
+         (sumGreater b c a))))
+
+Skill: 1, 5
+
+/chen.fiona
+=======================
+Question 29:
+
+Programming question: Write a function that returns true when the sum of two numbers (a b) does not equal the third (c)
+ and returns false in all other cases.
+Skills: 1,5
+
+
+/chen.janice
+=======================
+Question 30:
+
+Programming question: Write a function for the following contract
+; 2 boolean values as inputs
+; true if 2 inputs are false
+; false in all other cases
+Skill:1,2,3,5
+
+/fung.william
+=======================
+Question 31:
+
+Programming Question
+Skills: 1 2 3 5
+Given the following description, write a function (or functions), as well as contracts and test cases for your function(s).
+
+This function returns True if a given grade is above a given cutoff grade after curving using the following method:
+    The square root method consists of multiplying 10 times the square root of a given grade.
+        For example, curving a grade of 64 this way would return 80.
+    Both the given and cutoff grades should be positive numbers from 0 to 100.
+Examples:
+    An initial grade of 64 with a cutoff of 70 would return True to symbolize a pass.
+    However, an initial grade of 36 with the same cutoff of 70 would return False to symbolize a fail.
+
+Example Solution:
+
+; (curveGrade grade) -> positive number from 0 to 100
+;    grade: positive number from 0 to 100
+;    Given a grade, returns 10 times the square root of the grade.
+;    (curveGrade 64) -> 80
+(define curveGrade (lambda grade)(
+                                  * 10 (sqrt grade)
+                                 )
+)
+(display "curveGrade tests: (curveGrade 64) should return 80:")
+(curveGrade 64)
+(display "curveGrade tests: (curveGrade 36) should return 60:")
+(curveGrade 36)
+
+; (checkPass grade cutoff) -> boolean
+;    grade, cutoff: positive numbers from 0-100
+;    Given a grade, returns True if the curved grade is higher than a given cutoff grade, else returns False.
+;    (checkPass 64 70) -> #true
+;    (checkPass 36 70) -> #false
+(define checkPass (lambda (grade cutoff) (
+                                          > (curveGrade grade) cutoff
+                                         )
+)
+(display "checkPass tests: (checkPass 64 70) should return #t: ")
+(checkPass 64 70)
+(display "checkPass tests: (checkPass 36 70) should return #f: ")
+(checkPass 36 70)
+/jen.dylan
+=======================
+Question 32:
+
+Programming question:
+Write a function that takes the side length of a regular hexagon
+and returns its area.
+Area = (3 * sqrt(3) / 2) * s^2
+Skills: 1, 3
+
+/jensen.eske
+=======================
+Question 33:
+
+Programming question:
+Skill:
+Description
+
+
+/jiang.alvin
+=======================
+Question 34:
+
+Programming question: Write a function that divides the input by 2.
+Skill:3
+Description
+; divides the input by 2
+
+
+/khan.uthsho
+=======================
+Question 35:
+
+Programming question: Write a contract for the following function:
+(define rightTriLeg
+  (lambda (c a)
+   (sqrt (- (* c c) (* a a))))
+Skill: 3
+
+
+/kye.erin
+=======================
+Question 36:
+
+ng racket
+MC Question: In order to write a contract you must have,
+Skill: 3
+Options:
+A) semi-colons
+B) a function
+C) parenthesis
+
+Answer: A
+
+MC Question: A boolean function...
+Skill: 5
+Options:
+A) Has multiple possible output values
+B) Has only true possible output values
+C) Has only true and false possible output values
+D) Has only false possible output values
+
+Answer: C
+
+Programming question:
+Write a function that takes the side length of a cube and returns the surface area
+surface area of a cube: 6side^2
+Skills: 1, 3
+
+
+(define surface_area_c 
+  (lambda (side)
+    (* (expt side 2)6))
+/lin.angie
+=======================
+Question 37:
+
+Programming question: Write the contract and function definition for a function determines if a number is even
+Skill: 1, 3, 5
+Description
+The function should return true if the input is even and false if it is not
+
+
+/murtoza.irfan
+=======================
+Question 38:
+
+Programming question:
+Write a function that takes in two numbers, base and height, and returns the area of a triangle.  
+Formula: area = 1/2 * base * height  
+Skill: 1, 3  
+
+
+/nurullaeva.sabrina
+=======================
+Question 39:
+
+Programming question:
+Write a function that takes the age of a person and their citizenship status
+and returns whether they can vote or not. Write a contract and include
+four examples in your contract. 
+Skill: 1, 3, 5
+
+/peng.alex
+=======================
+Question 40:
+
+Programming question: Write a function that takes the a b c values of the quadratic formula and returns the values of x.
+Skill: 1, 3
+Description:
+    -b±√[(b^2)-4ac]
+x = ───────────────
+          2a
+
+(QuadraticFormula+ 1 2 1) --> 1
+(QuadraticFormula- 1 2 1) --> -1
+/royce.sophie
+=======================
+Question 41:
+
+programming question:
+ Write a function that returns the area of a trapezoid given its two bases and height.
+ Area = ((B1+B2)/2) * h
+Skill:1,3
+
+
+/schaible.anna
+=======================
+Question 42:
+
+Programming Question:
+Create a function that fulfills the following contract:
+(SphereVol. r) --> postive number
+r: postive number
+Returns a positive number that is the volume of a sphere with the given radius
+*note we will round pi to 3.14
+(SphereVol. 6) ==> 904.32
+
+Possible Answer:
+
+(define SphereVol.
+  (lambda (r)
+    (/ (* 4 3.14 (expt r 3)) 3)))
+/shahid.maryam
+=======================
+Question 43:
+
+Programming question:
+Write the function of the surface area of a cone.
+The formula for the surface area of a cone is 4πr²
+Skill: 1 and 3
+
+
+
+(define SAofCone
+  (lambda (r)
+    (* (* 4 pi) (expt r 2))))
+(SAofCone 3)
+/sukhdeo.dylan
+=======================
+Question 44:
+
+Programming question: Write a function called (triangleArea) that takes the base and height
+of a triangle and returns its area.
+Skill: 3
+Description
+Formula: area = 1/2 * base * height
+
+(define triangleArea
+  (lambda (base height)
+    (/ (* base height) 2)))
+/tissera.shanya
+=======================
+Question 45:
+
+Programming question:
+Write a function that outputs the maximum of two values, a and b.
+As a bonus, you can write a similar "min" function (hint : multiply by -1) :)))
+Skills: 1, 3
+
+/woodward.teo
+=======================
+Question 46:
+
+Programming question: Write and test a function that returns the percent error of data, given the measured and accepted results
+Skill: 3, 1
+Percent error formula: |(mV-aV)/aV|*100% = percent error
+   mV: Measured value
+   aV: Accepted value
+
+(define percentErr
+  (lambda (mV aV) 
+    (* (abs (/ (- mV aV) aV)) 100)))
+
+(display "Percent error is: ")
+(percentErr 93 100)
+/zeng.john
+=======================
+Question 47:
+
+Programming question: Write a function that takes in possible solutions to the system of inequalities y>9x+6 8x+19y<6 and returns whether or not the solutions work (true means it works, false means it doesn't work)
+Skill: 5
