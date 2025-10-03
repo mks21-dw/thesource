@@ -15,7 +15,7 @@ flowchart TD;
     id2 -- result1 --> id5{if result1 > result3};
 
     id0 -- b, target --> id3(b - target);
-    id3 -- result2 --> id4(abs result1);
+    id3 -- result2 --> id4(abs result2);
     id4 -- result3 --> id5;
     id5 -- #T --> id6([b]);
     id5 -- #F --> id7([a]);
