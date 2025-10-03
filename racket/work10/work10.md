@@ -29,12 +29,12 @@ flowchart TD;
   id1 -- #T --> id2(["right triangle"]);
   id1 -- #F --> id3( a + b );
   id3 -- r0 --> id4{if r0 > c };
-  id4 -- #T --> id5(["non-right triangle"]);
-  id4 -- #F --> id6(a + c);
+  id4 -- #T --> id6(a + c);
+  id4 -- #F --> id12(["not a triangle"]);
   id6 -- r1 --> id7{if r1 > b};
-  id7 -- #T --> id8(["non-right triangle"]);
-  id7 -- #F --> id9(b + c);
+  id7 -- #T --> id9(b + c);
+  id7 -- #F --> id13(["not a triangle"]);
   id9 -- r2 --> id10{if r2 > a};
   id10 -- #T --> id11(["non-right triangle"]);
-  id10 -- #F --> id12(["not a triangle"]);
+  id10 -- #F --> id14(["not a triangle"]);
 ```
