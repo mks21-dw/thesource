@@ -1,0 +1,559 @@
+
+/abreuperalta.stacy
+=======================
+Question 0:
+
+(define integerSum
+  (lambda (a)
+    (if (= a 0)
+        0
+        (+ a(integerSum (- a 1))))))
+(integerSum 4)
+/ahmetaj.kevin
+=======================
+Question 1:
+
+(define untilFri
+  (lambda (day)
+    (if (= day 5) 0
+        (+ 1 (untilFri
+              ( if (= day 7) 1
+                   (+ day 1)))))))
+/brinzensky.roman
+=======================
+Question 2:
+
+(define AddTen
+  (lambda (n)
+    (if (= n 1)
+        0
+        (+ 10 (AddTen (- n 1))))))
+(AddTen 1) --> 0
+(AddTen 3)---> 20
+(AddTen 7)--> 60
+/chan.cassandra
+=======================
+Question 3:
+
+#|
+Programming Question:
+Write a function that takes in a number, n (non-negative integer), and returns the sum of all the integers from 0 up to n.
+Skills: 3, 6, & 11
+Possible Solution:
+|*
+(define sumUp
+  (lambda (n)
+    (if (= n 0)
+      n
+      (+ n (sumUp (- n 1))))))
+(sumUp 0)
+(sumUp 5)
+/chen.cherie
+=======================
+Question 4:
+
+(define squareArea
+  (lambda (a b c d)
+    (if (and (= a b) (= a c) (= a d) (= b c) (= b d) (= c d))
+        (* a b)
+        0)))
+
+(squareArea 9 9 9 9)
+(squareArea 2 8 8 2)
+/chen.ethan
+=======================
+Question 5:
+
+;(andOdd n) --> integer or string
+; n:integer
+;
+;Return n if it is 0
+;Return "posAndEven" if n is positive and even
+;Return "notposAndEven" in all other cases
+/cheng.eason
+=======================
+Question 6:
+
+(define more-digits?
+  (lambda (n s)
+    (if (< n 10)
+        (if (< s 10) #f #f) 
+        (if (< s 10) #t     
+            (more-digits? (quotient n 10) (quotient s 10))))))
+/cho.wilson
+=======================
+Question 7:
+
+(define sum
+  (lambda (n)
+    (if (= n 0)
+        0
+        (+ n (sum (- n 1))))))
+/chosang.tenzin
+=======================
+Question 8:
+
+
+/chowdhury.adyan
+=======================
+Question 9:
+
+(define firstDigit
+  (lambda (n)
+    (if (< n 10)
+        n
+        (firstDigit (quotient n 10)))))
+(firstDigit 8)
+(firstDigit 4096)
+/debnath.sudipta
+=======================
+Question 10:
+
+(define powersOfTwo (lambda (n) (if (= n 2)
+                                    1
+                                    (+ 1 (powersOfTwo (quotient n 2))))))
+(powersOfTwo 8)
+/hafeez.arzan
+=======================
+Question 11:
+
+; (heronRoot x guess) --> nonnegative number
+;   x : nonnegative number
+;   guess : nonnegative number
+
+;   Returns an estimate for the square root of x based off of a guess.
+;   If |guess^2 - x| < 0.000001, the guess is accurate and used as the output.
+;   Otherwise, a new guess is made by taking the average of the previous guess and x/guess.
+;   The new guess then replaces the original guess until an accurate guess is reached.
+;   (heronRoot 16 4) --> 4
+;   (heronRoot 4 1) --> 2.0000000929222946603132596...
+;   (heronRoot 100 1) --> 10.0000000001398967108025855...
+
+(define heronRoot
+  (lambda (x guess)
+    (if (< (abs (- (* guess guess) x)) 0.000001)
+        guess
+        (heronRoot x (/ (+ guess (/ x guess)) 2)))))
+
+(heronRoot 16 4)
+(heronRoot 4 1)
+(heronRoot 100 1)
+/jiang.ayden
+=======================
+Question 12:
+
+
+/jiang.kingsley
+=======================
+Question 13:
+
+
+/kalantry.krish
+=======================
+Question 14:
+
+; (keepHalving n) --> positive number
+;
+; n : positive number
+; Takes a number n and divides it by two, adding the quotient to n, and repeating the process with the half until n is reduced to a single digit number.
+; (keepHalving 60) --> 122.5
+; (keepHalving 8) --> 8
+
+(define keepHalving
+  (lambda (n)
+    (if (< n 10)
+        n
+        (+ n (keepHalving (/ n 2))))))
+(keepHalving 60)
+(keepHalving 8)
+/kano.nene
+=======================
+Question 15:
+
+(define onesBy3
+  (lambda (n)
+    (if (< n 10)
+        (if (= (remainder n 3) 0)
+            #t
+            #f)
+        (if (= (remainder (remainder n 10) 3) 0)
+            #t
+            #f))))
+/lee.caitlyn
+=======================
+Question 16:
+
+; (+1 (HalfAddOne 5)
+; (+1 (+1 (HalfAddOne 2)
+; (+ 1 (+1 1)
+; (+ 1 2)
+; (3)
+/lee.nathan
+=======================
+Question 17:
+
+
+/liang.winston
+=======================
+Question 18:
+
+
+/lim.tj
+=======================
+Question 19:
+
+
+/ng.sophia
+=======================
+Question 20:
+
+(define productDigits
+  (lambda (n)
+    (if (< n 10)
+        n
+        (* (productDigits (quotient n 10)) (remainder n 10)))))
+(productDigits 154)
+/purkaysta.shuhag
+=======================
+Question 21:
+
+
+/shen.aaron
+=======================
+Question 22:
+
+(define firstDigit
+  (lambda (n)
+    (if (< n 10)
+        n
+        (firstDigit (quotient n 10)))))
+(firstDigit 8)
+(firstDigit 4096)
+/shih.thomas
+=======================
+Question 23:
+
+(define evenDigits
+  (lambda (n s)
+    (if (< n 10)
+        (if (= 0 (remainder n 2))
+            (+ s 1)
+            s)
+        (if (= 0 (remainder n 2))
+            (evenDigits (quotient n 10) (+ s 1))
+            (evenDigits (quotient n 10) s)))))
+/simi.caterina
+=======================
+Question 24:
+
+
+/tong.olivia
+=======================
+Question 25:
+
+(define qMoreOne
+  (lambda (q)
+    (if (> (* q 0.25) 1)
+        #true
+        #false)))
+(qMoreOne 5)
+(qMoreOne 3)
+/ashkenazi.orion
+=======================
+Question 26:
+
+(define fact
+  (lambda (n)
+    (if (= n 0)
+        1
+        (* n (fact (- n 1))))))
+
+(fact 5)
+; Expected output: 120
+/bergstraesser.finn
+=======================
+Question 27:
+
+(define sqrsol1
+  (lambda (n)
+    (if (= n 1) 1
+                  (+ (expt n 2) (sqrsol1 (- n 1))))))
+(sqrsol1 14)
+;OR use formula for sum of squares (n)*(n+1)*(2n+1)/6
+(define sqrsol2 (lambda (n)
+                  (/ (* n (+ n 1) (+ (* 2 n) 1)) 6)))
+(sqrsol2 14)
+/berman.jaffee
+=======================
+Question 28:
+
+(define trinum (lambda (x) (if (= x 1) 1 (+ x (trinum (- x 1))))))
+/bhowmik.mouri
+=======================
+Question 29:
+
+
+/bhuiyan.ahnaf
+=======================
+Question 30:
+
+(define fact
+  (lambda (n)
+    (if (= n 0)
+        1
+        (* n (fact (- n 1))))))
+
+(fact 5)
+; Expected output: 120
+/chan.angeline
+=======================
+Question 31:
+
+(define productdigits
+  (lambda (n)
+    (if (< n 10)
+        n
+        (* (remainder n 10) (productdigits (quotient n 10))))))
+/chan.brandon
+=======================
+Question 32:
+
+(define isPrime
+  (lambda (n)
+    (isDivisibleByAllBelow n (- n 1))))
+
+(define isDivisibleByAllBelow
+  (lambda (n factor)
+    (if (= factor 1)
+        #true
+        (and (not (= (remainder n factor) 0))
+             (isDivisibleByAllBelow n (- factor 1))))))
+/chen.fiona
+=======================
+Question 33:
+
+
+/chen.janice
+=======================
+Question 34:
+
+(define pascal
+  (lambda (n k)
+    (if (or (= n 0)
+            (= n k)
+            (= k 0))
+        1
+        (+ (pascal (- n 1) k)
+           (pascal (- n 1) (- k 1))))))
+/chen.nigel
+=======================
+Question 35:
+
+CODE GOES HERE
+/eng.cody
+=======================
+Question 36:
+
+(define sumOfAll
+  (lambda (n)
+    (if (= n 1)
+        (+ 1) 
+        (+ n (sumOfAll (- n 1)))
+        )))
+(sumOfAll 100)
+/fung.william
+=======================
+Question 37:
+
+(define power (lambda (x n)(
+                               if (= n 1)
+                                  x
+                                  (* x (power x (- n 1)))
+                                  )
+                      )
+  )
+/jen.dylan
+=======================
+Question 38:
+
+(define sumUpTo
+  (lambda (n)
+    (if (= n 1)
+        1
+        (+ n (sumUpTo (- n 1))))))
+
+(sumUpTo 5) ; Expected output: 15
+/jensen.eske
+=======================
+Question 39:
+
+(define squaresExceed
+  (lambda (n t)
+    (squaresExceedTest n 0 t)
+  )
+)
+  
+
+(define squaresExceedTest
+  (lambda (n s t)
+    (if (> (expt n s) t)
+        s
+        (squaresExceedTest n (+ s 1) t)
+    )
+  )
+)
+/jiang.alvin
+=======================
+Question 40:
+
+
+/khan.uthsho
+=======================
+Question 41:
+
+(define groceries
+  (lambda (n)
+  (if (< n (+ 5 2))
+     0
+     (+ 1 (groceries (- n (+ 5 2)))))))
+/kye.erin
+=======================
+Question 42:
+
+
+/lin.angie
+=======================
+Question 43:
+
+(define oddEven
+  (lambda (n)
+    (if (= (remainder n 2) 0)
+        "even"
+        "odd")))
+/liu.constance
+=======================
+Question 44:
+
+
+/martin.sameer
+=======================
+Question 45:
+
+(define numEvenDigits
+  (lambda (n)
+    (if (< n 10)
+        (if (= 1 (remainder n 2))
+             0
+             1)
+        (+ (if (= 1 (remainder n 2))
+             0
+             1)
+           (numEvenDigits (quotient n 10))))))
+/murtoza.irfan
+=======================
+Question 46:
+
+(define sumDigits
+  (lambda (n)
+    (if (< n 10)
+        n
+        (+ (remainder n 10)
+           (sumDigits (quotient n 10))))))
+
+(sumDigits 472)
+/nurullaeva.sabrina
+=======================
+Question 47:
+
+; (factorial n s) --> positive integer
+; n --> nonnegative integer
+; s --> positive integer
+; Returns n! multiplied by s
+; (factorial 5 1) --> 120
+; (factorial 3 1) --> 6
+(define factorial
+  (lambda (n s)
+    (if (= n 0)
+        s
+        (factorial (- n 1) (* n s)))))
+/peng.alex
+=======================
+Question 48:
+
+(define ProductN
+  (lambda (n)
+    (if (< n 10)
+        n
+        (* (remainder n 10)
+           (ProductN (quotient n 10))))))
+/schaible.anna
+=======================
+Question 49:
+
+CODE GOES HERE
+/shao.serena
+=======================
+Question 50:
+
+(define triangularNumber
+  (lambda (n)
+    (if (= n 1)
+        1
+        (+ n (triangularNumber (- n 1))))))
+/sukhdeo.dylan
+=======================
+Question 51:
+
+
+/tissera.shanya
+=======================
+Question 52:
+
+(define pascal
+  (lambda (n k)
+    (if (or (< k 0) (> k n))
+        0
+        (if (or (= k 0) (= k n))
+            1
+            (+ (pascal (- n 1) (- k 1))
+               (pascal (- n 1) k))))))
+(define pwr
+  (lambda (b e)
+    (if (= e 0)
+        1
+        (* b (pwr b (- e 1))))))
+(define numdigits
+  (lambda (n)
+    (if (< n 10)
+        1
+        (+ 1 (numdigits (quotient n 10))))))
+(define rowbuilder
+  (lambda (n k j)
+    (if (> k n)
+        j
+        (rowbuilder n (+ k 1) (+ (* j (pwr 10 (numdigits (pascal n k)))) (pascal n k))))))
+(define pascalRow
+  (lambda (n)
+    (rowbuilder n 0 0)))
+/woodward.teo
+=======================
+Question 53:
+
+(define sumToN
+ (lambda (n) 
+  (if (= n 0)
+    0
+   (+ n (sumToN (- n 1))))))
+/zeng.john
+=======================
+Question 54:
+
+(define TheFives
+  (lambda (n)
+    (if (< n 10)
+        (if (= n 5)
+            1
+            0)
+        (if (= (remainder n 10) 5)
+            (+ 1 (TheFives (quotient n 10)))
+            (+ 0 (TheFives (quotient n 10)))))))

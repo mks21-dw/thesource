@@ -1,0 +1,1521 @@
+
+/abreuperalta.stacy
+=======================
+Question 0.a:
+MC Question: What will the following code evalute to?
+(if (> 10 5)
+    (+ 3 7)
+    (- 10 2)
+Skill:4.
+Options:
+A. 8'
+B. 10
+C. 15
+D. Error
+Answer: B
+=======================
+Question 0.b:
+
+MC Question: Which of the following is the correct syntax for defining a simple
+function that adds two numbers?
+Skill: 2
+Options:
+A) (define addNumbers (lambda(a b) (+ a b)))
+B) (define (addNumbers (lambda (a b) (+ a b))))
+C) (define addNumbers (+ a b) lambda (a b))
+Answer: A
+/ahmetaj.kevin
+=======================
+Question 1.a:
+MC Question: In the following piece of code, what happens
+if (= n 10) is false
+(define sumDigits (lambda (n)
+(if (= n 0)     0
+  (+ (remainder n 10) (sumDigits (quotient n 10))))
+Skill: 2, 6, 11
+Options:
+A) 0 is returned 
+B) An error occurs since you are calling a function in a function
+C) Nothing since you cannot evaluate the the sum of the function sumDigits
+D) The sum of the remainder, of the number and 10, and the sumdigits
+function, of the number divided by 10.
+Answer D
+=======================
+Question 1.b:
+
+MC Question: What are the fundamentals of a recursive function
+Skill: 2, 11, 6
+Options:
+A) The recursive function has a base case
+B) The recursive function calls itself in the function
+C) The recursive function has a base case and calls itself in the function
+D) The recusive function is any function that contains a condtional statement
+Answer C
+/brinzensky.roman
+=======================
+Question 2.a:
+MC Question:
+What is the reason for an "overflow" error that would show up on DrRacket?
+Skill: 11
+A) You have not properly written your parameters and the function is unsolvable
+B) The computer can't recognize your style of writing
+C) The base case of your recursive function can be reached
+D) The base case of your function can not be reached
+
+Answer: D
+=======================
+Question 2.b:
+
+MC Question:
+What is a recursive function in Computer Science?
+Skill: 11
+Options:
+A) A function with standard structure that never stops running
+B) A function that calls itself until base case is reached
+C) A function that calls itself until recursive case is reached
+D) A function that calls on previously defined functions in the definitions pane.
+Answer: B
+/chan.cassandra
+=======================
+Question 3.a:
+MC Question: What is a wrapper?
+Skill: 11
+Options:
+A. A recursive case
+B. The base case
+C. A function that simplifies a tail recursion so that the user doesn't need to worry about the second parameter
+D. A hip hop artist
+
+Answer: C
+=======================
+Question 3.b:
+
+MC Question: 
+In this function, what would (sixSeven 5 3 8) return?: 
+(define sixSeven 
+  (lambda (x y z)
+    (if (or (and (> x y) (<= y z))
+        (and (= (+ x y) z) (not (< z 0))))
+      #t
+      #f)))
+Skill: 5
+Options:
+A. #t
+B. #f
+c. error
+d. True
+
+Answer: A
+/chen.cherie
+=======================
+Question 4.a:
+MC Question:
+What is the base case in a recursion?
+Skill: 11
+Options:
+A) What is referred to when the function is recalled
+B) A condition to stop the recursion
+C) The call to recursion
+D) Any process that uses self reference
+
+Answer: B
+=======================
+Question 4.b:
+
+MC Question:
+What is a condition in a conditional statement?
+Skill: 6
+A) The function that is called when the statement is true
+B) The function that is called when the statement is false
+C) Something that is evaluated to a boolean value to run a function
+D) The self referral of a function
+
+Answer: C
+/chen.ethan
+=======================
+Question 5.a:
+MC Question: You write a function for fibonacci and make tests cases.
+What will happen if you input a test case that will have a lot of function calls.
+Skill: 11
+Options:
+A) Returns the answer value to the test case
+B) A pop up stating an exceedance of memory limit
+C) Returns a false value
+D) Nothing
+
+Answer: D
+=======================
+Question 5.b:
+
+MC Question: Given the code, which function is evaluted first?
+(if (< n 10)
+n
+(+ 5 (quotient n 10)(remainder n 10))
+
+Skill:2
+Options:
+A) if
+B) <
+C) quotient
+D) remainder
+Answer: B
+/cheng.eason
+=======================
+Question 6.a:
+MC Question:
+Which is essential in a recursive function?
+Skill: 11
+Options:
+A) 2 parameters
+B) A base case
+C) A boolean operator
+D) A nested conditional
+
+Answer: B
+=======================
+Question 6.b:
+
+MC Question:
+What is a nested conditional?
+Skill: 6
+Options:
+A) A conditional statement inside a conditional statement
+B) Two conditional statements within the same function definition
+C) A conditional statement using a boolean operator
+D) A conditional statement with two clauses
+
+Answer: A
+/cho.wilson
+=======================
+Question 7.a:
+MC Question:
+What does the expression (and #t (not #f)) evaluate to?
+Skill: 5 
+Options:
+A) #t
+B) #f
+C) "true"
+D) "false"
+
+Answer: A
+=======================
+Question 7.b:
+
+MC Question:
+What will this conditional expression return?
+(if (>= 10 20)
+    "first"
+    "second")
+Skill: 6
+Options:
+A) 10
+B) 20
+C) "first"
+D) "second"
+
+Answer: D
+/chosang.tenzin
+=======================
+Question 8.a:
+MC Question: What is the "base case" of a recursive function?
+Skill:11
+Options:
+A: The answer you get from plugging in 0 to the parameter(s)
+B: The parameter of the function
+C: The input(s) that make the recursive function true
+D: The amount of parantheses used to close the function
+Answer: C
+=======================
+Question 8.b:
+
+MC Question: What does it mean to trace a recursive function?
+Skill:11
+Options:
+A: To count the amount of operators used in the function
+B: To create a flow chart for the function
+C: To write out each step of substituting a value for the parameter until you reach the base case
+D: To write test cases for the function
+Answer: C
+/chowdhury.adyan
+=======================
+Question 9.a:
+MC Question: What is an advantage of using a tail recursive function?
+Skill: 11
+Options:
+A) A base case is not needed 
+B) It keeps the "stack" from getting too "high"
+C) You can plug in values more easily
+D) It only uses one parameter
+Answer: B
+=======================
+Question 9.b:
+
+MC Question: What is a recursive function?
+Skill: 11
+Options:
+A) A function that is built into DrRacket
+B) A function that defines itself when you call it
+C) A function that calls itself in its definition
+D) A function that repeats forever
+Answer: C
+/debnath.sudipta
+=======================
+Question 10.a:
+MC Question:
+Which is not a characteristic of a recursive function?
+Skill:11
+Options:
+A)It calls itself directly or indirectly
+B)It had a specific trace diagram
+C)It always executes indefinetly
+D) It needs a base case
+Answer: C
+=======================
+Question 10.b:
+
+MC Question:
+What makes this function produce an error?
+(define fibonacci (lambda n
+                    (if (<= n 2)
+                        1
+                        (+ (fibonacci (- n 1)) (fibonacci (- n 2))))))
+Skill:2
+Options:
+A) The base case isn't reached; racket will respond with insufficient memory
+B) Two parenthesis are missing somewhere in the function
+C) <= isn't a valid operator
+D) Both A and B are correct
+Answer: B
+/hafeez.arzan
+=======================
+Question 11.a:
+MC Question:
+A recursive function is executed in Racket. What occurs in Racket’s stack as the function is evaluated?
+Skill: 2
+Options:
+A) The function is continuously redefined and then executed until a result is obtained.
+B) The function is removed from Racket’s memory before the function is executed.
+C) The function is added to the stack, executed, and removed once evaluation is complete.
+D) The function remains unevaluated and Racket fails to execute the program.
+
+Answer: C
+=======================
+Question 11.b:
+
+MC Question:
+What does the following code return in Racket, assuming that all expressions are evaluated correctly?
+
+(if (and (> 7 6) (or (= 2 2) (not #t)))
+    (or #f (and #t #t))
+    (and #t #f))
+
+Skills: 5, 6
+Options:
+A) #t
+B) #f
+C) 67
+D) The function does not produce a return value.
+
+Answer: A
+/jiang.ayden
+=======================
+Question 12.a:
+MC Question: Which of the following should come right after and if statement:
+Skill: 6
+Options:
+A) #t and #f
+B) 2 True Statements
+C) 2 False Statements
+D) One False and One True Statement
+
+Answer: D
+=======================
+Question 12.b:
+
+MC Question: Find the solution of the function if n is 3:
+(define solve
+(lambda (n)
+(if (< n 10)
+n
+(* (quotient n 10) (solve (remainder n 10))))))
+Skill:
+Options:
+A) 13
+B) 23
+C) 33
+D) 3
+
+Answer: D
+/jiang.kingsley
+=======================
+Question 13.a:
+MC Question:
+(define define
+ (lambda (define)
+  (if (or (< define 10) 
+          (> (expt define 3) (* define define)))
+      define
+      don't define)))
+Given the function above which of the following values make the funtion true?
+Skill: 5
+
+Options:
+A) 1 
+B) 2
+C) 10
+D) 12
+
+Answer: B
+=======================
+Question 13.b:
+
+MC Question:
+(define d0
+ (lambda (n s)
+  (if (> n s)
+      (+ n s)
+      (* n s))))
+Skill: 6
+
+Options:
+A) n:3 s:4
+B) n:1 s:7
+C) n:7 s:1
+D) n:2 s:5
+
+Answer: B
+/kalantry.krish
+=======================
+Question 14.a:
+MC Question:
+Consider the following Racket program:
+
+(define lambda
+  (lambda (lambda)
+    (if (< lambda 10)
+        lambda
+        (+ lambda (- lambda 1)))))
+(lambda 9)
+
+What will the program return?
+
+Skill: 6
+Options:
+A) 9
+B) 8
+C) 17
+D) This is not a valid Racket program.
+
+Answer: A
+=======================
+Question 14.b:
+
+MC Question:
+The following function returns the greater value two arguments x and y. Fill in the blanks:
+
+(define compare
+  (lambda (x y)
+    (if (> x y)
+        blank0
+        blank1)))
+
+Skill: 2, 6
+Options:
+A) blank0 --> (display "x")
+   blank1 --> (display "y")
+
+B) blank0 --> "x"
+   blank1 --> "y"
+
+C) blank0 --> x
+   blank1 --> y
+
+D) blank0 --> #true
+   blank1 --> #false
+
+Answer: C
+/kano.nene
+=======================
+Question 15.a:
+MC Question: Which of the following is not an appropriate boolean function?
+Skill: 5
+Options:
+A) (and #t #f)
+B) (< n 10)
+C) (< 10 15)
+D) (or #f #f)
+Answer: B
+=======================
+Question 15.b:
+
+MC Question: Which of the following is a valid conditional statement?
+Skill: 6
+Options:
+A) (if (= 10 12) #f #f))
+B) (if (and 5 6) #t #f))
+C) (if (> 10 4) #t #f))
+D) (if (= #t #f) 10 4))
+Answer: C
+/lee.caitlyn
+=======================
+Question 16.a:
+MC Question: What does a conditional function base its values on?
+Skill: 6
+Options:
+A) Parameters
+B) Boolean values
+C) Boolean condition 
+D) Stack 
+Answer
+=======================
+Question 16.b:
+
+MC Question: What is a base case?
+Skill: 11
+Options: 
+A) Integer 
+B) Boolean value
+C) *
+D) Simplest version of the problem
+Answer
+/lee.nathan
+=======================
+Question 17.a:
+MC Question: 
+What is a wrapper?
+Skill: 11
+Options:
+A) A recursive case
+B) The base case
+C) A function that simplifies a tail recursion so that
+ the user doesn't need to worry about the second parameter
+D) A hip hop artist
+
+Answer: C
+=======================
+Question 17.b:
+
+MC Question:
+What is the recursive case in the following function
+(define amount
+  (lambda (n)
+    (if (= n 1)
+        1
+        (+ 1 (amount (- n 1))))))
+Skill: 11
+Options: 
+A) if (= n 1)
+B) 1
+C) (+ 1 (amount (- n 1)))
+D) (amount (- n 1))
+Answer: C
+/liang.winston
+=======================
+Question 18.a:
+MC question:
+Which of the following would NOT appear in a trace diagram of the following function?
+(define nd
+ (lambda (n s)
+  (if (< n 10))
+    (+ 1 s)
+     (nd (quotient n 10) (+ s 1)))))
+(nd 2323)
+Skill: 11
+Options:
+A. (nd 23 2)
+B. (+ 1 3)
+C. (+ 1 (+ 1 2))
+D. (nd 2 3)
+
+Answer: C
+
+MC question:
+Which of the following is the correct outcome when the following function is run?
+;n: Two digit integer
+(define ???
+(lambda (n)
+  (if (= 0(remainder n 2))
+  (quotient n 10)
+   (if (= 0(remainder n 3))
+    (quotient n 10)
+     (if (= 0(remainder n 5))
+         (quotient n 10)
+         (remainder n 10)
+)))))
+Skill: 2, 3, 5, 6
+Options:
+A: Takes a two digit integer n and returns the ones place if n is even and tens place if n is odd.
+B: Takes a two digit integer n and returns the tens place if n is even and ones place if n is odd.
+C: Takes a two digit integer n and returns the tens place if n is composite and ones place if n is prime.
+D: Takes a two digit integer n and returns the ones place if n is composite and tens place if n is prime.
+
+Answer: C
+
+Programming question:
+Write a tail-recursive function that takes two inputs, a single non-negative integer n, and 0 and returns the sum of all integers from 1 to n and returns "zero" if n is 0.
+Skill: 2, 3, 4, 11
+Possible solution:
+(define sumall
+ (lambda (n s)
+  (if (= n 0)
+   s
+    (sumall (- n 1)(+ s n)
+))))
+=======================
+Question 18.b:
+
+
+/lim.tj
+=======================
+Question 19.a:
+MC: Question:Which of the following best describes
+a Boolean expression in Racket?
+Skill:5
+Options:
+A. It always performs arithmetic and returns a number.
+B. It is a statement that can only evaluate to #true or #false.
+C. It is a list of numbers that can be compared with +.
+D. It is any statement inside parentheses.
+Answer: B
+=======================
+Question 19.b:
+
+MC Question:
+What happens when (sumDigits 123) is called?
+(define (sumDigits n)
+  (if (< n 10)
+      n
+      (+ (remainder n 10)
+         (sumDigits (quotient n 10)))))
+Skill: 11
+Options:
+A. The function returns immediately because 123 is not less than 10.
+B. The function repeatedly calls itself, breaking 123 into smaller parts until a single digit is reached.
+C. The function causes an infinite loop because there is no base case.
+D. The function multiplies all digits instead of adding them.
+Answer: B
+/ng.sophia
+=======================
+Question 20.a:
+MC Question: What is a base case?
+Skill: 11
+Options:
+A) The condition to stop
+B) A smaller version of the original problem
+C) Always when the parameter is equal to 0
+D) Always when the parameter is equal to 1
+
+Answer: A
+=======================
+Question 20.b:
+
+MC Question: What is recursive function?
+Skill: 11
+Options:
+A) A function that uses self reference, a base case, and a recursive case
+B) A loop
+C) A function that uses a trace diagram 
+D) A smaller version of the original function
+
+Answer: A
+/purkaysta.shuhag
+=======================
+Question 21.a:
+MC Question:
+Which is not a characteristic of a recursive function?
+Skill:11
+A)It calls itself directly or indirectly
+B)It has a specific trace diagram
+C)It always executes infinitely
+D)It needs a base case
+
+Answer: C
+=======================
+Question 21.b:
+
+MC Question:
+What makes this function produce an error?
+(define fibonacci
+  (lambda n
+    (if (<= n 2)
+        1
+        (+ (fibonacci (- n 1)) (fibonacci (- n 2))))))
+Skill:2
+A)The base case isn't reached; racket will respond with insufficient memory
+B)Two parenthesis are missing somewhere in the function
+C)<= isn't a valid operator
+D)Both A and B are correct
+
+Answer: B
+/shen.aaron
+=======================
+Question 22.a:
+MC Question: What is an advantage of using a tail recursive function?
+Skill: 11
+Options:
+A) A base case is not needed 
+B) It keeps the "stack" from getting too "high"
+C) You can plug in values more easily
+D) It only uses one parameter
+Answer: B
+=======================
+Question 22.b:
+
+MC Question: What is a recursive function?
+Skill: 11
+Options:
+A) A function that is built into DrRacket
+B) A function that defines itself when you call it
+C) A function that calls itself in its definition
+D) A function that repeats forever
+Answer: C
+/shih.thomas
+=======================
+Question 23.a:
+MC Question:
+What is a recursive function?
+Skill: 11
+Options:
+A) A function that calls itself in its definition
+B) A function that calls another function in its definition
+C) A function with a very long definition
+D) A function that is called multiple times
+
+Answer: A
+=======================
+Question 23.b:
+
+MC Question:
+Why can recursive functions that use tail recursion be more
+efficient that recursive functions that do not?
+Skill: 1, 11
+Options:
+A) Tail recursion is simpler to use as it only needs one parameter.
+B) Using tail recursion is always better than not.
+C) Tail recursion does not fill the stack such that it needs to all
+   be collapsed at the end, thereby saving memory.
+D) Trick question; tail recursion is less efficient because it
+   requires that a wrapper function be programmed for it.
+
+Answer: C
+/simi.caterina
+=======================
+Question 24.a:
+MC Question:
+What is the difference between the recursive case and the base case?
+Skill: 11
+Options:
+A) The recursive case is the simplest form of the problem and the base case is a smaller version of the original problem and should move towards the recursive case
+B) The base case is the simplest form of the problem and the recursive case is a smaller version of the original problem and should move towards the base case
+C) The recursive case runs faster than the base case
+D) The base case runs faster than the recursive case
+
+Answer: B
+=======================
+Question 24.b:
+
+MC Question:
+How is an (if) function structured?
+Skill: 6
+Options:
+A) (if (result0 test result1))
+B) (if test (result0 result1))
+C) (if result0 result1 result2)
+D) (if (test result0 result1))
+
+Answer: D
+/tong.olivia
+=======================
+Question 25.a:
+MC Question: Which boolean operator returns false if any of the given input values are false?
+Skill: 5
+Options:
+A) =
+B) and
+C) not
+D) or
+Answer: B
+=======================
+Question 25.b:
+
+MC Question: How should your function be written to return the boolean value #true?
+Skill: 2,4
+Options:
+A) "true"
+B) "#true"
+C) #true
+D) t
+Answer: C
+/ashkenazi.orion
+=======================
+Question 26.a:
+MC Question:
+What is the difference between defining and calling a function in Racket?
+Skill: 2 (Understanding how functions operate)
+Options:
+A) Defining a function means executing it immediately.
+B) Calling a function means creating a new function.
+C) Defining a function gives it a name and behavior; calling it runs that behavior.
+D) There is no difference between defining and calling.
+Answer: C
+=======================
+Question 26.b:
+
+MC Question:
+Which of the following expressions will return true?
+Skill: 5 (Working with Boolean Values)
+Options:
+A) (= 3 5)
+B) (< 10 5)
+C) (and (> 4 2) (< 7 10))
+D) (not #f) ; (not false)
+Answer: C and D are both true, but the *single best* answer is C.
+/bergstraesser.finn
+=======================
+Question 27.a:
+MC Question: Fill in the blank: recursion is any process that uses __________.
+Skill:11
+Options:
+A. Self-reference
+B. A boolean value
+C. the stack
+D. Multiple steps
+Answer
+A. Self-reference
+=======================
+Question 27.b:
+
+MC Question: What is a base case?
+Skill:
+Options:
+A. simpler version of a big problem
+B. the first return value in a if function
+C. the part of a recursion function that does not change
+D. whatever number is used to evaluate trace diagrams
+Answer
+A. simpler version of a big problem
+/berman.jaffee
+=======================
+Question 28.a:
+MC Question:
+If the function (lambda (n) (if (> n 10) 2 3)) is applied to the value 15, what will the result be?
+Skill: 6
+Options:
+A) 1.5
+B) 2
+C) 3
+D) 6
+
+Answer: B
+=======================
+Question 28.b:
+
+MC Question:
+What function is (lambda (p q) (not (and (not p) (not q)))) logically equivalent to?
+Skill: 5
+Options:
+A) (and p q)
+B) (nand p q)
+C) (or p q)
+D) (nor p q)
+
+Answer: C
+/bhowmik.mouri
+=======================
+Question 29.a:
+MC Question:
+Skill: Understanding how functions operate
+Question: Which of the following best describes the difference between calling and defining a function?
+Options:
+A) Defining a function executes it immediately
+B) Calling a function creates the function
+C) Defining a function specifies what it does; calling it makes it run.
+D) Calling and defining a function are the same thing
+Answer: C
+=======================
+Question 29.b:
+
+MC Question:
+Skill: Working with Boolean Values
+Question: What is the result of evaluating the following expression in Racket?
+
+(and (> 4 2) (< 10 5))
+
+Options:
+A) #t  
+B) #f  
+C) 10  
+D) Error  
+
+Answer: B
+/bhuiyan.ahnaf
+=======================
+Question 30.a:
+MC Question:
+What is the difference between defining and calling a function in Racket?
+Skill: 2 (Understanding how functions operate)
+Options:
+A) Defining a function means executing it immediately.
+B) Calling a function means creating a new function.
+C) Defining a function gives it a name and behavior; calling it runs that behavior.
+D) There is no difference between defining and calling.
+Answer: C
+=======================
+Question 30.b:
+
+MC Question:
+Which of the following expressions will return true?
+Skill: 5 (Working with Boolean Values)
+Options:
+A) (= 3 5)
+B) (< 10 5)
+C) (and (> 4 2) (< 7 10))
+D) (not #f) ; (not false)
+Answer: C and D are both true, but the *single best* answer is C.
+/chan.angeline
+=======================
+Question 31.a:
+MC Question:
+What is a recussive function?
+Skill: 11
+Options:
+A) A function with arithmetic operations in it
+B) A function with conditional statements
+C) A function with boolean values in it
+D) A function that calls itself to solve a problem
+
+Answer: D
+=======================
+Question 31.b:
+
+MC Question:
+What shape is a conditional question belong in, for a flowchart
+Skill: 9001
+Options:
+A) Square
+B) Circle
+C) Diamond
+D) None of the above
+
+Answer: C
+/chan.brandon
+=======================
+Question 32.a:
+MC Question:
+The function below has an incomplete contract! Choose the best answer as to what the blank should be.
+
+;(whichParallelogram side1 side2 smallerAngle) --> string
+; side1, side2 : positive number
+; smallerAngle : positive number less than or equal to 90
+;
+; Returns a string that classifies whether a parallelogram is a square, non-square rectangle, non-square rhombus, or a generic parallelogram
+; Based off the side lengths and the minimum angle (in degrees)
+; (whichParallelogram 1 1 90) --> "square"
+; (whichParallelogram 1 2 90) --> "rectangle that is not a square"
+; (whichParallelogram 1 1 60) --> "rhombus that is not a square"
+; ___ --> ___
+(define whichParallelogram
+  (lambda (side1 side2 smallerAngle)
+    (if (= side1 side2)
+        (if (= smallerAngle 90)
+            "square"
+            "rhombus that is not a square")
+        (if (= smallerAngle 90)
+            "rectangle that is not a square"
+            "parallelogram that is not a rectangle nor rhombus"))))
+
+Skill: 2, 3
+Options:
+A) (whichParallelogram 2 2 60); "parallelogram"
+B) (whichParallelogram 2 2 60); "parallelogram that is not a rectangle nor rhombus"
+C) (whichParallelogram 1 2 60); "parallelogram"
+D) (whichParallelogram 1 2 60); "parallelogram that is not a rectangle nor rhombus"
+Answer: D
+=======================
+Question 32.b:
+
+MC Question:
+What is the THIRD function to go on the stack?
+
+(if (even? (expt 3 2))
+    (remainder 58 (+ 3 2))
+    (* 3 (/ 0.5) 5)
+
+Skill: 2, 4
+Options:
+A) even?
+B) expt
+C) if
+D) remainder
+Answer: B
+/chen.fiona
+=======================
+Question 33.a:
+MC Question: Which of the following are types of recursive functions?
+Skill: 11
+Options:
+A) tail
+B) wrapper
+C) all of the above
+D) none of the above
+Answer: C
+=======================
+Question 33.b:
+
+MC Question: Which line of code calls the function?
+(define squareArea (lambda (n)
+                     (* s s)))
+Skill: 2
+Options:
+A) define sqaureArea
+B) * s s
+C) lambda
+D) none
+Answer: D
+/chen.janice
+=======================
+Question 34.a:
+MC Question: What is a conditional statement?
+Skill: 6
+Options:
+A)Values provided as inputs to functions calls
+B)Functions that return different values based on Boolean tests
+C)Variables that act as placeholder for arguments 
+D)Take 2 or more arguments and return a Boolean value
+Answer: B
+=======================
+Question 34.b:
+
+MC Question: What property would be solved first in: (/ (+ 5 ( quotient 2025 (remainder 50647 n))))
+Skill: 2,4
+Options:
+A) /
+B) +
+C) remainder
+D) quotient
+Answer: C
+/chen.nigel
+=======================
+Question 35.a:
+MC Question:
+Given a function which recieves any natural num and returns the remainder after dividing by 4.
+how many possible result can it have?
+Skill:
+1,2(?)
+Options:
+A) 2
+B) 3
+C) 4
+D) 5
+Answer: C
+=======================
+Question 35.b:
+
+MC Question:
+Given some function "dp" that is also some kind of recursive function. dp *2 to the vaule each time and only ends when the input number surpass 100.
+how much time will dp run when (dp 5) run?
+Skill:
+11
+Options:
+A) 3
+B) 4
+C) 5
+D) 6
+Answer: C
+/eng.cody
+=======================
+Question 36.a:
+MC Question: How is an if function structured?
+Skill: 6
+Options:
+A: (if (boolean)
+       (#f)
+       (#t)
+       ))
+B: (if (boolean)
+       (Result if #t)
+       (Result if #f)))
+C: (if (#t)
+       (#t)
+       (#f))
+D: (if (#f)
+       (#f)
+       (#t))
+Answer: B
+=======================
+Question 36.b:
+
+MC Question: What do you need for a recursive function to work?
+Skill: 11
+Options:
+A: A boolean value
+B: A base case only
+C: A base case and a recursive case
+D: None of the above
+Answer: C
+/fung.william
+=======================
+Question 37.a:
+MC Question:
+Recursion can best be defined as any function that uses: 
+Skill: 11
+Options:
+A) a trace diagram
+B) repetition
+C) self-reference
+D) a base case
+Answer: C
+=======================
+Question 37.b:
+
+MC Question:
+Find the result of the following Racket code if n equals 3:
+(if (not (= 0 (remainder n 5)))
+    (if (< n 5)
+        #true
+        (= n (quotient n 5)))
+    #false
+    )
+Skill: 5, 6
+Options:
+A) #true
+B) 5
+C) #false
+D) 3
+
+Answer: A
+/jen.dylan
+=======================
+Question 38.a:
+MC Question:
+Which is recursion?
+Skill: 11
+Options:
+A) A function calling another function
+B) A function calling itself
+C) A loop repeating a block of code
+D) A variable holding a value
+
+Answer: B
+=======================
+Question 38.b:
+
+MC Question:
+Which  will return #t when x is greater than 5?
+Skill: 6
+Options:
+A) (if (> x 5) #t #f)
+B) (if (> x 5) #f #t)
+C) (if (< x 5) #t #f)
+D) (if (<= x 5) #f #t)
+
+Answer: A
+/jensen.eske
+=======================
+Question 39.a:
+MC Question:
+In the code:
+
+(define function
+  (lambda (a)
+    (if (>= a 3)
+        (+ a 3)
+        (sqrt a))))
+
+What would be the expected result of (function 16)?
+Skill: 6
+Options:
+A) 4
+B) 5
+C) 13
+D) 19
+
+Answer: D
+=======================
+Question 39.b:
+
+MC Question:
+What does a diamond represent on a flow chart?
+Skill: 4
+Options:
+A) Terminal Node
+B) Process Node
+C) Decision Node
+D) Start Node
+
+Answer: C
+/jiang.alvin
+=======================
+Question 40.a:
+MC Question: What is a recursion function?
+Skill:11
+Options:
+a. A boolean function
+b. A function that returns different values based on Boolean Tests
+c. Functions that call themselves in their definition
+Answer
+c
+=======================
+Question 40.b:
+
+MC Question: What is a Stack?
+Skill: 11
+Options:
+a. Where function calls go
+b. Where outputs go
+Answer
+a.
+/khan.uthsho
+=======================
+Question 41.a:
+MC Question: What will the function below return when (mystery 4 7 #t) is called?
+
+; x --> number
+; y --> number
+; z --> boolean
+
+(define mystery
+  (lambda (x y z)
+  (if (and (> y x) z)
+      (or (= (+ x y) 11) (not z))
+      (<= x y)))
+
+Skill: 5
+Options:
+A) True
+B) False
+Answer: A
+=======================
+Question 41.b:
+
+MC Question: What would be an appropriate step in a trace diagram of the function call (multi 456) with the function below?
+
+(define multi
+  (lambda (n)
+    (if (< n 10)
+    n
+    (* (remainder n 10) (multi (quotient n 10)))))
+
+Skill: 11
+Options:
+A) (* 6 (multi 4))
+B) (* 6 (multi 45))
+C) (* 6 4 (multi 45))
+D) (* 6 (multi 54))
+Answer: B
+/kye.erin
+=======================
+Question 42.a:
+MC Question: Which symbol in a flow chart represents a decision?
+Skill:4
+Options:
+A) Oval
+B) rectangle
+C) square
+D) diamond
+Answer: D
+=======================
+Question 42.b:
+
+MC Question: What is the definition of an algorithm?
+Skill: 4
+Options:
+A) a sequence of many unspecific steps
+B) one step that solves a problem
+C) a sequence of steps that will solve a problem when solved
+Answer: C
+/lin.angie
+=======================
+Question 43.a:
+MC Question:
+What is a recursive function?
+Skill: 11
+Options:
+A) A function that repeats
+B) A function that takes one input
+C) A function that calls itself
+D) A function that takes in a boolean value
+
+Answer: C
+=======================
+Question 43.b:
+
+MC Question:
+Someone wrote a conditional statement using if but it showed an error when they tried running the code. What could have gone wrong?
+Skill: 6
+Options:
+A) They forgot to write the contracts
+B) They forgot to assign true and false values
+C) Nothing is wrong, just run it again
+D) They assigned 2 parameters
+
+Answer: B
+/liu.constance
+=======================
+Question 44.a:
+MC Question: What is the name of the rectangle node and its function in a flowchart?
+Skill: 4
+Options:
+A. process, action to be performed
+B. decision, asks for boolean value
+C. terminal, start/end
+D. process, start/end
+Answer: A
+=======================
+Question 44.b:
+
+MC Question: What of the following is a characteristic of recursive functions?
+Skill: 11
+Options:
+A. it always has two parameters
+B. it refers to itself
+C. it must be three lines long
+D. it repeats six times
+Answer: B
+/martin.sameer
+=======================
+Question 45.a:
+MC Question:
+How do you write x less than 5
+Skill: 5
+Options:
+A) (x < 5)
+B) (< x 5)
+C) (> 5 x)
+D) (5 > x)
+
+Answer: B
+=======================
+Question 45.b:
+
+MC Question:
+What is the purpose of conditional statements
+Skill: 6
+Options:
+A) To return a one of two possible value based on the truth value of conditon
+B) To give the truth value of that both parameters are true
+C) To display a variable
+D) To make a function repeate itself infinitely
+
+Answer: A
+/murtoza.irfan
+=======================
+Question 46.a:
+MC Question:
+Which of the following best describes the difference between *defining* a function and *calling* a function?
+Skill: 2 (Understanding how functions operate)
+Options:
+A) Defining a function tells the computer what to do; calling a function tells it to actually do it.
+B) Defining a function executes the code immediately; calling a function stores it for later.
+C) Defining a function is only for math functions; calling is for user-defined ones.
+D) Defining and calling a function are the same thing.
+Answer: A
+=======================
+Question 46.b:
+
+MC Question:
+Which conditional statement correctly checks if a number `n` is both positive and even?
+Skill: 6 (Using Conditional Statements)
+Options:
+A) (if (and (> n 0) (even? n)) "Yes" "No")
+B) (if (or (> n 0) (even? n)) "Yes" "No")
+C) (if (> n 0 and even? n) "Yes" "No")
+D) (if (> n 0) and (even? n) "Yes" "No")
+Answer: A
+/nurullaeva.sabrina
+=======================
+Question 47.a:
+MC Question: Which line of the following code CALLS the function?
+(define triArea
+   (lambda (b h)
+       (* 1/2 b h)))
+(triArea 10 4)
+
+Skill: 2
+Options:
+A) (lambda (b h)
+B) (define triArea
+C) (* 1/2 b h)))
+D) (triArea 10 4)
+
+Answer: D
+=======================
+Question 47.b:
+
+MC Question: What is the result of this expression? (and (> 6 2) (< 3 7))
+Skill: 5
+Options:
+A) #t
+B) #f
+C) 3
+D) 6
+Answer: A
+/peng.alex
+=======================
+Question 48.a:
+MC Question:
+What is a recursive function?
+Skill: 11
+Options:
+A)Any process that uses self-reference.
+B) Functions that call themselves in their definition.
+C) The base case of a recursive function should stop.
+D) All of the above.
+Answer: D
+=======================
+Question 48.b:
+
+MC Question:
+How do you write a conditional statment?
+Skill: 6
+Options:
+A) (if BooleanValue TrueReturnValue FalseReturnValue)
+B) (if BooleanValue FalseReturnValue TrueReturnValue)
+C) (if TrueReturnValue FalseReturnValue BooleanValue)
+D) None of the above
+Answer: A
+/schaible.anna
+=======================
+Question 49.a:
+MC Question: What is the purpose of a trace diagram?
+Skill: 6
+Options:
+A) to trace things, duh
+B) to follow the path of a recursive function
+C) to follow the path of a non-recursive function
+D) to follow things
+Answer: B
+=======================
+Question 49.b:
+
+MC Question: What three shapes are used in flow charts?
+Skill: 4
+Options:
+A) oval, diamond, rectangle
+B) what's a flow chart?
+C) triangles, circles, trapazoids
+D) trick question, we don't use shapes
+Answer: A
+/shao.serena
+=======================
+Question 50.a:
+MC Question:
+What will the following expression evaluate to?
+(and #t (not #f))
+Skill: 5
+Options:
+A) #f
+B) #t
+C) (not #f)
+D) and
+Answer: B
+=======================
+Question 50.b:
+
+MC Question:
+What is the output of the following code?
+(if (> 3 5)
+    "yes"
+    "no")
+Skill: 6
+Options:
+A) "yes"
+B) "no"
+C) #t
+D) #f
+Answer: B
+/sukhdeo.dylan
+=======================
+Question 51.a:
+0
+MC Question: Which of the following is true about a flowchart?
+Skill: 4
+Options:
+A) An oval is a decision
+B) An oval is a process
+C) A diamond is a decision
+D) A diamond is a process
+Answer C
+=======================
+Question 51.b:
+
+1
+MC Question: What are recursive functions?
+Skill: 11 
+Options:
+A) Functions that call themselves with their definition
+B) Functions that return different values based on Boolean tests
+C) A function that has boolean arguments and returns boolean arguments
+D) None of the above
+Answer A
+/tissera.shanya
+=======================
+Question 52.a:
+MC Question:
+What is a base case?
+Skill: 11
+Options:
+A) When recursive functions should start
+B) When recursive functions should stop
+C) The simplest case
+D) A smaller version of the problem with variables
+Answer: B
+=======================
+Question 52.b:
+
+MC Question:
+Which of these is NOT a node on a flowchart?
+Skill: 4
+Options:
+A) Process
+B) Decision
+C) Algorithm
+D) Terminal
+Answer: C
+/woodward.teo
+=======================
+Question 53.a:
+MC Question: What is the purpose of a Base Case?
+Skill: 2 11
+Options:
+A) To make the function faster
+B) To define when the function should stop calling itself
+C) To reset all variable values
+D) To create an infinite loop
+
+Answer: B
+=======================
+Question 53.b:
+
+MC Question: When creating a trace diagram for a recursive function, what happens at the base case?
+Skill: 2 11
+Options:
+A) The recursion continues indefinitely
+B) The program resets
+C) A new trace branch is created
+D) The recursion stops and begins returning values
+
+Answer: D
+/zeng.john
+=======================
+Question 54.a:
+MC Question: Which function is a boolean operator?
+Skill: 5
+Options:
+A) >
+B) <
+C) define
+D) and
+Answer: D) and
+=======================
+Question 54.b:
+
+MC Question: What do you need in a function contract?
+Skill: 3
+Options:
+A) lambda
+B) limits on the parameter
+C) colons
+D) full sentences
+Answer
+B) limits on the parameter

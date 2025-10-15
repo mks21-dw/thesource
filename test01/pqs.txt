@@ -1,0 +1,669 @@
+
+/abreuperalta.stacy
+=======================
+Question 0:
+
+Programming question: Write a recursive function called integerSum that returns
+the sum from 1 up to the given positive integer.
+Skill: 3 and 11
+Description: The function should take a positive integer "a" as input
+If a is 0, returns 0
+Otherwise he sum is "a" plus the sum of integers from 1 up to n-1
+
+/ahmetaj.kevin
+=======================
+Question 1:
+
+Programming question:
+Skill: 3 6 11
+Description
+Write out a function  that takes in a day of the week
+and returns how many days until friday
+Have the parameter be day and the day of week be between 1 and 7.
+
+/brinzensky.roman
+=======================
+Question 2:
+
+Programming question:
+Write a function that takes a positive integer n and returns the nth terms in the seqence: An = a(n-1)+10 (first term is 0).
+Each number is added to 10 to produce the next value in a sequence.
+Skill: 11
+
+/chan.cassandra
+=======================
+Question 3:
+
+Programming Question:
+Write a function that takes in a number, n (non-negative integer), and returns the sum of all the integers from 0 up to n.
+Skills: 3, 6, & 11
+Possible Solution:
+|*
+(define sumUp
+  (lambda (n)
+    (if (= n 0)
+      n
+      (+ n (sumUp (- n 1))))))
+(sumUp 0)
+(sumUp 5
+/chen.cherie
+=======================
+Question 4:
+
+Programming question:
+Skills: 2, 3, 5, 6
+Write a function that returns the area of a quadrilateral with the sides a b c d only if it is a square.
+Area: a * b
+
+/chen.ethan
+=======================
+Question 5:
+
+Programming question: Write a function contract for the following function
+(define andOdd
+(λ (n)
+(if (= 0 n)
+n
+(if (and (> n 0) (= (remainder n 2) 0))
+
+"posAndEven"
+"notposAndEven"))))
+
+Skill: 3
+Description
+
+
+/cheng.eason
+=======================
+Question 6:
+
+Programming question:
+Write a function that checks if the number of digits in n is greater than the number of digits in s
+Skills: 5, 6, 11
+
+/cho.wilson
+=======================
+Question 7:
+
+Programming question:
+Write a recursive function that takes a positive integer n
+and returns the sum of all integers from 1 to n.
+The function should call itself until it reaches 0.
+
+Skill: 11 
+
+/chosang.tenzin
+=======================
+Question 8:
+
+
+/chowdhury.adyan
+=======================
+Question 9:
+
+Programming question: Write a function that takes in a positive integer and returns the first digit of the integer
+Skill: 6, 11
+
+/debnath.sudipta
+=======================
+Question 10:
+
+Programming question: Write a function and contract for the following question:
+Skill:3, 11
+Description
+Write a function that returns the power that the argument is raised to. The argument MUST be a number that has a base of 2. Ex:
+8 --> 3, 2^3 = 8
+256 --> 8, 2^8 = 256
+
+/hafeez.arzan
+=======================
+Question 11:
+
+Programming question: 
+Heron of Alexandria, a Greek mathematician and engineer, developed a method to approximate the square root of a number x using an iterative sequence. The method works as follows:
+
+- A guess is made of the square root of x.
+- If |guess^2 - x| < 0.000001, then the guess is accurate and is used as the output.
+- Otherwise, a new guess is made by taking the average of the previous guess and x divided by that guess. This new guess replaces the original guess.
+
+The process is repeated continuously until an accurate guess is obtained.
+
+Using Racket syntax, write a function with inputs x and guess that approximates the square root of x using this method. You may assume that x and guess are both nonnegative numbers.
+
+Include a contract and effective test cases for your function. It is not necessary to include the results of your test cases (the solution does this for completion).
+Skills: 3, 11
+
+/jiang.ayden
+=======================
+Question 12:
+
+Programming question:Write a recursive function that takes a number multiplies
+each digit together.
+Skill:3,11
+Description:
+;(multipyDigits a) --> non-negative integer
+a --> non-negative integer
+; Write a function that takes a number and multiplies the each digit together.
+
+
+(define multiplyDigits
+    (lambda (n)
+      (if (< n 10)
+          n
+          (* (remainder n 10) (multiplyDigits (quotient n 10))))))
+(multiplyDigits (quotient n 10)))))
+/jiang.kingsley
+=======================
+Question 13:
+
+Programming question:
+Write a function "bob" to find the sum of n times s and n divided by s.
+Skill: 3
+
+
+(define bob
+ (lambda (n s)
+  (+ (* n s) (/ n s))))
+/kalantry.krish
+=======================
+Question 14:
+
+Programming question:
+Write a recursive function keepHalving that takes an argument n and adds it to its half, repeating the process until n is reduced to single-digit number. Be sure to include a contract and test cases.
+Skill: 3, 5, 6, 11
+Description
+
+
+/kano.nene
+=======================
+Question 15:
+
+Programming question: Write a valid function that takes in a number and determines if
+the ones digit of that number is divisible by 3.
+Skill: 1, 3 
+
+
+/lee.caitlyn
+=======================
+Question 16:
+
+Programming question: Given the following function definition, write a valid contract and provide function calls that would act as effective test cases.
+Skills: 11 and 2
+Description
+
+Trace 
+(define HalfAddOne
+  (lambda (n)
+    (if (<= n 2)
+        1
+        (+ 1 (HalfAddOne (quotient n 2))))))
+
+(HalfAddOne 10)
+
+
+/lee.nathan
+=======================
+Question 17:
+
+Programming question: Write a function that returns the sum of the digits of a number if the number is even, 
+and the amount of digits if the number is odd. You can use code from previous assignments to help you.
+Skill: 3,4,5,6,11
+Description
+
+
+;I added the previous assignment's code for these and then put it in, but you didn't have to define 3 functions,
+;you could have just put it all in the one function.
+(define digitsAdded
+ (lambda (n)
+  (if (< n 10)
+      n
+      (+ (remainder n 10) (digitAmount (quotient n 10))))))
+(define digitAmount 
+ (lambda (n)
+  (if (< n 10)
+      1
+      (+ 1 (digitAmount (quotient n 10))))))
+(define digitThing
+ (lambda (n)
+  (if (= (/ n 2) 0)
+      (digitsAdded n)
+      (digitAmount n)))
+/liang.winston
+=======================
+Question 18:
+
+
+/lim.tj
+=======================
+Question 19:
+
+Programming question: Write a function that maps exponetial growth
+a(1+r)^t
+Skill:3
+Description
+Can map out exponetial growth of a value over a certain percent and time. 
+\
+(define exptGrowth
+(lambda (a r t)
+(* a (expt (+ 1 r) t))))
+/ng.sophia
+=======================
+Question 20:
+
+Programming question:
+Write a function that returns the product of the digits of n, or n if n is a single digit number
+Skills: 3, 11
+
+/purkaysta.shuhag
+=======================
+Question 21:
+
+Programming Question:
+Write a function and contract for the following question:
+Description
+Write a function that returns the power that the argument is rased to. The argument must be a number that has a base of 2.
+Ex:
+8-->3, 2^3=8
+256--> 8, 2^8=256
+Skills:3, 11
+
+Possible Solution:
+Function Definition:
+(define powersOfTwo
+  (lambda (n)
+    (if (= n 2)
+        1
+        (+ 1 (powersOfTwo (quotient n 2))))))
+
+Function Contract:
+;(powersOfTwo n)-->Positive integer
+;n:Positive integer with a base of 2
+;Returns the power that the argument, which is a number with a base of 2, is raised to.
+/shen.aaron
+=======================
+Question 22:
+
+Programming question: Write a function that takes in a positive integer and returns the first digit of the integer
+Skill: 6, 11
+
+/shih.thomas
+=======================
+Question 23:
+
+Programming question:
+Write a function using *tail recusion* that
+takes in a natural number (integer > 0)
+and returns the number of even digits in it.
+Skill: 3, 6, 5, 11
+
+/simi.caterina
+=======================
+Question 24:
+
+Programming question:
+Write a function that returns the number of even digits in an integer
+0 is an even number
+Skills: 3, 5, 6, 11
+
+(define CountEven
+  (lambda (n)
+    (if (< n 10)
+        (if (= 0 (remainder n 2))
+               1
+               0)
+      (+ (if (= 0 (remainder n 2))
+               1
+               0) (CountEven (quotient n 10))))))
+/tong.olivia
+=======================
+Question 25:
+
+Programming question: Write a function with one parameter (q) representing the number of quarters that returns true if the amount in dollars is greater than one, false in all other cases.
+Skill: 2, 4, 5, 6
+
+/ashkenazi.orion
+=======================
+Question 26:
+
+Programming question:
+Write a recursive function that computes the factorial of a number n.
+The factorial of n (written n!) is defined as:
+n! = n × (n - 1) × (n - 2) × ... × 1
+and factorial(0) = 1
+
+Skill: 3 (Writing functions), 11 (Recursion)
+Description:
+Write a function (fact n) that takes a nonnegative integer n and returns n!.
+
+
+/bergstraesser.finn
+=======================
+Question 27:
+
+Programming question: Create a recursion function that adds the first n perfect squares (1^2+2^2+...n^2), given positive integer n .
+Skill:3,11
+Description
+
+
+/berman.jaffee
+=======================
+Question 28:
+
+Programming question:
+Write a recursive function that takes in a number x and returns the xth triangle number.
+The xth triangle number is the total number of dots in a filled equilateral triangle where each side has x dots.
+Skills: 3, 4
+
+/bhowmik.mouri
+=======================
+Question 29:
+
+Programming question:
+Skill: Using Recursion
+Description: Write a recursive function called `countdown` that takes a number `n` and prints each number from `n` down to 1.
+
+
+(define (countdown n)
+  (if (zero? n)
+      'done
+      (begin
+        (displayln n)
+        (countdown (- n 1)))))
+/bhuiyan.ahnaf
+=======================
+Question 30:
+
+Programming question:
+Write a recursive function that computes the factorial of a number n.
+The factorial of n (written n!) is defined as:
+n! = n × (n - 1) × (n - 2) × ... × 1
+and factorial(0) = 1
+
+Skill: 3 (Writing functions), 11 (Recursion)
+Description:
+Write a function (fact n) that takes a nonnegative integer n and returns n!.
+
+
+/chan.angeline
+=======================
+Question 31:
+
+Programming question:
+Write a function that returns the product of all the digits in a number
+Skills: 3. 11
+
+/chan.brandon
+=======================
+Question 32:
+
+Programming question:
+Write a function that finds if an integer greater than 1 is prime.
+
+Skill: 3, 5, 11
+
+/chen.fiona
+=======================
+Question 33:
+
+Programming question: Write a contract and test cases for a function that returns true when n is the product of the first two parameters and returns the sum of the digits in n when n is not the product.
+Skill: 2,3,4,5,6,11
+Note: may include more than one function defintion
+
+; (sumproduct a b n) --> positive integer
+; a,b,n: nonnegative integer
+;
+; returns true when n is the product of a and b
+; returns the sum of digits in n in all other cases
+; (sumproduct 11 3 23) --> 5
+(define sumDigits (lambda (n)
+                    (if (< = n 0)
+                        0
+                        (+ (remainder n 10)
+                           (sumDigits (quotient n 10))))))
+(define sumproduct (lambda (n)
+                     (if (= n (* a b))
+                         #t
+                         (sumDigits n))))
+(display "sumproduct test\n")
+(display "should be #t: ")
+(sumproduct 3 5 15)
+(display "should be 16: ")
+(sumproduct 8 8)
+(display "should be 0: ")
+(sumproduct -10)
+/chen.janice
+=======================
+Question 34:
+
+Programming question:
+Skill: 3,6,11
+Description
+Write a recursive function that tells you the number in the nth row and kth column in pascal's triangle.
+Pascal's triangle is always 1 on the edges, and each row is counted starting with 1. 
+
+/chen.nigel
+=======================
+Question 35:
+
+Programming question:
+Please write a recursive function that recieves a natural num < 100 and *2 everytime until the return vaule reaches 100, then return the time it got ran.(don't have to write a Wrapping function) 
+Skill:
+3, 11
+
+(define dp
+  (lambda (n a)
+    (if (< n 100)
+         (dp (* 2 n) (+ a 1))
+         a
+         )))
+/eng.cody
+=======================
+Question 36:
+
+Programming question: Write a function that adds up all nonnegative integers behind n
+Skill: 11
+Description
+
+
+/fung.william
+=======================
+Question 37:
+
+Programming question:
+Write a function that raises a given number to a given positive integer power; your function should work like the expt function.
+Example: (power -3 4) --> 81 because (expt -3 4)--> 81.
+Skill: 3, 5, 6, 11
+
+
+/jen.dylan
+=======================
+Question 38:
+
+Programming question:
+Write a recursive function that computes the sum of all whole numbers from 1 to n.
+Skills: 11, 5
+
+/jensen.eske
+=======================
+Question 39:
+
+Programming question:
+Write a function that returns the number of times a number n has to be squared to surpass a threshold t.
+If the number is over t, return 1.
+n : positive integer greater than 1
+t : positive integer
+Skills: 6, 11
+
+/jiang.alvin
+=======================
+Question 40:
+
+Write a function that takes a non-negative integer and returns the number of even digits it contains
+Skill: 11
+
+(define numEvenDigits
+  (lambda (n)
+    (if (< n 10)
+        (if (= 1 (remainder n 2))
+             0
+             1)
+        (+ (if (= 1 (remainder n 2))
+             0
+             1)
+           (numEvenDigits (quotient n 10))))))
+/khan.uthsho
+=======================
+Question 41:
+
+Programming question: Given n dollars, and a pack of grapes is 5 dollars, and a banana is 2 dollars,
+write a function that finds how many sets of a pack of grapes and a banana someone could buy.
+Skill: 11
+Description
+
+
+/kye.erin
+=======================
+Question 42:
+
+Programming question: Create a function that takes in 3 integers and returns the max of the three.
+Skill: 6
+Description
+
+
+
+(define max3
+    (lambda (a b c)
+        (if (> a b)
+            (if (> a c)
+
+             a
+             c)
+            (if (> b c)
+                 b
+                 c))))
+/lin.angie
+=======================
+Question 43:
+
+Programming question:
+Write a function that returns even if a number is even and odd if a number is odd
+
+/liu.constance
+=======================
+Question 44:
+
+Programming question: Write a recursive function that returns the sum of the first n whole numbers.
+Skill: 11
+
+(define sumW
+(lambda (n)
+(if (= n  0)
+0
+(+ n (sumW (- n 1))))))
+/martin.sameer
+=======================
+Question 45:
+
+Programming question: 
+Write a function that takes a non-negative integer and returns the number of even digits it contains
+Skill: 11
+
+/murtoza.irfan
+=======================
+Question 46:
+
+Programming question:
+Write a recursive function that takes a nonnegative integer `n` and returns the sum of all digits in that number.
+Example: (sumDigits 472) → 13
+Skill: 3 (Writing functions/procedures), 11 (Recursion)
+Description:
+Use recursion:
+- Base case: if n < 10, return n
+- Recursive case: (sumDigits n) = (remainder n 10) + (sumDigits (quotient n 10))
+
+
+/nurullaeva.sabrina
+=======================
+Question 47:
+
+Programming question: Write a function and contract for a tail recursive
+function representing factorial. Use n and s as your parameters. 
+Skill: 3, 5, 6, 11
+
+/peng.alex
+=======================
+Question 48:
+
+Programming question:
+Write a function that takes a nonnegative integer parameter and returns the product of all the didigts of that parameter.
+Skill: 5, 6, 11
+Description
+Function name is ProductN
+Parameter name is n
+
+/schaible.anna
+=======================
+Question 49:
+
+Programming question: factorial trees are created by continuously divinding branches by a certain number.
+Create a function that takes in the number (n) of divisions per round and how many times (b for branches) to go through before returning the answer. 
+Skill: 3, 5, 6, 
+
+(define factree
+  (lambda (n b)
+    (if (or (= n 0) (= b 0))
+        1
+        (/ 1 (expt n b)))))
+/shao.serena
+=======================
+Question 50:
+
+Programming question:
+Write a function that takes a number n and returns the nth triangular number. Use recursion!
+Skill: 2, 3, 4, 6, 11
+Description:
+A triangular number is the sum of all integers from 1 to n. Formula: Tn = n * (n + 1) / 2
+
+/sukhdeo.dylan
+=======================
+Question 51:
+
+2
+Programming question: Write a function for a flowchart that returns the max of 3 parameters, a, b, and c.
+Skill: 3,4,5
+Description
+
+ (define max3
+(lambda (a b c)
+(if (> a b)
+(if (> a c)
+a
+c)
+(if (> b c)
+b
+c))))
+/tissera.shanya
+=======================
+Question 52:
+
+Programming question:
+Write a function pascalRow that takes some positive integer n and outputs
+the nth row of pascal's triangle :))
+Skill: 11, 6
+
+
+/woodward.teo
+=======================
+Question 53:
+
+Programming question: Write a function that returns the sum of all numbers from 1 up to n.
+Skill: 11
+Description
+
+
+/zeng.john
+=======================
+Question 54:
+
+Programming question: Write a function that returns how many fives are in a number
+Skill: 3, 11
