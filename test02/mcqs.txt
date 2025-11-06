@@ -1,0 +1,1424 @@
+
+/abreuperalta.stacy
+=======================
+Question 0.a:
+MC Question:  What do each node contain?
+Skill: 10
+Options:
+A)Data to store
+B)Link to the next node
+C)Null
+D) A & B
+Answer: D
+=======================
+Question 0.b:
+
+MC Question:  What does (build-list n f) do?
+Skill:2 
+Options:
+A) creates a list of n elements by  applying f on the integers in the range [0 , n)
+B) creates a list of n elements by applying f on the integers in the range [0, n]
+C) creates a list of n elements by applying f on the integersin the range (0,n)
+
+Answer:
+A
+/brinzensky.roman
+=======================
+Question 1.a:
+MC Question:
+For the following code, why does the function not call (mystery 3):
+(define mystery
+	(lambda (n)
+	(if  (<= n 0)
+	0
+	(mystery (+ n 1)))))
+Skill: 11
+Options:
+a) Stack overflow causes infinite recursions to halt Dr Racket
+b) The syntax is incorrect and recursion isn’t being done
+c) Stack overflow causes racket to pile too many functions that never lead to a value
+d) The recursive case can never be reached
+
+Answer
+C
+=======================
+Question 1.b:
+
+MC Question:
+A student is presented with a linked list full of nodes containing a value and a portion with a linking element.
+When the student had drawn the diagram out with a list of 5 elements, the last arrow in the entire series pointed to a node (box).
+If he were taking a test, would he get the question wrong?
+Skill: 10
+Options:
+a) Yes, the last arrow needs to directly link the element to null, not to the last element in the list
+b) Yes, the last arrow needs to directly link the element another list, causing the lists to be linked
+c) No, the he answered correctly
+d) Yes, linked lists have arrows pointing to the next linking element in a node, not a value.
+
+Answer
+A
+/chan.cassandra
+=======================
+Question 2.a:
+MC Question:
+Skill: 11
+Question: What makes a function recursive?
+Options:
+A. It uses a loop to repeat code.
+B. It calls itself within its definition.
+C. It defines another function inside of it.
+D. It only uses conditional statements.
+
+
+Answer: B
+=======================
+Question 2.b:
+
+MC Question:
+Skill: 11
+Question: What is the purpose of a base case in recursion?
+Options:
+A. To make the function run faster.
+B. To prevent infinite recursion by providing a stopping condition.
+C. To make the function return multiple values.
+D. To create a list from numbers.
+
+
+Answer: B
+/chen.ethan
+=======================
+Question 3.a:
+MC Question:What is the correct formula for build-list syntax?
+Skill:2,7,10
+Options:
+A) (build-list amount# function)
+B) (build-list function amount#)
+C) (build-list parameter function amount#)
+D) (build-list amount# parameter function)
+Answer
+A)
+=======================
+Question 3.b:
+
+MC Question:What does the following function do when called?
+(filter odd? '( 1 2 4 8 13 21 27 61 89 100)
+Skill:
+Options:
+A)filters the lists for odd number
+B)calls the function created by lambda
+C)creates the lists
+D)filters the lists for even number
+Answer
+A)
+/cheng.eason
+=======================
+Question 4.a:
+MC Question: What is a required parameter for the build-list function to be called
+Skill: 10
+Options:
+A) A list
+B) A boolean value
+C) A function
+D) A variable
+Answer: C
+=======================
+Question 4.b:
+
+MC Question: What defines a recursive function?
+Skill: 11
+Options:
+/cho.wilson
+=======================
+Question 5.a:
+MC Question:
+Which of the following will return a list with 2 added to the front of the list '(3 4)?
+Skill: 2, 10
+Options:
+A) (cons 2 '(3 4))
+B) (cons (2 '(3 4)))
+C) (cons '(3 4) 2)
+D) (cons '(3 4) (2))
+Answer: A
+=======================
+Question 5.b:
+
+MC Question:
+What does the folowing expression define?
+(define a (lambda (b c)
+          (cons b c)))
+Skill: 2, 7, 10
+Options:
+A) (A function that adds b and c numerically
+B) A function that multiples b and c
+C) A function that applies a function to a number
+D) A function that adds b, a number to the front of a list c
+Answer: D
+/chowdhury.adyan
+=======================
+Question 6.a:
+MC Question: What does the last node of a list link to?
+Skill: 10
+Options:
+A) nothing
+B) nullify
+C) null
+D) nihility
+Answer: C
+=======================
+Question 6.b:
+
+MC Question: What does the foldl function do?
+Skill: 10
+Options:
+A) Builds a list of a given number of values using a given function
+B) Returns a new list by running a given function on each element of a given list and the previous value returned by the function
+C) Filters a given list for the elements that return true for a given function
+D) Adds another element to the beginning of a given list
+Answer: B
+/debnath.sudipta
+=======================
+Question 7.a:
+MC Question: What would the following code return?
+(cons 4 (list 1 2 3))
+Skill: 10
+Options:
+A) '(1 2 3 4)
+B) (4 1 2 3)
+C) '(4 1 2 3)
+D) (1 2 3 4)
+Answer: C
+=======================
+Question 7.b:
+
+MC Question: What is true about the non-list parameters of filter and fold, respectively?
+Skill: 10
+Options:
+A) filter must take in a function that accepts exactly 2 arguments, and fold takes in a function that uses a single real-number argument.
+B) filter must take in a function uses a single real-number argument, and fold must take in a function that accepts exactly 2 arguments.
+C) filter must take in a function that accepts exactly 2 boolean-value arguments, and fold must take in a function that accepts exactly 2 arguments.
+D) filter must take in a function produces a single boolean value, and fold must take in a function that accepts exactly 2 arguments.
+Answer: D
+/hafeez.arzan
+=======================
+Question 8.a:
+MC Question:
+Consider the following Racket code.
+
+(define mystery
+  (lambda (n)
+    (if (<= n 0)
+        0
+        (mystery (+ n 1)))))
+
+Why is (mystery 3) unable to be executed properly in DrRacket?
+
+Skill: 2
+Options:
+A) An overflow in the stack causes infinitely many recursions to occur, leading to DrRacket's inability to execute the program.
+B) The code's syntax is incorrect, and the necessary recursions are not being executed.
+C) An overflow in the stack causes DrRacket to terminate the program, as recursive cases are left unresolved and memory is used excessively.
+D) The function cannot be executed because it is left undefined.
+
+Answer: A
+=======================
+Question 8.b:
+
+MC Question:
+A student is presented with a linked list. When the student attempts to draw a diagram of a linked list with five elements (the values being denoted by boxes and the links being denoted by 
+arrows), the final link in the list points to a node. Is the student's diagram correct?
+Skill: 10
+Options:
+A) No, the last link needs to link the final value in the list to the empty set, not another node.
+B) No, the last link needs to link the element to another list, which forms a linked list.
+C) Yes, linked lists contain links that link the next element in a node.
+D) None of the above.
+
+Answer: A
+/jiang.ayden
+=======================
+Question 9.a:
+MC Question:What is the value of the expression (and #t (not #f))
+Skill: 2,5
+Options:
+A) #t
+B) #f
+C) 0
+D) Both A and B
+Answer: A
+=======================
+Question 9.b:
+
+MC Question: What does this funciton return when called with (sign -3)
+(define sign
+lambda (n)
+(if (< n 0)
+"negative"
+(if (> n 0)
+"positive"
+0)))
+Skill: 2,6,7
+Options:
+A) "positive"
+B) "negative"
+C) 0
+D) Nothing
+Answer: B
+/jiang.kingsley
+=======================
+Question 10.a:
+MC Question:
+(+ (* 10 2) (- 2 6)
+What best describes (- 2 6)
+Skill: 2
+Options:
+A) A parameter
+B) A arguement
+C) A base case
+D) A variable
+Answer
+A)
+=======================
+Question 10.b:
+
+MC Question:
+Fill in the blank to make the function true
+(define r0
+ (lambda (a b)
+  (if (> (* a b (sqrt a)) a)
+   #t
+   #f)))
+Skill: 5
+Options:
+A) a= 1 b= 10
+B) a= 4 b= 5
+C) a= 3 b= -3
+D) a= 5 b= 2
+Answer
+c)
+/kalantry.krish
+=======================
+Question 11.a:
+MC Question: Which of the following racket programs returns a list containing only the even numbers from the list '(1 2 3 4 5 6)?
+Skill: 10
+Options:
+A. (filter even? '(1 2 3 4 5 6))
+B. (cons even? '(1 2 3 4 5 6))
+C. (foldl even? '() '(1 2 3 4 5 6))
+D. (filter (even? '(1 2 3 4 5 6)) '())
+Answer: A
+=======================
+Question 11.b:
+
+MC Question: Given the following racket program:
+(foldl + 0 '(2 4 6 7 8))
+What does the expression return?
+Skill: 10
+Options:
+A. '(2 4 6 7 8)
+B. 27
+C. '(8 7 6 4 2)
+D. 8
+Answer: B
+/kano.nene
+=======================
+Question 12.a:
+MC Question:
+Which of the following is not a valid list function?
+Skill: 10
+Options:
+A) first
+B) build-list
+C) foldl
+D) last
+Answer: D
+=======================
+Question 12.b:
+
+MC Question:
+What is not a required element in a recursive function?
+Skill: 11
+Options:
+A) calls itself once
+B) calls itself more than once
+C) all parameters 
+D) base case
+Answer: B
+/lee.caitlyn
+=======================
+Question 13.a:
+MC Question: What is the importance of cons?
+Skill: 10
+Options:
+A) A list node with value of e that connects to g 
+B) A bomb 
+C) A boolean value 
+D) Building a list 
+Answer: A
+=======================
+Question 13.b:
+
+MC Question: What is the format for foldl? 
+Skill: 10 
+Options: 
+A) (foldl startValue g f)
+B) (foldl f startValue g)
+C) (build-list 10 (random 8 19)
+D) (fold f startValue g)
+Answer: B
+/lee.nathan
+=======================
+Question 14.a:
+MC Question:
+When using foldl like so; (foldl x y z)
+what is x?
+Skill: 7 2 
+Options:
+A) the start value
+B) a function with one parameter
+C) a function with two parameters
+D) the list being used
+
+Answer: C
+=======================
+Question 14.b:
+
+MC Question:
+What is the base case in this function:
+(define baseCase?
+  (lambda (x)
+    (if (> x 0)
+        (+ 1 (baseCase? (- x 1))
+        x))))))
+Skill: 2 6 11
+Options:
+A) (+ 1 (baseCase? (- x 1))
+B) (lambda (x))
+C) (> x 0)
+D) There is no base case
+
+Answer: C
+/liang.winston
+=======================
+Question 15.a:
+Multiple choice:
+Which of the following goes on the 'stack'?
+Skills: 11
+A) Each recursive call
+B) Card stack
+C) Nested 'if' statements
+D) Only the result
+
+Answer: A
+=======================
+Question 15.b:
+
+Programming question:
+Write a recursive function that takes a list and returns a new list containing all the even two-digit numbers in the original list.
+Include test case i think
+Skills: 6, 10, 11
+Possible solution:
+/lim.tj
+=======================
+Question 16.a:
+MC Question:Which Racket expression correctly accesses the second element in a list called nums?
+Skill: 7,10
+Options:
+A) (nums 1)
+B) (rest nums)
+C) (first nums)
+D) (second nums)
+Answer: D
+=======================
+Question 16.b:
+
+MC Question:What is the result of evaluating this code?
+(define g
+(lambda (x 4)
+(if (> x 5)
+    "Greater"
+    (if (= x 4)
+        "Equal"
+        "Smaller"))))
+Skill:6
+Options:
+A) "Greater"
+B) "Equal"
+C) "Smaller"
+D) Error
+Answer: B
+/mui.hayden
+=======================
+Question 17.a:
+MC Question: what does build-list do
+Skill: 2
+Options:
+A) (build-list t y) makes list of t elements by doing y on each non-negative integer in order up to t
+B) (build-list t y) makes list of y elements by doing t on each positive integer in order up to y
+Answer
+=======================
+Question 17.b:
+
+MC Question: What's the correct form for foldl
+Skill: 2
+Options:
+A) (foldl startValue g (lambda (x y z)))
+B) (foldl (lambda (x y)) startValue g)
+C) (foldl startValue (lambda (x)) g)
+Answer: B
+/nabhan.ilham
+=======================
+Question 18.a:
+MC Question:
+Consider the following function:
+(define (f x) (if (= x 0) 1 (* x (f (- x 1)))))
+What is the value of (f 3)?
+Skill: 2, 11
+Options:
+A) 6
+B) 3
+C) 0
+D) 1
+Answer: A
+=======================
+Question 18.b:
+
+MC Question:
+What will be the result of this expression: (and #t #f)?
+Skill: 5
+Options:
+A) #t
+B) #f
+C) Error
+D) null
+Answer: B
+/ng.sophia
+=======================
+Question 19.a:
+MC Question: Which of the following is true about the function filter?
+Skill: 7
+Options:
+A) Requires three parameters
+B) The first parameter must be a function that returns a boolean value
+C) Requires one parameter
+D) The first parameter must be a two argument function
+
+Answer: B
+=======================
+Question 19.b:
+
+MC Question: Which of the following is true about the function foldl?
+Skill: 7
+Options:
+A) Requires a function, start value, and list
+B) Requires a function and a list
+C) The function (the argument in foldl) must have one argument
+D) Requires a start value and function
+
+Answer: A
+/opara.daniel
+=======================
+Question 20.a:
+MC Question: To be classified as recursive, a function must...
+Skill: 11
+Options:
+A) Call another function
+B) Call itself
+C) Add calls to the stack
+D) Have _r at the start of its name
+
+Answer: B
+=======================
+Question 20.b:
+
+MC Question: Each node in a list has data and a link to what data type?
+Skill: 10
+Options:
+A) String
+B) Boolean
+C) List
+D) Integer
+
+Answer: C
+/purkaysta.shuhag
+=======================
+Question 21.a:
+MC Question:
+Using this code:
+
+(define factorial
+  (lambda (x)
+    (if (= x 1)
+        1
+        (* x (factorial (- x 1))))))
+
+Which of the following is true?
+Skill:11
+A)This function will do infinite recursion and is not valid racket code
+B)If x=1 it will return 0
+C)This function is a wrapper function
+D)(factorial (- x 1)) is the base case
+
+Answer:C
+=======================
+Question 21.b:
+
+MC Question:
+
+(foldl function x y)
+
+What is the purpose of x?
+Skill:10
+
+A)It determines the length of the list y
+B)foldl combines it with the first element of the list using the function.
+C)It tells you which element of the list that should be processed by foldl first.
+D)Tells you how much times you would use the function on each element of the list, y.
+
+Answer: B
+/shen.aaron
+=======================
+Question 22.a:
+MC Question: What is a required parameter for the build-list function to be called
+Skill: 10
+Options:
+A) A list
+B) A boolean value
+C) A function
+D) A variable
+Answer: C
+=======================
+Question 22.b:
+
+MC Question: What defines a recursive function?
+Skill: 11
+Options:
+
+A) A function with a nested conditional
+B) A function with a base case and calls itself in its definition
+C) A function that uses a boolean operator within an if statement
+D) A function that only takes one parameter and returns a boolean value
+Answer: B
+/shih.thomas
+=======================
+Question 23.a:
+MC Question:
+What happens when you write a recursive function that can
+never reach the base case?
+Skill: 2, 11
+Options:
+A) DrRacket will crash your computer
+B) The stack overflows and DrRacket runs out memory
+C) The code is automatically deleted
+D) Nothing happens
+Answer: B
+=======================
+Question 23.b:
+
+MC Question:
+What is the second parameter of the if function?
+Skill: 6
+Options:
+A) Boolean value
+B) A test case for the if function
+C) The function evaluated if the first parameter is #t
+D) The function evaluated if the first parameter is #f
+Answer: C
+/simi.caterina
+=======================
+Question 24.a:
+MC Question: what's the difference between build-list and cons?
+Skill: 2, 10
+Options:
+a. cons takes integer n and a function f and constructs a list by calling f from 0 to the integer, and build-list builds a list node with a value of b and c.
+b. build-list builds on an existing, non-empty list and cons constructs a recursive function.
+c. cons involve robbing the Louvre and build-list creates your grocery store list for you.
+d. build-list takes integer n and a function f and builds a list by calling f from 0 to the integer, and cons constructs a list node with a value of b and c.
+Answer
+d
+=======================
+Question 24.b:
+
+MC Question: which of the following could NOT be a list returned by this function: (build-list 5 (lambda (x) (random 18)))
+Skill: 10
+Options: 
+a. '(3 17 5 12 13)
+b. '(8 18 3 6 2)
+c. '(4 11 9 0 16)
+d. '(15 1 7 10 15)
+Answer
+b
+/tong.olivia
+=======================
+Question 25.a:
+MC Question:
+What is true about the parameters of filter?
+Skill: 10
+Options:
+A) The function must return a boolean value
+B) The list must be strings only
+C) The function is called
+D) The list cannot be empty
+Answer: A
+=======================
+Question 25.b:
+
+MC Question:
+How do you indicate a function returns a boolean value in a contract?
+Skill: 5
+Options:
+A) "true" or "false"
+B) "#true" or "#false"
+C) t or f
+D) #t or #f
+Answer: D
+/zou.wilson
+=======================
+Question 26.a:
+MC Question: What will this result in: (filter (not (even?)) '(2 3 4 5 6 1 9))
+Skill: 2, 5, 10
+Options:
+A) error
+B) runs out of memory
+C) '(2 4 6)
+D) '(3 5 1 9)
+Answer
+=======================
+Question 26.b:
+
+MC Question: What does this code return?
+(define a
+  (lambda (x)
+    (if (and (> x 49) (< x 122))
+       #t
+       false)))
+(a 49)
+Skill: 5, 6
+Options:
+a) #t
+b) true
+c) false
+d) #f
+Answer
+/berman.jaffee
+=======================
+Question 27.a:
+MC Question:
+What will the result of the following code be?
+(first (rest (cons 6 '(3 10 2))))
+Skill: 10
+Options: 
+A) 6
+B) 3
+C) 10
+D) 2
+Answer: B
+=======================
+Question 27.b:
+
+MC Question:
+Given the following function:
+(define func (lambda (p q) (foldl (lambda (a b) (+ (remainder a q) (remainder b q)) 0 p))))
+What should the contract of func say for p?
+Skill: 7
+A) p : list
+B) p : list of numbers
+C) p : list of integers
+D) p : list of 3 integers
+Answer: C
+/bhowmik.mouri
+=======================
+Question 28.a:
+MC Question:
+Which is not a boolean operator?
+Skill: 5
+Options:
+A) if
+B) and
+C) or
+D) not
+Answer: A
+=======================
+Question 28.b:
+
+MC Question:
+What can not be used to make a list?
+Skill: 10
+Options:
+A) list
+B) cons
+C) foldl
+D) build-list
+Answer: C
+/bhuiyan.ahnaf
+=======================
+Question 29.a:
+MC Question: What is the use of foldl?
+Skill: 10
+Options:
+A. Take a list, perform a function on the elements in the list and get a value back.
+B. Take a list, perform a function on the elements in the list and get a list back.
+C. Take 2 lists and uses a function to output a list with all the values from both of the lists.
+D. Take a list and does nothing with it.
+Answer: A
+=======================
+Question 29.b:
+
+MC Question: Which of the following does NOT return an empty list?
+Skill: 10
+Options:
+A. (list)
+b. null
+c. '(null)
+d. '()
+Answer: C
+/chan.angeline
+=======================
+Question 30.a:
+MC Question: What function can be used (most direct way) to create a list of only even numbers given another list
+Skill: 10
+Options:
+A) build-list
+B) lambda
+C) foldl
+D) filter
+Answer: D
+=======================
+Question 30.b:
+
+MC Question: Which is boolean value
+Skill: 5
+Options:
+A) true
+B) 2
+C) and
+D) expt
+Answer: A
+/chan.brandon
+=======================
+Question 31.a:
+MC Question:
+Which of these is not a literal value?
+Skill: 7
+Options:
+A) "hello"
+B) (= 5 3)
+C) '(2 4 6)
+D) null
+
+Answer: B
+=======================
+Question 31.b:
+
+MC Question:
+Calculate what this function returns:
+
+(foldl - 1 '(2 4 6))
+
+Skill: 
+Options:
+A) -11
+B) 9
+C) -13
+D) 3
+
+Answer: D
+/chen.fiona
+=======================
+Question 32.a:
+MC Question: What is the recursive case in writing a function does performs factorial? (Assume that this function only takes in nonnegative integers)
+Skill: 11
+Options:
+A) (= n 0)
+B) (<= n 1)
+C) (* n (factorial (- n 1)))
+D) (define factorial)
+Answer: C
+=======================
+Question 32.b:
+
+MC Question: What happens after a function is defined?
+Skill: 2
+Options:
+A) It is put onto the stack.
+B) It is run on the stack and removed after.
+C) It is not put on the stack until it is called.
+D) None of these.
+Answer: C
+/chen.janice
+=======================
+Question 33.a:
+MC Question:
+What does (first (rest (list 3 0 2 65))) return?
+Skill: 10
+Options:
+A) 3
+B) 0
+C) 2
+D) 65
+Answer: B) 0
+=======================
+Question 33.b:
+
+MC Question:
+What does a recursive function always need?
+Skill: 11
+Options:
+A)a list
+B)at least three functions
+C)a base case
+D)at least two parameters
+Answer: C) a base case
+/chen.nigel
+=======================
+Question 34.a:
+MC Question:if we are writing a recursive function about Mr.DW take the a number k and doubled it to the next person until it reaches 2048.
+which operator should we write everytime before the recursing happen?
+Skill: 11
+Options:
+A) +
+B) -
+C) *
+D) neither of above
+Answer
+D)
+=======================
+Question 34.b:
+
+MC Question: We are testing the maximum floor until egg break
+             when throwing down an infinitely tall building.
+             Which floor should we start from to write a recursive function?(we have infinite eggs)
+Skill:11
+Options:
+A) 1
+B) 100
+C) 67
+D) a lot
+Answer
+/eng.cody
+=======================
+Question 35.a:
+MC Question:
+When will a recursive function containing a list return null?
+Skill: 10 11
+Options:
+A: Never
+B: Sometimes
+C: When a list is empty
+D: When there is still a list
+Answer: C
+=======================
+Question 35.b:
+
+MC Question:
+What data structure does Racket use?
+Skill: 10
+Options:
+A: Linked List
+B: Arrays
+C: Stacks
+D: Queues
+Answer
+/fung.william
+=======================
+Question 36.a:
+MC Question:
+What does the following line of code return?
+(foldl max -inf.0 '(5 8 9 4 -35 296 3 6))
+Skill: 10
+Options:
+A) 3
+B) -inf.0
+C) 296
+D) foldl: contract violation
+   expected: procedure?
+   given: -inf.0 ...
+Answer: C
+=======================
+Question 36.b:
+
+MC Question:
+What would be a good name for the following function?
+(define foo (lambda (g n)(
+                                       if (null? g)
+                                          n
+                                          (if (= n (min n (first g)))
+                                              (foo (rest g)  n)
+                                              (foo (rest g) (first g))
+                                              )
+                                          )
+                  )
+  )
+Skill: 6, 10, 11
+Options:
+A) listMax
+B) listMin
+C) foo
+D) foldl
+
+Answer: B
+/jen.dylan
+=======================
+Question 37.a:
+MC Question: Which of the following is a correct use of a variable in Racket?
+Skill: 7
+Options:
+a) (define x 5)
+b) (x = 5)
+c) (variable x 5)
+d) (set x 5)
+Answer: a
+=======================
+Question 37.b:
+
+MC Question: What is the result of the following code: (if (5 > 3) "Yes" "No")
+Skill: 6
+Options:
+a) No
+b) Yes
+c) False
+d) Error
+Answer: d
+/jensen.eske
+=======================
+Question 38.a:
+MC Question: What will this line of code return: (or (and (not (and (not (or #f #f)) #t)) #f) (not #t) (not #f))
+Skill: 5
+Options:
+a) #t
+b) #f
+c) It will return an error.
+d) "False"
+Answer A
+=======================
+Question 38.b:
+
+MC Question: What will happen when the command (testFunction '(1 2 3 4 5) sqrt)) is run?
+(define testFunction
+  (lambda (g f)
+    (if (= g 0)
+        '()
+        (cons (f g 2) (testFunction (rest g) f))
+    )
+  )
+)
+Skill: 11
+Options:
+a) The function will run until DrRacket runs out of memory
+b) The function will produce a value
+c) The function will not run
+d) The function will run but will not produce a value
+Answer C
+/khan.uthsho
+=======================
+Question 39.a:
+MC Question: Given the following function and function call, what should be the appropriate output?
+
+(define question0
+  (lambda (max min g)
+      (filter (lambda (x) (>= max x))
+        (filter (lambda (x) (>= x min)) g))))
+
+(question0 10 2 '(1 2 3 4 5 10 14))
+
+Skill: 10
+Options:
+A) '(1 2 10 14)
+B) '(2 3 4 5 10)
+C) '(2 10)
+D) '(3 4 5)
+Answer
+B
+=======================
+Question 39.b:
+
+MC Question: What is the appropriate use of the filter function to return a list with only values that are less than 5, given list g?
+Skill: 10, 5
+Options:
+A) (filter (> x 5) g)
+B) (filter (lambda (x) (> 5 x)) g)
+C) (filter (lambda (x) (> x 5)) g)
+D) (filter g (lambda (x) (> x 5)) g)
+Answer
+B
+/kye.erin
+=======================
+Question 40.a:
+MC Question: What will happen if you try to use "first" on an empty list?
+Skill: 10
+Options:
+A. An error will occur
+B. It will return 0
+C. It will return false
+
+Answer: A
+=======================
+Question 40.b:
+
+MC Question: what is the purpose of a trace diagram?
+Skill: 11
+Options:
+A. To give you possible outcomes of a function
+B. To help visualize the execution of the code
+C. To test the code with possible values 
+
+Answer: B
+/lin.angie
+=======================
+Question 41.a:
+MC Question: What would happen if a recursive function did not have a base case?
+Skill: 11
+Options:
+a) it will only return the base case
+b) it will run out of memory
+c) it will show an error
+d) it would run normally 
+
+Answer: b
+=======================
+Question 41.b:
+
+MC Question: What would this function return? (if (or #t #f) (or (> 3 2) (< 1 0)) (and (= 3 3) (> 1 0)))
+Skill: 5, 6
+Options:
+a) #t
+b) #f
+c) error
+d) would not run
+Answer: a
+/lin.hanchen
+=======================
+Question 42.a:
+MC Question: given the function 
+(define (build-list n)
+(if (= n 0)
+'()
+(cons n (build-list (-n 1)))))
+
+what would (build-list 3) return?
+Skill: 10 11
+Options:
+A.) '(3 2 1)
+B.) '(1 2 3)
+C.) '(3 2 1 0)
+D.) '()
+Answer
+A
+=======================
+Question 42.b:
+
+MC Question: Which statement about recursion and lists in Racket is true?
+
+Skill: 10 11
+Options:
+A.) Recursive list functions always modify the original list
+B.) Recursive list functions create new lists based on each call
+C.) Recursion only works on integers
+D.) Base cases are optional
+Answer
+B
+/liu.constance
+=======================
+Question 43.a:
+MC Question: What does (if (> 5 4) 1 2) return?
+Skill: 6
+Options:
+A. #t
+B. #f
+C. 1
+D. 2
+Answer: C
+=======================
+Question 43.b:
+
+MC Question: What does (cons 5 '(2 4 5)) do?
+Skill: 10
+Options:
+A. '(5 2 4 5)
+B. '(2 4 5 5)
+C. '(5)
+D. '(2 5 4 5)
+Answer: A
+/martin.sameer
+=======================
+Question 44.a:
+MC Question:
+How many arguements does foldl take?
+Skill: 10
+Options:
+A) 0
+B) 1
+C) 2
+D) 3
+
+Answer: 3
+=======================
+Question 44.b:
+
+MC Question:
+If the function and is given 7 true arguements and 5 false arguements what value will it return?
+Skill: 5
+Options:
+A) #t
+B) #f
+C) 5
+D) 7
+
+Answer: #f
+/nurullaeva.sabrina
+=======================
+Question 45.a:
+MC Question: What does the following function call return?
+(filter even? (build-list 5 (lambda (x) (+ 2 x))))
+Skill: 2, 10
+Options:
+A) '(1 2 3 4 5)
+B) '(0 1 2 3 4)
+C) '(0 2 4)
+D) '(2 4 6)
+Answer: D
+=======================
+Question 45.b:
+
+MC Question: What would be an appropriate name for the following function?
+(define mystery
+   (lambda (x)
+      (if (null? x)
+          0
+          (+ (first x) (mystery (rest x))))))
+Skill: 2, 6, 10, 11
+Options:
+A) sumList
+B) factorial
+C) randList
+D) smallToLarge
+Answer: A
+/peng.alex
+=======================
+Question 46.a:
+MC Question:
+How many arguments does filter take in?
+Skill: 2, 10
+Options:
+A) 1
+B) 2
+C) 3
+D) 4
+Answer: B
+=======================
+Question 46.b:
+
+MC Question:
+What is the use of build-list (most specific and correct option)
+Skill: 2, 10
+Options:
+A) Builds a list generated by performing a function on each number from 0 to n.
+B) Builds a list generated by performing a function on each integer from 0 to n.
+C) Builds a list generated by performing a function on each number from 0 to n-1.
+D) Build a list generated by performing a funciton on each integer from 0 to n-1.
+Answer: D
+/schaible.anna
+=======================
+Question 48.a:
+MC Question:
+Evaluate the following code -- (filter (lambda (a) (and (= 0 (remainder a 2)) #t)) '(1 2 3 4 5 6 7 8 9 10))
+Skill:10
+Options:
+a) '()
+b) '(1 2 3 4 5)
+c) '(2 4 6 8 10)
+d) '(1 3 5 7 9)
+Answer C
+=======================
+Question 48.b:
+
+MC Question:
+Which of these is NOT a valid evaluation of the code -- (cons 3 (build-list 3 (random 0 3)))
+Skill:10
+Options:
+a) (3 1 2 1)
+b) (3 2 1 0)
+c) (3 1 2 3)
+d) (3 0 0 0)
+Answer C
+/shahid.maryam
+=======================
+Question 49.a:
+MC Question: Which of the following functions don't build a list?
+Skill:10
+Options:
+A) (list)
+B) (foldl)
+C) (cons)
+D) (build-list)
+Answer
+B
+=======================
+Question 49.b:
+
+MC Question: What is returned when the function:
+(build-list 3 (lambda (x) (+ x 4)))
+Skill: 6 
+Options:
+A) #t
+B) #t
+C) '(4 5 6)
+D) '(5 6 7)
+Answer
+C
+/shao.serena
+=======================
+Question 50.a:
+MC Question:
+The last node of any list points to:
+Skill: 10
+Options:
+A) '(1)
+B) '(0)
+C) '('end')
+D) '()
+
+Answer
+D
+=======================
+Question 50.b:
+
+MC Question:
+Which of the following functions can be used as an argument of foldl?
+Skill: 2, 10
+Options:
+A) random
+B) abs
+C) even?
+D) buildlist
+
+Answer
+D
+/sukhdeo.dylan
+=======================
+Question 51.a:
+MC Question: Given this function, which of the following will be returned?
+(define DollarStore
+  (lambda (g)
+    (if (> g 41) "CAPPUCINO"
+        "ASSASSINO")))
+
+(DollarStore (random 100))
+Skill: 6, 7
+Options:
+A: #True
+B: CAPPUCINO
+C. ASSASSINO
+D. Either CAPPUCINO or ASSASSINO
+
+Answer: D
+=======================
+Question 51.b:
+
+MC Question:
+What does filter do?
+
+Skill: 10
+Options:
+A. It removes elements that do not satisfy a given condition.
+B. It applies a given function to each element of a list and returns a new list of the results
+C. It takes a function and a list, and constructs a new list containing only the elements for which the function returns #true
+D. It combines all the elements of a list into a single value using a specified function 
+
+Answer: C
+/tissera.shanya
+=======================
+Question 52.a:
+MC Question: What does the mystery funciton do?
+(define (mystery lst)
+  (if (empty? lst)
+      0
+      (+ 1 (mystery (rest lst)))))
+Skill: 11
+Options:
+A) It returns the first element of the list.
+B) It returns the sum of all elements in the list.
+C) It returns an error.
+D) It returns the length of the list.
+Answer
+=======================
+Question 52.b:
+
+MC Question: Which of the following is not a component
+of a linked list?
+Skill:10
+Options:
+A) node
+B) link
+C) terminal
+D) element
+Answer
+C
+/wang.victoria
+=======================
+Question 53.a:
+MC Question:
+What does (first (rest (list 3 0 2 65))) return?
+Skill: 10
+Options:
+A) 0
+B) 65
+C) 3
+D) 2
+
+Answer: A
+=======================
+Question 53.b:
+
+MC Question:
+What does a recursive function always need?
+Skill: 11
+Options:
+A) A list
+B) At least 3 functions 
+C) base case
+D) at least 2 parameters
+
+Answer: C
+/woodward.teo
+=======================
+Question 54.a:
+MC Question: Which of the following does NOT return an empty list 
+Skill: 10
+Options:
+A: (list)
+B: null
+C: '(null)
+D: '()
+Answer: C
+=======================
+Question 54.b:
+
+MC Question: What actions does foldl perform when called?                                                                 
+Skill: 10
+Options:
+A: Takes a list, performs a function on the elements in the list and returns a value back
+B: Takes a list, performs a function on the elements in the list and returns a list back
+C: Takes two lists and returns a list which uses a function to combine the two
+D: Takes a list and returns the same list
+Answer: A
+/zeng.john
+=======================
+Question 55.a:
+MC Question: What does an element of a list consist of?
+Skill: 10
+Options:
+a) a link to the next element
+b) a value
+c) both of the above
+d) nothing
+Answer c) both
+=======================
+Question 55.b:
+
+MC Question: What function cannot create a list?
+Skill: 10
+Options: a) list
+b) define
+c) build-list
+d) cons
+Answer b)define

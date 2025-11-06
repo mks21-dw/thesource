@@ -1,0 +1,650 @@
+
+/abreuperalta.stacy
+=======================
+Question 0:
+
+(define squareSum
+         (lambda (x)
+           (if (null? x)
+               0
+               (+  (*(first x) (first x))
+                  (squareSum (rest x))))))
+/brinzensky.roman
+=======================
+Question 1:
+
+;CODE GOES HERE
+(define selectFunc
+  (lambda (f g)
+    (if (null? g)
+        '()
+       (cons (if (and (even? (first g)) (> (first g) 25))
+                  (f (first g))
+                  (first g))
+              (selectFunc f (rest g))))))
+(selectFunc - '(26 28 3 12))
+/chan.cassandra
+=======================
+Question 2:
+
+(define element
+  (lambda (n list)
+    (if (null? list)
+      #f
+      (if (or (= n (first list)) (element n (rest list)))
+        #t
+        #f))))
+/chen.ethan
+=======================
+Question 3:
+
+;(evenX n m) → string
+; n: number
+; m: number
+;
+;Returns “maybe” if the sum is even
+;Returns “exactly” if the sum is odd
+/cheng.eason
+=======================
+Question 4:
+
+(define factorial 
+(lambda (n)
+  (if (= n 0)
+      1
+      (* n (factorial (- n 1))))))
+
+(define sum-of-factorials 
+(lambda (num1 num2)
+  (+ (factorial num1) (factorial num2))))
+/cho.wilson
+=======================
+Question 5:
+
+(define double-list
+  (lambda (a)
+    (if (null? a)
+        '()
+        (cons (* 2 (first a))
+              (double-list (rest a))))))
+(double-list '(1 2 3))
+(double-list '(4 5 6))
+(double-list '(7 8 9))
+/chowdhury.adyan
+=======================
+Question 6:
+
+(define evenOrOddSum
+  (lambda (s)
+    (if (even? (evenOrOddSumCode s))
+        "even"
+        "odd")))
+(define evenOrOddSumCode
+  (lambda (g)
+    (if (null? g)
+        0
+        (+ (first g) (evenOrOddSumCode (rest g))))))
+/debnath.sudipta
+=======================
+Question 7:
+
+(define doubleDigitEven (lambda (l) (if (null? l)
+                                        '()
+                                        (if (and (even? (first l)) (and (> (first l) 9) (< (first l) 100)))
+                                            (cons (first l) (doubleDigitEven (rest l)))
+                                            (doubleDigitEven (rest l))))))
+/hafeez.arzan
+=======================
+Question 8:
+
+(define transformList
+  (lambda (f g)
+    (if (null? g)
+        '()
+        (if (and (even? (first g)) (> (first g) 25))
+            (cons (f (first g)) (transformList f (rest g)))
+            (cons (first g) (transformList f (rest g)))))))
+
+(transformList (lambda (x) (* x -1)) '(26 3 12))
+(transformList (lambda (x) (* x -1)) '(31 3 12))
+(transformList (lambda (x) (+ x 67)) '())
+/jiang.ayden
+=======================
+Question 9:
+
+(define removeMultiple3
+  (lambda (list)
+    (if (null? list)
+        '()
+        (if (= (remainder (first list) 3) 0)
+            (removeMultiple3 (rest list))
+            (cons (first list)
+                  (removeMultiple3 (rest list)))))
+    ))
+/jiang.kingsley
+=======================
+Question 10:
+
+
+/kalantry.krish
+=======================
+Question 11:
+
+(define positiveSum
+  (lambda (nums)
+    (if (not (null? nums))
+        (+ (if (> (first nums) 0)
+               (first nums)
+               0)
+           (positiveSum (rest nums)))
+        0))) ; see possible stack in question
+/kano.nene
+=======================
+Question 12:
+
+(define times2List
+  (lambda (g)
+    (if (null? g)
+        '()
+        (cons (* 2 (first g)) (times2List (rest g))))))
+/lee.caitlyn
+=======================
+Question 13:
+
+;(define (even-values g)
+;  (filter even? g))
+/lee.nathan
+=======================
+Question 14:
+
+(define half
+  (lambda (g)
+    (if (null? g)
+        '()
+        (cons (* 0.5 (first g))
+              (half (rest g))))))
+(half '(1 2 3 4 5 6))
+/liang.winston
+=======================
+Question 15:
+
+(define eventwodigits
+  (lambda (g)
+    (if (null? g)
+        '()
+        (if (and (= 0 (remainder (first g) 2)) (> (first g) 9))
+            (cons (first g) (eventwodigits (rest g)))
+            (eventwodigits (rest g))
+            ))))
+(eventwodigits '(18 20 22 9 193 29))
+/lim.tj
+=======================
+Question 16:
+
+(define (countEven lst)
+  (if (null? lst)
+      0
+      (+ (if (even? (first lst)) 1 0)
+         (countEven (rest lst)))))
+/mui.hayden
+=======================
+Question 17:
+
+(define sumEvenSquare
+  (lambda (g)
+    (if (null? g)
+        0
+    (foldl (lambda (x prev) (+ prev (expt x 2))) 0 (filter even? g)))))
+/nabhan.ilham
+=======================
+Question 18:
+
+(define (ReturnNumber n)
+  (if (= n 0)
+      0
+      (+ 1 (ReturnNumber (- n 1)))))
+
+; Example calls:
+; (ReturnNumber 0) => 0
+; (ReturnNumber 3) => 3
+; (ReturnNumber 5) => 5
+/ng.sophia
+=======================
+Question 19:
+
+(define squaredList
+  (lambda (n)
+    (if (null? n)
+        '()
+        (cons (expt (first n) 2) (squaredList (rest n))))))
+(squaredList '(1 2 3 4 5))
+/opara.daniel
+=======================
+Question 20:
+
+
+/purkaysta.shuhag
+=======================
+Question 21:
+
+
+/shen.aaron
+=======================
+Question 22:
+
+(define factorial 
+(lambda (n)
+  (if (= n 0)
+      1
+      (* n (factorial (- n 1))))))
+
+(define sum-of-factorials 
+(lambda (num1 num2)
+  (+ (factorial num1) (factorial num2))))
+/shih.thomas
+=======================
+Question 23:
+
+; (foldl f startValue g) : value
+;   f : two-argument function that returns a value
+;       that it can use within itself
+;   startValue: value used the first time f is called
+;               (acts as the first previous value)
+;   g : list
+;
+;   Returns a value by running f on each element of g
+;   and the previous value returned by f
+/simi.caterina
+=======================
+Question 24:
+
+(define tripleAndAddOne
+  (lambda (g)
+    (if (null? g)
+        '()
+        (cons (+ 1 (* 3 (first g))) (tripleAndAddOne (rest g))))))
+/tong.olivia
+=======================
+Question 25:
+
+(define even2Odd
+  (lambda (g)
+    (if (null? g)
+        '()
+        (if (= (remainder (first g) 2) 0)
+            (cons (/ (first g) 2) (even2Odd (rest g)))
+            (cons (* (first g) 2) (even2Odd (rest g)))))))
+(even2Odd '(1 2 3))
+(even2Odd '(5 11 7))
+(even2Odd '(22 9 4))
+/zou.wilson
+=======================
+Question 26:
+
+(define divisible?
+  (lambda (x n)
+    (if (null? x)
+        (list)
+        (if (= (remainder (first x) n) 0)
+            (cons (first x) (divisible? (rest x) n))
+            (divisible? (rest x) n)))))
+/berman.jaffee
+=======================
+Question 27:
+
+(define dist (λ (n)
+               (foldl + 0
+                      ((λ (g)
+                         (if (=
+                              (foldl
+                               (λ (x y) (+ x 1)) 0 g) n)
+                             g
+                             (filter (λ (x) (not (= x 0)))
+                                     (cons
+                                      (random -1 2) g))))
+                       (build-list (- n 1)
+                                   (lambda (k)
+                                     (random -1 2)))))))
+/bhowmik.mouri
+=======================
+Question 28:
+
+;(removeEvens g0) -> list
+;  g0 = list
+;
+;  Return a list with no even values from the orginal 'g0'
+
+(define (removeEvens g0)
+  (if (null? g0)
+      '()
+      (if (even? (first g0))
+          (removeEvens (rest g0))
+          (cons (first g0) (removeEvens (rest g0))))))
+/bhuiyan.ahnaf
+=======================
+Question 29:
+
+(define (sum-up-to n)
+  (if (<= n 0)
+      0
+      (+ n (sum-up-to (- n 1)))))
+/chan.angeline
+=======================
+Question 30:
+
+(define thingy
+  (lambda (g)
+    (if (null? g)
+        '()
+        (if (= (remainder (first g) 2) 0)
+            (cons (sqrt (first g)) (thingy (rest g)))
+            (cons (expt (first g) 2) (thingy (rest g)))))))
+/chan.brandon
+=======================
+Question 31:
+
+(define spiky
+  (lambda (n)
+    (truncateUntil n (spikyFull n))))
+
+(define truncateUntil
+  (lambda (n g)
+    (if (>= n (foldl (lambda (new old) (+ old 1)) 0 g))
+        g
+        (truncateUntil n (truncate g)))))
+
+(define spikyFull
+  (lambda (n)
+    (if (= n 0)
+        '()
+        (join (spikyFull (- n 1)) (spike n)))))
+
+(define spike
+  (lambda (n)
+    (build-list (* n 2) (lambda (x) (+ n 1 (- (abs (- n x))))))))
+
+(define join
+  (lambda (g0 g1)
+    (if (null? g0)
+        g1
+        (join (truncate g0)
+              (cons (last g0) g1)))))
+
+(define last
+  (lambda (g)
+    (if (null? (rest g))
+        (first g)
+        (last (rest g)))))
+
+(define truncate
+  (lambda (g)
+    (if (null? (rest g))
+        '()
+        (cons (first g) (truncate (rest g))))))
+/chen.fiona
+=======================
+Question 32:
+
+(define evenList (lambda (n)
+                  (if (null? n)
+                    null
+                    (if (even? (first n))
+                                 (cons (first n) (evenList (rest n)))
+                                 (evenList (rest n))))))
+(evenList '(2 5 6 9 10 -2))
+/chen.janice
+=======================
+Question 33:
+
+(define devisBy2or3
+  (lambda (g)
+    (if (null? g)
+        '()
+        (if (= (remainder (first g) 2) 0)
+            (cons (first g) (devisBy2or3 (rest g)))
+            (if (= (remainder (first g) 3) 0)
+                (cons (first g) (devisBy2or3 (rest g)))
+                (devisBy2or3 (rest g)))))))
+/chen.nigel
+=======================
+Question 34:
+
+
+/eng.cody
+=======================
+Question 35:
+
+(define Filter2
+  (lambda (g)
+    (filter even? g)))
+
+(Filter2 '(1 2 3 4 5 6 7))
+/fung.william
+=======================
+Question 36:
+
+(define factorial (lambda (n)(
+                              if (< n 2)
+                                 1
+                                 (* n (factorial (- n 1))
+                                    )
+                                 )
+                    )
+  )
+(define choose (lambda (n r)(
+                                / (factorial n) (* (factorial r) (factorial (- n r))))
+                 )
+  )
+(define pascalR (lambda (row col)(
+                                if (= col 0)
+                                   '(1)
+                                   (cons (choose row col) (pascalR row (- col 1)))
+                                   )
+                    )
+  )
+; wrapper function for pascalR
+(define pascalRow (lambda (row)( 
+                                pascalR row row
+                                       )
+                    )
+  )
+
+(define pascalT (lambda (rows n) (
+                                  if (= n rows)
+                                     (list (pascalRow n))
+                                     (cons (pascalRow n) (pascalT rows (+ n 1)))
+                                     )
+                    )
+  )
+; wrapper function for pascalT
+(define pascalTri (lambda (rows)(
+                                 pascalT rows 0
+                                         )
+                    )
+  )
+/jen.dylan
+=======================
+Question 37:
+
+(define (prodToN n)
+  (if (= n 0)
+      0
+      (* n (prodToN (- n 1)))))
+/jensen.eske
+=======================
+Question 38:
+
+(define filterDivisible
+  (lambda (g p1 p2)
+    (filter (lambda (x) (and (= (remainder x p1) 0) (= (remainder x p2) 0))) g)
+  )
+)
+/khan.uthsho
+=======================
+Question 39:
+
+(define tournament
+  (lambda (a b)
+    (if (and (> (first a) (first (rest a))) (> (first b) (first (rest b))))
+        (if (> (first a) (first b))
+            "A"
+            "B")
+        #f)))
+/kye.erin
+=======================
+Question 40:
+
+
+/lin.angie
+=======================
+Question 41:
+
+(define rec
+  (lambda (list)
+    (if (null? list)
+      '()
+        (cons (* 5 (first list)) (rec (rest list))))))
+
+;(rec '(1 2 3))
+;(cons 5 '(2 3))
+;(cons 5 (cons 10 '(3)))
+;(cons 5 (cons 10 (cons 15 '())))
+;(cons 5 (cons 10 '(15)))
+;(cons 5 '(10 15))
+;'(5 10 15)
+/lin.hanchen
+=======================
+Question 42:
+
+CODE GOES HERE
+/liu.constance
+=======================
+Question 43:
+
+(define EvenOrOdd
+  (lambda (g)
+    (if (null? g)
+        '()
+        (if (= 0 (remainder (first g) 2))
+            (cons (sqrt (first g)) (EvenOrOdd (rest g)))
+            (cons (expt (first g) 2) (EvenOrOdd (rest g)))))))
+/martin.sameer
+=======================
+Question 44:
+
+(define isItSummerBreak
+  (lambda (month day year)
+    (if (= year
+           2025)
+        (if (<= 6
+                month
+                9)
+            (and (not(and (= month
+                             6)
+                          (< day
+                             27)))
+                 (not (and (= month
+                              9)
+                           (> day
+                              4))))
+            #f)
+        #f)))
+(isItSummerBreak 6 26 2025)
+(isItSummerBreak 7 26 2025)
+(isItSummerBreak 8 26 2025)
+(isItSummerBreak 9 26 2025)
+/nurullaeva.sabrina
+=======================
+Question 45:
+
+(define applyToOdd
+  (lambda (l f)
+    (if (null? l)
+        '()
+        (if (odd? (first l))
+                  (cons (f (first l))
+                        (applyToOdd (rest l) f))
+                  (applyToOdd (rest l) f)))))
+/peng.alex
+=======================
+Question 46:
+
+(define ListGreaterN?
+  (lambda (n g)
+    (if (null? g)
+        #t
+        (and (> (first g) n) (ListGreaterN? n (rest g))))))
+/schaible.anna
+=======================
+Question 48:
+
+CODE GOES HERE
+/shahid.maryam
+=======================
+Question 49:
+
+(define scores '(85 92 78 95 61 88 100 75))
+
+(define passed?
+         (lambda (score-list)
+  (filter (lambda (score) (>= score 80))
+          score-list)))
+
+(passed? scores)
+/shao.serena
+=======================
+Question 50:
+
+(define countPositive
+  (lambda (g)
+    (if (null? g)
+      0
+      (if (> (first g) 0)
+          (+ 1 (countPositive (rest g)))
+          (countPositive (rest g))))))
+/sukhdeo.dylan
+=======================
+Question 51:
+
+; (sumDigits 1234)
+; -> (+ 4 (sumDigits 123))
+; -> (+ 4 (+ 3 (sumDigits 12)))
+; -> (+ 4 (+ 3 (+ 2 (sumDigits 1))))
+; -> (+ 4 (+ 3 (+ 2 1)))
+; -> (+ 4 (+ 3 3))
+; -> (+ 4 6)
+; -> 10
+/tissera.shanya
+=======================
+Question 52:
+
+
+/wang.victoria
+=======================
+Question 53:
+
+
+/woodward.teo
+=======================
+Question 54:
+
+(define listFactor
+  (lambda (g n)
+    (if (or (null? g) (null? (filter even? g)))
+      #t
+      (if (= (remainder (first (filter even? g)) n) 0)
+        (listFactor (rest g) n)
+        #f))))
+/zeng.john
+=======================
+Question 55:
+
+(define randomdecis
+   (lambda (n)
+      (build-list n (lambda (x) (+ (random) (random -7 7))))))
+
+(define randomdecis1
+   (lambda (n)
+      (if (= n 0)
+         '()
+          (cons (+ (random) (random -7 7)) (randomdecis1 (- n 1))))))
