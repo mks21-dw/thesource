@@ -1,0 +1,1089 @@
+
+/ahmetaj.kevin
+=======================
+Question 0.a:
+MC Question:
+Which explanation correctly describes what happens on the stack when the following function is CALLED?
+(define (square x)
+  (* x x))
+Skill: 2 
+Options:
+A) No stack frame is created because the function was already defined.
+B) A new stack frame is created where x is bound to the argument value, and the body is evaluated in that frame.
+C) The body is evaluated at definition time, so calling the function just returns a stored value.
+D) The stack frame replaces the global environment permanently.
+Answer: B
+=======================
+Question 0.b:
+
+MC Question:
+Which function BEST matches the contract and purpose?
+Contract: (Number Number -> Boolean)
+Purpose: returns #true if the first number is strictly greater than the second.
+Skill: 3 & 5 
+Options:
+A) (define (greater a b)
+     (> a b))
+B) (define (greater a b)
+     (- a b))
+C) (define (greater a b)
+     (if a b #true #false))
+D) (define (greater a b)
+     (>= b a))
+Answer: A
+/brinzensky.roman
+=======================
+Question 1.a:
+MC Question: For the following function:
+(define number
+    (lambda (x)
+       (if (= x 5)
+           (+ x 1)
+           (+ x 3))))
+If the boolean value (= x 5) will not return true, which of the following outputs is impossible to get?
+Skill: 11
+Options:
+A) 7
+B) 6
+C) 8
+D) 2
+Answer B
+=======================
+Question 1.b:
+
+MC Question: Which of the following must happen for a function to be placed on the "stack"?
+Skill: 1, 2, 3
+Options:
+A) The function must have the recursive case and reach its base case
+B) The function must have a recursive case but NOT reach its base case
+C) The function must be defined and called
+D) The function must be defined 
+Answer: C
+/chen.ethan
+=======================
+Question 2.a:
+MC Question: When you define a function in the definitions pane and press Run, what happens?
+Skill: 2
+Options:
+A. The function runs and returns a value
+B. A syntax error will appear
+C. The function does not run
+D. The function can be used in the interaction pane
+E. Both C and D
+Answer
+E.
+=======================
+Question 2.b:
+
+MC Question: When do functions get placed onto the stack?
+Skill: 2
+Options:
+A. When they are defined
+B. When they are created with lambda
+C. When they are called
+D. Both A and B
+Answer
+C.
+/cheng.eason
+=======================
+Question 3.a:
+MC Question: What does the cons command require?
+Skill: 9
+Options:
+A) A list and a list element
+B) A list and a boolean
+C) A list and a conditional
+D) A list and a recursive function
+
+Answer: A
+=======================
+Question 3.b:
+
+MC Question: What is a nested conditional?
+Skill: 5, 6
+Options:
+A) A recursive function in a conditional
+B) A conditional within a conditional
+C) A statement with a boolean function inside a conditional
+D) A conditional using a variable
+Answer: B
+/cho.wilson
+=======================
+Question 4.a:
+MC Question:
+
+What does the following expression evaluate to?
+(+ (* 3 4) (- 10 1))
+
+Skill: 2
+Options:
+A) 21
+B) 22
+C) 23
+D) 24
+
+Answer: A
+=======================
+Question 4.b:
+
+MC Question:
+What is the result of the following code?
+(define nums (list 5 10 15))
+(first (rest nums))
+
+Skill: 10
+Options:
+A) 5
+B) 10
+C) 15
+D) (10 15)
+
+Answer: B
+/chosang.tenzin
+=======================
+Question 5.a:
+MC Question: Which expression computes the addition of: 5 to the power of 3, and the square root of 64?
+Skill:2, 3, 4
+Options:
+A) (+ (5 expt 3) (sqrt 64))
+B) (+ 5 expt 3 (sqrt 64))
+C) (+ (expt 5 3) (sqrt 64))
+D) (expt 5 3) + (sqrt 64))
+Answer: C
+=======================
+Question 5.b:
+
+MC Question: How many numbers are returned from the command: (random 5 12)
+Skill: 8
+Options:
+A) 1
+B) 12
+C) 8
+D) 7
+Answer: A
+/chowdhury.adyan
+=======================
+Question 6.a:
+MC Question: Which code returns a random value in the range [50, 90)?
+Skill: 8
+Options:
+A) (random 90)
+B) (random 91)
+C) (random 40) + 50
+D) (random 41) + 50
+Answer: D
+=======================
+Question 6.b:
+
+MC Question: Why does infinite recursion occur?
+Skill: 11
+Options: 
+A) not using a recursive case
+B) not using a base case
+C) not using an iterative case
+D) not using the random command
+Answer: B
+/hafeez.arzan
+=======================
+Question 7.a:
+MC Question:
+Consider the Racket code shown below, where f and g are functions that are applied to any two parameters x and y.
+
+(define transform
+  (lambda (f g)
+    (lambda (x y)
+      (g (f (+ x y))))))
+
+(define enlarge
+  (lambda (n)
+    (+ n 4)))
+
+(define shrink
+  (lambda (m)
+    (- m 3)))
+
+(define mystery
+  (lambda (a b)
+    ((transform enlarge shrink) a b)))
+
+What does (mystery 5 2) return?
+Skills: 2 and 3
+Options:
+A) 6
+B) 8
+C) 9
+D) 11
+Answer: B
+=======================
+Question 7.b:
+
+MC Question:
+Consider the Racket code shown below.
+
+(define sum
+  (lambda (x y)
+    (+ x y)))
+
+(define diff
+  (lambda (x y)
+    (- x y)))
+
+(define compute
+  (lambda (x y)
+    (if (> (sum x y) 20)
+        (* (sum x y) (diff x y))
+        (if (< (diff x y) 0)
+            (+ (sum x y) (diff x y))
+            (sum x y)))))
+
+What does (compute 8 15) return?
+Skills: 6 and 7
+Options:
+A) -161
+B) -23
+C) -7
+D) 7
+Answer: A
+/kano.nene
+=======================
+Question 8.a:
+MC Question:
+What is the value of the following expression in racket?
+(+ (/ (* 4 5) (- 105 95)) 198)
+Skill:
+Options:
+A) 100
+B) 2
+C) 199
+D) 200
+Answer: D
+=======================
+Question 8.b:
+
+MC Question:
+Which of the following is the correct next step to the function that returns
+the length of the entire list?
+(define (mystery g)
+(if (empty? g)
+0
+(NEXT STEP)
+Skill:
+Options:
+A) (+ mystery (rest g))
+B) (* mystery (rest g))
+C) (+ 1 (mystery (rest g)))
+D) (- 1 (mystery (rest g)))
+Answer: C
+/lee.caitlyn
+=======================
+Question 9.a:
+MC Question:
+Which of the following will return a list with 6 added to the front of the list '(7 9)?
+Skill: 2, 10
+Options:
+A) (cons 6'(7 9))
+B) (cons (6 '(7 9)))
+C) (cons '(7 9) 6)
+D) (cons '(7 9) (6))
+Answer: A
+=======================
+Question 9.b:
+
+MC Question:
+What happens when your base case is never reached by your recursive function? 
+Skill: 2, 11 
+Options:
+A) The code explodes 
+B) Your recursive function restarts 
+C) Your Racket will run out of memory and the stack overflows 
+D) Nothing 
+Answer: C
+/lee.nathan
+=======================
+Question 10.a:
+MC Question:
+What does rest or cdr return?
+Skill: 11
+Options:
+A) a list of random elements
+B) nothing; it displays
+C) the rest of a list, but not in list structure
+D) the rest of a list, as a list.
+Answer: D
+=======================
+Question 10.b:
+
+MC Question:
+What does random (N) return
+Skill: 8
+Options:
+A) Any random integer from [0 , N)
+B) Any random integer from (0 , N)
+C) Any floating point number from [0 , N)
+D) Any floating point number from (0 , N)
+  
+Answer: A
+/ng.sophia
+=======================
+Question 11.a:
+MC Question: How would you turn '(1 12 15 42 48 90) into '(12 42 48 90)
+Skill: 2,3,10
+Options:
+A) (cons 3 '(1 12 15 42 48 90))
+B) (filter even? '(1 12 15 42 48 90))
+C) (build-list 4 even?)
+D) (even? '(1 12 15 42 48 90))
+
+Answer: B
+=======================
+Question 11.b:
+
+MC Question: What is a base case in recursive functions?
+Skill: 11
+Options:
+A) First step in recursive case
+B) Condition to stop recursion
+C) Self-reference in the function
+D) A test case in a trace diagram
+
+Answer: B
+/purkaysta.shuhag
+=======================
+Question 12.a:
+MC Question:
+
+What is the error in this function?
+(define passFail
+  (lambda (s)
+  (if (> score 65)
+      "pass"
+      "fail")))
+
+Skill:5, 6
+
+Options:
+A)The function must return a boolean
+B)Parameter s is never used and score is undefined
+C)if can't return strings
+D)Lambda is not used properly
+
+Answer:B
+=======================
+Question 12.b:
+
+MC Question:
+What is the result of running this code?
+
+(define factorial
+  (lambda (n)
+    (if (= n 0)
+        1
+        (* n (factorial n)))))
+
+(factorial 3)
+
+Skill: 11, 5
+
+Options:
+A) 6  
+B) 3  
+C) Infinite recursion 
+D) 0  
+
+Answer: C
+/shen.aaron
+=======================
+Question 13.a:
+MC Question: What do you need in recursive functions to ensure that Racket does not run out of memory?
+Skill: 11
+Options:
+a) A conditional statement
+b) A base case
+c) A lot of memory
+d) A list
+Answer: b
+=======================
+Question 13.b:
+
+MC Question: What type of programming language is Racket?
+Skill: 1, 2
+Options:
+a) A functional programming language
+b) An agent-based language
+c) A coding language
+d) A conditional language
+Answer: a
+/shih.thomas
+=======================
+Question 14.a:
+MC Question:
+What kind of programming language is Racket?
+Skill: 2
+Options:
+A)Agent-based
+B)Object-oriented
+C)Turing
+D)Functional
+
+Answer: D
+=======================
+Question 14.b:
+
+MC Question:
+What kind of lists are in Racket?
+Skill: 10
+Options:
+A) Linked
+B) Random-access
+C) Linear
+D) Sorted
+
+Answer: A
+/shih.thomas
+=======================
+Question 15.a:
+MC Question:
+What kind of programming language is Racket?
+Skill: 2
+Options:
+A)Agent-based
+B)Object-oriented
+C)Turing
+D)Functional
+
+Answer: D
+=======================
+Question 15.b:
+
+MC Question:
+What kind of lists are in Racket?
+Skill: 10
+Options:
+A) Linked
+B) Random-access
+C) Linear
+D) Sorted
+
+Answer: A
+/simi.caterina
+=======================
+Question 16.a:
+MC Question: what would (/ a) be equal to
+Skill: 2
+Options:
+a  1
+b  undefined
+c  0
+d  1/a
+
+Answer: d
+=======================
+Question 16.b:
+
+MC Question: How is an (if) function structured?
+Skill: 6
+Options:
+a (if (result0 test result1))
+b (if test (result0 result1))
+c (if result0 result1 result2)
+d (if (test result0 result1))
+
+Answer: d
+/zou.wilson
+=======================
+Question 17.a:
+MC Question: What would this result in? ((* 5 10) + 5)
+Skill: 2, 3
+Options:
+A. error
+b. 75
+c. 55
+d. 0
+Answer: a
+=======================
+Question 17.b:
+
+MC Question: What would this give: (and (not (< 52 32)) (= 4 42))?
+Skill: 5, 6
+Options:
+a: f
+b: false
+c: error
+d: #f
+
+Answer
+/bergstraesser.finn
+=======================
+Question 18.a:
+MC Question: To add numbers A and B, which function should one use?
+Skill:
+Options:
+A. (+ A B)
+B. (A + B)
+C. (foldl A B)
+D. (AB +)
+Answer
+=======================
+Question 18.b:
+
+MC Question:
+Skill:
+Options:
+Answer
+/berman.jaffee
+=======================
+Question 19.a:
+MC Question: 
+In the command (+ 1 (* (/ 3 2) 4)), which function is evaluated first?
+Skill: 2
+Options:
+A) +
+B) *
+C) /
+D) 4
+Answer: C
+=======================
+Question 19.b:
+
+MC Question:
+Which command will add 1 to the beginning of a list g if it is not already at the beginning, and 0 otherwise?
+Skill: 10
+Options:
+A) (if (= (cons g) 1) (first 0 g) (first 1 g))
+B) (if (= (first g) 1) (cons 0 g) (cons 1 g))
+C) (if (= (first g) 1) (cons g 0) (cons g 1))
+D) (if (= (cons g) 1) (first g 0) (first g 1))
+Answer: B
+/bhuiyan.ahnaf
+=======================
+Question 20.a:
+MC Question:
+What does the following expression evaluate to?
+
+(define x 4)
+(define y (+ x 3))
+(* y (- x 1))
+
+Skill: 2, 3
+Options:
+A) 7
+B) 14
+C) 21
+D) 28
+
+Answer: C
+=======================
+Question 20.b:
+
+MC Question:
+What does the following expression evaluate to?
+
+(define (classify n)
+  (if (< n 0)
+      'neg
+      (if (= n 0) 'zero 'pos)))
+
+(classify (- 2 5))
+
+Skill: 5, 6, 10
+Options:
+A) neg
+B) zero
+C) pos
+D) error (if requires booleans)
+
+Answer: A
+/chan.angeline
+=======================
+Question 21.a:
+MC Question:
+What cannot be put into a list in racket?
+Skill: 10
+Options:
+A) #true
+B) '()
+C) 2
+D) All of them can
+
+Answer: D
+=======================
+Question 21.b:
+
+MC Question:
+Which of the following is a recursive function
+Skill: 11
+Options:
+A) (define function1
+  (lambda (n)
+    (+ n n)))
+B) (define function2
+  (lambda (n)
+    (if (= n 2) 4 2)))
+C) (define function3
+  (lambda (n)
+    (if (> n 0) (function3 (- n 1)) 1)))
+D) (define function4
+  (lambda
+      (a b) (+ a b)))
+
+Answer: C
+/chan.brandon
+=======================
+Question 22.a:
+MC Question:
+Which of these BEST describes the relation between the functions f and g, and why it was made that way?
+
+(define f
+  (lambda (n)
+    (g n n)))
+
+(define g
+  (lambda (n k)
+    (if (= k 0)
+        false
+        (or (= n (expt k 2))
+            (g n (- k 1))))))
+
+Skill: 3 11
+Options:
+A) f is a more specialized variant of g, and there exists other specialized variants of g which use different arguments
+B) f has only one argument, so a programmer doesn't have to always remember what should be the second argument of g is
+C) f has only one argument because making g more memory-efficient required a second argument
+D) the type of variables f uses as arguments is different than the type of variables g uses, so they cannot be used in the same contexts
+Answer: B
+=======================
+Question 22.b:
+
+MC Question:
+The following code is used to create a random boolean:
+
+(define a 0.4)
+(define b 0.3)
+(define n (> (+ a b) (/ (random 3) 2)))
+
+Which is CLOSEST to the probability of n being false?
+
+Skill: 7 8
+Options:
+A) 20%
+B) 70%
+C) 33%
+D) 67%
+Answer: D
+/chen.fiona
+=======================
+Question 23.a:
+MC Question: What does define do?
+Skill: 1
+Options:
+A) creates a identifier
+B) assigns an list to a variable
+C) none of these
+D) all of these
+Answer D
+=======================
+Question 23.b:
+
+MC Question: What is true aboiut recursion?
+Skill: 11
+Options:
+A) It will run forever
+B) It constantly removes itself from the stack
+C) It can be nestled
+D) Tail recursion works without wrap recursion
+Answer: B
+/chen.janice
+=======================
+Question 24.a:
+MC Question: What is a parameter?
+Skill: 2 
+Options:
+A)a value provided as an input to function calls
+B)a variable that acts as a placeholder for an argument
+C)data that has an identifier and a seperate value
+D)something that returns true or false
+Answer: B
+=======================
+Question 24.b:
+
+MC Question: What operation is done first in : (/ (+ 5 (quotient 2026 (remainder 20567 n)) 10 15) 2)
+Skill: 2, 4
+Options:
+A) /
+B) +
+C) remainder
+D) quotient
+Answer: C
+/fung.william
+=======================
+Question 25.a:
+MC Question:
+What of the following statements must be true for recursive functions?
+  I) They should have a recursive case and a base case.
+ II) The recursive case frames the solution as a simpler version of the original problem, partly by calling the function to be defined.
+III) The base case is a wrapper for the recursive case, calling it with the given arguments and extra, predefined arguments as necessary.
+Skill: 11
+Options:
+A) I
+B) I and II
+C) I and III
+D) None of them, not even I.
+
+Answer: B
+=======================
+Question 25.b:
+
+MC Question:
+Today you want to bake a cake. However, you are too lazy to search for cake recipes, so you ask Racket to produce a cake recipe for you instead.
+What recipe could the following Racket function return when given the list '("flour" "sugar" "high fructose corn syrup")?
+
+(define DrChef (lambda (ingredients) (if (null? ingredients)
+                                       (list "done!")
+                                       (cons (list (first ingredients) (random 10)) (chef (rest ingredients)))
+                                       )
+               )
+  )
+
+Skill: 6 8 10 11
+Options:
+A) '( ("flour" 10) ("sugar" 3) ("high fructose corn syrup" 2) "done!" ) ;This seems like an okay cake. 
+B) '( ("sugar" 8) ("flour" 0) ("high fructose corn syrup" 9) "done!" ) ;Are you sure that you are baking a cake?
+C) '( "done!" ) ;You cheated and bought a cake, I saw you!
+D) '( ("flour" 9) ("sugar" 1) ("high fructose corn syrup" 0) "done!" ) ;Did you run out of sugar after "baking" cake B?.
+Answer: D
+/jen.dylan
+=======================
+Question 26.a:
+MC Question: Which of the following correctly defines a function in Racket that returns true if a number is greater than 10 and less than 15?
+Skill: 1, 5
+Options:
+A) (define hi (lambda (x) ((> x 10) and (< x 15))))
+B) (define hi (lambda (x) (and (> x 10) (< x 15))))
+C) (define (hi lambda x) (and (x > 10) (x < 15)))
+D) (define hi (lambda x) (or (x > 10) (x < 15)))
+Answer: B
+=======================
+Question 26.b:
+
+MC Question: Which algorithm best describes what the following function does?
+(define sum-to (lambda (n)
+  (if (= n 0)
+      0
+      (+ n (sum-to (- n 1)))))
+Skill: 4, 11
+Options:
+A) Multiplies all numbers from 1 to n
+B) Adds all numbers from 1 to n
+C) Counts how many numbers are between 1 and n
+D) Always returns 0
+Answer: B
+/jensen.eske
+=======================
+Question 27.a:
+MC Question: What would (and (or (and (not (and #t #f))) #f))
+Skill: 5
+Options:
+
+A) #t
+B) #f
+C) #t and #f
+D) none of the above
+
+Answer A
+=======================
+Question 27.b:
+
+MC Question: Which cons statement would produce a valid list?
+Skill: 2, 4
+Options:
+A) (cons 5 5)
+B) (cons #f 5)
+C) (cons '() '(5))
+D) (cons #f #f)
+
+Answer
+/liu.constance
+=======================
+Question 28.a:
+MC Question: Which of the followng can (random 4 90) return?
+Skill: 9
+Options:
+A. 35
+B. 90
+C. 3
+D. 0
+Answer: A
+=======================
+Question 28.b:
+
+MC Question: What does (first (list 70 1 5 -1)) return?
+Skill:10
+Options:
+A. -1
+B. 1
+C. 5
+D. 70
+Answer: D
+/nurullaeva.sabrina
+=======================
+Question 29.a:
+MC Question: In the given function, what would (weirdBoolean 3 8) return?
+(define weirdBoolean
+  (lambda (a b)
+    (not
+      (or
+        (or (= a b) (> a b))
+        (and (a > 0) (b > 5))))))
+Skill: 5
+Options:
+A) #t
+B) #f
+C) error
+D) tralse
+Answer: B
+=======================
+Question 29.b:
+
+MC Question: Which of the following is not true about the recursive case?
+Skill: 11
+Options:
+A) It is a simpler version of the problem
+B) It moves towards the base case
+C) It is when a recursive function should stop
+D) None of the above; every statement is true
+Answer: C
+/peng.alex
+=======================
+Question 30.a:
+MC Question:
+What are arguments?
+Skill: 2
+Options:
+A) The ability to call a function
+B) Values provided as inputs to function
+C) Variables that act as placeholders for arguments in a function.
+D) The output of a function.
+Answer: B
+=======================
+Question 30.b:
+
+MC Question: How many comparison functions are there?
+Skill: 5
+Options:
+A) 5
+B) 2
+C) 3
+D) 4
+Answer: A
+/royce.sophie
+=======================
+Question 31.a:
+MC Question:
+ Which of the following is true about boolean functions?
+Skill:5
+Options:
+ a) It has boolean arguments and returns boolean values
+ b) It has numerical arguments and returns boolean values
+ c) It has boolean arguments and returns boolean values
+ d) It has numerical arguments and returns numerical values
+Answer:
+ a)
+=======================
+Question 31.b:
+
+MC Question:
+ What is a variable?
+Skill: 2
+Options:
+ a) Data that is exactly what it appears to be
+ b) The application of one or more operations on one or more inputs
+ c) Data that has an identifier and a sepaeate value
+ d) The output of a function
+Answer:
+ c)
+/schaible.anna
+=======================
+Question 32.a:
+MC Question:
+When your laptop tells you it needs more memory, what should you do?
+Skill: 11
+Options:
+A) Give it the memory it asks for
+B) Try to debug your recursion
+C) Ignore it
+D) Boom?
+Answer: B
+=======================
+Question 32.b:
+
+MC Question:
+What does this program return?
+(define Vietas (lambda (a b c) (list (/ (* -1 b) a) (/ c a))))
+Skill: 2/3
+Options:
+A) -c/a
+B) b/a
+C) nothing
+D) -b/a
+Answer: C
+/shahid.maryam
+=======================
+Question 33.a:
+MC Question:
+Given the following racket code:
+(sqrt (+ 9 (expt 12 2)))
+Which function is evalutated completely first?
+Skill: 2
+Options:
+A) sqrt
+B) +
+C) expt
+D) 12
+
+Answer C
+=======================
+Question 33.b:
+
+MC Question: What is returned when the function:
+(build-list 3 (lambda (x) (+ x 4)))
+Skill: 6 
+Options:
+A) #t
+B) #t
+C) '(4 5 6)
+D) '(5 6 7)
+
+Answer
+C
+/shao.serena
+=======================
+Question 34.a:
+MC Question:
+What does lambda do?
+Skill: 2
+Options:
+A) defines and calls a function
+B) defines and returns a function
+C) calls a function
+D) returns a function
+
+Answer: B
+=======================
+Question 34.b:
+
+MC Question:
+Which of the following can be possible identifier names?
+Skill: 3
+Options:
+A) 123testing
+B) Testing?
+C) Tri-Area
+D) Tri_area
+
+Answer: D
+/sukhdeo.dylan
+=======================
+Question 35.a:
+MC Question: Task: Identify the correct implementation and contract for a Racket function that calculates the total cost of an item including a 7% sales tax.
+Which of the following code snippets correctly defines the contract and the function in Racket?
+Skill:  3 9
+Options: A)
+; total-cost : number -> number
+(define (total-cost price) (+ price 0.07))
+B)
+; total-cost : number -> number
+(define (total-cost price) (* price 1.07))
+C)
+; total-cost : price -> total
+(define (total-cost price) (* price 1.07))
+D)
+; total-cost : string -> number
+(define total-cost (price) (* price 1.07))
+Answer B
+=======================
+Question 35.b:
+
+MC Question: Task: Trace a recursive function that processes a list of numbers.
+(define (count-big-nums lon)
+  (cond
+    [(empty? lon) 0]
+    [(> (first lon) 10) (+ 1 (count-big-nums (rest lon)))]
+    [else (count-big-nums (rest lon))]))
+What is the result of calling (count-big-nums (list 5 12 8 20 10))?
+
+Skill: 6 11
+Options:
+A) 1
+B) 2
+C) 3
+D) 5
+Answer
+B
+/tissera.shanya
+=======================
+Question 36.a:
+MC Question:
+What is the result of the following expression?
+
+(rest (list 5 10 15 20))
+
+Skill: 10
+Options:
+A) 5
+B) 10
+C) (10 15 20)
+D) (5 10 15 20)
+
+Answer: C
+=======================
+Question 36.b:
+
+MC Question:
+Which of the following expressions will give an error?
+
+Skill: 10
+Options:
+A) (first (list 1 2 3))
+B) (rest (list 9))
+C) (first (list))
+D) (cons 4 (list 5 6))
+
+Answer: C
+/zeng.john
+=======================
+Question 37.a:
+MC Question: how do you return the 3rd value of a linked list g?
+Skill: 10
+Options:
+A) (cons 3 (cons 3 (cons 3 '(3))))
+B) (first (first (first g)))
+C) (rest (rest (rest g)))
+D) (lambda (x g)
+         (if (= x 3)
+              (first g (rest g (first g)))
+              x))
+Answer B
+=======================
+Question 37.b:
+
+MC Question: Write a function with one parameter that returns the argument
+if it is greater than or equal to 100 and half the argument if it is less than 100
+Skill: 6
+Options:
+A) (lambda (x g)
+    (if (< x 100)
+        g
+        (/ g 2)))
+B) (lambda (x)
+     (if (>= x 100)
+         x
+         (/ x 2)))
+C) (if (>= x 100)
+       x
+       (define b (/ x 2)))
+D) (if (<= x 100)
+       (if (> x 100)
+            (/ x 2)
+           x)
+       (/ x 2))
+Answer B

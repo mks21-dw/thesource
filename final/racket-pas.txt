@@ -1,0 +1,643 @@
+
+/ahmetaj.kevin
+=======================
+Question 0:
+
+#|
+MC Question:
+Which recursive function correctly returns a list of n random integers between 1 and 10 (inclusive)?
+Skill: 7, 8, 10, 11 — Variables, randomness, data structures, and recursion.
+Options:
+A) (define (rand-list n)
+     (random 10))
+B) (define (rand-list n)
+     (if (= n 0)
+         null?
+         (cons (+ 1 (random 10))
+               (rand-list (- n 1)))))
+C) (define (rand-list n)
+     (cons (random 10) null?))
+D) (define (rand-list n)
+     (if (< n 0)
+         null?
+         (rand-list n)))
+Answer: B
+|#
+/brinzensky.roman
+=======================
+Question 1:
+
+#|
+MC Question: Which of the following functions is not present in Dr Racket?
+Skill: 6
+Options:
+A) If
+B) Modulo
+C) Cdr
+D) Ifelse
+Answer: D
+|#
+/chen.ethan
+=======================
+Question 2:
+
+#|
+MC Question: What happens during stack overflow?
+Skill: 2
+Options:
+A. A loop runs forever but does not use any memory
+B. The call stack runs out of space to store additional function calls
+C. Too many conditional if statements are nested inside one another
+D. A program repeatedly calls functions without returning, causing stack memory to fill up
+Answer
+B.
+|#
+/cheng.eason
+=======================
+Question 3:
+
+#|
+MC Question: What type of programming language is Racket?
+Skill: 1, 2
+Options:
+A) A functional programming language
+B) An agent based programming language
+C) A researching language
+D) A conditional language
+
+Answer: A
+|#
+/cho.wilson
+=======================
+Question 4:
+
+#|
+MC Question:
+What value does the function call below return?
+
+(define (mystery n)
+  (if (< n 1)
+      1
+      (* n (mystery (- n 1)))))
+
+(mystery 3)
+Skill: 11
+Options:
+A) 3
+B) 6
+C) 9
+D) 1
+
+Answer: B
+|#
+/chosang.tenzin
+=======================
+Question 5:
+
+#|
+MC Question: What does it mean to trace a recursive function?
+Skill:11
+Options:
+A: To count the amount of operators used 
+B: To create a flow chart for the function
+C: To write out each step of substituting a value for the parameter until you reach the base case
+D: To write test cases for the function
+Answer: C
+|#
+CODE GOES HERE
+/chowdhury.adyan
+=======================
+Question 6:
+
+#|
+MC Question: Which would return true?
+Skill: 5
+Options:
+A) (not (not (not (not (not #t)))))
+B) (and #t #t #t #t #t #f #t)
+C) (not (not (not (not (not (not #t))))))
+D) (or #f #f #f #f #f #f #f)
+Answer: C
+|#
+/hafeez.arzan
+=======================
+Question 7:
+
+#|
+MC Question: Consider the Racket function shown below.
+
+(define strange
+  (lambda (x)
+    (if (< (random 4) 2)
+        (+ x (random 3))
+        (- x (random 2)))))
+
+Which of these values COULD (strange 5) return?
+Skills: 6 and 8
+Options:
+A) 2
+B) 4
+C) 8
+D) Both B and C are correct.
+Answer: B
+|#
+/kano.nene
+=======================
+Question 8:
+
+#|
+MC Question:
+What does the base case of the following function do? 
+Skill:
+Options:
+A) finds the remainder of (first g) and 5
+B) adds 1 to (even_5 (rest g))
+C) runs even_5
+D) checks if list g is empty
+Answer: D
+|#
+/lee.caitlyn
+=======================
+Question 9:
+
+#|
+MC Question: 
+Given the code, which function is evaluted first?
+Skill: 6
+(if (> n 300)
+n
+(+ 5 (quotient n 10)(remainder n 10))
+
+Skill:2
+Options:
+A) +
+B) >
+C) quotient
+D) remainder
+Answer: B
+|#
+/lee.nathan
+=======================
+Question 10:
+
+#|
+MC Question:
+How can you use remainder (n m)?
+Skill: 3
+Options:
+A) Remainder will return the remainder of n and 10
+B) The name is deceiving; it just does division.
+C) Returns the integer remainder of n and m
+D) Returns two values: the quotient, and the remainder.
+Answer
+|#
+/ng.sophia
+=======================
+Question 11:
+
+#|
+MC Question: Which function returns a random floating point number?
+Skill: 2,8
+Options:
+A) (random)
+B) (random 1)
+C) (random 0 1)
+D) (random 0)
+
+Answer: A
+|#
+/purkaysta.shuhag
+=======================
+Question 12:
+
+#|
+MC Question:
+
+What is the range of values for this expression?
+
+(- (random 26) 10)
+
+Skill: 8
+
+Options:
+A) 0 to 15  
+B) 0 to 16  
+C) -10 to 15 
+D) -10 to 16  
+
+Answer: C
+|#
+/shen.aaron
+=======================
+Question 13:
+
+#|
+MC Question: What is a nested conditional?
+Skill: 5, 6
+Options:
+a) A simple conditional
+b) A conditional that made a nest
+c) A statement with a conditional inside of another conditional
+d) A recursive statement
+Answer: c
+|#
+/shih.thomas
+=======================
+Question 14:
+
+(define chain
+  (lambda (x a b l)
+    (if (= x 0)
+        l
+        (chain (- x 1) a b (cons (random a (+ b 1)) l)))))
+/shih.thomas
+=======================
+Question 15:
+
+(define chain
+  (lambda (x a b l)
+    (if (= x 0)
+        l
+        (chain (- x 1) a b (cons (random a (+ b 1)) l)))))
+/simi.caterina
+=======================
+Question 16:
+
+#|
+MC Question: which of the following could NOT be a list returned by this function: (build-list 5 (lambda (x) (random 18)))
+Skill: 10
+Options: 
+a '(3 17 5 12 13)
+b '(8 18 3 6 2)
+c '(4 11 9 0 16)
+d '(15 1 7 10 15)
+
+Answer: b
+|#
+/zou.wilson
+=======================
+Question 17:
+
+#|
+MC Question: If a is defined as 5, what would (/ (* 10 a) 10)
+Skill: 2, 3
+Options:
+a: error
+b: a
+c: 5
+d: no answer
+Answer
+|#
+/bergstraesser.finn
+=======================
+Question 18:
+
+(define remSum
+  
+ (lambda (number n)
+   (if (< number 10)
+   (remainder number n)
+   (+ (remainder (remainder number 10) n) (remSum (quotient n 10) n)    
+              ))))
+/berman.jaffee
+=======================
+Question 19:
+
+(if (= (remainder a 6) 0) (f a) (f (- a 1)))
+/bhuiyan.ahnaf
+=======================
+Question 20:
+
+#|
+MC Question:
+What does the following expression evaluate to?
+
+(define (apply-twice f x)
+  (f (f x)))
+
+(apply-twice (lambda (n) (+ n 3)) 5)
+
+Skill: 12, 21
+Options:
+A) 8
+B) 11
+C) 14
+D) error (lambda can’t be passed as a value)
+
+Answer: C
+|#
+
+
+#|
+Programming question:
+Write a function (count-evens xs) that takes a list of integers and returns
+how many of them are even.
+
+Skill: 7, 8, 22
+Description:
+- Use recursion (no mutation).
+- Do NOT use cond.
+- Assume xs is a (possibly empty) list of integers.
+
+Possible solution:
+|#
+
+(define (count-evens xs)
+  (if (empty? xs)
+      0
+      (if (even? (first xs))
+          (+ 1 (count-evens (rest xs)))
+          (count-evens (rest xs)))))
+
+;; sample runs
+(count-evens '())                 ; => 0
+(count-evens (list 1 2 3 4 6))     ; => 3
+(count-evens (list 7 9 11))        ; => 0
+/chan.angeline
+=======================
+Question 21:
+
+#|
+MC Question:
+What cannot be returned in the function: (random 3)
+Skill: 5
+Options:
+A) 0
+B) 1
+C) 2
+D) 3
+
+Answer: D
+|#
+/chan.brandon
+=======================
+Question 22:
+
+#|
+MC Question:
+What does this function evaluate to?
+
+(if (<= 3 5 5 7)
+    (if (and (not false) (> 1 (/ 2)))
+        "A"
+        "B")
+    (if (or (= 1 2) (not false))
+        "C"
+        "D"))
+
+Skill: 5 6
+Options:
+A) "A"
+B) "B"
+C) "C"
+D) "D"
+Answer: A
+|#
+/chen.fiona
+=======================
+Question 23:
+
+#|
+(define maxOrMin2
+  (lambda (g)
+    (if (null? g)
+        null
+        (filter (lambda (x) (> x 0)) g))))
+|#
+/chen.janice
+=======================
+Question 24:
+
+#|
+MC Question: What does a recursive function always need?
+Skill: 11
+Options:
+A) a list
+B) at least three functions
+C) a base case
+D) at least two parameters
+Answer: C
+|#
+/fung.william
+=======================
+Question 25:
+
+#|
+MC Question:
+What does the following Netlogo code do when executed in observer context?
+Cats are a breed, and count is a property of all turtles. There are currently 28 cats.
+ask cat 0 [
+    if (count turtles > 25)[
+        ask patches with [pcolor = orange] [
+            set pcolor red
+            fd 1
+        ]
+        set count 10
+    ]
+]
+Skill:  5 6 19 21 22
+Options:
+A) All orange patches will turn red and all cats will set their "count" value to 10.
+B) Absolutely nothing. 
+C) All orange patches will turn red and cat 0 will set its "count" value to 10.
+D) Netlogo will complain because you're using procedures in the wrong context.
+
+Answer: D
+|#
+/jen.dylan
+=======================
+Question 26:
+
+#|
+MC Question:
+What does the following expression evaluate to?
+(and (> 5 3) (< 2 1))
+Skill:
+5
+Options:
+A) true
+B) #false
+C) #t
+D) False
+
+Answer: B
+|#
+/jensen.eske
+=======================
+Question 27:
+
+(define higherThanD20
+  (lambda (n t)
+    (if (= t 0)
+        '()
+        (cons (>= (+ (random 20) 1) n) (higherThanD20 n (- t 1)))
+    )
+  )
+)
+/liu.constance
+=======================
+Question 28:
+
+#|
+MC Question: What does (if (> 0 x) (+ 1 x) (- 1 x)) return if x=0?
+Skill:5 6
+Options:
+A. 1
+B. 0
+C. -1
+D. 5
+Answer: A
+|#
+/nurullaeva.sabrina
+=======================
+Question 29:
+
+#|
+MC Question: Which of the following is true about the parameters of (filter f g)?
+Skill: 2, 10
+Options:
+A) f is a function that takes one argument and must return a boolean value
+B) g must be a list
+C) values in g must be valid arguments of f
+D) All of the above
+Answer: D
+|#
+/peng.alex
+=======================
+Question 30:
+
+#|
+MC Question: How many values can there be in a list?
+Skill: 10
+Options:
+A) 0
+B) 1
+C) Infinite
+D) None of the above
+Answer: C
+|#
+/royce.sophie
+=======================
+Question 31:
+
+#|
+MC Question: What is the result of evaluating the following Racket code?
+(define (mystery-sum lst)
+  (if (empty? lst)
+      0
+      (+ (first lst) (mystery-sum (rest lst)))))
+(mystery-sum '(5 10 15))
+
+Skill: 11
+Options:
+a) 30
+b) 0
+c) '(5 10 15)
+d) 3
+Answer: a) 30
+|#
+/schaible.anna
+=======================
+Question 32:
+
+#|
+MC Question:
+Why are parenthases important for Racket?
+Skill: 2/3
+Options:
+A) b/c otherwise nothing works
+B) syntax purposes
+C) i hate parenthesis
+D) (not C)
+Answer: D
+|#
+/shahid.maryam
+=======================
+Question 33:
+
+CODE GOES HERE
+/shao.serena
+=======================
+Question 34:
+
+#|
+MC Question:
+What is the output of the following code?
+(if (> 3 5)
+    "yes"
+    "no")
+Skill: 6
+Options:
+A) "yes"
+B) "no"
+C) #t
+D) #f
+Answer: B
+|#
+/sukhdeo.dylan
+=======================
+Question 35:
+
+#|
+MC Question: Task: Analyze the behavior of a list-processing algorithm.
+A student is asked to write an algorithm that finds the largest number in a list. They provide the following steps:
+Assume the first number in the list is the "current max."
+Look at the next number in the list.
+If the next number is larger than the "current max," replace the "current max" with this number.
+Repeat steps 2-3 until the end of the list is reached.
+Return the "current max."
+Which Racket code block successfully implements this algorithm for a non-empty list?
+
+Skill: 4 10
+Options:
+A)
+(define (find-max lon)
+(foldl max (first lon) (rest lon)))
+B)
+(define (find-max lon)
+(filter (lambda (x) (> x 0)) lon))
+C)
+(define (find-max lon)
+(map max lon))
+D)
+(define (find-max lon)
+(first (sort lon <)))
+Answer
+A
+|#
+/tissera.shanya
+=======================
+Question 36:
+
+#|
+MC Question:
+Consider this expression:
+
+(null? (rest (list 7)))
+
+What will it evaluate to?
+
+Skill: 10
+
+Options:
+A) #true
+B) #false
+C) 7
+D) 0
+
+Answer: A
+|#
+/zeng.john
+=======================
+Question 37:
+
+#|
+MC Question: Which of the following is a Racket function?
+Skill: 2
+Options:
+A) die
+B) ask
+C) cons
+D) of
+Answer C
+|#

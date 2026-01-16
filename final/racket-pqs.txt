@@ -1,0 +1,562 @@
+
+/ahmetaj.kevin
+=======================
+Question 0:
+
+MC Question:
+Which code correctly uses conditional statements to classify a number?
+Purpose: returns 'negative, 'zero, or 'positive.
+Skill: 6
+Options:
+(define (classify n)
+     (if (< n 0)
+         "negative"
+         "positive"))
+B) (define (classify n)
+     (if (< n 0)
+         'negative
+         (if (= n 0)
+             "zero"
+             "positive")))
+C) (define (classify n)
+     (if n "positive" "negative"))
+D) (define (classify n)
+     (if (= n 0)
+         "zero"
+         "negative"))
+Answer: B
+/brinzensky.roman
+=======================
+Question 1:
+
+MC Question: For the following usage of cons (cons a b), which of the following can be a?
+Skill: 7
+Options:
+A) '()
+B) 534
+C) "string"
+D) All of the above
+Answer: D
+/chen.ethan
+=======================
+Question 2:
+
+MC Question: Which of the following can not be given boolean arguments?
+Skill: 5
+Options:
+A. and
+B. or
+C. not
+D. =
+Answer
+D
+/cheng.eason
+=======================
+Question 3:
+
+MC Question: What do you need in  recursive functions to ensure that Racket does not run out of memory?
+Skill: 11
+Options:
+A) A conditional statement
+B) A base case
+C) A lot of memory
+D) A list
+
+Answer: B
+/cho.wilson
+=======================
+Question 4:
+
+MC Question:
+What value does the function call below return?
+
+(define (countdown n)
+  (if (= n 0)
+      0
+      (countdown (- n 1))))
+Skill: 11
+Options:
+A) 3
+B) 1
+C) 0
+D) error
+
+Answer: C
+/chosang.tenzin
+=======================
+Question 5:
+
+MC Question: What is infix notation? Does Racket or Netlogo use infix?
+Skill: 2
+Options:
+A) Infix notation has the operands come before the operator. Racket uses infix notation. 
+B) Infix notation has the operator come before the operands. Netlogo uses infix notation. 
+C) Infix notation has the operator between the operands. Netlogo uses infix notation. 
+D) Infix notation has the operator come before the operands. Racket uses infix notation. 
+Answer: C
+/chowdhury.adyan
+=======================
+Question 6:
+
+MC Question: Which function would return the last digit of the square of a number?
+Skill: 3
+Options: 
+A) (remainder (expt n 2) 10)
+B) (expt (remainder n 10) 2)
+C) (remainder 10 (expt n 2))
+D) (expt 2 (remainder n 10))
+Answer: A
+/hafeez.arzan
+=======================
+Question 7:
+
+MC Question:
+A student creates a Racket function that takes two inputs, and uses a nested if structure to output a return value. The function returns a value using the process below.
+
+1. The function first checks whether the two inputs are equal.
+2. If the inputs are not equal, it checks whether the first input is a number and the second input is a Boolean value.
+3. If neither of the two conditions in step 2 are true, it returns 0.
+
+Which of these statements most accurately describes how Racket evaluates this function?
+Skills: 2 and 6
+Options:
+A) Racket evaluates all conditions before returning a value.
+B) Racket performs the equality test first, and only if it is false does it perform the test in step 2.
+C) Racket performs the test in step 2 first, since it is more specific.
+D) Racket returns 0 if either of the two inputs are not numbers.
+Answer: B
+/kano.nene
+=======================
+Question 8:
+
+MC Question:
+What is evaluated first in the following code:
+(define (even_5 g)
+  (if (empty? g)
+      0
+      (if (or (even? (first g))
+              (= (remainder (first g) 5) 0))
+          (+ 1 (even_5 (rest g)))
+          (even_5 (rest g)))))
+Skill:
+Options:
+A) (even_5 (rest g))
+B) (empty? g)
+C) (remainder (first g) 5)
+D) (even_5 g)
+Answer: B
+/lee.caitlyn
+=======================
+Question 9:
+
+MC Question:
+What is not a boolean value? 
+Skill: 5 
+Options:
+A) if 
+B) or 
+C) not 
+D) and 
+Answer: A
+/lee.nathan
+=======================
+Question 10:
+
+MC Question:
+What are the parameters ___ of "null?" and what does it return___?
+Skill: 9 10
+Options:
+A) any number or boolean , nothing
+B) a list , a boolean
+C) a list, a number
+D) a number, a boolean
+Answer: B
+/ng.sophia
+=======================
+Question 11:
+
+MC Question: Which of the following is true?
+Skill: 2
+Options:
+A) The last node in a list links to null
+B) The empty list is invalid
+C) Each node in a list contains only data
+D) Null is a list with only one piece of data
+
+Answer: A
+/purkaysta.shuhag
+=======================
+Question 12:
+
+MC Question:
+
+What is the purpose of foldl in Racket and what are its parameters.
+
+Skill:10, 12
+
+Options:
+A) foldl applies a function repeatedly to a list, parameters are a function, an initial accumulator, and a list  
+B) foldl creates a list of numbers parameters are a number and a function  
+C) foldl creates a random list and its 2 parameters are the number of values and the max value. 
+D) foldl returns the first element of a list parameters are just the list 
+
+Answer:A
+/shen.aaron
+=======================
+Question 13:
+
+MC Question: What does the cons command require?
+Skill: 9
+Options:
+a) A list and a list element
+b) A list and a boolean
+c) A list and a conditional
+d) A list and a recursive function
+Answer: a
+/shih.thomas
+=======================
+Question 14:
+
+Programming question:
+Write a function that creates a list of random integers x long,
+with each int being minimum a and maximum b (i.e., in [a, b])
+Skill: 8
+
+
+/shih.thomas
+=======================
+Question 15:
+
+Programming question:
+Write a function that creates a list of random integers x long,
+with each int being minimum a and maximum b (i.e., in [a, b])
+Skill: 8
+
+
+/simi.caterina
+=======================
+Question 16:
+
+MC Question: what's the difference between build-list and cons?
+Skill: 2, 10
+Options:
+a cons takes integer n and a function f and constructs a list by calling f from 0 to the integer, and build-list builds a list node with a value of b and c.
+b build-list builds on an existing, non-empty list and cons constructs a recursive function.
+c cons involves robbing the Louvre and build-list creates your grocery store list for you.
+d build-list takes integer n and a function f and builds a list by calling f from 0 to the integer, and cons constructs a list node with a value of b and c.
+
+Answer: d
+/zou.wilson
+=======================
+Question 17:
+
+MC Question: What would this return:
+(define a
+  (lambda (x)
+    (if (or (> x 4) (< x -210))
+       #t
+       false)))
+a 5
+Skill: 5, 6, 3, 2,
+Options:
+a: error
+b: nothing
+c: 5
+d: #t
+Answer
+/bergstraesser.finn
+=======================
+Question 18:
+
+Programming question: Write a recursive racket function that sums all the digits of a number and finds the result's remainder when divided by n. 
+Skill:
+
+Description: my answer's wrong 
+
+/berman.jaffee
+=======================
+Question 19:
+
+Programming question:
+Skill: 6
+Description:
+For a function (f a), create a command which will evaluate f of a if a is a multiple of 6, and f of a - 1 otherwise.
+
+/bhuiyan.ahnaf
+=======================
+Question 20:
+
+MC Question:
+What does the following expression evaluate to?
+
+(define (weird xs)
+  (let ([first (car xs)]
+        [rest  (cdr xs)])
+    (cons (+ first 10) (cdr rest))))
+
+(weird (list 1 2 3 4))
+
+Skill: 8, 11
+Options:
+A) '(11 2 3 4)
+B) '(11 3 4)
+C) '(1 12 3 4)
+D) '(11 4)
+
+Answer: B
+/chan.angeline
+=======================
+Question 21:
+
+MC Question:
+What will racket return when given: (if (> x 1) 3 15); when x = 4
+Skill: 5
+Options:
+A) #true
+B) #false
+C) 3
+D) 15
+
+Answer: C
+/chan.brandon
+=======================
+Question 22:
+
+MC Question:
+Fill-in the trace diagram:
+
+(define merge
+  (lambda (list1 list2)
+    (if (null? list1)
+        list2
+        (if (null? list2)
+            list1
+            (if (< (first list1) (first list2))
+                (cons (first list1) (merge (rest list1) list2))
+                (cons (first list2) (merge list1 (rest list2))))))))
+
+(merge '(1 5) '(2 4))
+(cons 1 (merge '(5) ('2 3))
+(cons 1 (cons 2 (merge '(5) '(3))))
+(cons 1 (cons 2 (cons 3 (merge '(5) '()))))
+???
+'(1 2 3 5)
+* All cons functions were evaluated in one step
+
+Skill: 2 10
+Options:
+A) (cons 1 (cons 2 (cons 3 (cons 5 '()))))
+B) (cons 1 (cons 2 (cons 3 5)))
+C) (cons 1 (cons 2 (cons 3 '(5))))
+D) (cons 1 (cons 2 '(3 5)))
+Answer: C
+/chen.fiona
+=======================
+Question 23:
+
+Programming question:
+Skills: 1,5,6
+Description
+Create a valid code that will return the greatest value after filtering out a list of positive integers.
+
+/chen.janice
+=======================
+Question 24:
+
+MC Question: What does (first (rest (list 3 0 2 65))) return?
+Skill: 10
+Options:
+A) 3
+B) 0
+C) 2
+D) 65
+Answer: B
+/fung.william
+=======================
+Question 25:
+
+MC Question:
+Based on the following Racket code, which of the following statements must be correct?
+(define foo (lambda (l x y) (
+                         if (first l)
+                          (and first 1 y)
+                          (or (not first 1) x)
+                          )
+              )
+  )
+
+Skill: 2 5 6 10
+Options:
+A) If the first element of l is True and x is False, return False.
+B) If the first element of l is False and y is True, return True.
+C) If the first element of l is True and y is False, return False.
+D) If (or x y) returns True, then the function must return True.
+
+Answer: B
+/jen.dylan
+=======================
+Question 26:
+
+MC Question:
+Which of the following best describes the difference between defining and calling a function in Racket?
+Skill: 1, 2
+Options:
+A) Defining a function runs its code; calling a function names it
+B) Defining a function names it and specifies its behavior; calling a function runs its code
+C) Defining a function passes arguments; calling a function creates parameters
+D) There is no difference in Racket
+Answer: B
+/jensen.eske
+=======================
+Question 27:
+
+Programming question: Write a function with parameter n that returns a list of t boolean values based on whether n is higher or lower than a random d20 roll.
+Skill: 5, 6, 8, 10, 11
+Description
+
+
+/liu.constance
+=======================
+Question 28:
+
+MC Question: which of the following does not raise 25 to the 6th power?
+Skill: 2
+Options:
+A. (expt 25 6)
+B. (expt (* 5 5) (* 2 3))
+C. (expt (* 5 5) 5)
+D. (expt (+ (* 5 4) 5) (+ 5 1))
+Answer: C
+/nurullaeva.sabrina
+=======================
+Question 29:
+
+MC Question: (build-list n f) generates a list by calling f on integers in what range?
+Skill: 10
+Options:
+A) [0, n)
+B) [0, n]
+C) (0, n)
+D) (0, n]
+Answer: A
+/peng.alex
+=======================
+Question 30:
+
+MC Question: Is it true or is it false that "and" requires two parameters and returns true only if all arguments are true and returns false if any argument is false.
+Skill: 5
+Options:
+A) True
+B) False
+Answer: False (explanation: key word is parameters)
+/royce.sophie
+=======================
+Question 31:
+
+MC Question: Which of these procedures would return the sum of all the values in list g?
+Skill: 10
+Options:
+a. (cons (first g) (rest g))
+b. (foldl + 1 g)
+c. (+ (first g) (rest g))
+d. (foldl + 0 g)
+Answer: d
+/schaible.anna
+=======================
+Question 32:
+
+MC Question:
+What does this program return?
+(define fail? (lambda (pointsEarned pointsLost)
+                (if (> (/ pointsEarned (+ pointsLost pointsEarned)) 65)
+                    "Passed!"
+                    "Failed :(")))
+(fail? 20 22)
+Skill: 2/3/5/6
+Options:
+A)nothing
+B)fail
+C)nope
+D)Passed!
+Answer: D
+/shahid.maryam
+=======================
+Question 33:
+
+Programming question:
+Write the function of the surface area of a cone.
+The formula for the surface area of a cone is 4πr²
+Skill: 3
+
+
+
+(define SAofCone
+  (lambda (r)
+    (* (* 4 pi) (expt r 2))))
+(SAofCone 3)
+/shao.serena
+=======================
+Question 34:
+
+MC Question:
+What will the following expression evaluate to?
+(and #t (not #f))
+Skill: 5
+Options:
+A) #f
+B) #t
+C) (not #f)
+D) and
+Answer: B
+/sukhdeo.dylan
+=======================
+Question 35:
+
+MC Question: Task: Use randomness to control program outcomes based on a probability threshold.
+You want to write a function flip-coin that returns "Heads" 50% of the time and "Tails" 50% of the time. Which implementation correctly uses Racket’s random function?
+Skill: 5 8
+Options:
+A)
+(define (flip-coin)
+(if (= (random 1) 1) "Heads" "Tails"))
+B)
+(define (flip-coin)
+(if (> (random 100) 50) "Heads" "Tails"))
+C)
+(define (flip-coin)
+(if (< (random 2) 1) "Heads" "Tails"))
+D)
+(define (flip-coin)
+(if (random 2) "Heads" "Tails"))
+Answer
+C
+/tissera.shanya
+=======================
+Question 36:
+
+MC Question:
+What does this return?
+
+(define L (list 3 8 2))
+(max (first L) (rest L))
+
+Skill: 10
+Options:
+A) 8
+B) 3
+C) (8 2)
+D) Error
+
+Answer: D
+/zeng.john
+=======================
+Question 37:
+
+MC Question: Which of the following is a boolean function
+Skill: 5
+Options:
+A) if
+B) define
+C) and
+D) (define boolean_function 42)
+Answer C

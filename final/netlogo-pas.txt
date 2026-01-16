@@ -1,0 +1,386 @@
+
+/ahmetaj.kevin
+=======================
+Question 0:
+
+;##########
+;MC Question: Which of the following is true about the command ask 
+;Skill: 
+;Options:
+;A:Any agent can ask all of an  Agent set to do something
+;B:Agents, other than observer, can only ask members of their agent set to do something.
+;C: The agent set neighbors can not be asked anything.
+;D: Only the observer can ask agent set of all patches/turtles 
+;Answer
+;D
+;##########
+
+]]>
+/chen.ethan
+=======================
+Question 1:
+
+;##########
+;MC Question: Which of the following is not a NetLogo agent?
+;Skill: 21
+;Options: 
+; A. Turtles
+; B. Patches
+; C. Variables
+; D. Links
+;Answer
+; C
+;##########
+/cheng.eason
+=======================
+Question 2:
+
+;##########
+;MC Question: What is required to create a procedure?
+;Skill: 19
+;Options:
+;a) all 4 types of agents
+;b) the keywords to and end
+;c) a variable
+;d) an interface element
+;
+;Answer: b
+;
+;##########
+/cho.wilson
+=======================
+Question 3:
+
+;##########
+;MC Question:
+;Skill: 21 
+;What does the following code do?
+;ask turtles with [ who < 3 ] [ fd 1 ]
+;Options:
+;A) Moves all turtles forward 1
+;B) Moves turtles with who less than 3 forward 1
+;C) Creates 3 turtles
+;D) Causes an error
+;
+;Answer: B
+;##########
+
+]]>
+/chowdhury.adyan
+=======================
+Question 4:
+
+;##########
+;MC Question: How do you ask a subgroup of an agent set to do something?
+;Skill: 22
+;Options: 
+;A) Replace any instance of the name of the subgroup with the word "turtles" or "patches"
+;B) Have "of [subgroup name]
+;C) Have "with [subgroup name]
+;D) Replace any instance of the word "turtles" or "patches" with the name of the subgroup
+;Answer: D
+;
+;##########
+/hafeez.arzan
+=======================
+Question 5:
+
+;##########
+;MC Question:
+;Skills: 10 and 21
+;Consider the NetLogo procedure shown below, which uses a previously defined property of turtles called speed to 
+;designate a subset of turtles in the world and change their color.
+;
+;to markSpeedyTurtles
+;  let speedyTurtles (turtles with [speed > 2])
+;  ask speedyTurtles [
+;    set color blue
+;  ]
+;end
+;
+;Which of these statements best describes how agent sets are being manipulated in markSpeedyTurtles?
+;Options:
+;A) speedyTurtles stores a single turtle chosen at random from all turtles with a speed value larger than 2.
+;B) speedyTurtles represents a list of turtle variables, and the ask command loops through this list in random order.
+;C) speedyTurtles is an agentset that contains all turtles with a speed value larger than 2, and the ask command
+;instructs all of these turtles to turn blue in no particular order.
+;D) speedyTurtles represents a list of the who values of all turtles present in the world, and, when used in ask, 
+;NetLogo automatically converts this list into an agentset.
+;Answer: C
+;##########]]>
+/kano.nene
+=======================
+Question 6:
+
+;##########
+;MC Question:
+;What is one possible outcome of the following code?
+;ask turtles [
+;if count turtles-here > 1 [
+; die ]]
+;Skill: 21 22 
+;Options:
+;A)one turtle per patch survives
+;B)all turtles die simultaneously
+;C)SOME turtles on crowded patches may survive 
+;D)the code will not run
+;
+;Answer: C
+;
+;##########]]>
+/lee.caitlyn
+=======================
+Question 7:
+
+
+/ng.sophia
+=======================
+Question 8:
+
+;##########
+;MC Question: What are the comparison operators in netlogo
+;Skill: 5
+;Options:
+; A) <, >, <=, >=, =
+; B) =, =!, <, >, <=, >=
+; C) =, !=, <, >, <=, >=
+; D) <, >, =<, =>, =, =!
+;Answer: C
+;
+;##########
+
+]]>
+/purkaysta.shuhag
+=======================
+Question 9:
+
+
+/shen.aaron
+=======================
+Question 10:
+
+;##########
+;MC Question: What command is the agentset of all the neighbors?
+;Skill: 1, 2, 21
+;Options:
+;a) Neighbors
+;b) Turtles
+;c) Patches
+;d) Patches-own
+;Answer
+;a
+;##########
+/berman.jaffee
+=======================
+Question 11:
+
+
+/chan.angeline
+=======================
+Question 12:
+
+
+/chan.brandon
+=======================
+Question 13:
+
+;##########
+;MC Question:
+;Calculate the value of f 3 3:
+;
+;globals [var1]
+;
+;to-report f [num1 num2]
+;  set var1 1
+;  repeat num2 [
+;    set var1 (var1 * num1)
+;  ]
+;  report var1
+;end
+;
+;Skill: 12
+;Options:
+;A) 1
+;B) 9
+;C) 27
+;D) 81
+;Answer: C
+;##########]]>
+/chen.fiona
+=======================
+Question 14:
+
+to changeColor
+  ask one-of neighbors
+  [ set pcolor random 141 ]
+end
+/fung.william
+=======================
+Question 15:
+
+;##########
+;MC Question:
+;Even after all of the work of the Observer and your fellow turtles, the velociraptors are closing in on you. Do not underestimate hungry velociraptors.
+;The best thing to do now is to camouflage yourself with the surrounding environment and create a wall of turtles surrounding you so that you may be spared.
+;Which of the following procedures is most likely to accomplish this? (Keywords to delineate the procedure being defined are removed here.)
+;Skill: 19 21 22
+;Options:
+;A) ask other turtles [setxy xcor ycor
+;                      fd 1]
+;
+;B) ask other turtles [setxy xcor ycor 
+;                      fd 1
+;                      breed 5]
+;   ask neighbors [set pcolor color]
+;
+;C) Won't these all suddenly teleport the velociraptors (and turtles) to me? I don't like velociraptors near me...
+;
+;D) ask other turtles [setxy xcor ycor 
+;                      set color pcolor
+;                      fd 1
+;                      breed 5]
+;   ask neighbors [set pcolor color]
+; 
+;Answer: C
+;
+;##########]]>
+/jen.dylan
+=======================
+Question 16:
+
+
+/jensen.eske
+=======================
+Question 17:
+
+to setup
+  ca
+  crt 1000 [set heading 90]
+  ask patches with [(pycor <= -5) or (pycor >= 5)] [set pcolor red]
+  
+end
+
+to go
+  wait 0.25
+  ask turtles [
+    left ((random 45) - 22.5)
+    fd 1
+    if ([pcolor] of patch-here = red)
+    [ die ]
+  ]
+  
+end
+]]>
+/liu.constance
+=======================
+Question 18:
+
+;##########
+;MC Question: Which of the following uses a global variable?
+;Skill: 20
+;Options: 
+;A. monitor
+;B. slider
+;C. button
+;D. plot
+;
+;Answer: B
+;
+;##########
+
+]]>
+/nurullaeva.sabrina
+=======================
+Question 19:
+
+;##########
+;MC Question: What does the following program do?
+; to-report percentLiving
+;    report (count pathces with [pcolor = white]) /
+;    (count patches) * 100
+;end
+;
+;Skill: 18
+;Options:
+; A) creates a new variable
+; B) defines percentLiving
+; C) reports percentLiving
+; D) plots percentLiving
+;
+;Answer C
+;##########
+/royce.sophie
+=======================
+Question 20:
+
+
+/shahid.maryam
+=======================
+Question 21:
+
+
+/shao.serena
+=======================
+Question 22:
+
+;##########
+;MC Question:
+;How to create a new property called bling for patches?
+;Skill: 22
+;Options:
+;A) [bling] of patches
+;B) [bling] [bling] [bling]
+;C) property-new [bling]
+;D) patches-own [bling
+;
+;Answer
+;D
+;##########
+/sukhdeo.dylan
+=======================
+Question 23:
+
+;##########
+;MC Question: In NetLogo, the ask command is the primary way to perform iteration over agents. Which statement best describes how ask turtles [ fd 1 ] functions?
+
+;Skill: 12 19
+;Options:
+; A) It moves all turtles forward simultaneously in one single hardware step.
+; B) It picks turtles one by one in a randomized order and moves each one forward before picking the next.
+; C) It moves the turtles in the order they were created (by WHO number).
+; D) It moves only the turtle with the highest energy.
+;Answer
+; B
+;##########
+]]>
+/tissera.shanya
+=======================
+Question 24:
+
+;##########
+;MC Question:
+;Skill: 22
+;Which makes a new turtle?
+;Options:
+;A) hatch
+;B) crt
+;C) both a and b
+;D) none
+;
+;Answer: C
+;##########
+/zeng.john
+=======================
+Question 25:
+
+;##########
+;MC Question: How to make a new breed of turtles called fish (singular: a_fish) and make a new fish-only property called gills
+;Skill: 22
+;Options:
+;A) breed [fish a_fish] turtles with [breed = fish]-own [gills]
+;B) breed [a_fish fish] fish-own [gills]
+; C) breed [fish a_fish] fish-own [gills]
+; D) breed [fish a_fish gills]
+;Answer
+;C
+;##########

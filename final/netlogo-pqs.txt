@@ -1,0 +1,355 @@
+
+/ahmetaj.kevin
+=======================
+Question 0:
+
+;MC Question:  what is the difference between crt and cro 
+;Skill: 2, 19, 21 
+;Options:
+;A: crt is only observer command while cro can be used in turtle context.
+;B: You can put turtle specific commands, in [], following cro but not following crt 
+;C:Crt assigns random headings and random pcolor, while Cro assigns evenly spaced
+; headings, from 0-360, and pcolor based on who value
+;D:Cro assigns random headings and random pcolor, while Crt assigns evenly spaced
+; headings, from 0-360, and pcolor based on who value
+;Answer
+; C
+/chen.ethan
+=======================
+Question 1:
+
+;MC Question: What is wrong with the following code: ask turtle [ fd 1 ]
+;Skill: 21, 22
+;Options: 
+; A. Missing brackets
+; B. Turtle should be turtles
+; C. Ask is unnecessary 
+; D. Nothing is wrong
+;Answer
+; B
+/cheng.eason
+=======================
+Question 2:
+
+;MC Question: What does a slider do?
+;Skill: 20
+;Options:
+;a) sets a variable value
+;b) changes a turtle's property
+;c) changes the amount of turtles on the map
+;d) changes the color of an agent
+;
+;Answer: a
+;
+/cho.wilson
+=======================
+Question 3:
+
+;MC Question:
+;Skill: 21 (Working with Agent Sets), 6 (Using Conditional Statements)
+;Assume there are 5 turtles with who values 0 through 4.
+;What does the following code do?
+;
+;ask turtles [
+;  if who mod 2 = 0 [
+;    fd 1
+;  ]
+;]
+;
+;Options:
+;A) All turtles move forward 1
+;B) Only turtles with odd who values move forward 1
+;C) Only turtles with even who values move forward 1
+;D) No turtles move
+;
+;Answer: C
+/chowdhury.adyan
+=======================
+Question 4:
+
+;MC Question: Which command makes subgroups of an agent-set?
+;Skill: 21
+;Options: 
+;A) turtles-own
+;B) breed
+;C) patches-own
+;D) globals
+;Answer: B
+;
+/hafeez.arzan
+=======================
+Question 5:
+
+;MC Question:
+;Skills: 8, 19, and 21
+;A student uses the one-of function to write a procedure, shown below.
+;
+;to redPatches
+;  ask one-of patches [
+;    set pcolor red
+;  ]
+;end
+;
+;Which of these statements best describes how one-of is used in this procedure?
+;Options:
+;A) In this procedure, one-of selects a random patch from the world, but only from those that have turtles on them.
+;B) In this procedure, one-of selects a random patch from the agentset patches, with each patch having an equal
+;probability of being chosen and turning red.
+;C) In this procedure, one-of selects the first patch in the agentset patches using patch coordinates.
+;D) In this procedure, one-of selects a random patch, but some patches have a higher probability of being chosen and
+;turning red when compared to other patches in the world.
+;Answer: B
+/kano.nene
+=======================
+Question 6:
+
+;MC Question:
+;What does the following code do?
+;ask turtles [
+;if any? other turtles-here [
+;ask other turtles-here [ 
+;set color blue
+;]]]
+;Skill: 21 22
+;Options:
+;A) one turtle turns blue
+;B) all turtles on the same patch as another turn blue
+;C) all turtles turn blue
+;D) the code does not work
+;
+;Answer: B
+;
+/lee.caitlyn
+=======================
+Question 7:
+
+
+/ng.sophia
+=======================
+Question 8:
+
+;MC Question: Which function will return set patch x y a random color of gray, red, or orange
+;Skill: 8
+;Options:
+; A) ask patch x y [set pcolor ((random 3) * 10 + 5)]
+; B) ask patch x y [set color ((random 3) * 10 + 5)]
+; C) ask patch x y [set pcolor ((random 3) * 5 + 5)]
+; D) ask patch x y [set color ((random 3) * 5 + 5)]
+;Answer: A
+;
+/purkaysta.shuhag
+=======================
+Question 9:
+
+
+/shen.aaron
+=======================
+Question 10:
+
+;MC Question: What does tick do?
+;Skill: 1, 2
+;Options:
+;a) Creates turtles
+;b) Clears the world
+;c) Waits some time
+;d) Increases the clock of the Netlogo world by 1.
+;Answer
+;d
+/berman.jaffee
+=======================
+Question 11:
+
+
+/chan.angeline
+=======================
+Question 12:
+
+
+/chan.brandon
+=======================
+Question 13:
+
+;MC Question:
+;There is a slider controlling a variable named f that goes into this procedure:
+;
+;to age
+;  if f >= random 50
+;  [
+;    die
+;  ]
+;end
+;
+;What is the chance the calling turtle will die if f is 49?
+;
+;Skill: 8
+;Options:
+;A) 100%
+;B) 98%
+;C) 2%
+;D) 0%
+;Answer: A
+/chen.fiona
+=======================
+Question 14:
+
+;Programming question: Create a procedure called move in which turtles ask a random neighboring patch to change their color to a random color
+;Skill:
+;Description
+;
+;
+;
+/fung.william
+=======================
+Question 15:
+
+;MC Question:
+;It is the next morning. Seeing that you're here, the velociraptors still haven't got you yet.
+;You have just received word from the other turtles that the velociraptors have begun using patches as hoverboards to make them run much faster.
+;This is an issue.
+;However, in the same report, the turtles have found previously unknown information about velociraptors, after having taken one hostage.
+;
+;This is one of the few procedures the velociraptor released in exchange for freedom: ;He also has been forced to go vegetarian for the rest of his life.
+;to find-turtles
+;  if (pcolor = red) [ fd 8 ]
+;  ifelse (count other (velociraptors in-radius 3) < 10) and (time = 0)
+;    [ die ]
+;    [ set time-without-friends 20 ]
+;  ifelse (count other (turtles in-cone 3 5) >= 2)
+;    [ 
+;      fd 2 
+;      set time-without-friends time-without-friends - 1
+;    ]
+;    [rt 5]
+;end
+;
+;What of the following do we learn about velociraptors from this procedure?
+;I)   Velociraptors have mastered the art of using red turtles as hovercrafts to propel them forwards by 8 patches.
+;II)  Velociraptors like being in groups and will die of loneliness if there are fewer than 10 other velociraptors around them for a given period of time.
+;III) Velociraptors have very narrow lines of sight when finding turtles, but will move towards them if there are more than 2 sighted.
+;Skill: 6 7 19 21 22
+;Options:
+;A) I and II
+;B) I and III
+;C) II and III
+;D) I, II, III
+;Answer: C)
+;
+/jen.dylan
+=======================
+Question 16:
+
+
+/jensen.eske
+=======================
+Question 17:
+
+;Programming question:
+;Skill: a couple of them
+;Description:
+; Make a 5 wide gray line in the middle and the rest red. If a turtle touches red, it dies.
+;
+; setup
+; Creates 1000 turtles, sets their heading to 90, and sets up the patches
+;
+; go
+; Asks turtles to rotate within the range [-22.5, 22.5]. Moves turtles forward 1. If they touch red, they die.
+;
+;
+;
+/liu.constance
+=======================
+Question 18:
+
+;MC Question: Which of the following returns the number of pink patches?
+;Skills 21 22
+;A. ask patches count patches with pcolor pink
+;B. ask patches count patches with color pink
+;C. ask patches [count patches with [pcolor = pink]]
+;D. ask [patches] count patches with pcolor = pink
+;
+;Answer: C
+;
+/nurullaeva.sabrina
+=======================
+Question 19:
+
+;MC Question: Which of the following is not true about cellular automata?
+;Skill: 19
+;Options:
+; A) there are set rules for state changes
+; B) time moves continuously
+; C) they are examples of emergent behavior
+; D) the world is a grid of cells
+;
+; Answer: B
+/royce.sophie
+=======================
+Question 20:
+
+
+/shahid.maryam
+=======================
+Question 21:
+
+;Programming question:
+;Skill:
+;Description
+;
+;
+;
+/shao.serena
+=======================
+Question 22:
+
+;MC Question:
+;Which expression correctly reports a random integer between -10 and 10 in NetLogo?
+;Skill: 19
+;Options:
+;A) random -10 10
+;B) random-float 20 - 10
+;C) (random 21) - 10
+;D) random 10
+;
+;Answer
+;C
+/sukhdeo.dylan
+=======================
+Question 23:
+
+;MC Question: In a disease spread model, you want a turtle to have a 25% chance of becoming "sick" every tick. Which line of code should be placed inside the go procedure?
+
+;Skill: 8 18
+;Options:
+; A) if random 100 < 25 [ set sick? true ]
+;B) if random-float 1.0 < 0.25 [ set sick? true ]
+;C) set sick? (random 4 = 0)
+;D) All of the above.
+;Answer
+; D
+/tissera.shanya
+=======================
+Question 24:
+
+;MC Question:
+;Skill: 21
+;Which command makes a different agent do something?
+;Options:
+;A) do
+;B) req
+;C) ask
+;D) agentset-own
+;
+;Answer: C
+/zeng.john
+=======================
+Question 25:
+
+;MC Question: Write a command to set patches to random color in patch context 
+;Skill:21
+;Options:
+;A) ask patches [ set pcolor random 99 / 10]
+;B) set pcolor random 256
+;C) set pcolor random 140
+;D) ask turtles [set color random 140]
+;Answer
+;C

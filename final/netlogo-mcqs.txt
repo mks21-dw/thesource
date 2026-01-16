@@ -1,0 +1,638 @@
+
+/ahmetaj.kevin
+=======================
+Question 0.a:
+;MC Question: What happens when the command show pcolor is used in turtle context
+;Skill:19, 22, 2
+;Options:
+;A:An error occurs, since pcolor is only for patch context 
+;B: It shows the turtle color.
+;C:It shows the pcolor of the patch the turtle is standing on.
+;D: It shows the color of adjacent turtles 
+;Answer
+;C
+=======================
+Question 0.b:
+
+;MC Question: Which of the following is the correct way to use if/ ifelse based on netlogo syntax 
+;Skill: 5 6
+;Options: 
+; A: if pycor > 0 [set pcolor blue]
+; B: if random 2 = 0 [set pcolor white] [set pcolor black]
+; C: ifelse random 10 = 5 [set color purple]
+; D: if random-xcor and random-ycor [set pcolor random 140]
+;Answer
+; A
+/chen.ethan
+=======================
+Question 1.a:
+;MC Question: In NetLogo, why are agents sets useful?
+;Skill: 21
+;Options:
+;A. They make models run faster and smoother
+;B. They replace variables
+;C. they allow many agents to act at the same time
+;D. They allow the observer to control agents one at a time
+;
+;Answer
+;C
+=======================
+Question 1.b:
+
+;MC Question: What does tick do?
+;Skill: 21
+;Options: 
+; A. Move turtles
+; B. Stop the program
+; C. Count the amount of seconds passed
+; D. Count time steps in a model
+;Answer
+; D
+/cheng.eason
+=======================
+Question 2.a:
+;MC Question: What is an agent set?
+;Skill: 21
+;Options:
+;a) a group of agents of any agent type
+;b) a group of agents of the same agent type
+;c) a collection of functions corresponding to the same agent type
+;d) a specific breed of turtles
+;
+;Answer: b
+;
+=======================
+Question 2.b:
+
+;MC Question: What are the 4 agent types?
+;Skill: 22
+;Options:
+;a) turtles, patches, lists, observer
+;b) turtles, patterns, lists, observer
+;c) turtles, patterns, links, observer
+;d) turtles, patches, links, observer
+;
+;Answer: d
+;
+/cho.wilson
+=======================
+Question 3.a:
+;MC Question:
+;Skill: 6
+;What will be shown when the following code runs?
+;
+;let x 10
+;ifelse x < 5
+;  [ show "low" ]
+;  [ show "high" ]
+;Options:
+;A) "low"
+;B) "high"
+;C) 10
+;D) error
+;
+;Answer: B
+=======================
+Question 3.b:
+
+;MC Question:
+;Skill: 8 
+;Which value could be produced by the following code?
+;random 4
+;Options:
+;A) 4
+;B) 5
+;C) 6
+;D) 3
+;
+;Answer: D
+/chowdhury.adyan
+=======================
+Question 4.a:
+;MC Question: Which would return the color of the patch that a turtle is on?
+;Skill: 19
+;Options:
+;A) [pcolor] of patch-here
+;B) [color] of patch-here
+;C) pcolor of patch-here
+;D) color of patch-here
+;Answer: A
+;
+=======================
+Question 4.b:
+
+;MC Question: Which interface widget shows the value of a variable over time?
+;Skill: 20
+;Options: 
+;A) Monitor
+;B) Slider
+;C) Plot
+;D) Chooser
+;Answer: C
+;
+/hafeez.arzan
+=======================
+Question 5.a:
+;MC Question:
+;Skills: 8 and 21
+;A student wants to simulate a NetLogo model representing the reproduction of a new turtle from a parent turtle. In
+;a regular birth, a new turtle preserves the parent color of the original turtle. However, the student wants to 
+;simulate a randomized mutation in the turtle's color, where the turtle inherits the parent color but has a 
+;mutation from -5 to 5, inclusive. The student's attempt in simulating this model is shown below.
+;
+;to mutation
+; ask turtles [
+;   hatch 1 [
+;     set color ______________
+;   ]
+; ]
+;
+;Which of these lines of code completes the procedure and accurately represents the student's model?
+;Options:
+;A) [color] of parent + ((random 11) - 5)
+;B) [color] of parent + (5 - (random 10))
+;C) (random 11) - 5
+;D) None of the above is correct.
+;
+;Answer: A
+=======================
+Question 5.b:
+
+;MC Question:
+;Skills: 8, 19, and 21
+;Consider the NetLogo wiggle procedure shown below, which facilitates the random movement of a turtle.
+;
+;to wiggle 
+;  ask turtles [
+;    rt random 30
+;    lt random 30
+;    fd 1
+;  ]
+;
+;Three students make the following statements about this procedure. Which of the statements, if any, are correct?
+;
+;I. Though the turtle turns right and turns left by random amounts, the largest possible net turn in either direction
+;is less than 30 degrees.
+;
+;II. Replacing the two separate right and left turns with the command rt (random 30 - random 30) would alter the 
+;probabilities of some net turning angles, even though the range of all possible angles remains the same.
+;
+;III. Because the right and the left turns are executed in sequential order, the turtle's final heading is dependent
+;on the order of the two commands in the procedure.
+;Options:
+;A) none of I, II, or III
+;B) I, only
+;C) II and III, only
+;D) I, II, and III
+;Answer: B
+/kano.nene
+=======================
+Question 6.a:
+;MC Question:
+;Which of the following commands can only be used in the turtle context?
+;Skill: 21 22
+;Options:
+;A) set pcolor green
+;B) create-turtles
+;C) fd 10
+;D) ask patches [ set pcolor blue ]
+;
+;Answer: C
+;
+=======================
+Question 6.b:
+
+;MC Question:
+; Which command would be appropriate to use in the following to make all the
+; turtles one of two colors:
+; ask turtles [ if random 2 = 0
+; [set color green]
+; [?]
+;Skill: 21 22
+;Options:
+;A) [set color white]
+;B) rt 180
+;C) create-turtles 2
+;D) [ask turtle [set color white]
+;
+;Answer: A
+;
+/lee.caitlyn
+=======================
+Question 7.a:
+
+=======================
+Question 7.b:
+
+
+/ng.sophia
+=======================
+Question 8.a:
+2 3 5 6 7 8 10 11 12 19 21 22
+;MC Question: In observer context, which function will turn all patches red
+;Skill: 2,3
+;Options:
+; A) set pcolor red
+; B) ask patches [set color red]
+; C) ask patches [set pcolor red]
+; D) pcolor red
+;Answer: C
+;
+=======================
+Question 8.b:
+
+;MC Question: In which context will "ask turtles [set heading 0]" work
+;Skill: 9
+;Options:
+; A) observer context
+; B) turtle context 
+; C) patch context
+; D) link context
+;Answer: A
+;
+/purkaysta.shuhag
+=======================
+Question 9.a:
+
+=======================
+Question 9.b:
+
+
+/shen.aaron
+=======================
+Question 10.a:
+;MC Question: Which NetLogo command is talks to another agentset all at once?
+;Skill: 1, 2
+;Options:
+;a) fd
+;b) tick
+;c) ask
+;d) set
+;Answer
+;c
+=======================
+Question 10.b:
+
+;MC Question: What type of programming language is Netlogo?
+;Skill: 21
+;Options:
+;a) Functional
+;b) Agent-based
+;c) Encrypting
+;d) Network
+;Answer
+;b
+/berman.jaffee
+=======================
+Question 11.a:
+
+=======================
+Question 11.b:
+
+
+/chan.angeline
+=======================
+Question 12.a:
+
+=======================
+Question 12.b:
+
+
+/chan.brandon
+=======================
+Question 13.a:
+;MC Question:
+;
+;A turtle will die when there is another turtle on the same patch as it,
+;and if it is on a yellow tile
+;If a turtle does not die because of this, then they will move forward 1
+;
+;Which would be best to implement this?
+;
+;Skill: 5 6
+;Options:
+;A) ifelse + or
+;B) ifelse + and
+;C) if + or
+;D) if + and
+;Answer: D
+=======================
+Question 13.b:
+
+;MC Question:
+;
+;A program with turtles has it so when one type of turtle is on the same patch as another type, the quicker type of turtle dies, and the survivor turns
+;Every 10 ticks, the quicker type of turtle will reproduce. After 100 ticks of life, the slower type of turtles will die
+;
+;What is the most likely description of how the program behaves?
+;
+;Skill: 22
+;Options: 
+;A) it uses turtles and each turtle has a variable
+;B) it uses two breeds, with both breeds having the same variable
+;C) it uses two breeds, with only one breed having their own variable 
+;D) it uses two breeds, each with their own separate variables
+;Answer: B
+/chen.fiona
+=======================
+Question 14.a:
+;MC Question: Which code sets a turtle's heading to an integer between 9 81?
+;Skill: 20,21
+;Options:
+;A) set heading random 9 81
+;B) set heading random 81
+;C) set heading (random 10) + (random 73)
+;D) none of these
+;Answer D
+;
+=======================
+Question 14.b:
+
+;MC Question: A turtle can...
+;Skill: 19,20,21,22
+;Options:
+;A) ask its surrounding patches to die
+;B) ask turtle 0 to ask surrounding patches to change color
+;C) ask the observer to create another turtle
+;D) ask all patches to change their color
+;
+;Answer B
+;
+/fung.william
+=======================
+Question 15.a:
+;MC Question:
+;You are a turtle wiggling around in a large, seemingly infinite land of multicolor squares. You are not the only breed here, though.
+;You are very fearful of the velociraptor breed: You may not have ever seen them, but you are very afraid of them for one reason:
+;They are very interested in eating you, and you would not like to be turned into turtle noodles.
+;Luckily, the Observer above has provided you with powerful procedures that protect you from the velociraptors.
+;
+;One of the most important procedures that the Observer has taught you is the wiggle function, whose code is shown below:
+;to wiggle
+;    fd (random 6) + 1
+;    rt random 180
+;    lt random 180
+;    wait random 3
+;end
+;
+;One day, while you are looking for grass to eat, the Observer sees that you are in danger, and recommends that you take action by wiggling. What of the following should you do? 
+;Note that the final answer might not be everything you should do, but what is listed is in order.
+;I)   Rotate right by 180 degrees. ;If you look away from the velociraptors, they won't be there anymore.
+;II)  Run forward the length of up to 6 of those squares. You'll decide by rolling a die.
+;III) Stop for 1 or 2 seconds, or maybe just keep going. ;Not only should you look unpredictable, but you need to buy time to think.
+;IV)  Rotate left by some number of degrees between 0 and 179. This one you'll decide by finding where the wind blows.
+;Skill: 8 19
+;Options:
+;A) III, then IV, then I, then II.
+;B) II, then I, then IV, then III.
+;C) II, then IV, then III.
+;D) I, then I, then I... ;Spinning in circles will only make you dizzy.
+;
+;Answer: C
+;
+=======================
+Question 15.b:
+
+;MC Question:
+;With the help of the Observer, you have successfully escaped the velociraptors this time. 
+;However, as the Observer goes to sleep for the night, you are left on your own to look out for velociraptors, as they will not sleep until they eat, and they are still very hungry. 
+;Of course, with the lack of the Observer's careful gaze, you are reliant on the other turtles to protect you, and you all have agreed to protect each other.
+;
+;One of the procedures, perfected over generations of elder turtles, that you continually use nightly for this, is shown below:
+;to look-out [radius]
+;  ask other turtles (in-cone radius 90) [
+;      if ((count velociraptors in-radius radius with [state = "starving"]) > 0)[
+;          look-out radius
+;          wiggle
+;      ]
+;  ]
+;end
+;
+;Part of this procedure asks other turtles in your area to do something for you. What do these other turtles do?
+;Skill:
+;Options: 6 19 21 22
+;A) Ask each turtle in a 90 degree cone with given radius from themselves to check for starving velociraptors around them, and look-out themselves and wiggle if there are.
+;B) Check if there are velociraptors within radius of the turtle, then look-out themselves if there are and wiggle away.
+;C) Ask each velociraptor in a 90 degree cone with given radius from the turtle to check for starving turtles around them, and look-out themselves and wiggle if there are.
+;D) Check if there are velociraptors within radius of the turtle that are starving, then they should look-out and wiggle if there are.
+;
+;Answer: D
+;
+/jen.dylan
+=======================
+Question 16.a:
+
+=======================
+Question 16.b:
+
+
+/jensen.eske
+=======================
+Question 17.a:
+;MC Question: How many neighbors does a single patch have (assume wrapping is on)?
+;Skill:
+;Options:
+; A) 9
+; B) 8
+; C) 1
+; D) 0
+;
+;Answer
+;
+=======================
+Question 17.b:
+
+;MC Question: If a turtle asks for its pcolor, what does it return.
+;Skill:
+;Options:
+; A) the color of the turtle
+; B) the color of the observer
+; C) the color of the patch the turtle is on
+; D) error; pcolor is not a property of a turtle
+;
+;Answer
+;
+/liu.constance
+=======================
+Question 18.a:
+;MC Question: Which of the following does not set the color of a patch blue?
+;Skill: 19
+;Options:
+;A. (set pcolor blue)
+;B. (set color blue)
+;C. (set pcolor 105)
+;D. to question ask patch 1 2 [set pcolor 105] end
+;Answer:B
+;
+=======================
+Question 18.b:
+
+;MC Question: What does to col [x] (ifelse (x > 0) [set pcolor 10] [set pcolor 100) end return when x = -1?
+;Skill:
+;Options: 
+;A. either turns a patch of the color of ten or one hundrend
+;B. x < -1
+;C. x < 0
+;D. turns a patch of the color 100
+;
+;Answer: D
+;
+/nurullaeva.sabrina
+=======================
+Question 19.a:
+;MC Question: Which of the following can you do in turtle context?
+;Skill: 19, 22
+;Options:
+; A) Modify properties of the patch the turtle is on
+; B) Ask all the turtles
+; C) Ask the observer to do something
+; D) Ask all the patches
+;
+;Answer: A
+=======================
+Question 19.b:
+
+;MC Question: Which of the following is true about the turtles-here command?
+;Skill: 20
+;Options:
+; A) turtles/patch context
+; B) reports an agentset containing all turtles on the patch of the calling agent
+; C) no parameters
+; D) all of the above
+;
+;Answer: D
+/royce.sophie
+=======================
+Question 20.a:
+
+=======================
+Question 20.b:
+
+
+/shahid.maryam
+=======================
+Question 21.a:
+;MC Question: Which of the following functions has a specific context?
+;Skill: 
+;Options:
+;A) ask
+;B) crt
+;C) count
+;D) one-of
+;Answer B
+;
+=======================
+Question 21.b:
+
+;MC Question: How do you change the shape of a turtle?
+;Skill:
+;Options:
+;A) ask turtle "shape"
+;B) set turtle "shape"
+;C) set shape "shape"
+;D) one-of "shape"
+;Answer C
+;
+/shao.serena
+=======================
+Question 22.a:
+;MC Question:
+;Skill: 18 19
+;What does the NetLogo command tick do when placed inside a go procedure?
+;Options:
+;A) Resets the tick counter to zero
+;B) Advances the tick counter by 1
+;C) Stops the model
+;D) Clears all agents
+;
+;Answer
+;B
+=======================
+Question 22.b:
+
+;MC Question:
+;Skill: 21
+;Which agent type can directly change the value of pcolor?
+;Options:
+;A) Turtles
+;B) Links
+;C) Observer
+;D) Patches
+;
+;Answer
+;D
+/sukhdeo.dylan
+=======================
+Question 23.a:
+;MC Question: 
+;A model has a breed of turtles called predators. Each predator has a variable called energy. Which code snippet correctly allows a predator to increase its energy by 10 when it catches a prey agent on its current patch?
+;Skill: 7 22
+;Options:
+; A) ask prey [ set energy energy + 10 ]
+;B) ask one-of prey-here [ set energy [energy] of myself + 10 ]
+;C) ask one-of prey-here [ set [energy] of myself (energy + 10) ]
+;D) if any? prey-here [ set energy energy + 10 ask one-of prey-here [ die ] ]
+;Answer
+; D
+=======================
+Question 23.b:
+
+;MC Question: You want all turtles with a speed variable greater than 5 and a color of red to turn right by 45 degrees. Which NetLogo command correctly identifies and instructs this specific agent set?
+;Skill: 6 21
+;Options:
+; A) ask turtles with [speed > 5 and color = red] [ rt 45 ]
+;B) ask turtles [ if speed > 5 or color = red [ rt 45 ] ]
+;C) ask turtles with [speed > 5] [ if color = red [ rt 45 ] ]
+;D) Both A and C are syntactically correct and achieve the goal.
+;Answer
+; D
+/tissera.shanya
+=======================
+Question 24.a:
+;MC Question:
+;Skill: 20
+;Which of the following is most related to pens, in the context of a turtle?
+;Options:
+;A) pd
+;B) count
+;C) scribble
+;D) cap
+;
+;Answer: A
+=======================
+Question 24.b:
+
+;MC Question:
+;Skill: 20
+;Which of the following is most related to pens, in the context of a plot?
+;Options:
+;A) draw
+;B) count
+;C) scribble
+;D) cap
+;
+;Answer: B
+/zeng.john
+=======================
+Question 25.a:
+;MC Question: How do you set all patches green in observer context
+;Skill:22
+;Options:
+;A) [set pcolor green]
+;B) ask turtles [set color green]
+;C) ask patches [set pcolor green]
+;D) ask patches with [pcolor = green]
+;Answer
+;C
+=======================
+Question 25.b:
+
+;MC Question: how does a turtle make 5 identical turtles
+;Skill:21
+;Options:
+;A) hatch 5
+;B) crt 5
+;C) ask 5-of turtles [crt 1]
+;D) ask turtle 5 [hatch 1]
+;Answer
+;A
